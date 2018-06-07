@@ -1,0 +1,525 @@
+body{
+	margin: 0;
+	box-sizing: border-box;
+}
+.wrapper{
+	margin: 0 auto;
+	max-width: 1300px;
+}
+@font-face{
+	font-family: 'Lavanderia regular';
+	src:url('../fonts/ofont.ru_LavanderiaC.ttf');
+}
+@font-face{
+	font-family: 'AlteHaasGrotesk';
+	src:url('../fonts/AlteHaasGroteskBold.ttf');
+}
+@font-face{
+	font-family: 'Univers';
+	src:url('../fonts/Univers CE 45 Light.ttf');
+}
+@font-face{
+	font-family: 'UniversL';
+	src:url('../fonts/Univers LT 45 Light.ttf');
+}
+.menu{
+	background-color: #fbfcfb;
+	opacity: 0.9;
+}
+header{
+	background: url(../img/font.png);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	height: auto;
+}
+.menu h1{
+	font-family: lavanderia regular;
+	margin: 0;
+}
+/*Выпадающее меню*/
+
+.open-menu{
+	display: none;
+	text-align: center;
+	position: relative;
+	left: 100px;
+}
+.icon-open .fas{
+	cursor: pointer;
+	font-size: 20px;
+}
+.list-open a{
+	font-size: 20px;
+	font-family: arial;
+	border-bottom: 2px solid pink;
+	display: block;
+	margin: 10px 0;
+	padding-bottom: 5px;
+	color: #383838;
+}
+.list-open a:hover{
+	color: pink;
+	transition: 0.8s;
+}
+.list{
+	background-color: #fff;
+	border: 2px solid black;
+	border-radius: 10px;
+	position: absolute;
+	padding: 20px;
+	left: 50%;
+	margin-left: -60px;
+	top: 30px;
+	display: none;
+}
+
+/*Выпадающее меню. End*/
+.menu a{
+	text-decoration: none;
+	vertical-align: middle;
+}
+.tap a:hover{
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	transition: 1s;
+	border-radius: 10px;
+	background-color: #e4e4e4; 
+	color: #000000;
+}
+.menu a:not(:hover){
+	transition: 1s;
+}
+.man{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+.menu span{
+	color: pink;
+}
+.logo{
+	margin: 0;
+	font-size: 15pt;
+	padding: 0 10px;
+}
+.tap a{
+	font-size: 15pt;
+	font-family: segoe ui regular;
+	padding: 20px;
+	color: #817a7a;
+}
+.menu input{
+	background-color: #de6d6e;
+	color: #FFFFFF;
+	font-family: segoe ui regular;
+	padding: 5px 20px;
+	border: none;
+	margin: 10px;
+	cursor: pointer;
+	font-size: 12pt;
+	font-family: segoe ui regular;
+	border-radius: 5px;
+	outline: none;
+}
+.menu input:hover{
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	transition: 0.2s;
+	background-color: #ed7475;
+}
+.menu input:not(:hover){
+	transition: 0.4s;
+}
+.tap{
+	margin-left: 150px;
+}
+.welcome h1{
+	font-family: AlteHaasGrotesk;
+	color: #FFFFFF;
+	font-size: 70pt;
+}
+.welcome{
+	text-align: center;
+	margin-top: 350px;
+}
+.welcome p{
+	font-size: 20pt;
+	color: #FFFFFF;
+	font-family: Univers;
+	padding: 10px 0 100px 0;
+}
+.top-block h1{
+	font-family: Univers;
+	font-weight: 100;
+	font-size: 40px;
+}
+.top-block p{
+	font-family: segoe ui regular;
+	padding: 10px 50px;
+}
+.top-block{
+	text-align: center;
+  	box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
+}
+.circle{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 90px;
+}
+.tickets, .camera, .beer, .devices{
+	border-radius: 100%;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	margin: 10px 10px 50px 10px;
+	height: 200px;
+	width: 200px;
+	cursor: pointer;
+}
+.tickets h2, .camera h2, .beer h2, .devices h2{
+	font-family: segoe ui regular;
+	color: #ffffff;
+	font-size: 20px;
+	margin: 0;
+	padding-top: 10px;
+}
+.tex{
+	position: absolute;
+	opacity: 0;
+	height: 200px;
+	width: 200px;
+	border-radius: 100%;
+}
+.tex p{
+	font-size: 15px;
+	padding-top: 40px;
+	font-family: univers;
+	font-weight: 800;
+}
+.tickets{
+	background-color: #4eb9f4;
+}
+.camera{
+	background-color: #6fc125;
+}
+.beer{
+	background-color: #ff5649;
+}
+.devices{
+	background-color: #e48f23;
+}
+.tickets:hover .tex, .camera:hover .tex, .beer:hover .tex, .devices:hover .tex{
+	opacity: 1;
+	transition: 1s;
+}
+.tickets:hover .fa-ticket-alt, .camera:hover .fa-camera-retro, .beer:hover .fa-beer, .devices:hover .fa-desktop{
+	opacity: 0.2;
+	transition: 0.5s;
+}
+.tickets:hover h2, .camera:hover h2, .beer:hover h2, .devices:hover h2{
+	opacity: 0.2;
+	transition: 0.5s;
+}
+.tickets:not(:hover) h2, .camera:not(:hover) h2, .beer:not(:hover) h2, .devices:not(:hover) h2{
+	transition: 0.7s;
+}
+.tickets:not(:hover) .fa-ticket-alt, .camera:not(:hover) .fa-camera-retro, .beer:not(:hover) .fa-beer, .devices:not(:hover) .fa-desktop{
+	transition: 0.7s;
+}
+.tickets:not(:hover) .tex, .camera:not(:hover) .tex, .beer:not(:hover) .tex, .devices:not(:hover) .tex{
+	transition: 0.7s;
+}
+.fa-ticket-alt{
+	padding-top: 40px;
+	font-size: 100px;
+	color: #ffffff;
+}
+.fa-camera-retro{
+	padding-top: 40px;
+	font-size: 100px;
+	color: #ffffff;
+}
+.fa-beer{
+	padding: 40px 0 0 20px; 
+	font-size: 100px;
+	color: #ffffff;
+}
+.fa-desktop{
+	padding-top: 40px;
+	font-size: 100px;
+	color: #ffffff;
+}
+.text h1{
+	font-family: Univers;
+	font-weight: 100;
+	color: #646464;
+	margin: 0;
+}
+.text p{
+	font-family: Univers;
+	font-weight: 100;
+	color: #8b8b8b;
+	max-width: 600px;
+	margin-top: 5px;
+	padding-right: 30px; 
+}
+.text{
+	padding: 10px;
+	margin-top: 10px; 
+}
+.sector{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.bottom-block{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	padding-bottom: 50px;
+}
+.sector img{
+	padding: 20px;
+}
+footer{
+	background: url(../img/background.png);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+}
+.foot{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.menu_foot{
+	padding: 10px 50px 30px 50px;
+}
+.menu_foot h2{
+	font-family: Univers;
+	padding: 20px 0;
+	color: #696b6a;
+}
+.menu_foot a{
+	display: block;
+	text-decoration: none;
+	font-family: Univers;
+	font-weight: 800;
+	color: #696b6a;
+	margin: 25px 0;
+}
+.menu_foot a:hover{
+	color: #ffffff;
+	transition: 0.8s;
+}
+.menu_foot a:not(:hover){
+	transition: 0.8s;
+}
+.info{
+	padding: 70px 30px 30px 30px;
+}
+.info p{
+	font-family: univers;
+	color: #dfdfdf;
+}
+.social-link{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.fa-facebook-square, .fa-twitter-square, .fa-dribbble-square, .fa-share-alt-square{
+	color: #696b6a;
+	font-size: 50px;
+	margin: 10px;
+	cursor: pointer;
+}
+.fa-facebook-square:hover, .fa-twitter-square:hover, .fa-dribbble-square:hover, .fa-share-alt-square:hover{
+	color: #ffffff;
+	transition: 0.8s;
+}
+.fa-facebook-square:not(:hover), .fa-twitter-square:not(:hover), .fa-dribbble-square:not(:hover), .fa-share-alt-square:not(:hover){
+	transition: 0.8s;
+}
+
+
+/*Модальное окно "login"*/
+
+.overlay{
+	background-color: black;
+	position: fixed;
+	z-index: 3;
+	opacity: 0.8;
+	-moz-opacity:0.8;
+	filter:alpha(opacity=80);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+	display: none;
+}
+.win{
+	text-align: center;
+	top: 50%;
+	right: 50%;
+	display: none;
+	position: fixed;
+	margin-right: -150px;
+	margin-top: -145px;
+	z-index: 5;
+}
+.background_modal{
+	text-align: center;
+	background-color: #ffffff;
+	border-radius: 10px;
+	box-shadow: 0 15px 30px 0 #000000;
+	display: inline-block;
+	border: 1px solid #000000;
+}
+.window{
+	padding: 30px;
+}
+.background_modal span{
+	text-align: right;
+	color: #6b6b6b;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	padding: 0 3px;
+	cursor: pointer;
+}
+.background_modal span:hover{
+	color: black;
+	transition: 0.7s;
+}
+.window h1{
+	font-family: arial;
+	color: #a0a0a0;
+	margin: 0;
+	padding-bottom: 10px;
+	border-bottom: 3px solid pink;
+}
+.window a{
+	text-decoration: none;
+}
+.window input[type=login], input[type=password]{
+	border: none;
+	border-bottom: 2px solid pink;
+	color: #6b6b6b;
+	outline: none;
+	font-family: arial;
+}
+.window p{
+	display: inline-block;
+	font-family: arial;
+	padding-right: 10px;
+	font-size: 15px;
+	color: #6b6b6b;
+}
+.window input[type=button]{
+	color: #e000c8;
+	border-radius: 20px;
+	border: none;
+	background-color: #ffffff;
+	border: 2px solid #ff51ed;
+	font-family: arial;
+	padding: 5px 20px;
+	font-weight: 600;
+	outline: none;
+	cursor: pointer;
+	margin: 20px;
+}
+.window input[type=button]:hover{
+	background-color: pink;
+	box-shadow: 0px 6px 25px 0px #000000;
+	transition: 0.7s;
+}
+.window input[type=button]:not(:hover){
+	transition: 0.7s;
+}
+.window a{
+	text-decoration: none;
+	color: #6b6b6b;
+	font-family: arial;
+	padding: 5px 10px;
+	margin: 10px 0;
+}
+.window a:hover{
+	color: black;
+	transition: 0.7s;
+}
+
+/*Модальное окно. End*/
+
+@media all and (max-width: 1115px){
+	.logo{
+		margin:0;
+	}
+	.tap{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+@media all and (max-width: 900px){
+	.logo{
+		display: block;
+	}
+	.tap{
+		margin: 0 auto;
+	}
+}
+
+@media all and (max-width: 720px){
+	.tap a{display: none;}
+	.menu input{display: none;}
+	.open-menu{display: block;}
+	.tap{margin: 10px;}
+	.man{justify-content: space-between;}
+}
+@media all and (max-width: 910px){
+	.sector{
+		text-align: center;
+		display: block;
+	}
+	.text p{
+		padding: 0 20px;
+	}
+	.camera{
+		margin: 0 100px 0 35px;
+	}
+	.tickets{
+		margin: 0 35px 0 100px; 
+	}
+	.devices{
+		margin: 30px 100px 30px 35px;
+	}
+	.beer{
+		margin: 30px 35px 30px 100px;
+	}
+}
+@media all and (max-width: 470px){
+	.open-menu{
+		left: 20px;
+	}
+}
+@media all and (max-width: 690px){
+	.camera{
+		margin: 30px 100px 0 100px;
+	}
+	.devices{
+		margin: 30px 100px 30px 100px;
+	}
+	.beer{
+		margin: 30px 100px 0 100px;
+	}
+	.tickets{
+		margin: 0 100px 0 100px;
+	}
+}
