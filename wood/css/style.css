@@ -39,7 +39,7 @@ a {
 /**********HEADER**********/
 
 header {
-	background: url(../img/background.png);
+	background: url(../img/Background.png);
 	background-position: center center; 
 	background-size: cover; 
 	background-repeat: no-repeat;
@@ -153,7 +153,7 @@ header {
 /****Portfolio****/
 
 .portfolio {
-	background: url(../img/background2.png);
+	background: url(../img/Background2.png);
 	background-position: center center; 
 	background-size: cover; 
 	background-repeat: no-repeat;
