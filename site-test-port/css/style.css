@@ -42,6 +42,11 @@ header .menu {
   right: 0;
   background: rgba(0, 0, 0, 0.4);
   padding: 20px;
+  opacity: 0;
+  -webkit-animation: menu 2s linear 1s;
+          animation: menu 2s linear 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 header ul {
   list-style: none;
@@ -59,6 +64,7 @@ header ul a {
   color: white;
   padding: 15px;
   font-family: "Futura PT", "Open Sans", arial;
+  font-size: 20px;
 }
 header h1 {
   font-family: "Futura PT", "Open Sans", arial;
@@ -77,9 +83,76 @@ header #anim_head {
 
 /*******HEDER END***** */
 /*******MAIN***** */
+/**Rst-Example* */
+.rst-example {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.rst-example .exam {
+  padding: 30px;
+  width: 50%;
+  text-align: center;
+}
+.rst-example .typesetting {
+  background: #000;
+  overflow: hidden;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.rst-example .typesetting p {
+  margin: 20px;
+}
+.rst-example .typesetting img {
+  max-width: 80%;
+}
+.rst-example .code-links {
+  color: white;
+  font-size: 30px;
+}
+.rst-example .code-links i {
+  margin: 15px;
+}
+.rst-example .design {
+  background: #eee;
+}
+.rst-example .design img {
+  max-width: 150px;
+}
+
+/**Rst-Exemple End* */
 /*******MAIN END***** */
 /*******FOOTER***** */
 /*******FOOTER END***** */
+/**********Animation********** */
+@-webkit-keyframes typesetting {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
+}
+@keyframes typesetting {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
+}
 @-webkit-keyframes nev {
   from {
     opacity: 0;
@@ -100,6 +173,23 @@ header #anim_head {
     margin-top: 0;
   }
 }
+@-webkit-keyframes menu {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes menu {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/**********Animation END********** */
 /*********FONTS******* */
 @font-face {
   font-family: "Futura PT";
