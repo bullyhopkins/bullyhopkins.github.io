@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic");
 body {
   margin: 0;
   padding: 0;
@@ -17,10 +18,30 @@ body {
 
 /*******HEDER***** */
 header {
-  background: url(../img/background-1.jpg);
-  min-height: 800px;
+  background: url(../img/background-2.jpg);
+  background-size: cover;
   background-position: center center;
-  width: 100%;
+  background-repeat: no-repeat;
+  min-height: 500px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+header .menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px;
 }
 header ul {
   list-style: none;
@@ -29,11 +50,29 @@ header ul {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 header ul a {
   text-decoration: none;
   color: white;
   padding: 15px;
+  font-family: "Futura PT", "Open Sans", arial;
+}
+header h1 {
+  font-family: "Futura PT", "Open Sans", arial;
+  font-size: 60px;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  opacity: 0;
+}
+header #anim_head {
+  -webkit-animation: nev 1.5s linear 1s;
+          animation: nev 1.5s linear 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 /*******HEDER END***** */
@@ -41,5 +80,32 @@ header ul a {
 /*******MAIN END***** */
 /*******FOOTER***** */
 /*******FOOTER END***** */
+@-webkit-keyframes nev {
+  from {
+    opacity: 0;
+    margin-top: -100px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+@keyframes nev {
+  from {
+    opacity: 0;
+    margin-top: -100px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+/*********FONTS******* */
+@font-face {
+  font-family: "Futura PT";
+  src: url("../fonts/Futura PT.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
 
 /*# sourceMappingURL=style.css.map */

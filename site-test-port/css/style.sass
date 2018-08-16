@@ -1,3 +1,5 @@
+$fonts: 'Futura PT', 'Open Sans', arial
+
 body 
 	margin: 0
 	padding: 0
@@ -14,18 +16,43 @@ body
 /*******HEDER******/ 
 
 header
-	background: url(../img/background-1.jpg)
-	min-height: 800px
+	background: url(../img/background-2.jpg)
+	background-size: cover 
 	background-position: center center
-	width: 100%
+	background-repeat: no-repeat 
+	min-height: 500px
+	text-align: center
+	display: flex
+	flex-direction: column
+	justify-content: center
+	.menu
+		position: fixed
+		left: 0
+		top: 0
+		right: 0
+		background: rgba(0, 0, 0, 0.4) 
+		padding: 20px
 	ul
 		list-style: none
 		display: flex
 		flex-wrap: wrap
+		justify-content: flex-end
 		a
 			text-decoration: none
 			color: white 
 			padding: 15px
+			font-family: $fonts
+	h1
+		font-family: $fonts
+		font-size: 60px
+		color: white
+		font-weight: 700
+		text-transform: uppercase 
+		opacity: 0
+		
+	#anim_head
+		animation: nev 1.5s linear 1s
+		animation-fill-mode: forwards
 
 /*******HEDER END******/ 
 
@@ -38,3 +65,15 @@ header
 
 
 /*******FOOTER END******/ 
+
+@keyframes nev
+	from
+		opacity: 0
+		margin-top: -100px
+	to
+		opacity: 1
+		margin-top: 0
+
+/*********FONTS********/
+@import fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic')
