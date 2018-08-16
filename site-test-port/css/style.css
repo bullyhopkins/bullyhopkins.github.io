@@ -84,7 +84,7 @@ header #anim_head {
 /*******HEDER END***** */
 /*******MAIN***** */
 /**Rst-Example* */
-.rst-example {
+.example {
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -92,12 +92,13 @@ header #anim_head {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.rst-example .exam {
+.example .typesetting,
+.example .design {
   padding: 30px;
   width: 50%;
   text-align: center;
 }
-.rst-example .typesetting {
+.example .typesetting {
   background: #000;
   overflow: hidden;
   color: white;
@@ -112,27 +113,38 @@ header #anim_head {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.rst-example .typesetting p {
+.example .typesetting p {
   margin: 20px;
 }
-.rst-example .typesetting img {
-  max-width: 80%;
-}
-.rst-example .code-links {
+.example .code-links {
   color: white;
   font-size: 30px;
 }
-.rst-example .code-links i {
+.example .code-links i {
   margin: 15px;
 }
-.rst-example .design {
+.example .design {
   background: #eee;
 }
-.rst-example .design img {
+.example .design img {
   max-width: 150px;
+  cursor: pointer;
 }
 
 /**Rst-Exemple End* */
+/**Second-Exemple* */
+.design-two {
+  padding: 30px;
+  width: 50%;
+  text-align: center;
+  background: #eee;
+}
+.design-two img {
+  max-width: 150px;
+  cursor: pointer;
+}
+
+/**Second-Exemple End* */
 /*******MAIN END***** */
 /*******FOOTER***** */
 /*******FOOTER END***** */
