@@ -145,6 +145,61 @@ header #anim_head {
 }
 
 /**Second-Exemple End* */
+/**About Us* */
+.about-us {
+  text-align: center;
+  font-family: "Futura PT", "Open Sans", arial;
+  padding: 20px;
+}
+
+/**About Us End* */
+/**More About Us* */
+.more-about-us {
+  font-family: "Futura PT", "Open Sans", arial;
+  padding: 20px;
+}
+
+.one-list {
+  overflow: hidden;
+}
+
+.one-list li {
+  opacity: 0;
+}
+
+.active {
+  -webkit-animation: menu4 0.3s ease-in-out forwards;
+          animation: menu4 0.3s ease-in-out forwards;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+@-webkit-keyframes menu4 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(5000px);
+            transform: translateX(5000px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0) rotate(0);
+            transform: translateX(0) rotate(0);
+  }
+}
+
+@keyframes menu4 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(5000px);
+            transform: translateX(5000px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0) rotate(0);
+            transform: translateX(0) rotate(0);
+  }
+}
+/**More About Us End* */
 /*******MAIN END***** */
 /*******FOOTER***** */
 /*******FOOTER END***** */
@@ -201,6 +256,8 @@ header #anim_head {
     opacity: 1;
   }
 }
+/********Skills-Panel Animation******** */
+/********Skills-Panel Animation End******** */
 /**********Animation END********** */
 /*********FONTS******* */
 @font-face {

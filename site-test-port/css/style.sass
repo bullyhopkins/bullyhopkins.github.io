@@ -107,6 +107,43 @@ header
 
 /**Second-Exemple End**/
 
+/**About Us**/
+
+.about-us
+	text-align: center
+	font-family: $fonts
+	padding: 20px
+
+/**About Us End**/
+
+/**More About Us**/
+
+.more-about-us
+	font-family: $fonts
+	padding: 20px 
+	
+.one-list
+	overflow: hidden
+
+.one-list li
+	opacity: 0
+
+.active 
+	animation: menu4 0.3s ease-in-out forwards
+	animation-delay: 0.3s
+
+
+@keyframes menu4 
+	0% 
+		opacity: 0
+		transform: translateX(5000px)
+  
+	100% 
+		opacity: 1
+		transform: translateX(0) rotate(0)
+
+/**More About Us End**/
+
 
 /*******MAIN END******/ 
 
@@ -137,6 +174,12 @@ header
 		opacity: 0
 	to
 		opacity: 1
+		
+/********Skills-Panel Animation*********/
+
+
+
+/********Skills-Panel Animation End*********/
 
 /**********Animation END***********/
 
