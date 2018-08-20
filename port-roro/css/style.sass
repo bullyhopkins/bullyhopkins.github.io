@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Open+Sans:400,700&subset=cyrillic')
+
+$fonts: 'Comfortaa', 'Open Sans', Arial
+
+
+*
+	box-sizing: border-box
+
+body 
+	margin: 0
+	padding: 0
+	
+
+a
+	text-decoration: none
+	
+.container
+	max-width: 1300px
+	margin: 0 auto
+
+/**************HEADER***************/
+
+header
+	background: url(../img/bg1.jpg)
+	-webkit-background-size: cover 
+	-o-background-size: cover 
+	background-size: cover 
+	background-position: center center
+	backround-repeat: no-repeat
+	min-height: 500px
+	font-family: $fonts
+	display: flex
+	flex-direction: column
+	justify-content: center
+	text-align: center
+	h1
+		margin-top: -150px
+		font-size: 60px
+		opacity: 0
+		animation: headH 3s linear 2s forwards
+		color: #fff
+	
+.top-menu
+	padding: 10px
+	background-color: rgba(0,0,0,0.8)
+	position: fixed
+	z-index: 50 
+	left: 0
+	top: 0
+	right: 0
+	width: 100%
+	ul
+		list-style: none
+		display: flex
+		justify-content: flex-end 
+	li
+		transform: translateX(-10000px)
+	a
+		font-size: 20px  
+		color: #fff
+		margin: 15px
+	.menu-anim
+		animation: menuAnim 3s linear 0.5s forwards
+
+/**************HEADER END***************/
+/**************MAIN***************/
+
+/***************Pluses******************/
+
+.pluses
+	padding: 30px
+	background: #292727 
+	font-family: $fonts
+	color: white
+	text-align: center
+	h2
+		font-size: 30px
+		margin-bottom: 50px 
+	.plus
+		margin: 0 20px
+		width: 200px
+		text-align: center
+	.flex-wrap
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-around
+		
+	
+
+/***************Pluses End******************/
+
+/**************Info Work End***************/
+.info-work
+	background: url(../img/background2.jpg) 
+	-webkit-background-size: cover 
+	-o-background-size: cover 
+	background-size: cover 
+	background-position: center center
+	backround-repeat: no-repeat
+	color: #fff
+	font-family: $fonts
+	padding: 20px
+	text-align: center
+	h2
+		margin: 30px 0
+	p
+		margin: 40px 0
+
+	
+/**************Info Work End***************/
+
+/*********Our Works***********/
+.our-works
+	padding: 20px 0
+	background: #292727 
+
+	.slider-works
+		width: 90%
+		margin: 0 auto
+		overflow: hidden
+		
+	img
+		max-width: 300px
+		
+	.slide-work
+		position: relative
+		max-width: 300px
+		margin: 20px
+		overflow: hidden
+		max-height: 400px
+		&:hover .description-slide
+			transition: 0.6s
+			opacity: 1
+		&:not(:hover) .description-slide
+			transition: 0.3s
+			
+	.description-slide
+		position: absolute
+		background: rgba(0,0,0,0.8)
+		color: #fff
+		font-family: $fonts
+		text-align: center
+		font-size: 15px 
+		z-index: 10
+		top: 0
+		right: 0
+		width: 100%
+		height: 100%
+		display: flex
+		flex-direction: column
+		justify-content: center
+		opacity: 0
+		
+	i
+		font-size: 30px
+		color: #fff
+		margin: 10px 15px
+		
+/*********Our Works End***********/
+
+/*********About Us***********/
+
+.about-us
+	background: url(../img/background2.jpg) 
+	-webkit-background-size: cover 
+	-o-background-size: cover 
+	background-size: cover 
+	background-position: center center
+	backround-repeat: no-repeat
+	font-family: $fonts
+	padding: 70px
+	
+.info-about-us
+	background: #FFF 
+	padding: 30px
+	width: 70%
+	margin: 0 auto
+	
+.mobile-about-us
+	color: #fff
+	display: none
+
+/*********About Us End***********/
+
+/*********Contacts***********/
+
+.contacts
+	padding: 30px
+	color: #fff
+	font-family: $fonts
+	background: #292727 
+	text-align: center
+	h2
+		margin-bottom: 40px
+	.personal-info
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-around
+	.nono,
+	.bully
+		font-size: 15px
+		width: 40%
+		min-width: 300px
+	img
+		-webkit-border-radius: 100% 
+		border-radius: 100% 
+		height: 250px
+		max-width: 250px
+		transition: 0.5s
+	ul
+		list-style: none
+		padding: 0
+		li
+			margin: 10px 0
+	i
+		color: #fff
+		font-size: 20px
+		margin: 0 15px
+		&:hover
+			color: #ED7425
+			transition: 0.6s
+/*********Contacts End***********/
+
+/*********Description***********/
+
+.description
+	background: url(../img/background2.jpg) 
+	-webkit-background-size: cover 
+	-o-background-size: cover 
+	background-size: cover 
+	background-position: center center
+	backround-repeat: no-repeat
+	position: relative
+	padding: 20px
+	color: #fff
+	font-family: $fonts 
+	h2
+		text-align: center
+		margin-bottom: 50px
+	.ask-answer
+		cursor: pointer
+		text-align: center
+		p
+			display: none
+
+/*********Description End***********/
+		
+/**************MAIN END***************/
+/**************FOOTER***************/
+/**************FOOTER END***************/
+
+
+/**********Animation***********/
+
+@keyframes headH
+	from
+		margin-top: -150px
+		opacity: 0
+	to
+		margin-top: 0
+		opacity: 1
+		
+@keyframes menuAnim
+	from
+		transform: translateX(-10000px)
+	to
+		transform: translateX(0px)
+
+/**********Animation End***********/
+
+		
+@media screen and (max-width: 782px)
+	.pluses
+		.plus
+			width: 100%
+			margin: 20px 0
+		img
+			max-width: 30%
+		p
+			font-weight: 700
+			font-size: 20px
+			max-width: 70%
+			margin: 0 auto 
+			margin-top: 20px
+			
+	.description
+		.asks,
+		.answers
+			width: 100%
+		.asks
+		padding-right: 0
+		.answers
+			padding-left: 0
+	
+	.nono,
+	.bully
+		margin-top: 20px
+		
+	.info-about-us
+		width: 100%
+		
+
+@media screen and (max-width: 600px)
+	.top-menu
+		display: none
+	
+	.about-us
+		padding: 20px
+	.info-about-us
+		display: none
+	.mobile-about-us
+		display: block
+		h2
+			text-align: center
+			margin-bottom: 30px
+		
+@media screen and (max-width: 450px)
+	.pluses
+		.plus
+			display: flex
+		img
+			max-width: 30% 
+		p
+			padding-left: 20px
+			font-size: 17px 
+			
+@media screen and (max-width: 370px)
+	.pluses
+		.plus
+			display: flex
+			align-items: center
+		img
+			max-width: 35% 
+		h2
+			font-size: 20px
+		p
+			padding-left: 15px
+			font-size: 13px 
+			margin-top: 0
+			
