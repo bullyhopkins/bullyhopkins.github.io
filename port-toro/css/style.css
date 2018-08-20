@@ -11,11 +11,20 @@ body {
 
 a {
   text-decoration: none;
+  outline: none;
 }
 
 .container {
   max-width: 1300px;
   margin: 0 auto;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
 }
 
 /**************HEADER************** */
@@ -24,7 +33,7 @@ header {
   background-size: cover;
   background-position: center center;
   backround-repeat: no-repeat;
-  min-height: 500px;
+  min-height: 700px;
   font-family: "Comfortaa", "Open Sans", Arial;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -112,7 +121,7 @@ header h1 {
 /***************Pluses End***************** */
 /**************Info Work End************** */
 .info-work {
-  background: url(../img/background2.jpg);
+  background: url(../img/bg2-3.jpg);
   background-size: cover;
   background-position: center center;
   backround-repeat: no-repeat;
@@ -158,6 +167,11 @@ header h1 {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
+.our-works .slide-work i:hover {
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  color: #ED7425;
+}
 .our-works .description-slide {
   position: absolute;
   background: rgba(0, 0, 0, 0.8);
@@ -191,7 +205,7 @@ header h1 {
 /*********Our Works End********** */
 /*********About Us********** */
 .about-us {
-  background: url(../img/background2.jpg);
+  background: url(../img/bgg1.jpg);
   background-size: cover;
   background-position: center center;
   backround-repeat: no-repeat;
@@ -200,10 +214,11 @@ header h1 {
 }
 
 .info-about-us {
-  background: #FFF;
   padding: 30px;
   width: 70%;
   margin: 0 auto;
+  border: 3px solid #ED7425;
+  color: #fff;
 }
 
 .mobile-about-us {
@@ -238,12 +253,27 @@ header h1 {
   width: 40%;
   min-width: 300px;
 }
-.contacts img {
+.contacts h5 {
+  font-size: 30px;
+  margin: 15px 0;
+}
+.contacts .img {
   border-radius: 100%;
   height: 250px;
   max-width: 250px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  margin: 0 auto;
+}
+.contacts .img-bully {
+  background: url(../img/bully.jpg);
+  background-size: cover;
+  background-position: center center;
+  backround-repeat: no-repeat;
+}
+.contacts .img-nono {
+  background: url(../img/nono.jpg);
+  background-size: cover;
+  background-position: center center;
+  backround-repeat: no-repeat;
 }
 .contacts ul {
   list-style: none;
@@ -289,8 +319,6 @@ header h1 {
 
 /*********Description End********** */
 /**************MAIN END************** */
-/**************FOOTER************** */
-/**************FOOTER END************** */
 /**********Animation********** */
 @-webkit-keyframes headH {
   from {

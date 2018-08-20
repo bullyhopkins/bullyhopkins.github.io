@@ -13,10 +13,17 @@ body
 
 a
 	text-decoration: none
+	outline: none
 	
 .container
 	max-width: 1300px
 	margin: 0 auto
+
+.hidden
+	opacity: 0
+
+.visible
+	opacity: 1
 
 /**************HEADER***************/
 
@@ -27,7 +34,7 @@ header
 	background-size: cover 
 	background-position: center center
 	backround-repeat: no-repeat
-	min-height: 500px
+	min-height: 700px
 	font-family: $fonts
 	display: flex
 	flex-direction: column
@@ -91,7 +98,7 @@ header
 
 /**************Info Work End***************/
 .info-work
-	background: url(../img/background2.jpg) 
+	background: url(../img/bg2-3.jpg) 
 	-webkit-background-size: cover 
 	-o-background-size: cover 
 	background-size: cover 
@@ -133,6 +140,9 @@ header
 			opacity: 1
 		&:not(:hover) .description-slide
 			transition: 0.3s
+		i:hover
+			transition: 0.6s
+			color: #ED7425
 			
 	.description-slide
 		position: absolute
@@ -161,7 +171,7 @@ header
 /*********About Us***********/
 
 .about-us
-	background: url(../img/background2.jpg) 
+	background: url(../img/bgg1.jpg) 
 	-webkit-background-size: cover 
 	-o-background-size: cover 
 	background-size: cover 
@@ -171,10 +181,11 @@ header
 	padding: 70px
 	
 .info-about-us
-	background: #FFF 
 	padding: 30px
 	width: 70%
 	margin: 0 auto
+	border: 3px solid #ED7425
+	color: #fff 
 	
 .mobile-about-us
 	color: #fff
@@ -201,12 +212,29 @@ header
 		font-size: 15px
 		width: 40%
 		min-width: 300px
-	img
+	h5
+		font-size: 30px
+		margin: 15px 0
+	.img
 		-webkit-border-radius: 100% 
 		border-radius: 100% 
 		height: 250px
 		max-width: 250px
-		transition: 0.5s
+		margin: 0 auto
+	.img-bully
+		background: url(../img/bully.jpg) 
+		-webkit-background-size: cover 
+		-o-background-size: cover 
+		background-size: cover 
+		background-position: center center
+		backround-repeat: no-repeat
+	.img-nono
+		background: url(../img/nono.jpg)
+		-webkit-background-size: cover 
+		-o-background-size: cover 
+		background-size: cover 
+		background-position: center center
+		backround-repeat: no-repeat
 	ul
 		list-style: none
 		padding: 0
@@ -246,9 +274,6 @@ header
 /*********Description End***********/
 		
 /**************MAIN END***************/
-/**************FOOTER***************/
-/**************FOOTER END***************/
-
 
 /**********Animation***********/
 
