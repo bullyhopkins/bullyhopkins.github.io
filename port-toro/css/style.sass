@@ -18,6 +18,7 @@ a
 .container
 	max-width: 1300px
 	margin: 0 auto
+	overflow: hidden
 
 .hidden
 	opacity: 0
@@ -179,6 +180,7 @@ header
 	backround-repeat: no-repeat
 	font-family: $fonts
 	padding: 70px
+	overflow: hidden
 	
 .info-about-us
 	padding: 30px
@@ -248,30 +250,6 @@ header
 			color: #ED7425
 			transition: 0.6s
 /*********Contacts End***********/
-
-/*********Description***********/
-
-.description
-	background: url(../img/background2.jpg) 
-	-webkit-background-size: cover 
-	-o-background-size: cover 
-	background-size: cover 
-	background-position: center center
-	backround-repeat: no-repeat
-	position: relative
-	padding: 20px
-	color: #fff
-	font-family: $fonts 
-	h2
-		text-align: center
-		margin-bottom: 50px
-	.ask-answer
-		cursor: pointer
-		text-align: center
-		p
-			display: none
-
-/*********Description End***********/
 		
 /**************MAIN END***************/
 
@@ -293,8 +271,11 @@ header
 
 /**********Animation End***********/
 
+@media (max-width: 1000px)
+	.info-about-us
+		width: 100%
 		
-@media screen and (max-width: 782px)
+@media (max-width: 782px)
 	.pluses
 		.plus
 			width: 100%
@@ -307,25 +288,17 @@ header
 			max-width: 70%
 			margin: 0 auto 
 			margin-top: 20px
-			
-	.description
-		.asks,
-		.answers
-			width: 100%
-		.asks
-		padding-right: 0
-		.answers
-			padding-left: 0
 	
 	.nono,
 	.bully
 		margin-top: 20px
 		
-	.info-about-us
-		width: 100%
+	// .info-work
+	// 	p
+	// 		font-size: 15px
 		
 
-@media screen and (max-width: 600px)
+@media (max-width: 600px)
 	.top-menu
 		display: none
 	
@@ -339,7 +312,7 @@ header
 			text-align: center
 			margin-bottom: 30px
 		
-@media screen and (max-width: 450px)
+@media (max-width: 450px)
 	.pluses
 		.plus
 			display: flex
@@ -349,7 +322,7 @@ header
 			padding-left: 20px
 			font-size: 17px 
 			
-@media screen and (max-width: 370px)
+@media (max-width: 370px)
 	.pluses
 		.plus
 			display: flex
