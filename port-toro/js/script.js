@@ -11,6 +11,13 @@ $(function(){
 
 	/******Scroll End********/
 
+	/******Paralax********/
+
+	$('#about-us').enllax();
+	$('.info-work').enllax();
+
+	/******Paralax End********/
+
 
 	//Плавное появление блоков при сролле 
 
@@ -85,14 +92,4 @@ $(function(){
 		  ]
 	});
 
-
-	/*******Open Ask********/
-
-	$('.ask-answer').on('click', function(){
-
-		$(this).children('p').stop(true, true).slideToggle(700);
-
-	});
-
-	/*********Open Ask End*********/
 });
