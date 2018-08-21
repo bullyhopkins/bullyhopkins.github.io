@@ -1,0 +1,432 @@
+/*=====================================Шрифты=================================================*/
+@font-face {
+    font-family: 'MontserratRegular';
+    src: url('fonts/MontserratRegular.eot');
+    src: url('fonts/MontserratRegular.eot') format('embedded-opentype'),
+         url('fonts/MontserratRegular.woff2') format('woff2'),
+         url('fonts/MontserratRegular.woff') format('woff'),
+         url('fonts/MontserratRegular.ttf') format('truetype'),
+         url('fonts/MontserratRegular.svg#MontserratRegular') format('svg');
+}
+@font-face {
+    font-family: 'opensans';
+    src: url('fonts/opensans.eot');
+    src: url('fonts/opensans.eot') format('embedded-opentype'),
+         url('fonts/opensans.woff2') format('woff2'),
+         url('fonts/opensans.woff') format('woff'),
+         url('fonts/opensans.ttf') format('truetype'),
+         url('fonts/opensans.svg#opensans') format('svg');
+}
+@font-face {
+    font-family: 'opensansbold';
+    src: url('fonts/opensansbold.eot');
+    src: url('fonts/opensansbold.eot') format('embedded-opentype'),
+         url('fonts/opensansbold.woff2') format('woff2'),
+         url('fonts/opensansbold.woff') format('woff'),
+         url('fonts/opensansbold.ttf') format('truetype'),
+         url('fonts/opensansbold.svg#opensansbold') format('svg');
+}
+@font-face {
+    font-family: 'opensanslight';
+    src: url('fonts/opensanslight.eot');
+    src: url('fonts/opensanslight.eot') format('embedded-opentype'),
+         url('fonts/opensanslight.woff2') format('woff2'),
+         url('fonts/opensanslight.woff') format('woff'),
+         url('fonts/opensanslight.ttf') format('truetype'),
+         url('fonts/opensanslight.svg#opensanslight') format('svg');
+}
+@font-face {
+    font-family: 'opensanssemibold';
+    src: url('fonts/opensanssemibold.eot');
+    src: url('fonts/opensanssemibold.eot') format('embedded-opentype'),
+         url('fonts/opensanssemibold.woff2') format('woff2'),
+         url('fonts/opensanssemibold.woff') format('woff'),
+         url('fonts/opensanssemibold.ttf') format('truetype'),
+         url('fonts/opensanssemibold.svg#opensanssemibold') format('svg');
+}
+
+.mon {
+    font-family: "MontserratRegular";
+}
+.reg {
+    font-family: "opensans";
+}
+.bold {
+    font-family: "opensansbold";
+}
+.light {
+    font-family: "opensanslight";
+}
+.semi_bold {
+    font-family: "opensanssemibold";
+}
+/*===================================Базове настройки============================================*/
+a:hover,
+a:visited,
+a:active,
+a:focus {
+    text-decoration: none;
+}
+
+/*==========================================Шапка=================================================*/
+nav {
+    .row{
+        margin-top: 15px;
+    }
+    .semi_bold;
+    .menu {
+        .list-inline {
+            li {
+                margin-left: 20px;
+            }
+            margin-top: 12px;
+        }
+        a {
+            color: #a2a2a2;
+            text-transform: uppercase;
+        }
+    }
+    .login_btn {
+        border: none;
+        text-transform: uppercase;
+        color: #fff;
+        background: #bcda5c;
+        padding: 8px 25px;
+        border-radius: 25px;
+            -webkit-border-radius: 25px;
+            -moz-border-radius: 25px;
+
+    }
+}
+
+/*==========================================Баннер=================================================*/
+section#banner {
+    margin-top: 20px;
+    img {
+        width: 100%;
+    }
+    #banner_btn {
+        position: relative;
+        bottom: 0;
+        margin-top: 40px;
+        padding: 25px 35px;
+        .semi_bold;
+        border: none;
+        font-size: 16px;
+        border-radius: 13px;
+            -webkit-border-radius: 13px;
+            -moz-border-radius: 13px;
+        background: #99c50a;
+        color: #fff;
+    }
+    h1 {
+        margin-top: 20px;
+        .semi_bold
+    }
+    h3{
+        .reg
+    }
+}
+/*==========================================Описание===============================================*/
+section#description {
+    margin-top: 80px;
+    color: #515151;
+    h2 {
+        .semi_bold;
+        text-transform: uppercase;
+        margin-top: 45px;
+    }
+    p {
+        margin-top: 35px;
+        font-size: 16px;
+        .reg
+    }
+}
+/*==================================Текстовый слайдер=============================================*/
+section#text_slider {
+    margin-top: 150px;
+    #indicators {
+        padding: 0px 50px;
+        margin-bottom: 60px;
+    }
+    .carousel-indicators {
+        position: static;
+        margin-left: 0;
+        width: 100%;
+        border-bottom: 1px solid #e6e6e6;
+        text-align: center;
+        overflow: auto;
+        li {
+            width: auto;
+            height: auto;
+            text-indent: 0;
+            margin: 0;
+            border: none;
+            border-radius: 0;
+            padding-bottom: 50px;
+            .indicator {
+                display: inline-block;
+                background: #5f5f5f;
+                border: none;
+                color: #fff;
+                .semi_bold;
+                line-height: 45px;
+                text-align: center;
+                font-size: 20px;
+                width: 45px;
+                height: 45px;
+                border-radius: 45px;
+                    -webkit-border-radius: 45px;
+                    -moz-border-radius: 45px;
+            }
+            &:first-child {
+                float: left;
+            }
+            &:last-child {
+                float: right;
+            }
+            .indicator_caption {
+                font-size: 26px;
+                margin-left: 30px;
+                color: #656565;
+                .light;
+            }
+        }
+        .active {
+            border-bottom: 1px solid #add136;
+            .indicator {
+                background: #add136;
+            }
+        }
+    }
+    .carousel-inner {
+        .reg;
+        img {
+            padding-top: 15px;
+        }
+        h2 {
+            padding-left: 15px;
+            color: #add136;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+        p {
+            padding-left: 15px;
+            color: #9f9f9f;
+            font-size: 16px;
+        }
+    }
+}
+/*==========================================Предложения=============================================*/
+section#offers {
+    margin-top: 100px;
+    color: #515151;
+    .reg;
+    h2 {
+        margin-bottom: 30px;
+    }
+    p {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    #offer1 {
+        background-color: #e2f8ff;
+        padding: 40px 0px;
+        img {
+            margin-top: 13%;
+        }
+    }
+    #offer2 {
+        background-color: #f5f9eb;
+        padding: 40px 0px;
+        img {
+            margin-top: 19%;
+        }
+    }
+    button {
+        .semi_bold;
+        margin-left: 15px;
+        color: #fff;
+        border: none;
+        padding: 15px 20px;
+        border-radius: 13px;
+            -webkit-border-radius: 13px;
+            -moz-border-radius: 13px;
+        
+    }
+    #become {
+        background-color: #26a6d1;
+    }
+    #submit {
+        background-color: #add136;
+    }
+    
+}
+/*==========================================Проекты=================================================*/
+section#features {
+    margin-top: 80px;
+    .features_header {
+        margin-bottom: 60px;
+    }
+    h2 {
+        .semi_bold;
+        color: #515151;
+    }
+    p {
+        .reg;
+        font-size: 16px;
+        color: #8f8f8f;
+    }
+    button {
+        .semi_bold;
+        color: #919191;
+        background-color: #fff;
+        border: 1px solid #b6b6b6;
+        border-radius: 13px;
+            -webkit-border-radius: 13px;
+            -moz-border-radius: 13px;
+        padding: 20px;
+        margin-top: 11%;
+    }
+    .current_projects {
+        overflow: hidden;
+        background-color: #f9f9f9;
+        border: 1px solid #e5e5e5;
+        padding: 0;
+        margin-right: 40px;
+        border-radius: 10px;
+        &:before {
+            position: absolute;
+            content: "";
+            display: inline-block;
+            height: 0px;
+            width: 0px;
+            top: 0;
+            border: 40px solid transparent;
+            border-left: 40px solid #add136;
+            border-top: 40px solid #add136;
+            }
+        &:after {
+            position: absolute;
+            top: 14px;
+            left: 5px;
+            content: "new";
+            color: #fff;
+            .mon;
+            font-size: 14px;
+            text-transform: uppercase;
+            transform: rotate(-45deg);
+        }
+        img {
+            border-radius: 10px 10px 0 0;
+        }
+        h4 {
+            .bold;
+            color: #484848;
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+    .project_description {
+        padding: 0 15px;
+    }
+    .progress {
+        height: 16px;
+        border-radius: 10px;
+        background-color: #e3e3e3;
+        box-shadow: none;
+    }
+    .progress-bar {
+        background-color: #add136;
+        box-shadow: none;
+    }
+    .status_bar_text {
+        margin-bottom: 10px;
+        p {
+            color: #8d8d8d;
+            .semi_bold;
+            font-size: 14px;
+        }
+    }
+    .details {
+        text-align: right;
+        .semi_bold;
+        padding-top: 30px;
+        margin-bottom: 25px;
+        border-top: 1px solid #d6d6d6;
+        span {
+            color: #bfdb64;
+            margin: 0 10px;
+            font-size: 18px;
+            top: 3px;
+        }
+    }
+}
+/*==========================================Отзывы==================================================*/
+section#feedback {
+    margin-top: 90px;
+    background: url(../img/feedback-bg.jpg) no-repeat center center;
+    .container {
+        padding-bottom: 60px;
+    }
+    h1 {
+        .semi_bold;
+        color: #9ec02d;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    p {
+        .reg;
+        text-align: center;
+        color: #9c9c9c;
+        font-size: 18px;
+    }
+    .feedback_text {
+        position: relative;
+        background-color: #fff;
+        border-radius: 15px;
+        margin-top: 100px;
+        margin-bottom: 40px;
+        padding: 25px 0;
+        &:before {
+            content: "";
+            position: absolute;
+            border: 20px solid transparent;
+            border-left: 20px solid #fff;
+            border-top: 20px solid #fff;
+            height: 0;
+            bottom: -30px;
+            left: 100px;
+        }
+        h3 {
+            .semi_bold;
+            color: #9ec02d;
+            text-align: center;
+            margin-top: 0;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+    .feedback_author {
+        .mon;
+        font-size: 14px;
+        color: #494949;
+        margin-top: 15%;
+    }
+}
+/*==========================================Футер===================================================*/
+footer {
+    margin-top: 50px;
+    div#partners {
+        margin-left: auto;
+        margin-bottom: 45px;
+    }
+    p {
+        color: #989898;
+        .reg;
+        padding: 25px 0;
+        border-top: 1px solid #ededed;
+    }
+}
