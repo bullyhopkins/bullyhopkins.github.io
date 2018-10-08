@@ -1,0 +1,814 @@
+@media screen and (max-width: 1152px){
+    .background .slogan .clean-apartment h3 {
+    font-size: 45px;
+    font-weight: 100;
+    font-family: "Open Sans", sans-serif;
+}
+.nav-tabs .nav-link {
+    padding: 10px 83px;
+}
+.stock .txt-h2{
+    padding: 0px;
+}
+footer .foot-list {
+    font-size: 0px;
+    font-family: "Roboto", sans-serif;
+    margin: 0 12px;
+}
+.calc {
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 18px;
+}
+}
+@media screen and (max-width: 960px){
+    .nav-tabs .nav-link {
+    padding: 10px 52.7px;
+}
+.background .slogan .clean-apartment h3 {
+    font-size: 35px;
+    font-weight: 100;
+    font-family: "Open Sans", sans-serif;
+}
+.background .slogan .clean-apartment p {
+    width: 100%;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+}
+.workers .worker-card {
+    border: 1px solid #BEBCBC;
+    width: 220px;
+    height: 220px;
+    border-radius: 3px;
+    text-align: center;
+}
+.our-value h2 {
+    margin-bottom: 0px;
+}
+.communication .communication-links {
+    margin-top: 15px;
+}
+footer ul a {
+    color: #C7C6CC;
+    font-size: 14px;
+}
+footer .foot-list {
+    font-size: 0px;
+    font-family: "Roboto", sans-serif;
+    margin: 0 0px;
+}
+}
+@media screen and (max-width: 854px){
+    nav a {
+    font-size: 13px;
+    margin: 10px 10px;
+    color: #282828;
+}
+.background .slogan .work-in h1 {
+    font-size: 25px;
+    padding-bottom: 120px;
+    margin-top: 110px;
+}
+.pluses .plus p {
+    padding: 20px 0;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+.our-value .value-right-block p {
+    text-align: center;
+    padding: 10px 0;
+}
+}
+@media screen and (max-width: 800px) {
+    .questions-answer .container-questions {
+        margin: 30px auto;
+        max-width: 89%;
+    }
+
+    .cleaning-number .number-info {
+        margin-bottom: 40px;
+    }
+
+    .communication-with-me input {
+        width: 100%;
+        margin: 10px;
+    }
+
+    .communication-dry input {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px){
+    footer ul a {
+    color: #C7C6CC;
+    font-size: 13px;
+}
+.phone-to {
+    display: block;
+}
+.order-now .left-image {
+    display: block;
+}
+.calc {
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 110px;
+}
+
+.head-how, .sub-head-how {
+  padding-left: 0;
+  text-align: center;
+}
+
+.head-how h2 {
+    margin: 20px auto;
+}
+}
+@media screen and (max-width: 720px){
+.order-now .left-image {
+    display: none;
+}
+.background .calc {
+    width: 100%;
+    margin-top: 85px;
+}
+.tab-about-clean{
+    display: none;
+}
+.stock .txt-h2 {
+    padding: 0px;
+    text-align: center;
+}
+.questions-answer .container-questions {
+    margin: 30px auto;
+    max-width: 88%;
+}
+footer .foot-list {
+    font-size: 0px;
+    font-family: "Roboto", sans-serif;
+    margin: 0 0px;
+    text-align: center;
+}
+.social-networks{
+    margin-left: 150px;
+}
+.google-store{
+    margin-left: 175px;
+}
+footer .tel {
+    padding: 10px 0;
+    margin-left: 150px;
+}
+footer .copy {
+    padding: 0;
+    text-align: center;
+}
+.visa-master a{
+    text-align: center;
+}
+.stock .stock-card p {
+    padding: 0;
+    font-size: 11px;
+    font-family: "Open Sans", sans-serif;
+}
+.stock .stock-card img {
+    width: 35px;
+    height: 35px;
+}
+.stock .stock-card h2 {
+    font-size: 13px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+}
+.stock .stock-card {
+    padding: 20px 20px;
+    width: 350px;
+    height: 220px;
+    border: 1px solid #eee;
+    text-align: center;
+    border-radius: 5px;
+}
+.our-value .value-foto img {
+    width: 70% !important;
+}
+}
+@media screen and (max-width: 704px){
+    .questions-answer .container-questions {
+    margin: 30px auto;
+    max-width: 87%;
+}
+.visa-master{
+    text-align: center;
+}
+}
+@media screen and (max-width: 600px){
+    .social-networks {
+    margin-left: 125px;
+}
+.google-store {
+    margin-left: 150px;
+}
+footer .tel {
+    padding: 10px 0;
+    margin-left: 125px;
+}
+.slider-stock-wrap{
+  display: none;
+}
+.stock .mobile-stock{
+    display: block;
+}
+.open-mobile-stock{
+    display: block;
+}
+.stock{
+    padding: 0;
+}
+}
+@media screen and (max-width: 540px){
+    .questions-answer .container-questions {
+    margin: 30px auto;
+    max-width: 84%;
+}
+.social-networks {
+    margin-left: 100px;
+}
+.google-store {
+    margin-left: 130px;
+}
+footer .tel {
+    padding: 10px 0;
+    margin-left: 105px;
+}
+}
+@media screen and (max-width: 480px){
+    .social-networks {
+    margin-left: 70px;
+}
+.google-store {
+    margin-left: 95px;
+}
+footer .tel {
+    padding: 10px 0;
+    margin-left: 70px;
+}
+.phone-to {
+    background: #44AA3D;
+    border: none;
+    padding: 10px 15px;
+    font-size: 15px;
+    margin: 0 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white;
+}
+nav input[type="button"] {
+    background: #44AA3D;
+    border: none;
+    padding: 10px 15px;
+    font-size: 15px;
+    margin: 0 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white;
+}
+.open-mobile-amenities{
+  display: block;
+}
+}
+@media screen and (max-width: 414px){
+    nav input[type="button"] {
+    background: #44AA3D;
+    border: none;
+    padding: 10px 25px;
+    font-size: 15px;
+    margin: 0 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white;
+}
+.phone-to {
+    background: #44AA3D;
+    border: none;
+    padding: 10px 25px;
+    font-size: 15px;
+    margin: 0 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white;
+}
+.social-networks {
+    margin-left: 35px;
+}
+.google-store {
+    margin-left: 60px;
+}
+footer .tel {
+    padding: 10px 0;
+    margin-left: 35px;
+}
+}
+@media screen and (max-width: 411px){
+    .phone-to {
+    background: #44AA3D;
+    border: none;
+    padding: 10px 25px;
+    font-size: 15px;
+    margin: 0 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white;
+}
+.social-networks {
+    margin-left: 35px;
+}
+.google-store {
+    margin-left: 65px;
+}
+footer .tel {
+    padding: 10px 0;
+    margin-left: 40px;
+}
+}
+@media screen and (max-width: 400px){
+    .phone-to {
+    background: #44AA3D;
+    border: none;
+    padding: 10px 15px;
+    font-size: 15px;
+    margin: 0 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white;
+}
+.background .calc .text-mobile{
+    display: block;
+    text-align: center;
+    font-size: 22px;
+}
+nav input[type="button"] {
+    background: #44AA3D;
+    border: none;
+    padding: 10px 15px;
+    font-size: 15px;
+    margin: 0 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white;
+}
+.questions-answer .container-questions {
+    margin: 30px auto;
+    max-width: 95%;
+}
+.social-networks {
+    margin-left: 30px;
+}
+.google-store {
+    margin-left: 55px;
+}
+footer .tel {
+    padding: 10px 0;
+    margin-left: 35px;
+}
+}
+@media screen and (max-width: 384px){
+    .google-store {
+    margin-left: 50px;
+}
+footer .tel {
+    padding: 10px 0;
+    margin-left: 30px;
+}
+}
+@media screen and (max-width: 360px){
+    .phone-to {
+    background: #44AA3D;
+    border: none;
+    padding: 10px 10px;
+    font-size: 15px;
+    margin: 0 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white;
+}
+.social-networks {
+    margin-left: 10px;
+}
+.google-store {
+    margin-left: 35px;
+}
+footer .tel {
+    padding: 10px 0;
+    margin-left: 10px;
+}
+}
+@media screen and (max-width: 352px){
+    nav input[type="button"] {
+    background: #44AA3D;
+    border: none;
+    padding: 10px 15px;
+    font-size: 15px;
+    margin: 0 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white;
+}
+.social-networks {
+    margin-left: 5px;
+}
+.google-store {
+    margin-left: 30px;
+}
+footer .tel {
+    padding: 10px 0;
+    margin-left: 5px;
+}
+}
+@media screen and (max-width: 320px){
+footer .social-networks i {
+    font-size: 25px;
+    margin: 5px;
+    color: white;
+}
+.social-networks {
+    margin-left: 0px;
+}
+.google-store {
+    margin-left: 15px;
+}
+footer .tel a {
+    color: #44AA3D;
+    font-family: "Roboto", sans-serif;
+    margin-left: 0px;
+}
+footer .tel {
+    padding: 10px 0;
+    margin-left: 0px;
+}
+nav input[type="button"] {
+    background: #44AA3D;
+    border: none;
+    padding: 10px 5px;
+    font-size: 15px;
+    margin: 0 0px;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white;
+}
+.phone-to {
+    background: #44AA3D;
+    border: none;
+    padding: 10px 5px;
+    font-size: 15px;
+    margin: 0 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white;
+}
+}
+
+
+
+/********************PRICE**********************/
+
+@media screen and (max-width: 1000px){
+	.foot-list{
+		display: none;
+	}
+	.social-networks{
+		margin: 15px auto;
+		margin-top: 0;
+		text-align: center;
+	}
+	footer .social-networks i{
+		font-size: 40px;
+		padding-left: 10px;
+	}
+	.social-networks a:hover{
+		text-decoration: none;
+	}
+	.tel{
+		display: none;
+	}
+	.copy{
+		margin: 0 auto;
+		text-align: center;
+	}
+	.visa-master{
+		display: none;
+	}
+	.google-store{
+		display: none;
+	}
+	footer{
+		padding: 20px;
+	}
+}
+
+@media screen and (max-width: 960px){
+	.nav-tabs .nav-link {
+		padding: 10px 52.7px;
+	}
+}
+
+@media screen and (max-width: 854px){
+	nav a {
+		font-size: 13px;
+		margin: 10px 10px;
+		color: #282828;
+	}
+}
+
+@media screen and (max-width: 850px){
+	nav a.nav-window {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 770px){
+	.price-washing .price-window {
+		text-align: center;
+		padding: 20px 0;
+	}
+	.price-washing .left-image {
+		display: none;
+	}
+	.price-depends .form-depends {
+		text-align: center;
+		padding: 20px 0;
+	}
+	.price-depends .form-depends .list-price-depends {
+		text-align: left;
+		display: inline-block;
+	}
+	.price-depends input{
+		display: block;
+		margin: 0 auto; 
+	}
+	.price-depends .depends-image {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 768px){
+	nav a {
+    display: none;
+  }
+  nav span {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px){
+	nav input[type="button"] {
+    background: #44AA3D;
+    border: none;
+    padding: 10px 15px;
+    font-size: 15px;
+    margin: 0 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white;
+}
+	main .head-background h3{
+		text-align: center;
+	}
+	main .head-background h2{
+		text-align: center;
+	}
+}
+@media screen and (max-width: 414px){
+    nav input[type="button"] {
+    background: #44AA3D;
+    border: none;
+    padding: 10px 25px;
+    font-size: 15px;
+    margin: 0 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white;
+}
+	.legal-person,
+	.additional-work{
+		padding: 10px;
+	}
+	.types .type-slider .item-type{
+		width: 250px;
+	}
+	.types .type-slider .item-type ul{
+		padding-left: 50px;
+	}
+	.types .type-slider-wrap{
+		width: 100%;
+	}
+	footer .social-networks i{
+		font-size: 30px;
+		padding-left: 10px;
+	}
+	footer{
+		padding: 10px;
+	}
+	main .head-background h3{
+		font-size: 25px;
+		font-weight: 400;
+	}
+	main .head-background h2{
+		font-size: 30px;
+	}
+}
+
+/********************PRICE END**********************/
+
+
+
+/********************ABOUT**********************/
+
+@media screen and (max-width: 1000px){
+	.foot-list{
+		display: none;
+	}
+	.social-networks{
+		margin: 15px auto;
+		margin-top: 0;
+		text-align: center;
+	}
+	footer .social-networks i{
+		font-size: 40px;
+		padding-left: 10px;
+	}
+	.social-networks a:hover{
+		text-decoration: none;
+	}
+	.tel{
+		display: none;
+	}
+	.copy{
+		margin: 0 auto;
+		text-align: center;
+	}
+	.visa-master{
+		display: none;
+	}
+	.google-store{
+		display: none;
+	}
+	footer{
+		padding: 20px;
+	}
+}
+
+@media screen and (max-width: 960px){
+	.nav-tabs .nav-link {
+		padding: 10px 52.7px;
+	}
+	.container-wrap{
+		width: 100%;
+	}
+	header{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 920px){
+	nav a.nav-window {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 854px){
+	nav a {
+		font-size: 13px;
+		margin: 10px 10px;
+		color: #282828;
+	}
+	nav a {
+		display: none;
+	}
+	nav span {
+		display: none;
+	}
+
+	.logo {
+		display: none;
+	}
+	.video-mobile-none {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.how-we-work .item-work{
+		display: flex;
+		text-align: left;
+	}
+	.how-we-work .item-work p{
+		padding-top: 40px;
+	}
+	.how-we-work .item-work .item{
+		min-width: 80px;
+		min-height: 80px;
+		margin: 10px 20px;
+	}
+	.creation-company .image{
+		text-align: center;
+		padding: 20px;
+	}
+	.creation-company .left-info{
+		padding: 30px;
+	}
+	.communication-about input{
+		width: 100%;
+		margin: 5px 0;
+	}
+	.social-links .links-desktop{
+		display: none;
+	}
+	.social-links .mobile-social-links{
+		display: block;
+	}
+	.main-info-about{
+		padding: 15px 50px;
+	}
+}
+
+@media screen and (max-width: 570px){
+	.video-mobile-none-two{
+		display: none;
+	}
+	.how-we-work .item-work p{
+		padding-top: 20px;
+	}
+}
+
+@media screen and (max-width: 480px){
+	nav input[type="button"] {
+	    background: #44AA3D;
+	    border: none;
+	    padding: 10px 15px;
+	    font-size: 15px;
+	    margin: 0 5px;
+	    border-radius: 3px;
+	    cursor: pointer;
+	    color: white;
+	}
+	.how-we-work .item-work p{
+		padding-top: 10px;
+	}
+	footer .social-networks i{
+		font-size: 35px;
+		padding-left: 5px;
+	}
+}
+
+
+
+/********************ABOUT END**********************/
+
+
+/********************CONTACTS**********************/
+@media screen and (max-width: 900px){
+	.image-left-contacts{
+		display: none;
+	}
+	main .links .link i{
+		font-size: 25px;
+	}
+	main .gps{
+		width: 100%;
+	}
+	main .tel-for-workers{
+		width: 100%;
+	}
+}
+@media screen and (max-width: 450px){
+	.time-icon{
+		left: 0;
+		top: 10px;
+	}
+	main .contacts .client{
+		padding: 20px;
+	}
+	main .phone-contacts a span{
+		font-size: 20px;
+	}
+	h1{
+		text-align: center;
+	}
+}
+@media screen and (max-width: 385px){
+	.time-icon{
+		left: 0;
+		top: 5px;
+	}
+	.mail-contacts{
+		left: 0;
+		top: 5px;
+	}
+}
+
+/********************CONTACTS END**********************/
