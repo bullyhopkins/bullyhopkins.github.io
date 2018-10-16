@@ -542,7 +542,7 @@ footer {
   font-style: normal;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1105px) {
   .flex_personal_card {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -554,13 +554,46 @@ footer {
   .info_personal_card {
     text-align: center;
   }
+  .organizations_item {
+    min-height: 100px;
+    min-width: 200px;
+  }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1005px) {
   .info_discounts {
     display: none;
   }
   .footer_phones {
+    display: none;
+  }
+  .organizations_item {
+    min-height: 60px;
+    min-width: 160px;
+  }
+  .organizations_item img {
+    margin-right: 10px;
+  }
+  .organizations_item p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .col-organizations {
+    border: none;
+    width: 100%;
+  }
+  .organizations_item {
+    width: 100%;
+  }
+  .organizations_item:last-child::after {
+    display: inline-block;
+  }
+  .organizations_item::after {
+    width: 50%;
+  }
+  .mobile_none {
     display: none;
   }
 }
@@ -580,6 +613,9 @@ footer {
   }
   .sub_info_footer {
     display: none;
+  }
+  .card_operation img {
+    max-width: 300px;
   }
 }
 
@@ -624,6 +660,9 @@ footer {
   }
   .info_personal_card p {
     font-size: 12px;
+  }
+  .organizations_item:after {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
