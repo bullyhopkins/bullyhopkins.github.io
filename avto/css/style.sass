@@ -1,0 +1,435 @@
+$main-color: #e41e25
+$fonts: 'Proxima Nova', 'Open Sans', serif
+	
+body
+	margin: 0
+	padding: 0
+
+*
+	box-sizing: border-box
+
+.wrap
+	max-width: 1200px
+	margin: 0 auto
+
+/****HEADER****/
+.info-head
+	padding-top: 30px
+
+.flex-box
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	align-items: center
+
+.logo_name
+	display: flex
+	align-items: center
+
+.logo
+	max-width: 80px
+
+.name_company
+	padding-left: 20px
+	h2
+		font-family: $fonts
+		color: $main-color
+		margin: 0
+		padding: 0
+		sup
+			color: #000
+	p
+		margin: 10px 0
+		padding: 0
+
+.info_discounts
+	font-size: 13px
+
+.headphones
+	display: flex
+	align-items: center
+	font-family: $fonts
+.headphones-numbers
+	padding-left: 20px 
+	p
+		margin-top: 10px
+		margin-bottom: 0
+		font-weight: bold
+	span
+		color: $main-color
+		font-weight: 800
+	a
+		font-size: 12px
+		margin-left: 5px
+		color: $main-color
+
+.head_service
+	text-align: center
+	a
+		text-decoration: none
+	input 
+		border: none
+		background: $main-color
+		color: white
+		font-weight: 600
+		font-size: 14px
+		padding: 15px 15px
+		cursor: pointer
+		margin-top: 10px
+		outline: none
+
+//Top Menu
+
+.top-menu
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	align-items: center
+	background: #000
+	padding: 15px
+	font-family: $fonts
+	margin-top: 30px
+
+.item-menu
+	a
+		// display: none
+		text-decoration: none
+		outline: none
+		color: white
+		font-weight: bold
+		padding: 3px 15px
+		&:nth-child(2)
+			border-right: 1px solid #fff
+		&:nth-child(1)
+			border-right: 1px solid #fff
+		&:hover
+			color: #cf0006
+			transition: 0.3s
+	span
+		margin: 0 10px
+		color: white
+
+//Item-menu_mobile
+
+.item-menu_mobile
+	display: none
+	text-align: center
+	a
+		text-decoration: none
+		outline: none
+		color: white
+		font-weight: bold
+		padding: 3px 15px
+
+//Item-menu_mobile END
+
+.search_form
+	button
+		border: none
+		outline: none
+		background: #000
+		cursor: pointer
+		padding: 0
+	i
+		color: $main-color
+		font-size: 17px
+
+.search
+	border: none 
+	border-left: 1px solid #fff
+	color: white
+	background: #000
+	padding: 3px 10px
+	font-family: $fonts
+	outline: none 
+/****HEADER END****/
+/****MAIN****/
+.personal_card
+	background: #cf0006
+	overflow: hidden
+	min-height: 400px
+	padding: 20px
+	img
+		margin-top: -50px
+		max-width: 550px
+		top: -160px
+		right: 0
+
+.flex_personal_card
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+
+.info_personal_card
+	font-family: $fonts
+	top: 30px
+	z-index: 2
+	h2
+		color: white
+		font-size: 45px
+		margin: 0
+		margin-top: 50px
+	p
+		color: white
+		margin-top: 30px
+	input
+		border: none
+		font-family: $fonts
+		background: white
+		padding: 10px 20px 
+		font-weight: 500
+		outline: none
+		cursor: pointer
+		margin-top: 20px
+
+//Card Operation
+
+.card_operation
+	background: url(../img/background-card.png)
+	padding: 30px
+	font-family: $fonts
+	background-repeat: no-repeat
+	background-position: center center
+	img
+		margin-top: 30px
+		padding-right: 20px
+
+.info_card_operation
+	padding-left: 20px
+	h2
+		font-weight: 800
+		text-transform: uppercase
+	p
+		font-size: 13px
+	hr
+		margin-bottom: 30px
+
+.flex_card
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+	align-items: center
+
+//Advantages
+
+.advantages
+	font-family: $fonts
+	text-align: center
+	h2
+		font-weight: 800
+		text-transform: uppercase
+	hr
+		margin-top: 30px
+
+.flex_advanteges
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-around
+	padding-top: 40px
+
+.advantages_item
+	p
+		font-size: 15px
+
+
+//Organizations
+
+.organizations
+	font-family: $fonts
+	background: #f3f3f3
+	text-align: center
+	padding: 30px 0
+	text-align: center
+	hr
+		margin-bottom: 30px
+
+.flex-organizations
+	display: flex
+	justify-content: center
+	flex-wrap: wrap
+	margin: 0 auto
+	
+.col-organizations
+	display: flex
+	flex-direction: column
+	border-right: 1px solid #a8a8a8
+	&:last-child
+		border: none
+
+.organizations_item
+	text-align: center
+	margin: 0
+	display: flex
+	justify-content: center
+	position: relative
+	align-items: center
+	text-decoration: none
+	outline: none
+	color: #000
+	min-height: 120px
+	min-width: 220px
+	&::after
+		content: ''
+		width: 90%
+		height: 1px
+		position: absolute
+		top: 100%
+		left: 50%
+		transform: translateX(-50%)
+		display: inline-block
+		background: #a8a8a8
+	&:last-child::after
+		display: none
+	&:hover
+		transition: 0.3s
+		transform: scale(1.1)
+		background: #cf0006
+		color: white
+	&:not(:hover)
+		transition: 0.2s
+	img
+		margin-right: 20px
+	p
+		text-align: left
+		font-size: 15px
+
+.search_company
+	background: rgba(0, 0, 0, 0)
+	border: 1px solid #cf0006
+	color: #cf0006
+	font-family: $fonts
+	font-weight: 600
+	cursor: pointer
+	padding: 10px 15px
+	font-size: 17px
+	margin-top: 30px
+	&:hover
+		transition: 0.3s
+		background: #cf0006
+		color: #fff
+
+/****MAIN END****/
+
+/****FOOTER****/
+footer
+	background: #000
+	padding: 30px
+	font-family: $fonts
+
+.flex-footer
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	align-items: center
+
+.info_footer
+	p
+		color: #646566
+		font-size: 13px
+
+.sub_info_footer
+	a
+		color: #fff
+		font-size: 13px
+
+.social-links
+	a
+		text-decoration: none
+		outline: none
+	i
+		color: #fff
+		font-size: 25px
+		margin: 0 15px
+		&:hover
+			color: #cf0006
+			transition: 0.3s
+
+.footer_phones
+	text-align: center
+	p
+		color: #fff
+	i
+		color: #cf0006
+		margin-right: 15px
+	a
+		color: #cf0006
+		font-size: 12px
+
+.footer_conect
+	text-align: center
+	p
+		color: #fff
+	i
+		color: #cf0006
+		margin-right: 15px
+	a
+		color: #cf0006
+		font-size: 12px
+/****FOOTER END****/
+
+/*FONTS*/
+@font-face
+	font-family: 'Proxima Nova'
+	src: url('../fonts/ProximaNova.ttf')
+	font-weight: normal
+	font-style: normal
+
+@media screen and (max-width: 1100px)
+	.flex_personal_card
+		justify-content: center
+	.personal_card
+		img
+			display: none
+	.info_personal_card
+		text-align: center
+
+@media screen and (max-width: 1000px)
+	.info_discounts
+		display: none
+
+	.footer_phones
+		display: none
+
+@media screen and (max-width: 800px)
+	.logo_name,
+	.headphones,
+	.head_service
+		justify-content: center
+		width: 100%
+		margin-top: 25px
+	.search_form
+		display: none
+
+	.sub_info_footer
+		display: none
+
+@media screen and (max-width: 550px)
+	.top-menu
+		justify-content: center
+	.item-menu_mobile
+		display: block
+	.item-menu
+		display: none
+
+	.info_personal_card
+		h2
+			font-size: 30px
+		p
+			font-size: 15px
+
+	.footer_conect
+		display: none
+	.flex-footer
+		justify-content: center
+	.social-links
+		text-align: center
+
+@media screen and (max-width: 400px)
+	.personal_card
+		min-height: 200px
+	.info_personal_card
+		h2
+			font-size: 20px
+			margin: 0
+		p
+			font-size: 12px
