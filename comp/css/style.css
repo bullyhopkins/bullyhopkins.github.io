@@ -6,6 +6,11 @@ html {
   font-family: "Open Sans", serif;
 }
 
+.wrapper {
+  min-height: 100%;
+  position: relative;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -39,33 +44,35 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .logo {
   max-width: 80px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .name_company {
   padding-left: 20px;
 }
 
-.name_company h1 {
-  font-family: "Open Sans", serif;
-  color: #e41e25;
+.name_company p {
   margin: 0;
   padding: 0;
 }
 
-.name_company h1 sup {
-  color: #000;
+.great_people {
+  font-family: "Open Sans", serif;
+  color: #e41e25;
+  margin: 0;
+  font-weight: 800;
+  font-size: 25px;
+  padding: 0;
 }
 
-.name_company p {
-  margin: 10px 0;
-  padding: 0;
+.great_people sup {
+  color: #000;
 }
 
 .head_discounts {
@@ -112,6 +119,7 @@ html {
 }
 
 .head_service a {
+  color: #000;
   text-decoration: none;
 }
 
@@ -122,9 +130,17 @@ html {
   font-weight: 600;
   font-size: 14px;
   padding: 15px 15px;
+  border: 1px solid #e41e25;
   cursor: pointer;
   margin-top: 10px;
   outline: none;
+}
+
+.head_service input:hover {
+  background: rgba(0, 0, 0, 0);
+  color: #000;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .top-menu {
@@ -140,7 +156,6 @@ html {
       -ms-flex-align: center;
           align-items: center;
   background: #000;
-  padding: 15px;
   margin-top: 30px;
 }
 
@@ -148,6 +163,9 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .item-menu a {
@@ -155,16 +173,35 @@ html {
   outline: none;
   color: white;
   font-weight: bold;
-  padding: 3px 15px;
+  padding: 15px 15px;
   display: block;
+  position: relative;
 }
 
-.item-menu a:nth-child(2) {
-  border-right: 1px solid #fff;
+.item-menu a:nth-child(1)::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 1px;
+  height: 50%;
+  background-color: #fff;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
-.item-menu a:nth-child(1) {
-  border-right: 1px solid #fff;
+.item-menu a:nth-child(2)::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 1px;
+  height: 50%;
+  background-color: #fff;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .item-menu a:hover {
@@ -191,6 +228,10 @@ html {
   padding: 3px 15px;
 }
 
+.search_form {
+  padding: 10px;
+}
+
 .search_form button {
   border: none;
   outline: none;
@@ -215,6 +256,10 @@ html {
 
 /****HEADER END****/
 /****MAIN****/
+.content {
+  padding-bottom: 190px;
+}
+
 .personal_card {
   background: #cf0006;
   overflow: hidden;
@@ -222,10 +267,8 @@ html {
   padding: 20px;
 }
 
-.personal_card img {
-  margin-top: -120px;
-  max-width: 550px;
-  max-height: 500px;
+.personal_card_img {
+  min-height: 400px;
 }
 
 .flex_personal_card {
@@ -244,11 +287,13 @@ html {
   z-index: 2;
 }
 
-.info_personal_card h1 {
+.info_personal_card .personal_card_h2 {
   color: white;
-  font-size: 45px;
+  font-size: 40px;
   margin: 0;
+  font-weight: bold;
   margin-top: 50px;
+  text-transform: uppercase;
 }
 
 .info_personal_card p {
@@ -264,6 +309,16 @@ html {
   outline: none;
   cursor: pointer;
   margin-top: 20px;
+  border: 1px solid #fff;
+  font-weight: bold;
+  font-family: "Open Sans", serif;
+}
+
+.info_personal_card input:hover {
+  background: rgba(0, 0, 0, 0);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #fff;
 }
 
 .card_operation {
@@ -314,13 +369,14 @@ html {
   text-align: center;
 }
 
-.advantages h1 {
-  font-weight: 800;
-  text-transform: uppercase;
+.advantages hr {
+  margin-top: 20px;
 }
 
-.advantages hr {
-  margin-top: 30px;
+.advantages .advantages_h {
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 22px;
 }
 
 .flex_advanteges {
@@ -346,7 +402,12 @@ html {
 }
 
 .organizations hr {
-  margin-bottom: 30px;
+  margin: 30px auto;
+}
+
+.organizations_h {
+  font-weight: 700;
+  font-size: 22px;
 }
 
 .flex-organizations {
@@ -459,7 +520,7 @@ html {
 footer {
   background: #000;
   padding: 30px;
-  position: relative;
+  position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -487,6 +548,10 @@ footer {
 .sub_info_footer a {
   color: #fff;
   font-size: 13px;
+}
+
+.sub_info_footer a:hover {
+  text-decoration: none;
 }
 
 .social-links a {
@@ -571,7 +636,7 @@ footer {
 }
 
 @media screen and (max-width: 1005px) {
-  .info_discounts {
+  .head_discounts {
     display: none;
   }
   .footer_phones {
@@ -626,6 +691,9 @@ footer {
   }
   .card_operation img {
     max-width: 300px;
+  }
+  .content {
+    padding-bottom: 180px;
   }
 }
 
