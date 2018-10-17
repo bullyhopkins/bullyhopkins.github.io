@@ -89,6 +89,14 @@ html {
   font-family: "Open Sans", serif;
 }
 
+.headphones_img {
+  background: url(../img/headphones.jpg);
+  background-position: center center;
+  background-size: contain;
+  min-width: 50px;
+  min-height: 50px;
+}
+
 .headphones-numbers {
   padding-left: 20px;
 }
@@ -265,16 +273,18 @@ html {
   overflow: hidden;
   min-height: 400px;
   padding: 20px;
-}
-
-.personal_card img {
-  margin-top: -120px;
-  max-width: 550px;
-  max-height: 500px;
+  position: relative;
 }
 
 .personal_card_img {
-  min-height: 400px;
+  background: url(../img/301.png);
+  background-position: center center;
+  background-size: cover;
+  min-height: 500px;
+  min-width: 700px;
+  position: absolute;
+  right: 20px;
+  top: -80px;
 }
 
 .flex_personal_card {
@@ -334,9 +344,12 @@ html {
   background-position: center center;
 }
 
-.card_operation img {
-  margin-top: 30px;
-  padding-right: 20px;
+.card_operation_img {
+  background: url(../img/cards.png);
+  background-size: cover;
+  background-position: center center;
+  min-width: 400px;
+  min-height: 300px;
 }
 
 .info_card_operation {
@@ -398,6 +411,36 @@ html {
 
 .advantages_item p {
   font-size: 15px;
+}
+
+.advantages_list_img,
+.advantages_parther_img,
+.advantages_company_img {
+  min-width: 100px;
+  min-height: 100px;
+  background-position: center center;
+  background-size: cover;
+}
+
+.advantages_list_img {
+  background: url(../img/list.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.advantages_parther_img {
+  background: url(../img/partner.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.advantages_company_img {
+  background: url(../img/company-bel.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
 }
 
 .organizations {
@@ -624,20 +667,15 @@ footer {
 /****FOOTER END****/
 /*FONTS*/
 @media screen and (max-width: 1105px) {
-  .flex_personal_card {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .personal_card img {
-    display: none;
-  }
-  .info_personal_card {
-    text-align: center;
-  }
   .organizations_item {
     min-height: 100px;
     min-width: 200px;
+  }
+  .personal_card_img {
+    min-width: 500px;
+    min-height: 450px;
+    top: 0;
+    right: 0;
   }
 }
 
@@ -658,6 +696,9 @@ footer {
   .organizations_item p {
     font-size: 12px;
   }
+  .personal_card .personal_card_h2 {
+    font-size: 30px;
+  }
 }
 
 @media screen and (max-width: 850px) {
@@ -676,6 +717,17 @@ footer {
   }
   .mobile_none {
     display: none;
+  }
+  .flex_personal_card {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .personal_card .personal_card_img {
+    display: none;
+  }
+  .info_personal_card {
+    text-align: center;
   }
 }
 
@@ -720,6 +772,10 @@ footer {
   }
   .info_personal_card p {
     font-size: 15px;
+  }
+  .card_operation_img {
+    min-height: 200px;
+    min-width: 300px;
   }
   .footer_conect {
     display: none;

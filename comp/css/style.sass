@@ -61,6 +61,13 @@ html
 	align-items: center
 	font-family: $fonts
 
+.headphones_img
+	background: url(../img/headphones.jpg)
+	background-position: center center
+	background-size: contain
+	min-width: 50px
+	min-height: 50px
+
 .headphones-numbers
 	padding-left: 20px 
 	p
@@ -190,13 +197,17 @@ html
 	overflow: hidden
 	min-height: 400px
 	padding: 20px
-	// img
-	// 	margin-top: -120px
-	// 	max-width: 550px
-	// 	max-height: 500px
+	position: relative
 
 .personal_card_img
-	min-height: 400px
+	background: url(../img/301.png)
+	background-position: center center
+	background-size: cover
+	min-height: 500px
+	min-width: 700px
+	position: absolute
+	right: 20px
+	top: -80px
 
 .flex_personal_card
 	display: flex
@@ -239,9 +250,16 @@ html
 	padding: 30px
 	background-repeat: no-repeat
 	background-position: center center
-	img
-		margin-top: 30px
-		padding-right: 20px
+	// img
+	// 	margin-top: 30px
+	// 	padding-right: 20px
+
+.card_operation_img
+	background: url(../img/cards.png)
+	background-size: cover
+	background-position: center center
+	min-width: 400px
+	min-height: 300px
 
 .info_card_operation
 	padding-left: 20px
@@ -281,6 +299,31 @@ html
 	p
 		font-size: 15px
 
+.advantages_list_img,
+.advantages_parther_img,
+.advantages_company_img
+	min-width: 100px
+	min-height: 100px
+	background-position: center center
+	background-size: cover
+
+.advantages_list_img
+	background: url(../img/list.png)
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: contain
+
+.advantages_parther_img
+	background: url(../img/partner.png)
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: contain
+
+.advantages_company_img
+	background: url(../img/company-bel.png)
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: contain
 
 //Organizations
 
@@ -431,17 +474,16 @@ footer
 /*FONTS*/
 
 @media screen and (max-width: 1105px)
-	.flex_personal_card
-		justify-content: center
-	.personal_card
-		img
-			display: none
-	.info_personal_card
-		text-align: center
 
 	.organizations_item
 		min-height: 100px
 		min-width: 200px
+
+	.personal_card_img
+		min-width: 500px
+		min-height: 450px
+		top: 0
+		right: 0
 @media screen and (max-width: 1005px)
 	.head_discounts
 		display: none
@@ -457,6 +499,10 @@ footer
 		p
 			font-size: 12px
 
+	.personal_card
+		.personal_card_h2
+			font-size: 30px
+
 @media screen and (max-width: 850px)
 	.col-organizations
 		border: none
@@ -469,6 +515,14 @@ footer
 			width: 50%
 	.mobile_none
 		display: none
+
+	.flex_personal_card
+		justify-content: center
+	.personal_card
+		.personal_card_img
+			display: none
+	.info_personal_card
+		text-align: center
 @media screen and (max-width: 800px)
 	.logo_name,
 	.headphones,
@@ -502,6 +556,10 @@ footer
 			font-size: 30px
 		p
 			font-size: 15px
+
+	.card_operation_img
+		min-height: 200px
+		min-width: 300px
 
 	.footer_conect
 		display: none
