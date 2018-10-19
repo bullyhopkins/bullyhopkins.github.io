@@ -805,6 +805,26 @@ footer {
 }
 
 /****FOOTER END****/
+/**** MODAL WINDOWS ****/
+.modal-background {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 20;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.window-registration {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  z-index: 30;
+  background: #fff;
+}
+
+/**** MODAL WINDOWS END****/
 /*FONTS*/
 @media screen and (max-width: 1105px) {
   .organizations-item {
