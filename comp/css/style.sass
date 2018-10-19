@@ -1,5 +1,8 @@
 $main-color: #e41e25
-$fonts: 'Open Sans', serif
+$fonts: 'Proxima Nova', 'Open Sans', serif
+
+//Reset
+@import "reset.min.scss"
 	
 body,
 html
@@ -10,7 +13,7 @@ html
 
 .wrapper
 	min-height: 100%
-	position: relative
+	padding-bottom: 184px
 
 *
 	box-sizing: border-box
@@ -21,7 +24,7 @@ html
 
 /****HEADER****/
 .head
-	padding-top: 30px
+	padding-top: 20px
 
 .flex-box
 	display: flex
@@ -29,77 +32,85 @@ html
 	justify-content: space-between
 	align-items: center
 
-.logo_name
+.logo-name
 	display: flex
-	// align-items: center
+	align-items: center
 
 .logo
 	max-width: 80px
 	align-self: center
 
-.name_company
+.name-company
 	padding-left: 20px
 	p
 		margin: 0
 		padding: 0
 
-.great_people
+.great-people
 	font-family: $fonts
-	color: $main-color
-	margin: 0
+	color: #e31e24
 	font-weight: 800
 	font-size: 25px
 	padding: 0
+	margin-bottom: 5px
 	sup
 		color: #000
 
-.head_discounts
+.head-discounts
 	font-size: 13px
 
-.headphones
+.header-contacts
 	display: flex
 	align-items: center
 	font-family: $fonts
 
-.headphones_img
+
+.header-contacts-img
 	background: url(../img/headphones.jpg)
 	background-position: center center
 	background-size: contain
 	min-width: 50px
 	min-height: 50px
 
-.headphones-numbers
+.header-contacts-numbers
 	padding-left: 20px 
-	p
-		margin-top: 10px
-		margin-bottom: 0
-		font-weight: bold
-	span
-		color: $main-color
-		font-weight: 800
-	a
-		font-size: 12px
-		margin-left: 5px
+	.order-call
+		font-size: 14px
+		margin-left: 13px
 		color: $main-color
 		&:hover
 			text-decoration: none
+	.phones
+		margin-bottom: 8px
+		font-weight: 800
+		display: block
+		color: #000
+		font-size: 20px
+		text-decoration: none
+		span
+			color: $main-color
+			font-weight: 900
 
-.head_service
+
+.header-callback
 	text-align: center
 	a
-		color: #000
+		color: #a1a1a1
 		text-decoration: none
-	input 
-		border: none
+		font-size: 14px
+	i
+		color: $main-color
+	.header-callback-inp
+		display: block
 		background: $main-color
 		color: white
-		font-weight: 600
+		font-weight: 700
 		font-size: 14px
 		padding: 15px 15px
 		border: 1px solid $main-color
-		cursor: pointer
-		margin-top: 10px
+		margin-top: 15px
 		outline: none
+		font-family: $fonts
 		&:hover
 			background: rgba(0, 0, 0, 0)
 			color: #000
@@ -113,7 +124,6 @@ html
 	justify-content: space-between
 	align-items: center
 	background: #000
-	// padding: 0 15px
 	margin-top: 30px
 
 .item-menu
@@ -122,9 +132,10 @@ html
 	a
 		text-decoration: none
 		outline: none
-		color: white
-		font-weight: bold
-		padding: 15px 15px
+		color: #fff
+		font-weight: 500
+		padding: 23px 30px
+		font-size: 16px
 		display: block
 		position: relative
 		&:nth-child(1)::after
@@ -133,7 +144,7 @@ html
 			position: absolute
 			width: 1px
 			height: 50%
-			background-color: #fff
+			background-color: #4c4c4c
 			right: 0
 			top: 50%
 			transform: translateY(-50%)			
@@ -143,7 +154,7 @@ html
 			position: absolute
 			width: 1px
 			height: 50%
-			background-color: #fff
+			background-color: #4c4c4c
 			right: 0
 			top: 50%
 			transform: translateY(-50%)
@@ -154,52 +165,81 @@ html
 		margin: 0 10px
 		color: white
 
-//Item-menu_mobile
+//Item-menu-mobile
 
-.item-menu_mobile
+.item-menu-mobile
 	display: none
 	text-align: center
 	a
+		display: block
 		text-decoration: none
 		outline: none
 		color: white
 		font-weight: bold
-		padding: 3px 15px
+		padding: 10px 0
 
-//Item-menu_mobile END
+//Item-menu-mobile END
 
-.search_form
-	padding: 10px
+.header-search-form
+	position: relative
 	button
 		border: none
 		outline: none
 		background: #000
 		cursor: pointer
 		padding: 0
+		min-height: 62px
+		min-width: 60px
+		&:hover i
+			transition: 0.3s
+			color: white
 	i
 		color: $main-color
 		font-size: 17px
+	&:before
+		content: ''
+		display: inline
+		position: absolute
+		z-index: 2
+		left: 0
+		width: 2px
+		height: 60%
+		background: #4c4c4c
+		top: 50%
+		transform: translateY(-50%)
 
-.search
+.search-inp
 	border: none 
-	border-left: 1px solid #fff
 	color: white
 	background: #000
-	padding: 3px 10px
+	padding: 10px 10px
 	outline: none 
+	height: 60px
+	font-family: $fonts
+	font-size: 14px
+	width: 200px
+	&::-webkit-input-placeholder
+		color: #868585
+	&:-moz-placeholder
+		color: #868585
+	&::-moz-placeholder
+		color: #868585
+	&:-ms-input-placeholder
+		color: #868585
+
+
+
 /****HEADER END****/
 /****MAIN****/
-.content
-	padding-bottom: 190px
 
-.personal_card
+.personal-card
 	background: #cf0006
 	overflow: hidden
 	min-height: 400px
 	padding: 20px
 	position: relative
 
-.personal_card_img
+.personal-card-img
 	background: url(../img/301.png)
 	background-position: center center
 	background-size: cover
@@ -209,35 +249,36 @@ html
 	right: 20px
 	top: -80px
 
-.flex_personal_card
+.flex-personal-card
 	display: flex
 	justify-content: space-between
 	flex-wrap: wrap
+	align-items: center
+	min-height: 400px
 
-.info_personal_card
-	top: 30px
+.personal-card-left
 	z-index: 2
-	.personal_card_h2	
+	.personal-card-h
 		color: white
 		font-size: 40px
 		margin: 0
-		font-weight: bold
-		margin-top: 50px
+		font-weight: 800
+		line-height: 50px
 		text-transform: uppercase
 	p
 		color: white
-		margin-top: 30px
-	input
-		border: none
+		margin: 30px 0
+	a
+		text-decoration: none
+		color: #000
+		display: inline-block
 		background: white
-		padding: 10px 20px 
+		padding: 15px 30px
 		font-weight: 500
+		font-size: 16px
 		outline: none
-		cursor: pointer
-		margin-top: 20px
 		border: 1px solid #fff
 		font-weight: bold
-		font-family: $fonts
 		&:hover
 			background: rgba(0, 0, 0, 0)
 			transition: 0.3s
@@ -245,33 +286,33 @@ html
 
 //Card Operation
 
-.card_operation
+.card-operation
 	background: url(../img/background-card.png)
-	padding: 30px
+	padding: 100px 20px
 	background-repeat: no-repeat
 	background-position: center center
-	// img
-	// 	margin-top: 30px
-	// 	padding-right: 20px
 
-.card_operation_img
+.card-operation-img
 	background: url(../img/cards.png)
 	background-size: cover
 	background-position: center center
 	min-width: 400px
 	min-height: 300px
 
-.info_card_operation
-	padding-left: 20px
+.card-operation-right
+	padding-left: 80px
 	h1
 		font-weight: 800
 		text-transform: uppercase
+		font-size: 24px
 	p
-		font-size: 13px
+		font-size: 14px
+		margin-bottom: 20px
+		line-height: 20px
 	hr
-		margin-bottom: 30px
+		margin: 30px 0
 
-.flex_card
+.flex-card
 	display: flex
 	flex-wrap: wrap
 	justify-content: center
@@ -282,68 +323,67 @@ html
 .advantages
 	font-family: $fonts
 	text-align: center
+	padding: 20px 20px 70px 20px
 	hr
 		margin-top: 20px
-	.advantages_h
+	.advantages-h
 		font-weight: 800
 		text-transform: uppercase
-		font-size: 22px
+		font-size: 24px
 
-.flex_advanteges
+.flex-advanteges
 	display: flex
 	flex-wrap: wrap
 	justify-content: space-around
 	padding-top: 40px
 
-.advantages_item
+.advantages-item
 	p
-		font-size: 15px
+		font-size: 16px
+		line-height: 20px
+		margin-top: 10px
 
-.advantages_list_img,
-.advantages_parther_img,
-.advantages_company_img
+.advantages-icon
 	min-width: 100px
 	min-height: 100px
 	background-position: center center
 	background-size: cover
 
-.advantages_list_img
+.advantages-list-img
 	background: url(../img/list.png)
 	background-repeat: no-repeat
 	background-position: center center
-	background-size: contain
 
-.advantages_parther_img
+.advantages-parther-img
 	background: url(../img/partner.png)
 	background-repeat: no-repeat
 	background-position: center center
-	background-size: contain
 
-.advantages_company_img
+.advantages-company-img
 	background: url(../img/company-bel.png)
 	background-repeat: no-repeat
 	background-position: center center
-	background-size: contain
 
 //Organizations
 
 .organizations
-	background: #f3f3f3
 	text-align: center
 	padding: 30px 0
 	text-align: center
 	hr
 		margin: 30px auto
 
-.organizations_h
-	font-weight: 700
-	font-size: 22px
+.organizations-h
+	font-weight: 800
+	font-size: 24px
 
 .flex-organizations
 	display: flex
 	justify-content: center
 	flex-wrap: wrap
 	margin: 0 auto
+	background: #f3f3f3
+	padding: 30px 0
 	
 .col-organizations
 	display: flex
@@ -352,7 +392,7 @@ html
 	&:last-child
 		border: none
 
-.organizations_item
+.organizations-item
 	text-align: center
 	margin: 0
 	display: flex
@@ -360,6 +400,7 @@ html
 	position: relative
 	align-items: center
 	text-decoration: none
+	z-index: 2
 	outline: none
 	color: #000
 	min-height: 120px
@@ -389,30 +430,39 @@ html
 		text-align: left
 		font-size: 15px
 
-.search_company
+.no-organization:hover
+	transition: none
+	transform: none
+	cursor: default
+	background: none
+
+.search-company
 	background: rgba(0, 0, 0, 0)
 	border: 1px solid #cf0006
 	color: #cf0006
 	font-weight: 600
-	cursor: pointer
-	padding: 10px 15px
-	font-size: 17px
-	margin-top: 30px
+	display: inline-block
+	padding: 18px 45px
+	font-size: 14px
+	margin-top: 40px
+	text-decoration: none
 	&:hover
 		transition: 0.3s
 		background: #cf0006
 		color: #fff
+
+//Map
+	iframe
+		display: block
 
 /****MAIN END****/
 
 /****FOOTER****/
 footer
 	background: #000
-	padding: 30px
-	position: absolute
-	bottom: 0
-	left: 0
-	width: 100%
+	padding: 70px 20px
+	min-height: 184px
+	margin-top: -184px
 
 .flex-footer
 	display: flex
@@ -420,17 +470,35 @@ footer
 	justify-content: space-between
 	align-items: center
 
-.copy_footer
+.copy-footer
 	p
 		color: #646566
 		font-size: 13px
+		margin: 30px 0
 
-.sub_info_footer
+.sub-info-footer
+	p
+		margin-bottom: 25px
 	a
 		color: #fff
-		font-size: 13px
+		font-size: 15px
 		&:hover
 			text-decoration: none
+
+.our-company-icon
+	display: inline-block
+	min-height: 25px
+	min-width: 25px
+	background: url(../img/our-logo.png)
+	background-position: cneter center
+	margin-bottom: -7px
+	margin-right: 5px
+
+.our-company
+	text-decoration: none
+	color: #646566
+	margin-left: 15px
+
 
 .social-links
 	a
@@ -438,35 +506,53 @@ footer
 		outline: none
 	i
 		color: #fff
-		font-size: 25px
+		font-size: 23px
 		margin: 0 15px
 		&:hover
 			color: #cf0006
 			transition: 0.3s
 
-.footer_phones
+.footer-phones
 	text-align: center
-	p
+	.phones
 		color: #fff
+		display: block
+		font-size: 16px
+		font-weight: 700
+		text-decoration: none
+		margin-bottom: 20px
+	.footer-phone
+		margin-left: -10px
 	i
 		color: #cf0006
 		margin-right: 15px
 	a
 		color: #cf0006
 		font-size: 12px
+		display: inline-block
+		margin-top: 15px
 		&:hover
 			text-decoration: none
 
-.footer_conect
-	text-align: center
-	p
+.footer-conect
+	text-align: left
+	.email,
+	.mirol
+		display: block
 		color: #fff
+		font-size: 16px
+		text-decoration: none
+		margin-bottom: 20px
+		font-weight: 500
 	i
 		color: #cf0006
 		margin-right: 15px
-	a
+	.send-message
 		color: #cf0006
 		font-size: 12px
+		padding-left: 30px
+		display: inline-block
+		margin-top: 15px
 		&:hover
 			text-decoration: none
 /****FOOTER END****/
@@ -475,23 +561,23 @@ footer
 
 @media screen and (max-width: 1105px)
 
-	.organizations_item
+	.organizations-item
 		min-height: 100px
 		min-width: 200px
 
-	.personal_card_img
+	.personal-card-img
 		min-width: 500px
 		min-height: 450px
 		top: 0
 		right: 0
 @media screen and (max-width: 1005px)
-	.head_discounts
+	.head-discounts
 		display: none
 
-	.footer_phones
+	.footer-phones
 		display: none
 
-	.organizations_item
+	.organizations-item
 		min-height: 60px
 		min-width: 160px
 		img
@@ -499,44 +585,44 @@ footer
 		p
 			font-size: 12px
 
-	.personal_card
-		.personal_card_h2
+	.personal-card
+		.personal-card-h2
 			font-size: 30px
 
 @media screen and (max-width: 850px)
 	.col-organizations
 		border: none
 		width: 100%
-	.organizations_item
+	.organizations-item
 		width: 100%
 		&:last-child::after
 			display: inline-block
 		&::after
 			width: 50%
-	.mobile_none
+	.mobile-none
 		display: none
 
-	.flex_personal_card
+	.flex-personal-card
 		justify-content: center
-	.personal_card
-		.personal_card_img
+	.personal-card
+		.personal-card-img
 			display: none
-	.info_personal_card
+	.info-personal-card
 		text-align: center
 @media screen and (max-width: 800px)
-	.logo_name,
+	.logo-name,
 	.headphones,
-	.head_service
+	.head-service
 		justify-content: center
 		width: 100%
 		margin-top: 25px
-	.search_form
+	.search-form
 		display: none
 
-	.sub_info_footer
+	.sub-info-footer
 		display: none
 
-	.card_operation
+	.card-operation
 		img
 			max-width: 300px
 
@@ -546,22 +632,24 @@ footer
 @media screen and (max-width: 550px)
 	.top-menu
 		justify-content: center
-	.item-menu_mobile
+		flex-direction: column
+		align-items: stretch
+	.item-menu-mobile
 		display: block
 	.item-menu
 		display: none
 
-	.info_personal_card
+	.info-personal-card
 		h1
 			font-size: 30px
 		p
 			font-size: 15px
 
-	.card_operation_img
+	.card-operation-img
 		min-height: 200px
 		min-width: 300px
 
-	.footer_conect
+	.footer-conect
 		display: none
 	.flex-footer
 		justify-content: center
@@ -569,15 +657,18 @@ footer
 		text-align: center
 
 @media screen and (max-width: 400px)
-	.personal_card
+	.personal-card
 		min-height: 200px
-	.info_personal_card
+	.info-personal-card
 		h1
 			font-size: 20px
 			margin: 0
 		p
 			font-size: 12px
 
-	.organizations_item
+	.organizations-item
 		&:after
 			width: 100%
+
+//FONTS
+@import "../fonts/font.scss"
