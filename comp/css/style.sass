@@ -98,6 +98,7 @@ html
 		color: #a1a1a1
 		text-decoration: none
 		font-size: 14px
+		display: inline-block
 	i
 		color: $main-color
 	.header-callback-inp
@@ -560,7 +561,6 @@ footer
 /*FONTS*/
 
 @media screen and (max-width: 1105px)
-
 	.organizations-item
 		min-height: 100px
 		min-width: 200px
@@ -586,7 +586,7 @@ footer
 			font-size: 12px
 
 	.personal-card
-		.personal-card-h2
+		.personal-card-h
 			font-size: 30px
 
 @media screen and (max-width: 850px)
@@ -607,17 +607,25 @@ footer
 	.personal-card
 		.personal-card-img
 			display: none
-	.info-personal-card
+	.personal-card-left
 		text-align: center
 @media screen and (max-width: 800px)
 	.logo-name,
-	.headphones,
-	.head-service
+	.header-contacts
 		justify-content: center
 		width: 100%
 		margin-top: 25px
-	.search-form
+
+	.header-callback
+		margin: 0 auto
+		margin-top: 25px
+
+	.header-search-form
 		display: none
+
+	.card-operation-right
+		padding-left: 0
+		margin-top: 30px
 
 	.sub-info-footer
 		display: none
@@ -625,9 +633,6 @@ footer
 	.card-operation
 		img
 			max-width: 300px
-
-	.content
-		padding-bottom: 180px
 
 @media screen and (max-width: 550px)
 	.top-menu
@@ -639,11 +644,19 @@ footer
 	.item-menu
 		display: none
 
-	.info-personal-card
-		h1
-			font-size: 30px
+	.personal-card
+		min-height: 200px
+
+	.flex-personal-card
+		min-height: 200px
+
+	.personal-card-left
+		.personal-card-h
+			font-size: 20px
+			line-height: 30px
 		p
 			font-size: 15px
+			margin: 15px 0
 
 	.card-operation-img
 		min-height: 200px
@@ -659,7 +672,7 @@ footer
 @media screen and (max-width: 400px)
 	.personal-card
 		min-height: 200px
-	.info-personal-card
+	.personal-card-left
 		h1
 			font-size: 20px
 			margin: 0

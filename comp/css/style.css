@@ -170,6 +170,7 @@ html {
   color: #a1a1a1;
   text-decoration: none;
   font-size: 14px;
+  display: inline-block;
 }
 
 .header-callback i {
@@ -835,7 +836,7 @@ footer {
   .organizations-item p {
     font-size: 12px;
   }
-  .personal-card .personal-card-h2 {
+  .personal-card .personal-card-h {
     font-size: 30px;
   }
 }
@@ -865,32 +866,36 @@ footer {
   .personal-card .personal-card-img {
     display: none;
   }
-  .info-personal-card {
+  .personal-card-left {
     text-align: center;
   }
 }
 
 @media screen and (max-width: 800px) {
   .logo-name,
-  .headphones,
-  .head-service {
+  .header-contacts {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     width: 100%;
     margin-top: 25px;
   }
-  .search-form {
+  .header-callback {
+    margin: 0 auto;
+    margin-top: 25px;
+  }
+  .header-search-form {
     display: none;
+  }
+  .card-operation-right {
+    padding-left: 0;
+    margin-top: 30px;
   }
   .sub-info-footer {
     display: none;
   }
   .card-operation img {
     max-width: 300px;
-  }
-  .content {
-    padding-bottom: 180px;
   }
 }
 
@@ -913,11 +918,19 @@ footer {
   .item-menu {
     display: none;
   }
-  .info-personal-card h1 {
-    font-size: 30px;
+  .personal-card {
+    min-height: 200px;
   }
-  .info-personal-card p {
+  .flex-personal-card {
+    min-height: 200px;
+  }
+  .personal-card-left .personal-card-h {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .personal-card-left p {
     font-size: 15px;
+    margin: 15px 0;
   }
   .card-operation-img {
     min-height: 200px;
@@ -940,11 +953,11 @@ footer {
   .personal-card {
     min-height: 200px;
   }
-  .info-personal-card h1 {
+  .personal-card-left h1 {
     font-size: 20px;
     margin: 0;
   }
-  .info-personal-card p {
+  .personal-card-left p {
     font-size: 12px;
   }
   .organizations-item:after {
