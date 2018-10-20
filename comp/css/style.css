@@ -100,20 +100,26 @@ html {
 }
 
 .great-people {
-  font-family: "Proxima Nova", "Open Sans", serif;
+  font-family: 'Open Sans';
   color: #e31e24;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 25px;
   padding: 0;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  position: relative;
 }
 
 .great-people sup {
   color: #000;
+  font-size: 15px;
+  position: absolute;
+  top: -6px;
+  right: -10px;
 }
 
 .head-discounts {
   font-size: 13px;
+  color: #717171;
 }
 
 .header-contacts {
@@ -173,6 +179,10 @@ html {
   display: inline-block;
 }
 
+.header-callback .personal-account:hover {
+  text-decoration: underline;
+}
+
 .header-callback i {
   color: #e41e25;
 }
@@ -226,7 +236,7 @@ html {
   text-decoration: none;
   outline: none;
   color: #fff;
-  font-weight: 500;
+  font-weight: 700;
   padding: 23px 30px;
   font-size: 16px;
   display: block;
@@ -402,7 +412,8 @@ html {
 
 .personal-card-left p {
   color: white;
-  margin: 30px 0;
+  margin: 10px 0 30px 0;
+  line-height: 23px;
 }
 
 .personal-card-left a {
@@ -410,12 +421,10 @@ html {
   color: #000;
   display: inline-block;
   background: white;
-  padding: 15px 30px;
-  font-weight: 500;
+  padding: 15px 45px;
   font-size: 16px;
   outline: none;
   border: 1px solid #fff;
-  font-weight: bold;
 }
 
 .personal-card-left a:hover {
@@ -805,26 +814,164 @@ footer {
 }
 
 /****FOOTER END****/
-/**** MODAL WINDOWS ****/
-.modal-background {
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  z-index: 20;
-  background: rgba(0, 0, 0, 0.4);
+/****** MODAL WINDOWS ******/
+.window-registration {
+  background: #fff;
+  padding: 30px;
+  width: 580px;
+  position: absolute;
+  display: none;
 }
 
-.window-registration {
+.window-registration input {
+  min-height: 50px;
+  width: 90%;
+  border: 1px solid #bcbcbc;
+  display: block;
+  margin: 20px auto;
+  padding: 0 15px;
+  font-family: "Proxima Nova", "Open Sans", serif;
+  font-size: 14px;
+  outline: none;
+}
+
+.log-in-site {
+  text-align: center;
+  font-size: 14px;
+}
+
+.log-in-site a {
+  color: #cf0006;
+}
+
+.log-in-site a:hover {
+  text-decoration: none;
+}
+
+.registration-btn {
+  margin-bottom: 20px;
+  padding: 15px 43px;
+}
+
+.window-btn {
+  color: #fff;
+  border: 1px solid #cf0006;
+  background: #cf0006;
+  cursor: pointer;
+  font-weight: 700;
+  font-family: "Proxima Nova", "Open Sans", serif;
+  font-size: 14px;
+}
+
+.window-btn:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: rgba(0, 0, 0, 0);
+  color: #000;
+}
+
+.window-close {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%);
-  z-index: 30;
+  right: 0;
+  top: 0;
+  background: #cf0006;
+  padding: 10px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.window-close:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: rgba(0, 0, 0, 0);
+  color: #000;
+}
+
+.window-close:not(:hover) {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.window-h {
+  font-size: 24px;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.receive-sms {
+  color: #cf0006;
+  font-size: 14px;
+  margin-left: 30px;
+}
+
+.receive-sms:hover {
+  text-decoration: none;
+}
+
+.window-btn-wrap {
+  text-align: center;
+}
+
+.log-in {
+  text-align: center;
+  padding: 30px;
+  width: 570px;
+  display: none;
   background: #fff;
 }
 
-/**** MODAL WINDOWS END****/
+.log-in .log-in-number,
+.log-in .wrap-password-window {
+  border: 1px solid #bcbcbc;
+  display: block;
+  width: 90%;
+  min-height: 50px;
+  margin: 20px auto;
+}
+
+.log-in input {
+  font-size: 14px;
+  padding: 0 15px;
+}
+
+.wrap-password-window {
+  position: relative;
+}
+
+.wrap-password-window a {
+  color: #cf0006;
+  font-size: 14px;
+  position: absolute;
+  height: 100%;
+  width: 20%;
+  right: 0;
+  top: 0;
+  padding-top: 16px;
+}
+
+.wrap-password-window a:hover {
+  text-decoration: none;
+}
+
+.password-window {
+  border: none;
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.log-in-btn {
+  padding: 15px 90px;
+}
+
+.register {
+  margin-top: 20px;
+}
+
+/****** MODAL WINDOWS END ******/
 /*FONTS*/
 @media screen and (max-width: 1105px) {
   .organizations-item {
@@ -917,6 +1064,25 @@ footer {
   .card-operation img {
     max-width: 300px;
   }
+  .window-registration {
+    width: 400px;
+  }
+  .window-registration input {
+    min-height: 30px;
+    font-size: 12px;
+  }
+  .log-in {
+    width: 350px;
+  }
+  .log-in .log-in-number,
+  .log-in .wrap-password-window {
+    min-height: 30px;
+    font-size: 12px;
+  }
+  .wrap-password-window a {
+    padding-top: 8px;
+    font-size: 10px;
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -966,6 +1132,9 @@ footer {
   }
   .social-links {
     text-align: center;
+  }
+  .window-registration {
+    width: 300px;
   }
 }
 

@@ -21,29 +21,33 @@
 						<div class="logo-name">
 							<img src="img/logo-min.png" alt="" class="logo">
 							<div class="name-company">
-								<div class="great-people">Отличные люди <sup>&#174;</sup></div>
-								<p>дисконтная сеть</p>
+								<div class="great-people">
+									<span>Отличные люди</span>
+									<sup>&#174;</sup>
+								</div>
+								<p>Дисконтная сеть</p>
 							</div>
 						</div>
 						<p class="head-discounts">Скидки в обширном
 							<br>и постоянно расширяющемся
-							<br>комплексе услуг и </p>
+							<br>комплексе услуг и товаров</p>
 						<div class="header-contacts">
 							<div class="header-contacts-img"></div>
 							<div class="header-contacts-numbers">
-								<a href="#" class="phones">
+								<a href="tel:+375336965990" class="phones">
 									+375 (33) <span>696-59-90</span>
 								</a>
-								<a href="#" class="phones">
+								<a href="tel:375214585555" class="phones">
 									+375 (214) <span>58-55-55</span>
 								</a>
 								<a href="#" class="order-call">Заказать звонок</a>
 							</div>
 						</div>
 						<div class="header-callback">
-							<a href="#"><i class="far fa-user"></i> Личный кабинет</a>
+							<a href="#" class="personal-account"><i class="far fa-user"></i> Личный кабинет</a>
 							<div>
 								<a href="#" class="header-callback-inp">Зарегестрировать карту</a>
+							</div>
 						</div>
 					</div>
 					<!-- Info Head END-->
@@ -270,11 +274,11 @@
 					<p><a href="#">Партнерам</a></p>
 				</div>
 				<div class="footer-phones">
-					<a href="#" class="phones">
+					<a href="tel:375336865990" class="phones">
 						<i class="fas fa-mobile-alt"></i>
 						+375 (33) <span>696-59-90</span>
 					</a>
-					<a href="#" class="phones footer-phone">
+					<a href="tel:+375214585555" class="phones footer-phone">
 						<i class="fas fa-phone"></i>
 						+375 (214) <span>58-55-55</span>
 					</a>
@@ -297,22 +301,44 @@
 	<!-- FOOTER END-->
 
 	<!-- MODAL WINDOWS -->
-	<div class="modal-background">
+		<!-- <div class="background-modal"></div> -->
 		<form action="#" class="window-registration">
-			<input type="text">
-			<input type="tel">
-			<input type="text">
-			<input type="text">
-			<input type="password">
-			<a href="#"></a>
-			<input type="text">
-			<button type="submit">Подтвердить заявку</button>
-			<p>
-				Если вы уже зарегистрированы 
+			<span class="window-close">&#10006;</span>
+			<div class="window-h">Регистрация</div>
+			<input type="text" name="name" placeholder="Ваше имя">
+			<input type="tel" name="tel" placeholder="Ваш телефон">
+			<input type="text" name="card-number" placeholder="Введите номер карты">
+			<input type="text" name="additional-number" placeholder="Введите добавочный номер, указанный на карте">
+			<input type="password" name="password" placeholder="Введите пароль">
+			<a href="#" class="receive-sms">Получить смс код</a>
+			<input type="text" name="code" placeholder="Вставить код">
+			<div class="window-btn-wrap">
+				<button type="submit" class="window-btn registration-btn">Подтвердить заявку</button>
+			</div>
+			<p class="log-in-site">
+				Если вы уже зарегистрированы
 				<a href="#">войдите на сайт</a>
 			</p>
 		</form>
-	</div>
-	<!-- MODAL WINDOWS END-->
+
+		<form action="#" class="log-in">
+			<span class="window-close">&#10006;</span>
+			<div class="window-h">Вход</div>
+			<input type="tel" name="log-in-phone" class="log-in-number" placeholder="Номер телефона">
+			<span class="wrap-password-window">
+				<input type="password" name="log-in-pas" placeholder="Пароль" class="password-window">
+				<a href="#">Забыли?</a>
+			</span>
+			<button type="submit" class="window-btn log-in-btn">Войти</button>
+			<p class="log-in-site register">
+				Если вы не зарегистрированы
+				<a href="#">зарегистрируйтесь</a>
+			</p>
+		</form>
+	<!-- MODAL WINDOWS END -->
+
+	<script src="libs/jquery-3.3.1.min.js"></script>
+	<script src="libs/jquery.bpopup.min.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>
