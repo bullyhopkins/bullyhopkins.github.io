@@ -1,4 +1,4 @@
-$main-color: #e41e25
+$main-color: #cf0006
 $fonts: 'Proxima Nova', 'Open Sans', serif
 
 //Reset
@@ -170,7 +170,7 @@ html
 			top: 50%
 			transform: translateY(-50%)
 		&:hover
-			color: #cf0006
+			color: $main-color
 			transition: 0.3s
 	span
 		margin: 0 10px
@@ -213,8 +213,8 @@ html
 		position: absolute
 		z-index: 2
 		left: 0
-		width: 2px
-		height: 60%
+		min-width: 2px
+		min-height: 60%
 		background: #4c4c4c
 		top: 50%
 		transform: translateY(-50%)
@@ -244,7 +244,7 @@ html
 /****MAIN****/
 
 .personal-card
-	background: #cf0006
+	background: $main-color
 	overflow: hidden
 	min-height: 400px
 	padding: 20px
@@ -430,7 +430,7 @@ html
 	&:hover
 		transition: 0.3s
 		transform: scale(1.1)
-		background: #cf0006
+		background: $main-color
 		color: white
 	&:not(:hover)
 		transition: 0.2s
@@ -448,8 +448,8 @@ html
 
 .search-company
 	background: rgba(0, 0, 0, 0)
-	border: 1px solid #cf0006
-	color: #cf0006
+	border: 1px solid $main-color
+	color: $main-color
 	font-weight: 600
 	display: inline-block
 	padding: 18px 45px
@@ -458,7 +458,7 @@ html
 	text-decoration: none
 	&:hover
 		transition: 0.3s
-		background: #cf0006
+		background: $main-color
 		color: #fff
 
 //Map
@@ -519,7 +519,7 @@ footer
 		font-size: 23px
 		margin: 0 15px
 		&:hover
-			color: #cf0006
+			color: $main-color
 			transition: 0.3s
 
 .footer-phones
@@ -534,10 +534,10 @@ footer
 	.footer-phone
 		margin-left: -10px
 	i
-		color: #cf0006
+		color: $main-color
 		margin-right: 15px
 	a
-		color: #cf0006
+		color: $main-color
 		font-size: 12px
 		display: inline-block
 		margin-top: 15px
@@ -555,10 +555,10 @@ footer
 		margin-bottom: 20px
 		font-weight: 500
 	i
-		color: #cf0006
+		color: $main-color
 		margin-right: 15px
 	.send-message
-		color: #cf0006
+		color: $main-color
 		font-size: 12px
 		padding-left: 30px
 		display: inline-block
@@ -591,7 +591,7 @@ footer
 	text-align: center
 	font-size: 14px
 	a
-		color: #cf0006
+		color: $main-color
 		&:hover
 			text-decoration: none 
 
@@ -601,8 +601,8 @@ footer
 
 .window-btn
 	color: #fff
-	border: 1px solid #cf0006
-	background: #cf0006
+	border: 1px solid $main-color
+	background: $main-color
 	cursor: pointer
 	font-weight: 700
 	font-family: $fonts
@@ -616,7 +616,7 @@ footer
 	position: absolute
 	right: 0
 	top: 0
-	background: #cf0006
+	background: $main-color
 	padding: 10px
 	cursor: pointer
 	color: #fff
@@ -634,7 +634,7 @@ footer
 	margin-bottom: 30px
 
 .receive-sms
-	color: #cf0006
+	color: $main-color
 	font-size: 14px
 	margin-left: 30px
 	&:hover
@@ -667,7 +667,7 @@ footer
 .wrap-password-window
 	position: relative
 	a
-		color: #cf0006
+		color: $main-color
 		font-size: 14px
 		position: absolute
 		height: 100%
@@ -693,150 +693,1364 @@ footer
 	margin-top: 20px
 
 /****** MODAL WINDOWS END ******/
-/*FONTS*/
 
-@media screen and (max-width: 1105px)
-	.organizations-item
+
+/************* PAGE-AUTOSHOP *************/
+
+.autoshop
+	padding: 40px
+	background: #f5f5f5
+	h1
+		font-size: 33px
+		margin: 30px 0
+		font-weight: 900
+
+.autoshop .way 
+	display: flex
+	a
+		position: relative
+		padding: 0 10px
+		display: block
+		color: $main-color
+		font-size: 14px
+		&:hover
+			text-decoration: none
+		&:nth-child(1)::after
+			content: ""
+			position: absolute
+			display: inline-block
+			width: 1px
+			height: 100%
+			top: 50%
+			right: 0
+			transform: translateY(-50%)
+			background: #c5c5c5
+		&:nth-child(2)::after
+			content: ""
+			position: absolute
+			display: inline-block
+			width: 1px
+			height: 100%
+			right: 0
+			top: 50%
+			transform: translateY(-50%)
+			background: #c5c5c5
+		&:last-child
+			color: #929292
+
+.filter
+	font-size: 14px
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	select
+		max-width: 100px
+		padding: 7px
+
+.filter-rating
+	color: #929292
+	margin-right: 30px
+	a
+		color: #000
+		&:hover
+			text-decoration: none
+
+.autoshop-filter-city
+	color: #929292
+	margin-right: 8px
+
+.autoshop-all-company
+	a
+		color: $main-color
+		&:hover
+			text-decoration: none
+
+.flex-autoshop-list
+	display: flex
+	align-items: center
+	justify-content: center
+	margin-top: 90px
+
+.wrap-autoshop-list
+	display: flex
+	text-align: center
+
+.autoshop-item
+	position: relative
+	background: #fff
+	display: block
+	text-decoration: none
+	max-width: 270px
+	min-height: 320px
+	margin: 0 10px
+	&:hover
+		transition: 1s
+		top: -30px
+
+.stars
+	color: #ffcc00
+	margin-bottom: 20px
+
+.autozapchasty
+	.stars
+		color: #d6d6d6
+
+.autoshop-item-descr
+	border-top: 1px solid #c5c5c5
+	padding: 20px
+
+.name-company-item
+	font-size: 18px
+	font-weight: 900
+	margin: 20px 0
+	color: #000
+
+.location-company
+	font-size: 14px
+	color: #000
+	i
+		font-size: 15px
+		color: $main-color
+
+.comments
+	padding-left: 15px
+
+.credit-card
+	background: url(../img/autoshop/credit-card.png)
+	min-width: 55px
+	min-height: 55px
+	background-position: center center
+	background-repeat: no-repeat
+	position: absolute
+	top: -27px
+	right: 90px
+
+.discounts-img
+	min-height: 70px
+	min-width: 70px
+	position: absolute
+	top: -35px
+	right: 10px
+
+.discounts5 
+	background: url(../img/autoshop/5.png)
+	position: center center
+	background-repeat: no-repeat
+
+.discounts3
+	background: url(../img/autoshop/3.png)
+	position: center center
+	background-repeat: no-repeat
+
+.discounts10 
+	background: url(../img/autoshop/10.png)
+	position: center center
+	background-repeat: no-repeat
+
+.autoshop-item-img
+	min-width: 270px
+	min-height: 170px
+
+.automalyar .autoshop-item-img
+	background: url(../img/autoshop/automalyar.png)
+	background-repeat: no-repeat
+	background-position: center center
+
+.autozapchasty .autoshop-item-img
+	background: url(../img/autoshop/autozapchasty-img.png)
+	background-repeat: no-repeat
+	background-position: center center
+
+.shinniy-center .autoshop-item-img
+	background: url(../img/autoshop/shinniy-center-img.png)
+	background-repeat: no-repeat
+	background-position: center center
+
+.autobaza .autoshop-item-img
+	background: url(../img/autoshop/autobaza-img.png)
+	background-repeat: no-repeat
+	background-position: center center
+
+.get-card
+	padding-top: 70px
+	text-align: center
+	a
+		display: inline-block
+		text-decoration: none
+		color: #fff
+		font-weight: 700
+		font-size: 14px
+		background: $main-color
+		border: 1px solid $main-color
+		padding: 15px 35px
+		&:hover
+			transition: 0.3s
+			background: rgba(0, 0, 0, 0)
+			color: #000
+
+//Autoshope-map
+
+.autoshop-map
+	iframe
+		display: block
+	hr
+		margin-bottom: 20px
+
+.map-h
+	font-weight: 800
+	font-size: 24px
+	margin: 60px 0 20px 0
+	text-align: center
+	text-transform: uppercase
+
+.map-autoshop
+	padding-top: 40px
+
+//Text-autoshop
+
+.text-autoshop
+	padding: 100px 20px 80px 20px
+	p
+		font-size: 14px
+		line-height: 30px
+
+.autoshop-text-h
+	font-size: 21px
+	font-weight: 900
+	margin-bottom: 35px
+
+/************* PAGE AUTOSHOP END *************/
+
+
+/************* PAGE CARD *************/
+
+.page-h
+	font-weight: 900
+	font-size: 33px
+	margin: 20px 0 30px 0
+
+.take-card
+	padding: 40px 20px 50px 20px
+	background: #f5f5f5
+.way
+	display: flex
+	a
+		position: relative
+		padding: 0 10px
+		display: block
+		color: $main-color
+		font-size: 14px
+		&:hover
+			text-decoration: none
+		&:first-child::after
+			content: ""
+			position: absolute
+			display: inline-block
+			width: 1px
+			height: 100%
+			top: 50%
+			right: 0
+			transform: translateY(-50%)
+			background: #c5c5c5
+		&:last-child
+			color: #929292
+			text-decoration: none
+
+.card-company-line
+	display: flex
+	flex-wrap: wrap
+	margin-bottom: 30px
+
+.card-item
+	display: flex
+	a
+		color: $main-color
+		font-size: 14px
+		display: inline-block
+		margin-top: 15px
+		&:hover
+			text-decoration: none
+
+.card-item-img
+	min-width: 190px
+	min-height: 130px
+	margin-right: 20px
+
+.card-automalyar .card-item-img
+	background: url(../img/card/automalyar.png)
+	background-repeat: no-repeat
+	background-position: center center
+	background-color: #fff
+
+.card-shinniy-center .card-item-img
+	background: url(../img/card/shinniy-center.png)
+	background-repeat: no-repeat
+	background-position: center center
+	background-color: #fff
+
+.card-autozapchasti .card-item-img
+	background: url(../img/card/autozapchasti.png)
+	background-repeat: no-repeat
+	background-position: center center
+	background-color: #fff
+
+.card-autobaza .card-item-img
+	background: url(../img/card/autobaza.png)
+	background-repeat: no-repeat
+	background-position: center center
+	background-color: #fff
+
+.card-item-content
+	padding: 20px
+	margin-right: 45px
+	min-width: 257px
+
+/************* PAGE CARD END *************/
+
+
+/************* PAGE CATALOGUE *************/
+
+.catalogue-top
+	background: #f5f5f5
+	padding: 30px 20px 90px 20px
+
+.catalogue-company
+	display: flex
+	flex-wrap: wrap
+	min-width: 250px
+	justify-content: space-between
+	align-items: flex-start
+
+.flex-col
+	display: flex
+	flex-wrap: wrap
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	width: 30%
+	min-width: 250px
+	padding-left: 10px
+
+.catalogue-item
+	display: flex
+	align-items: center
+	background: #fff
+	width: 100%
+	margin-bottom: 10px
+	text-decoration: none
+	color: #000
+	&:hover
+		background: $main-color
+		transition: 0.3s
+		color: #fff
+
+.catalogue-item-img
+	min-width: 70px
+	min-height: 70px
+
+.catalogue-item-name
+	font-size: 16px
+	font-weight: 500
+	padding-left: 25px
+	text-transform: uppercase
+	line-height: 20px
+
+.flex-line
+	display: flex
+	justify-content: space-between
+
+.catalogue-burbershop .catalogue-item-img
+	background: url(../img/catalogue/barbershop.png)
+	background-position: center center
+	background-repeat: no-repeat
+	background-color: $main-color
+
+.catalogue-auto .catalogue-item-img
+	background: url(../img/catalogue/car.png)
+	background-position: center center
+	background-repeat: no-repeat
+	background-color: $main-color
+
+.catalogue-flowers .catalogue-item-img
+	background: url(../img/catalogue/flowers.png)
+	background-position: center center
+	background-repeat: no-repeat
+	background-color: $main-color
+
+.catalogue-products .catalogue-item-img
+	background: url(../img/catalogue/groceries.png)
+	background-position: center center
+	background-repeat: no-repeat
+	background-color: $main-color
+
+.catalogue-tire .catalogue-item-img
+	background: url(../img/catalogue/car-repair.png)
+	background-position: center center
+	background-repeat: no-repeat
+	background-color: $main-color
+
+.catalogue-cafe .catalogue-item-img
+	background: url(../img/catalogue/coffee-shop.png)
+	background-position: center center
+	background-repeat: no-repeat
+	background-color: $main-color
+
+.catalogue-construction .catalogue-item-img
+	background: url(../img/catalogue/brick.png)
+	background-position: center center
+	background-repeat: no-repeat
+	background-color: $main-color
+
+.catalogue-ritual .catalogue-item-img
+	background: url(../img/catalogue/coffin.png)
+	background-position: center center
+	background-repeat: no-repeat
+	background-color: $main-color
+
+.catalogue-dentists .catalogue-item-img
+	background: url(../img/catalogue/dental-care.png)
+	background-position: center center
+	background-repeat: no-repeat
+	background-color: $main-color
+
+.catalogue-sto .catalogue-item-img
+	background: url(../img/catalogue/tire.png)
+	background-position: center center
+	background-repeat: no-repeat
+	background-color: $main-color
+
+.catalogue-advertising .catalogue-item-img
+	background: url(../img/catalogue/megaphone.png)
+	background-position: center center
+	background-repeat: no-repeat
+	background-color: $main-color
+
+.catalogue-tourism .catalogue-item-img
+	background: url(../img/catalogue/sunset.png)
+	background-position: center center
+	background-repeat: no-repeat
+	background-color: $main-color
+
+.catalogue-veterinarian .catalogue-item-img
+	background: url(../img/catalogue/pet.png)
+	background-position: center center
+	background-repeat: no-repeat
+	background-color: $main-color
+
+.catalogue-furniture .catalogue-item-img
+	background: url(../img/catalogue/livingroom.png)
+	background-position: center center
+	background-repeat: no-repeat
+	background-color: $main-color
+
+.catalogue-holiday .catalogue-item-img
+	background: url(../img/catalogue/confetti.png)
+	background-position: center center
+	background-repeat: no-repeat
+	background-color: $main-color
+
+.catalogue-technique .catalogue-item-img
+	background: url(../img/catalogue/cms.png)
+	background-position: center center
+	background-repeat: no-repeat
+	background-color: $main-color
+
+.catalogue-beauty .catalogue-item-img
+	background: url(../img/catalogue/make-up.png)
+	background-position: center center
+	background-repeat: no-repeat
+	background-color: $main-color
+
+.catalogue-household .catalogue-item-img
+	background: url(../img/catalogue/cleaning.png)
+	background-position: center center
+	background-repeat: no-repeat
+	background-color: $main-color
+
+.catalogue-painting .catalogue-item-img
+	background: url(../img/catalogue/paint.png)
+	background-position: center center
+	background-repeat: no-repeat
+	background-color: $main-color
+
+/************* PAGE CATALOGUE END *************/
+
+
+/************* PAGE CABINET *************/
+
+.content-cabinet
+	padding: 35px 20px 70px 20px
+	background: #f5f5f5
+
+.cabinet-flex
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	align-items: flex-start
+
+.cabinet-sidebar
+	background: #fff
+	li
+		position: relative
+		display: flex
+		align-items: center
+		&:hover a
+			color: $main-color
+		&:hover .triangle-right
+			display: block
+	a
+		display: block
+		width: 100%
+		padding: 15px 25px
+		text-decoration: none
+		color: #000
+		font-weight: 700
+		font-size: 16px
+	i
+		color: $main-color
+		position: absolute
+		left: 0
+		height: 100%
+
+.triangle-right
+	width: 0
+	height: 0
+	position: absolute
+	border-top: 17px solid transparent
+	border-left: 7px solid red
+	border-bottom: 17px solid transparent
+	display: none
+
+
+.personality
+	flex-grow: 1
+	margin-left: 50px
+
+.personality-info
+	display: flex
+	align-items: center
+	span
+		font-size: 13px
+		color: #6b6b6b
+	a
+		font-size: 13px
+		color: $main-color
+		margin-left: 10px
+		&:hover
+			text-decoration: none
+	.personality-name
+		font-size: 20px
+		text-transform: uppercase
+		font-weight: 500
+		color: #000
+
+//Nav mobile
+.cabinet-nav-mobile
+	width: 100%
+	background: #fff
+	margin-top: 60px
+	display: none
+	margin: 0 auto
+	border-bottom: 2px solid #d2d2d2
+	ul
+		display: flex
+	a
+		padding: 15px 25px
+		display: inline-block
+		text-decoration: none
+		color: #000
+		padding: 15px 25px
+		font-weight: 700
+		font-size: 16px
+		position: relative
+		&:nth-child(1):after
+			content: ''
+			display: inline-block
+			width: 1px
+			height: 50%
+			background: #d2d2d2
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			right: 0
+		// &:last-child:after
+		// 	display: none
+		
+			
+//Nav mobile End
+
+.cabinet-fill-profile
+	padding-top: 10px
+
+.personality-img
+	min-width: 80px
+	min-height: 80px
+	border-radius: 50%
+	background: url(../img/cabinet/personal.png)
+	background-position: center center
+	background-repeat: no-repeat
+	margin-right: 20px
+
+.selected-companies
+	background: #fff
+	padding: 30px
+	margin-top: 20px
+
+.line-one
+	margin-bottom: 70px
+
+.selected-companies_h
+	font-size: 16px
+	text-transform: uppercase
+	border-bottom: 2px solid #d2d2d2
+	font-weight: 500
+	padding-bottom: 20px
+	margin-bottom: 60px
+
+.selected-flex
+	display: flex
+	justify-content: space-around
+
+.selected-companies-item
+	display: flex
+	position: relative
+	.name-company-item
+		font-size: 16px
+		margin: 10px 0
+	a
+		color: $main-color
+		font-size: 14px
+		display: inline-block
+		margin-top: 10px
+		&:hover
+			text-decoration: none
+
+.selected-companies-img
+	min-height: 100px
+	min-width: 150px
+	margin-right: 20px
+
+.selected-automalyar .selected-companies-img
+	background: url(../img/autoshop/automalyar.png)
+	background-position: center center
+	background-repeat: no-repeat
+	background-size: contain
+
+.selected-companies-discount
+	min-height: 50px
+	min-width: 50px
+	background: url(../img/autoshop/5.png)
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: contain
+	position: absolute
+	left: 0
+	top: -25px
+
+/************* PAGE CABINET END *************/
+
+
+/************* PAGE COMPANY *************/
+
+.way-company
+	margin-top: 30px
+	a
+		&:nth-child(2):after
+			content: ""
+			position: absolute
+			display: inline-block
+			width: 1px
+			height: 100%
+			top: 50%
+			right: 0
+			transform: translateY(-50%)
+			background: #c5c5c5
+		&:nth-child(3):after
+			content: ""
+			position: absolute
+			display: inline-block
+			width: 1px
+			height: 100%
+			top: 50%
+			right: 0
+			transform: translateY(-50%)
+			background: #c5c5c5
+
+.company-top
+	position: relative
+
+.company-select
+	background: #fff
+	position: absolute
+	bottom: 30px
+	right: 0
+	padding: 40px
+
+.company-select-flex
+	display: flex
+	flex-wrap: wrap
+
+.company-select-img
+	min-width: 230px
+	min-height: 215px
+	background: url(../img/company/workers.png)
+	background-position: center center
+	background-repeat: no-repeat
+	position: relative
+
+.company-select-discount
+	min-width: 80px
+	min-height: 80px
+	background: url(../img/autoshop/5.png)
+	background-position: center center
+	background-repeat: no-repeat
+	position: absolute
+	top: -40px
+	left: -40px
+
+.company-select-card
+	min-width: 50px
+	min-height: 60px
+	background: url(../img/autoshop/credit-card.png)
+	background-position: center center
+	background-repeat: no-repeat
+	background-size: contain
+	position: absolute
+	top: -25px
+	left: 50px
+
+.company-contacts
+	margin-left: 40px
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	// align-items: center
+	p
+		color: #636363
+		font-size: 16px
+		margin-top: 10px
+
+.company-location
+	line-height: 22px
+
+.company-location-h,
+.company-phone-h,
+.company-time-h
+	font-size: 18px
+	font-weight: 800
+	position: relative
+	i
+		position: absolute
+		color: $main-color
+		font-size: 12px
+		top: 50%
+		transform: translateY(-50%)
+		left: -25px
+
+.company-location,
+.company-phone,
+.company-time
+	margin-top: 15px
+
+.company-select-btn
+	text-align: center
+	padding-top: 40px
+	a
+		color: #fff
+		background: $main-color
+		border: 1px solid $main-color
+		padding: 15px 30px
+		text-decoration: none
+		font-size: 16px
+		font-weight: 600
+		&:hover
+			transition: 0.3s
+			background: rgba(0, 0, 0, 0)
+			color: #000
+
+//About Company
+.about-company
+	padding: 70px 20px 50px 20px
+	a
+		text-decoration: none
+		color: #000
+		&:before
+			content: '>'
+			margin-right: 20px
+		&:hover
+			transition: 0.3s
+			color: $main-color
+	span
+		font-size: 16px
+		font-weight: 600
+		margin-bottom: 20px
+
+.company-h
+	color: #6b6b6b
+	font-size: 20px
+	margin-bottom: 25px
+	font-weight: 600
+
+.about-company-content
+	background: #f5f5f5
+	display: flex
+	// flex-wrap: wrap
+	justify-content: space-between
+	padding: 30px 70px 70px 30px
+	hr
+		position: relative
+		margin: 20px 0
+		&:before
+			content: ''
+			display: inline-block
+			height: 6px
+			background: $main-color
+			width: 60px
+			position: absolute
+			left: -5px
+			top: 50%
+			transform: translateY(-50%)
+
+.amenities
+	margin-right: 50px
+	width: 500px
+
+.amenities-list
+	display: flex
+	// flex-wrap: wrap
+	ul
+		margin-right: 40px
+	li
+		padding: 10px 0
+
+.about-amenities-info
+	p
+		margin-bottom: 30px
+		line-height: 30px
+		color: #403f3f
+
+//Company Comments
+
+.company-comments
+	padding-bottom: 60px
+
+.company-comments-content
+	padding: 30px
+	background: #f5f5f5
+	hr
+		margin: 30px 0
+
+.top-star
+	color: #ffcc00
+	font-size: 21px
+	margin: 0 10px
+
+.assessment-span
+	font-size: 18px
+	color: #7b7b7b
+	text-transform: uppercase
+	margin-right: 15px
+
+.assessment-company
+	font-weight: 800
+	font-size: 21px
+	color: #000
+
+.leave-review
+	padding: 15px 30px
+	margin-left: 15px
+	background: $main-color
+	border: 1px solid $main-color
+	color: #fff
+	text-decoration: none
+	font-weight: 600
+	font-size: 14px
+	&:hover
+		transition: 0.3s
+		background: rgba(0, 0, 0, 0)
+		color: #000
+
+.post-comments
+	display: flex
+	margin: 30px 0
+	p
+		font-weight: 300
+		font-size: 14px
+		line-height: 25px
+		margin-top: 15px
+	span 
+		min-width: 110px
+		margin-right: 30px
+
+.post-comments .stars-mobile
+	display: none
+	color: #ffcc00
+	
+.comment-name
+	font-weight: 800
+	font-size: 18px
+
+.more-comments
+	text-align: center
+	a
+		color: $main-color
+		text-decoration: none
+		border-bottom: 1px solid $main-color
+		&:hover
+			border-bottom: none
+	i
+		display: inline-block
+		margin-bottom: -5px
+		margin-left: 5px
+
+.more-comments
+	text-align: center
+	a
+		color: $main-color
+		text-decoration: none
+		font-size: 14px
+		border-bottom: 1px solid $main-color
+		&:hover
+			text-decoration: none
+			border-bottom: none
+
+//Company Foto
+
+.slider-item
+	max-width: 250px
+	min-height: 250px
+	margin: 20px
+	overflow: hidden
+	position: relative
+	img
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translateX(-50%)translateY(-50%)
+
+.slider-wrap
+	width: 77%
+	overflow: hidden
+	margin: 0 auto
+	position: relative
+
+.company-sl-next,
+.company-sl-prev
+	position: absolute
+	background: #fff
+	border-radius: 50%
+	padding: 20px 28px
+	top: 50%
+	transform: translateY(-50%)
+	z-index: 2
+	cursor: pointer
+	&:hover i
+		color: $main-color
+	i
+		font-size: 30px
+
+.company-sl-next
+	right: -20px
+
+.company-sl-prev
+	left: -20px
+
+/************* PAGE COMPANY END *************/
+
+
+/************** MEDDIA **************/
+@media screen and (max-width: 1105px) 
+	.organizations-item 
 		min-height: 100px
 		min-width: 200px
+	
 
-	.personal-card-img
+	.personal-card-img 
 		min-width: 500px
 		min-height: 450px
 		top: 0
 		right: 0
-@media screen and (max-width: 1005px)
-	.head-discounts
-		display: none
+	
 
-	.footer-phones
-		display: none
+	.selected-companies-item 
+		margin-top: 30px
+	
 
-	.organizations-item
+	/*CABINET M*/
+	.line-one 
+		margin: 0
+	
+
+	.selected-companies 
+		margin-top: 0
+	
+
+	.personality-info 
+		margin-bottom: 20px
+	
+
+	.cabinet-sidebar 
+		display: none
+	
+
+	.cabinet-nav-mobile 
+		display: block
+	
+	/*CABINET END M*/
+
+	/*PAGE CARD M*/
+	.card-company-line
+		margin-bottom: 0
+		justify-content: center
+	.card-item
+		margin: 15px 0
+		flex-wrap: wrap
+	/*PAGE CARD END M*/
+
+	/*PAGE AUTOSHOP M*/
+	.flex-autoshop-list
+		flex-wrap: wrap
+	.autoshop-item
+		margin: 20px
+	.autoshop-all-company
+		margin-top: 20px
+		line-height: 20px
+	/*PAGE AUTOSHOP END M*/
+  
+@media screen and (max-width: 1005px) 
+	.head-discounts 
+		display: none
+	
+	.footer-phones 
+		display: none
+	
+	.organizations-item 
 		min-height: 60px
 		min-width: 160px
-		img
-			margin-right: 10px
-		p
-			font-size: 12px
+	
+	.organizations-item img 
+		margin-right: 10px
+	
+	.organizations-item p 
+		font-size: 12px
+	
+	.personal-card .personal-card-h 
+		font-size: 30px
+	
+	.slider-wrap .company-sl-next,
+	.slider-wrap .company-sl-prev 
+		display: none !important
 
-	.personal-card
-		.personal-card-h
-			font-size: 30px
+	/*PAGE CATALOGUE M*/
+	.catalogue-item-name
+		font-size: 12px
+	/*PAGE CATALOGUE M END*/
+	
 
-@media screen and (max-width: 850px)
-	.col-organizations
+	/*PAGE COMPANY M*/
+	.amenities-list
+		flex-wrap: wrap
+	
+
+	.about-amenities-info 
+		margin-top: 30px
+	
+
+	.content-company .about-company-content 
+		padding: 20px
+	
+
+	.content-company .about-company 
+		padding: 30px 0
+	
+	/*PAGE COMPANY M END*/
+
+
+	/*PAGE CABINET M*/
+	.selected-flex 
+		flex-wrap: wrap
+	
+	/*PAGE CABINET M END*/
+
+
+@media screen and (max-width: 850px) 
+	.col-organizations 
 		border: none
 		width: 100%
-	.organizations-item
+	
+	.organizations-item 
 		width: 100%
-		&:last-child::after
-			display: inline-block
-		&::after
-			width: 50%
-	.mobile-none
+	
+	.organizations-item:last-child::after 
+		display: inline-block
+	
+	.organizations-item::after 
+		width: 50%
+	
+	.mobile-none 
 		display: none
-
-	.flex-personal-card
+	
+	.flex-personal-card 
 		justify-content: center
-	.personal-card
-		.personal-card-img
-			display: none
-	.personal-card-left
+	
+	.personal-card .personal-card-img 
+		display: none
+	
+	.personal-card-left 
 		text-align: center
-@media screen and (max-width: 800px)
+
+@media screen and (max-width: 800px) 
 	.logo-name,
-	.header-contacts
+	.header-contacts 
 		justify-content: center
 		width: 100%
 		margin-top: 25px
-
-	.header-callback
+	
+	.header-callback 
 		margin: 0 auto
 		margin-top: 25px
-
-	.header-search-form
+	
+	.header-search-form 
 		display: none
-
-	.card-operation-right
+	
+	.card-operation-right 
 		padding-left: 0
 		margin-top: 30px
-
-	.sub-info-footer
+	
+	.sub-info-footer 
 		display: none
-
-	.card-operation
-		img
-			max-width: 300px
-
-	.window-registration
+	
+	.card-operation img 
+		max-width: 300px
+	
+	.window-registration 
 		width: 400px
-		input
-			min-height: 30px
-			font-size: 12px
-
-	.log-in
+	
+	.window-registration input 
+		min-height: 30px
+		font-size: 12px
+	
+	.log-in 
 		width: 350px
-		.log-in-number,
-		.wrap-password-window
-			min-height: 30px
-			font-size: 12px
-	.wrap-password-window
-		a
-			padding-top: 8px
-			font-size: 10px
 
-@media screen and (max-width: 550px)
-	.top-menu
+	.log-in .log-in-number,
+	.log-in .wrap-password-window 
+		min-height: 30px
+		font-size: 12px
+	
+	.wrap-password-window a 
+		padding-top: 8px
+		font-size: 10px
+	
+	/*PAGE COMPANY M*/
+	.company-top script 
+		max-height: 40px !important
+	
+
+	.company-top .company-select 
+		position: static
+	
+
+	.company-select-flex 
+		justify-content: center
+	
+
+	.about-company-content 
+		flex-wrap: wrap
+	
+
+	.amenities 
+		min-width: 100%
+	
+
+	.company-h 
+		text-align: center
+	
+	/*PAGE COMPANY M END*/
+
+	/*PAGE AUTOSHOP M*/
+	.wrap-autoshop-list
+		flex-wrap: wrap
+		justify-content: center
+	/*PAGE AUTOSHOP END M*/
+
+	/*PAGE CATALOGUE M*/
+	.catalogue-company
+		flex-direction: column
+		justify-content: center
+		align-items: center
+	.catalogue-item-name
+		font-size: 16px
+	.flex-col
+		min-width: 300px
+	.text-autoshop
+		padding-top: 40px
+	/*PAGE CATALOGUE M END*/
+
+
+
+@media screen and (max-width: 768px)
+	/*CABINET*/
+	.personality 
+		margin-left: 0
+    
+
+	.cabinet-nav-mobile 
+		border: none
+		ul 
+			flex-direction: column
+		
+		a:nth-child(1):after
+			display: none
+			
+		li 
+			border-bottom: 1px solid #d2d2d2
+			text-align: center
+        
+  /*CABINET END*/
+
+@media screen and (max-width: 550px) 
+	.top-menu 
 		justify-content: center
 		flex-direction: column
 		align-items: stretch
-	.item-menu-mobile
+	
+	.item-menu-mobile 
 		display: block
-	.item-menu
+	
+	.item-menu 
 		display: none
-
-	.personal-card
+	
+	.personal-card 
 		min-height: 200px
-
-	.flex-personal-card
+	
+	.flex-personal-card 
 		min-height: 200px
-
-	.personal-card-left
-		.personal-card-h
-			font-size: 20px
-			line-height: 30px
-		p
-			font-size: 15px
-			margin: 15px 0
-
-	.card-operation-img
+	
+	.personal-card-left .personal-card-h 
+		font-size: 20px
+		line-height: 30px
+	
+	.personal-card-left p 
+		font-size: 15px
+		margin: 15px 0
+	
+	.card-operation-img 
 		min-height: 200px
 		min-width: 300px
-
-	.footer-conect
+	
+	.footer-conect 
 		display: none
-	.flex-footer
+	
+	.flex-footer 
 		justify-content: center
-	.social-links
+	
+	.social-links 
 		text-align: center
-
-	.window-registration
+	
+	.window-registration 
 		width: 300px
+	
 
-@media screen and (max-width: 400px)
-	.personal-card
+	.way 
+		flex-wrap: wrap
+	
+
+	.way a 
+		margin: 10px 0
+	
+
+	/*PAGE COMPANY M*/
+	.leave-review 
+		display: block
+		margin: 0 auto
+		max-width: 185px
+	
+
+	.top-star 
+		margin: 0
+	
+
+	.assessment-company 
+		display: block
+		margin-bottom: 25px
+		text-align: center
+	
+
+	.assessment-span 
+		display: none
+	
+
+	.post-comments .stars 
+		display: none
+	
+
+	.post-comments .stars-mobile 
+		display: inline
+
+	/*PAGE COMPANY END M*/
+
+	/*PAGE CABINET M*/
+	.selected-companies_h 
+		margin-bottom: 0
+	
+
+	.selected-companies-item 
+		flex-direction: column
+		margin-top: 50px
+		border: 1px solid #eee
+		padding: 20px
+	
+	/*PAGE CABINET END M*/
+
+	/*PAGE CARD M*/
+	.card-item
+		justify-content: center
+		border: 1px solid #b2b2b2
+		display: inline-block
+		padding: 20px
+	.card-item-img
+		margin: 0
+	.card-item-content
+		text-align: center
+		margin: 0
+	/*PAGE CARD END M*/
+
+	/*PAGE AUTOSHOP M*/
+	.filter-rating
+		display: block
+		margin-bottom: 20px
+	/*PAGE AUTOSHOP END M*/
+
+@media screen and (max-width: 400px) 
+	.personal-card 
 		min-height: 200px
-	.personal-card-left
-		h1
-			font-size: 20px
-			margin: 0
-		p
-			font-size: 12px
+	
+	.personal-card-left h1 
+		font-size: 20px
+		margin: 0
+	
+	.personal-card-left p 
+		font-size: 12px
+	
+	.organizations-item:after 
+		width: 100%
 
-	.organizations-item
-		&:after
-			width: 100%
+	/*PAGE CATALOGUE M*/
+	.catalogue-item-name
+		font-size: 12px
+	.flex-col
+		min-width: 250px
+	/*PAGE CATALOGUE M*/
+
+	/*PAGE COMPANY M*/
+	.company-select-btn a 
+		font-size: 14px
+		padding: 10px 20px
+	
+	/*PAGE COMPANY M END*/
+
+/************** MEDDIA END **************/
 
 //FONTS
 @import "../fonts/font.scss"

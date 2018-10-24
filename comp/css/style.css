@@ -147,7 +147,7 @@ html {
 .header-contacts-numbers .order-call {
   font-size: 14px;
   margin-left: 13px;
-  color: #e41e25;
+  color: #cf0006;
 }
 
 .header-contacts-numbers .order-call:hover {
@@ -164,7 +164,7 @@ html {
 }
 
 .header-contacts-numbers .phones span {
-  color: #e41e25;
+  color: #cf0006;
   font-weight: 900;
 }
 
@@ -184,17 +184,17 @@ html {
 }
 
 .header-callback i {
-  color: #e41e25;
+  color: #cf0006;
 }
 
 .header-callback .header-callback-inp {
   display: block;
-  background: #e41e25;
+  background: #cf0006;
   color: white;
   font-weight: 700;
   font-size: 14px;
   padding: 15px 15px;
-  border: 1px solid #e41e25;
+  border: 1px solid #cf0006;
   margin-top: 15px;
   outline: none;
   font-family: "Proxima Nova", "Open Sans", serif;
@@ -315,7 +315,7 @@ html {
 }
 
 .header-search-form i {
-  color: #e41e25;
+  color: #cf0006;
   font-size: 17px;
 }
 
@@ -325,8 +325,8 @@ html {
   position: absolute;
   z-index: 2;
   left: 0;
-  width: 2px;
-  height: 60%;
+  min-width: 2px;
+  min-height: 60%;
   background: #4c4c4c;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -972,7 +972,1288 @@ footer {
 }
 
 /****** MODAL WINDOWS END ******/
-/*FONTS*/
+/************* PAGE-AUTOSHOP *************/
+.autoshop {
+  padding: 40px;
+  background: #f5f5f5;
+}
+
+.autoshop h1 {
+  font-size: 33px;
+  margin: 30px 0;
+  font-weight: 900;
+}
+
+.autoshop .way {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.autoshop .way a {
+  position: relative;
+  padding: 0 10px;
+  display: block;
+  color: #cf0006;
+  font-size: 14px;
+}
+
+.autoshop .way a:hover {
+  text-decoration: none;
+}
+
+.autoshop .way a:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 1px;
+  height: 100%;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: #c5c5c5;
+}
+
+.autoshop .way a:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 1px;
+  height: 100%;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: #c5c5c5;
+}
+
+.autoshop .way a:last-child {
+  color: #929292;
+}
+
+.filter {
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.filter select {
+  max-width: 100px;
+  padding: 7px;
+}
+
+.filter-rating {
+  color: #929292;
+  margin-right: 30px;
+}
+
+.filter-rating a {
+  color: #000;
+}
+
+.filter-rating a:hover {
+  text-decoration: none;
+}
+
+.autoshop-filter-city {
+  color: #929292;
+  margin-right: 8px;
+}
+
+.autoshop-all-company a {
+  color: #cf0006;
+}
+
+.autoshop-all-company a:hover {
+  text-decoration: none;
+}
+
+.flex-autoshop-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 90px;
+}
+
+.wrap-autoshop-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+.autoshop-item {
+  position: relative;
+  background: #fff;
+  display: block;
+  text-decoration: none;
+  max-width: 270px;
+  min-height: 320px;
+  margin: 0 10px;
+}
+
+.autoshop-item:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  top: -30px;
+}
+
+.stars {
+  color: #ffcc00;
+  margin-bottom: 20px;
+}
+
+.autozapchasty .stars {
+  color: #d6d6d6;
+}
+
+.autoshop-item-descr {
+  border-top: 1px solid #c5c5c5;
+  padding: 20px;
+}
+
+.name-company-item {
+  font-size: 18px;
+  font-weight: 900;
+  margin: 20px 0;
+  color: #000;
+}
+
+.location-company {
+  font-size: 14px;
+  color: #000;
+}
+
+.location-company i {
+  font-size: 15px;
+  color: #cf0006;
+}
+
+.comments {
+  padding-left: 15px;
+}
+
+.credit-card {
+  background: url(../img/autoshop/credit-card.png);
+  min-width: 55px;
+  min-height: 55px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -27px;
+  right: 90px;
+}
+
+.discounts-img {
+  min-height: 70px;
+  min-width: 70px;
+  position: absolute;
+  top: -35px;
+  right: 10px;
+}
+
+.discounts5 {
+  background: url(../img/autoshop/5.png);
+  position: center center;
+  background-repeat: no-repeat;
+}
+
+.discounts3 {
+  background: url(../img/autoshop/3.png);
+  position: center center;
+  background-repeat: no-repeat;
+}
+
+.discounts10 {
+  background: url(../img/autoshop/10.png);
+  position: center center;
+  background-repeat: no-repeat;
+}
+
+.autoshop-item-img {
+  min-width: 270px;
+  min-height: 170px;
+}
+
+.automalyar .autoshop-item-img {
+  background: url(../img/autoshop/automalyar.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.autozapchasty .autoshop-item-img {
+  background: url(../img/autoshop/autozapchasty-img.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.shinniy-center .autoshop-item-img {
+  background: url(../img/autoshop/shinniy-center-img.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.autobaza .autoshop-item-img {
+  background: url(../img/autoshop/autobaza-img.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.get-card {
+  padding-top: 70px;
+  text-align: center;
+}
+
+.get-card a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  background: #cf0006;
+  border: 1px solid #cf0006;
+  padding: 15px 35px;
+}
+
+.get-card a:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: rgba(0, 0, 0, 0);
+  color: #000;
+}
+
+.autoshop-map iframe {
+  display: block;
+}
+
+.autoshop-map hr {
+  margin-bottom: 20px;
+}
+
+.map-h {
+  font-weight: 800;
+  font-size: 24px;
+  margin: 60px 0 20px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.map-autoshop {
+  padding-top: 40px;
+}
+
+.text-autoshop {
+  padding: 100px 20px 80px 20px;
+}
+
+.text-autoshop p {
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.autoshop-text-h {
+  font-size: 21px;
+  font-weight: 900;
+  margin-bottom: 35px;
+}
+
+/************* PAGE AUTOSHOP END *************/
+/************* PAGE CARD *************/
+.page-h {
+  font-weight: 900;
+  font-size: 33px;
+  margin: 20px 0 30px 0;
+}
+
+.take-card {
+  padding: 40px 20px 50px 20px;
+  background: #f5f5f5;
+}
+
+.way {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.way a {
+  position: relative;
+  padding: 0 10px;
+  display: block;
+  color: #cf0006;
+  font-size: 14px;
+}
+
+.way a:hover {
+  text-decoration: none;
+}
+
+.way a:first-child::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 1px;
+  height: 100%;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: #c5c5c5;
+}
+
+.way a:last-child {
+  color: #929292;
+  text-decoration: none;
+}
+
+.card-company-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.card-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card-item a {
+  color: #cf0006;
+  font-size: 14px;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.card-item a:hover {
+  text-decoration: none;
+}
+
+.card-item-img {
+  min-width: 190px;
+  min-height: 130px;
+  margin-right: 20px;
+}
+
+.card-automalyar .card-item-img {
+  background: url(../img/card/automalyar.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #fff;
+}
+
+.card-shinniy-center .card-item-img {
+  background: url(../img/card/shinniy-center.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #fff;
+}
+
+.card-autozapchasti .card-item-img {
+  background: url(../img/card/autozapchasti.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #fff;
+}
+
+.card-autobaza .card-item-img {
+  background: url(../img/card/autobaza.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #fff;
+}
+
+.card-item-content {
+  padding: 20px;
+  margin-right: 45px;
+  min-width: 257px;
+}
+
+/************* PAGE CARD END *************/
+/************* PAGE CATALOGUE *************/
+.catalogue-top {
+  background: #f5f5f5;
+  padding: 30px 20px 90px 20px;
+}
+
+.catalogue-company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-width: 250px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.flex-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30%;
+  min-width: 250px;
+  padding-left: 10px;
+}
+
+.catalogue-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fff;
+  width: 100%;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+.catalogue-item:hover {
+  background: #cf0006;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #fff;
+}
+
+.catalogue-item-img {
+  min-width: 70px;
+  min-height: 70px;
+}
+
+.catalogue-item-name {
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 25px;
+  text-transform: uppercase;
+  line-height: 20px;
+}
+
+.flex-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.catalogue-burbershop .catalogue-item-img {
+  background: url(../img/catalogue/barbershop.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #cf0006;
+}
+
+.catalogue-auto .catalogue-item-img {
+  background: url(../img/catalogue/car.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #cf0006;
+}
+
+.catalogue-flowers .catalogue-item-img {
+  background: url(../img/catalogue/flowers.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #cf0006;
+}
+
+.catalogue-products .catalogue-item-img {
+  background: url(../img/catalogue/groceries.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #cf0006;
+}
+
+.catalogue-tire .catalogue-item-img {
+  background: url(../img/catalogue/car-repair.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #cf0006;
+}
+
+.catalogue-cafe .catalogue-item-img {
+  background: url(../img/catalogue/coffee-shop.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #cf0006;
+}
+
+.catalogue-construction .catalogue-item-img {
+  background: url(../img/catalogue/brick.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #cf0006;
+}
+
+.catalogue-ritual .catalogue-item-img {
+  background: url(../img/catalogue/coffin.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #cf0006;
+}
+
+.catalogue-dentists .catalogue-item-img {
+  background: url(../img/catalogue/dental-care.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #cf0006;
+}
+
+.catalogue-sto .catalogue-item-img {
+  background: url(../img/catalogue/tire.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #cf0006;
+}
+
+.catalogue-advertising .catalogue-item-img {
+  background: url(../img/catalogue/megaphone.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #cf0006;
+}
+
+.catalogue-tourism .catalogue-item-img {
+  background: url(../img/catalogue/sunset.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #cf0006;
+}
+
+.catalogue-veterinarian .catalogue-item-img {
+  background: url(../img/catalogue/pet.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #cf0006;
+}
+
+.catalogue-furniture .catalogue-item-img {
+  background: url(../img/catalogue/livingroom.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #cf0006;
+}
+
+.catalogue-holiday .catalogue-item-img {
+  background: url(../img/catalogue/confetti.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #cf0006;
+}
+
+.catalogue-technique .catalogue-item-img {
+  background: url(../img/catalogue/cms.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #cf0006;
+}
+
+.catalogue-beauty .catalogue-item-img {
+  background: url(../img/catalogue/make-up.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #cf0006;
+}
+
+.catalogue-household .catalogue-item-img {
+  background: url(../img/catalogue/cleaning.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #cf0006;
+}
+
+.catalogue-painting .catalogue-item-img {
+  background: url(../img/catalogue/paint.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #cf0006;
+}
+
+/************* PAGE CATALOGUE END *************/
+/************* PAGE CABINET *************/
+.content-cabinet {
+  padding: 35px 20px 70px 20px;
+  background: #f5f5f5;
+}
+
+.cabinet-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.cabinet-sidebar {
+  background: #fff;
+}
+
+.cabinet-sidebar li {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cabinet-sidebar li:hover a {
+  color: #cf0006;
+}
+
+.cabinet-sidebar li:hover .triangle-right {
+  display: block;
+}
+
+.cabinet-sidebar a {
+  display: block;
+  width: 100%;
+  padding: 15px 25px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.cabinet-sidebar i {
+  color: #cf0006;
+  position: absolute;
+  left: 0;
+  height: 100%;
+}
+
+.triangle-right {
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-top: 17px solid transparent;
+  border-left: 7px solid red;
+  border-bottom: 17px solid transparent;
+  display: none;
+}
+
+.personality {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-left: 50px;
+}
+
+.personality-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.personality-info span {
+  font-size: 13px;
+  color: #6b6b6b;
+}
+
+.personality-info a {
+  font-size: 13px;
+  color: #cf0006;
+  margin-left: 10px;
+}
+
+.personality-info a:hover {
+  text-decoration: none;
+}
+
+.personality-info .personality-name {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #000;
+}
+
+.cabinet-nav-mobile {
+  width: 100%;
+  background: #fff;
+  margin-top: 60px;
+  display: none;
+  margin: 0 auto;
+  border-bottom: 2px solid #d2d2d2;
+}
+
+.cabinet-nav-mobile ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cabinet-nav-mobile a {
+  padding: 15px 25px;
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  padding: 15px 25px;
+  font-weight: 700;
+  font-size: 16px;
+  position: relative;
+}
+
+.cabinet-nav-mobile a:nth-child(1):after {
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: 50%;
+  background: #d2d2d2;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0;
+}
+
+.cabinet-fill-profile {
+  padding-top: 10px;
+}
+
+.personality-img {
+  min-width: 80px;
+  min-height: 80px;
+  border-radius: 50%;
+  background: url(../img/cabinet/personal.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-right: 20px;
+}
+
+.selected-companies {
+  background: #fff;
+  padding: 30px;
+  margin-top: 20px;
+}
+
+.line-one {
+  margin-bottom: 70px;
+}
+
+.selected-companies_h {
+  font-size: 16px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #d2d2d2;
+  font-weight: 500;
+  padding-bottom: 20px;
+  margin-bottom: 60px;
+}
+
+.selected-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.selected-companies-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.selected-companies-item .name-company-item {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.selected-companies-item a {
+  color: #cf0006;
+  font-size: 14px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.selected-companies-item a:hover {
+  text-decoration: none;
+}
+
+.selected-companies-img {
+  min-height: 100px;
+  min-width: 150px;
+  margin-right: 20px;
+}
+
+.selected-automalyar .selected-companies-img {
+  background: url(../img/autoshop/automalyar.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.selected-companies-discount {
+  min-height: 50px;
+  min-width: 50px;
+  background: url(../img/autoshop/5.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  position: absolute;
+  left: 0;
+  top: -25px;
+}
+
+/************* PAGE CABINET END *************/
+/************* PAGE COMPANY *************/
+.way-company {
+  margin-top: 30px;
+}
+
+.way-company a:nth-child(2):after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 1px;
+  height: 100%;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: #c5c5c5;
+}
+
+.way-company a:nth-child(3):after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 1px;
+  height: 100%;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: #c5c5c5;
+}
+
+.company-top {
+  position: relative;
+}
+
+.company-select {
+  background: #fff;
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+  padding: 40px;
+}
+
+.company-select-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.company-select-img {
+  min-width: 230px;
+  min-height: 215px;
+  background: url(../img/company/workers.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.company-select-discount {
+  min-width: 80px;
+  min-height: 80px;
+  background: url(../img/autoshop/5.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -40px;
+  left: -40px;
+}
+
+.company-select-card {
+  min-width: 50px;
+  min-height: 60px;
+  background: url(../img/autoshop/credit-card.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: -25px;
+  left: 50px;
+}
+
+.company-contacts {
+  margin-left: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.company-contacts p {
+  color: #636363;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.company-location {
+  line-height: 22px;
+}
+
+.company-location-h,
+.company-phone-h,
+.company-time-h {
+  font-size: 18px;
+  font-weight: 800;
+  position: relative;
+}
+
+.company-location-h i,
+.company-phone-h i,
+.company-time-h i {
+  position: absolute;
+  color: #cf0006;
+  font-size: 12px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: -25px;
+}
+
+.company-location,
+.company-phone,
+.company-time {
+  margin-top: 15px;
+}
+
+.company-select-btn {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.company-select-btn a {
+  color: #fff;
+  background: #cf0006;
+  border: 1px solid #cf0006;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.company-select-btn a:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: rgba(0, 0, 0, 0);
+  color: #000;
+}
+
+.about-company {
+  padding: 70px 20px 50px 20px;
+}
+
+.about-company a {
+  text-decoration: none;
+  color: #000;
+}
+
+.about-company a:before {
+  content: '>';
+  margin-right: 20px;
+}
+
+.about-company a:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #cf0006;
+}
+
+.about-company span {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.company-h {
+  color: #6b6b6b;
+  font-size: 20px;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.about-company-content {
+  background: #f5f5f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 70px 70px 30px;
+}
+
+.about-company-content hr {
+  position: relative;
+  margin: 20px 0;
+}
+
+.about-company-content hr:before {
+  content: '';
+  display: inline-block;
+  height: 6px;
+  background: #cf0006;
+  width: 60px;
+  position: absolute;
+  left: -5px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.amenities {
+  margin-right: 50px;
+  width: 500px;
+}
+
+.amenities-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.amenities-list ul {
+  margin-right: 40px;
+}
+
+.amenities-list li {
+  padding: 10px 0;
+}
+
+.about-amenities-info p {
+  margin-bottom: 30px;
+  line-height: 30px;
+  color: #403f3f;
+}
+
+.company-comments {
+  padding-bottom: 60px;
+}
+
+.company-comments-content {
+  padding: 30px;
+  background: #f5f5f5;
+}
+
+.company-comments-content hr {
+  margin: 30px 0;
+}
+
+.top-star {
+  color: #ffcc00;
+  font-size: 21px;
+  margin: 0 10px;
+}
+
+.assessment-span {
+  font-size: 18px;
+  color: #7b7b7b;
+  text-transform: uppercase;
+  margin-right: 15px;
+}
+
+.assessment-company {
+  font-weight: 800;
+  font-size: 21px;
+  color: #000;
+}
+
+.leave-review {
+  padding: 15px 30px;
+  margin-left: 15px;
+  background: #cf0006;
+  border: 1px solid #cf0006;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.leave-review:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: rgba(0, 0, 0, 0);
+  color: #000;
+}
+
+.post-comments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px 0;
+}
+
+.post-comments p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 25px;
+  margin-top: 15px;
+}
+
+.post-comments span {
+  min-width: 110px;
+  margin-right: 30px;
+}
+
+.post-comments .stars-mobile {
+  display: none;
+  color: #ffcc00;
+}
+
+.comment-name {
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.more-comments {
+  text-align: center;
+}
+
+.more-comments a {
+  color: #cf0006;
+  text-decoration: none;
+  border-bottom: 1px solid #cf0006;
+}
+
+.more-comments a:hover {
+  border-bottom: none;
+}
+
+.more-comments i {
+  display: inline-block;
+  margin-bottom: -5px;
+  margin-left: 5px;
+}
+
+.more-comments {
+  text-align: center;
+}
+
+.more-comments a {
+  color: #cf0006;
+  text-decoration: none;
+  font-size: 14px;
+  border-bottom: 1px solid #cf0006;
+}
+
+.more-comments a:hover {
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.slider-item {
+  max-width: 250px;
+  min-height: 250px;
+  margin: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-item img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+
+.slider-wrap {
+  width: 77%;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+}
+
+.company-sl-next,
+.company-sl-prev {
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+  padding: 20px 28px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.company-sl-next:hover i,
+.company-sl-prev:hover i {
+  color: #cf0006;
+}
+
+.company-sl-next i,
+.company-sl-prev i {
+  font-size: 30px;
+}
+
+.company-sl-next {
+  right: -20px;
+}
+
+.company-sl-prev {
+  left: -20px;
+}
+
+/************* PAGE COMPANY END *************/
+/************** MEDDIA **************/
 @media screen and (max-width: 1105px) {
   .organizations-item {
     min-height: 100px;
@@ -984,6 +2265,52 @@ footer {
     top: 0;
     right: 0;
   }
+  .selected-companies-item {
+    margin-top: 30px;
+  }
+  /*CABINET M*/
+  .line-one {
+    margin: 0;
+  }
+  .selected-companies {
+    margin-top: 0;
+  }
+  .personality-info {
+    margin-bottom: 20px;
+  }
+  .cabinet-sidebar {
+    display: none;
+  }
+  .cabinet-nav-mobile {
+    display: block;
+  }
+  /*CABINET END M*/
+  /*PAGE CARD M*/
+  .card-company-line {
+    margin-bottom: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .card-item {
+    margin: 15px 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  /*PAGE CARD END M*/
+  /*PAGE AUTOSHOP M*/
+  .flex-autoshop-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .autoshop-item {
+    margin: 20px;
+  }
+  .autoshop-all-company {
+    margin-top: 20px;
+    line-height: 20px;
+  }
+  /*PAGE AUTOSHOP END M*/
 }
 
 @media screen and (max-width: 1005px) {
@@ -1006,6 +2333,36 @@ footer {
   .personal-card .personal-card-h {
     font-size: 30px;
   }
+  .slider-wrap .company-sl-next,
+  .slider-wrap .company-sl-prev {
+    display: none !important;
+  }
+  /*PAGE CATALOGUE M*/
+  .catalogue-item-name {
+    font-size: 12px;
+  }
+  /*PAGE CATALOGUE M END*/
+  /*PAGE COMPANY M*/
+  .amenities-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .about-amenities-info {
+    margin-top: 30px;
+  }
+  .content-company .about-company-content {
+    padding: 20px;
+  }
+  .content-company .about-company {
+    padding: 30px 0;
+  }
+  /*PAGE COMPANY M END*/
+  /*PAGE CABINET M*/
+  .selected-flex {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  /*PAGE CABINET M END*/
 }
 
 @media screen and (max-width: 850px) {
@@ -1083,6 +2440,85 @@ footer {
     padding-top: 8px;
     font-size: 10px;
   }
+  /*PAGE COMPANY M*/
+  .company-top script {
+    max-height: 40px !important;
+  }
+  .company-top .company-select {
+    position: static;
+  }
+  .company-select-flex {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about-company-content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .amenities {
+    min-width: 100%;
+  }
+  .company-h {
+    text-align: center;
+  }
+  /*PAGE COMPANY M END*/
+  /*PAGE AUTOSHOP M*/
+  .wrap-autoshop-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  /*PAGE AUTOSHOP END M*/
+  /*PAGE CATALOGUE M*/
+  .catalogue-company {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .catalogue-item-name {
+    font-size: 16px;
+  }
+  .flex-col {
+    min-width: 300px;
+  }
+  .text-autoshop {
+    padding-top: 40px;
+  }
+  /*PAGE CATALOGUE M END*/
+}
+
+@media screen and (max-width: 768px) {
+  /*CABINET*/
+  .personality {
+    margin-left: 0;
+  }
+  .cabinet-nav-mobile {
+    border: none;
+    /*CABINET END*/
+  }
+  .cabinet-nav-mobile ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cabinet-nav-mobile a:nth-child(1):after {
+    display: none;
+  }
+  .cabinet-nav-mobile li {
+    border-bottom: 1px solid #d2d2d2;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -1136,6 +2572,74 @@ footer {
   .window-registration {
     width: 300px;
   }
+  .way {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .way a {
+    margin: 10px 0;
+  }
+  /*PAGE COMPANY M*/
+  .leave-review {
+    display: block;
+    margin: 0 auto;
+    max-width: 185px;
+  }
+  .top-star {
+    margin: 0;
+  }
+  .assessment-company {
+    display: block;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  .assessment-span {
+    display: none;
+  }
+  .post-comments .stars {
+    display: none;
+  }
+  .post-comments .stars-mobile {
+    display: inline;
+  }
+  /*PAGE COMPANY END M*/
+  /*PAGE CABINET M*/
+  .selected-companies_h {
+    margin-bottom: 0;
+  }
+  .selected-companies-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 50px;
+    border: 1px solid #eee;
+    padding: 20px;
+  }
+  /*PAGE CABINET END M*/
+  /*PAGE CARD M*/
+  .card-item {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: 1px solid #b2b2b2;
+    display: inline-block;
+    padding: 20px;
+  }
+  .card-item-img {
+    margin: 0;
+  }
+  .card-item-content {
+    text-align: center;
+    margin: 0;
+  }
+  /*PAGE CARD END M*/
+  /*PAGE AUTOSHOP M*/
+  .filter-rating {
+    display: block;
+    margin-bottom: 20px;
+  }
+  /*PAGE AUTOSHOP END M*/
 }
 
 @media screen and (max-width: 400px) {
@@ -1152,8 +2656,23 @@ footer {
   .organizations-item:after {
     width: 100%;
   }
+  /*PAGE CATALOGUE M*/
+  .catalogue-item-name {
+    font-size: 12px;
+  }
+  .flex-col {
+    min-width: 250px;
+  }
+  /*PAGE CATALOGUE M*/
+  /*PAGE COMPANY M*/
+  .company-select-btn a {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+  /*PAGE COMPANY M END*/
 }
 
+/************** MEDDIA END **************/
 /* 300 */
 @font-face {
   font-family: 'Proxima Nova Lt';
