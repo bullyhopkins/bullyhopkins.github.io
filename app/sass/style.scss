@@ -1,0 +1,148 @@
+@import 'normalize.scss';
+
+#preloader {
+	background-color: #000;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	cursor: none;
+	overflow: hidden;
+	font-family: 'Montserrat';
+}
+
+.welcome {
+	color: #fff;
+	text-align: center;
+	font-size: 23px;
+	font-weight: 500;
+}
+
+.monro {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%)translateY(-50%);
+	min-width: 400px;
+	min-height: 400px;
+	background-image: url(../img/monro2.gif);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.hand {
+	max-width: 200px;
+	max-height: 200px;
+	position: absolute;
+	z-index: 1001;
+}
+
+#position {
+	color: #fff;
+}
+
+.logo {
+	max-width: 70px;
+	max-height: 70px;
+	position: absolute;
+	top: 20px;
+	left: 25px;
+}
+
+.light {
+	top: 70%;
+	left: 40px;
+	position: absolute;
+}	
+
+.inp-light {
+	position: relative;
+	display: inline-block;
+	min-width: 30px;
+	min-height: 30px;
+	background: #FF003C;
+	border-radius: 50%;
+	margin-bottom: 30px;
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		border: 1px solid #FF003C;
+		border-radius: 50%;
+		animation: pulse 2s linear infinite;
+	}
+}
+
+.light-text {
+	color: #FF0000;
+	text-decoration: none;
+	outline: none;
+	font-size: 18px;
+	line-height: 25px;
+	letter-spacing: 9px;
+}
+
+/**** MAIN CONTENT ****/
+
+body {
+	background: url(../img/path.png);
+}
+
+/*Big Business*/
+
+.big-business {
+	height: 100vh;
+	background: red;
+}
+
+/*Big Business End*/
+
+
+/*Medium Business*/
+
+.medium-business {
+	height: 100vh;
+	background: #000;
+}
+
+/*Medium Business End*/
+
+
+/*Startup*/
+
+.startup {
+	height: 100vh;
+	background: blue;
+}
+
+/*Startup End*/
+
+
+/**** MAIN CONTENT END ****/
+
+//ANIMATION
+
+@keyframes pulse {
+	0% {
+		height: 0;
+		width: 0;
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		height: 80px;
+		width: 80px;
+		opacity: 0;
+	}
+}
