@@ -8,6 +8,7 @@ $(function () {
 	//Включить свет
 	$('.inp-light').on('click', function () {
 		$('#preloader').fadeOut(1000);
+		$('html, body').css({ 'overflow': 'auto' });
 	});
 
 });
