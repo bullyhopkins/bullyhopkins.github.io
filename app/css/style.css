@@ -677,7 +677,7 @@ input[name="call-time"] {
             align-items: center; }
 
 .big-business-img {
-  background: url(../img/michael.gif);
+  background: url(../img/jakson.gif);
   -webkit-background-size: contain;
           background-size: contain;
   background-position: center center;
@@ -882,7 +882,7 @@ input[name="call-time"] {
     color: #FF003C; }
 
 .red-carpet-img {
-  background: url(../img/chap2.gif);
+  background: url(../img/chaplin.gif);
   -webkit-background-size: contain;
           background-size: contain;
   background-position: center center;
@@ -1253,6 +1253,190 @@ input[name="call-time"] {
   .individual-package:hover {
     background: #D81240;
     color: #fff; }
+
+.medium-window {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  left: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 40px 100px;
+  z-index: 1001;
+  font-family: "Montserrat", arial, serif;
+  overflow: auto; }
+
+.medium-window-back {
+  position: absolute;
+  top: 15%;
+  left: 10px;
+  cursor: pointer; }
+  .medium-window-back span {
+    font-size: 12px;
+    font-family: "Helvetica", "Montserrat", arial, serif;
+    letter-spacing: 1px; }
+
+.custom-window {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  left: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 40px 100px;
+  z-index: 1001;
+  font-family: "Montserrat", arial, serif;
+  overflow: auto; }
+
+.tool-selection {
+  font-family: "Helvetica", "Montserrat", arial, serif;
+  font-size: 22px;
+  color: #707070;
+  padding-left: 20px;
+  margin-top: 40px; }
+
+#custom-form {
+  padding-bottom: 150px;
+  z-index: 1030;
+  position: relative; }
+  #custom-form .label {
+    font-size: 17px;
+    margin-left: 15px; }
+
+.custom-list {
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  max-width: 80%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 40px;
+  margin-bottom: 20px; }
+  .custom-list li {
+    width: 50%; }
+
+.checkbox {
+  display: none; }
+
+#custom-form label {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  margin-bottom: 40px; }
+
+.checkbox-custom {
+  position: relative;
+  min-width: 20px;
+  min-height: 20px;
+  display: inline-block;
+  border: 1px solid #FF003C;
+  -webkit-border-radius: 50%;
+          border-radius: 50%; }
+
+.checkbox:checked + .checkbox-custom::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: #FF003C;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  -webkit-animation: pulse-list 1s infinite;
+          animation: pulse-list 1s infinite; }
+
+.form-package {
+  text-decoration: none;
+  outline: none;
+  font-size: 15px;
+  padding: 7px 50px;
+  border: 1px solid #D81240;
+  background: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  color: #000;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s; }
+  .form-package:hover {
+    background: #D81240;
+    color: #fff; }
+
+.custom-window-back {
+  position: absolute;
+  top: 15%;
+  left: 10px;
+  cursor: pointer; }
+  .custom-window-back span {
+    font-size: 12px;
+    font-family: "Helvetica", "Montserrat", arial, serif;
+    letter-spacing: 1px; }
+
+.background-text {
+  color: #EBEBEB;
+  position: absolute;
+  bottom: -245px;
+  right: 30px; }
+
+.background-text-individual {
+  font-size: 80px;
+  display: block;
+  -moz-text-align-last: right;
+       text-align-last: right; }
+
+.background-text-package {
+  font-size: 140px;
+  display: block; }
+
+.package-selected {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 40px 100px;
+  z-index: 1001;
+  font-family: "Montserrat", arial, serif;
+  overflow: auto;
+  display: none; }
+
+.package-selected-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+.package-selected-descr {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 50px; }
 
 /***Modal Window End ***/
 /**** MAIN CONTENT END ****/

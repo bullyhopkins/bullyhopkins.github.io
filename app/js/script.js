@@ -46,6 +46,42 @@ $(function () {
 		}, 1500);
 		$('html, body').css({ 'overflow': 'auto' });
 	});
+
+
+	//Medium-window
+	$('#med-inp').on('click', function (event) {
+		event.preventDefault();
+		$('.medium-window').animate({
+			left: 0
+		}, 1500);
+		setTimeout(noScroll, 2000);
+	});
+
+	//Закрытие Medium-window
+	$('.medium-window-back').on('click', function () {
+		$('.medium-window').animate({
+			left: '100%'
+		}, 1500);
+		$('html, body').css({ 'overflow': 'auto' });
+	});
+
+
+	//Custom Window
+	$('.custom-inp').on('click', function (event) {
+		event.preventDefault();
+		$('.custom-window').animate({
+			left: 0
+		}, 1500);
+		setTimeout(noScroll, 2000);
+	});
+
+	//Закрытие Custom Window
+	$('.custom-window-back').on('click', function () {
+		$('.custom-window').animate({
+			left: '100%'
+		}, 1500);
+		$('html, body').css({ 'overflow': 'auto' });
+	});
 	
 	function noScroll () {
 		$('html, body').css({ 'overflow': 'hidden' });
