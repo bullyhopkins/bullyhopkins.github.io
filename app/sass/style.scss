@@ -885,7 +885,7 @@ input[name="call-time"] {
 	height: 100%;
 	background: #fff;
 	left: 100%;
-	top: 0;
+	// top: 0;
 	right: 0;
 	bottom: 0;
 	padding: 40px 100px;
@@ -956,6 +956,7 @@ input[name="call-time"] {
 	position: relative;
 	width: 28%;
 	margin-bottom: 40px;
+	min-width: 280px;
 	ul {
 		padding: 0;
 		margin: 0;
@@ -1042,7 +1043,6 @@ input[name="call-time"] {
 	height: 100%;
 	background: #fff;
 	left: 100%;
-	top: 0;
 	right: 0;
 	bottom: 0;
 	padding: 40px 100px;
@@ -1114,6 +1114,7 @@ input[name="call-time"] {
 	margin-bottom: 20px;
 	li {
 		width: 50%;
+		padding-left: 20px;
 	}
 }
 
@@ -1207,8 +1208,8 @@ input[name="call-time"] {
 	width: 100%;
 	height: 100%;
 	background: #fff;
-	left: 100%;
-	// left: 0;
+	// left: 100%;
+	left: 0;
 	top: 0;
 	right: 0;
 	bottom: 0;
@@ -1262,19 +1263,24 @@ input[name="call-time"] {
 	}
 }
 
-.documents-form ul {
-	list-style: none;
-	display: flex;
-	flex-wrap: wrap;
-	padding: 0;
-	margin: 0;
-}
-
-.documents-form li {
-	width: 50%;
-	display: flex;
-	align-items: center;
-	padding: 10px 0;
+.documents-form {
+	ul {
+		list-style: none;
+		display: flex;
+		flex-wrap: wrap;
+		padding: 0;
+		margin: 0;
+	}
+	li {
+		width: 50%;
+		padding: 10px 0;
+	}
+	a {
+		display: flex;
+		align-items: center;
+		text-decoration: none;
+		outline: none;
+	}
 }
 
 .documents-form-img {
@@ -1331,8 +1337,37 @@ input[name="call-time"] {
 
 /**** MEDIA ****/
 
-// Экстрабольшие девайсы (большие десктопы, >= 1200px)
-// @media (min-width: 1200px) { ... }
+@media screen and (max-width: 1200px) {
+
+	.documents-form { 
+		display: none;
+	}
+
+	.inp-form-wrap {
+		text-align: center;
+	}
+
+	.package-selected-btn {
+		margin-top: 40px;
+	}
+
+	.package-selected form {
+		padding: 20px;
+		min-height: 200px;
+	}
+}
+
+@media screen and (max-width: 1070px) {
+
+	.startup-tariff {
+		width: 100%;
+		// ul {
+		// 	display: flex;
+		// 	flex-wrap: wrap;
+		// }
+	}
+
+}
 
 // // Большие девайсы (десктопы, >= 992px)
 @media screen and (max-width: 1000px) {
@@ -1432,6 +1467,48 @@ input[name="call-time"] {
 		margin: 0;
 	}
 
+	.custom-window {
+		padding: 80px 20px 50px 20px;
+	}
+
+	.custom-window-back {
+		// width: 30px;
+		left: auto;
+		right: 20px;
+		top: 20px;
+	}
+
+	#custom-form .label {
+		font-size: 14px;
+	}
+
+	.medium-window {
+		padding: 80px 20px 50px 20px;
+	}
+
+	.medium-window-back {
+		left: auto;
+		right: 20px;
+		top: 20px;
+	}
+
+	// .sturtup-window-top .castom-inp-wrap {
+	// 	padding-top: 30px;
+	// }
+	
+	.sturtup-window {
+		padding: 80px 20px 50px 20px;
+	}
+
+	.window-back {
+		left: auto;
+		right: 20px;
+		top: 20px;
+	}
+
+	.package-selected-content {
+		width: 80%;
+	}
 }
 
 // Средние девайсы («таблетки», >= 768px)
@@ -1481,6 +1558,55 @@ input[name="call-time"] {
 	#red-carpet .wrap {
 		justify-content: center;
 	}
+
+	.custom-list li {
+		width: 100%;
+	}
+
+	.sturtup-window-h {
+		font-size: 30px;
+	}
+
+	.tool-selection {
+		font-size: 18px;
+	}
+
+	.background-text {
+		display: none;
+	}
+
+	.sturtup-window-top div {
+		width: 100%;
+	}
+
+	.castom-inp-wrap {
+		padding-top: 30px;
+	}
+
+	.package-selected input {
+		width: 100%;
+	}
+
+	.package-selected form {
+		position: static;
+		transform: none;
+	}
+
+	.package-selected-content {
+		position: static;
+		transform: none;
+		margin: 0 auto;
+	}
+
+	.package-selected-descr {
+		margin-bottom: 30px;
+		font-size: 18px;
+	}
+
+	.package-selected {
+		padding: 80px 20px;
+	}
+
 }
 
 // Малые девайсы («ландшафтные телефоны», >= 576px)
@@ -1492,6 +1618,13 @@ input[name="call-time"] {
 
 	.communication-right {
 		min-width: 100%;
+	}
+
+	.skills-item {
+		&:hover {
+			animation: none;
+			transform: none;
+		}
 	}
 
 	.contacts-list li {
@@ -1524,13 +1657,42 @@ input[name="call-time"] {
 		min-width: 340px;
 	}
 
+	.logo-img {
+		display: none;
+	}
+
+	.callback-h {
+		font-size: 18px;
+	}
+
+	.sturtup-window-h {
+		font-size: 22px;
+	}
+
+	.window-free-service {
+		font-size: 13px;
+	}
+
+	.tool-selection {
+		font-size: 15px;
+		padding: 0;
+		margin: 20px 0;
+	}
+
+	.package-selected-btn {
+		padding: 8px 50px;
+	}
+
+	.package-selected form {
+		padding: 20px;
+		margin-bottom: 30px;
+	}
+
+	.package-selected-content {
+		width: 100%;
+	}
+
 }
-
-
-
-
-
-
 
 /**** MEDIA END ****/
 
