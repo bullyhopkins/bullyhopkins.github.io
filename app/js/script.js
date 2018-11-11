@@ -83,8 +83,23 @@ $(function () {
 		$('html, body').css({ 'overflow': 'auto' });
 	});
 	
+	//Модальное окно после выбора пакета
+	$('.select-open').on('click', function () {
+		$('.package-selected').animate({
+			left: 0
+		}, 1500);
+		$('html, body').css({ 'overflow': 'hidden' });
+	});
+	
 	function noScroll () {
 		$('html, body').css({ 'overflow': 'hidden' });
 	}
 
+	//Ссылка о компании
+	$('.account-agency-inp').on('click', function(e){
+		$('html,body').stop().animate({
+			scrollTop: $('#red-carpet').offset().top
+		}, 1000);
+		e.preventDefault();
+	});
 });

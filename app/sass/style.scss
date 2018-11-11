@@ -1,7 +1,7 @@
 @import 'normalize.scss';
 $main-color: #D81240;
-$fonts: 'Montserrat', arial, serif;
-$fontsHel: "Helvetica", 'Montserrat', arial, serif;
+$fonts: 'Proxima', arial, serif;
+$fontsHel: "Proxima", 'Montserrat', arial, serif;
 
 // html,
 // body {
@@ -27,7 +27,7 @@ $fontsHel: "Helvetica", 'Montserrat', arial, serif;
 	z-index: 1000;
 	cursor: none;
 	overflow: hidden;
-	font-family: 'Montserrat';
+	font-family: 'Proxima';
 	display: none; //delete
 }
 
@@ -190,7 +190,7 @@ body {
 		width: 100%;
 		padding: 10px 0;
 		font-size: 15px;
-		font-family: 'Helvetica', $fonts; 
+		font-family: 'Proxima', $fonts; 
 		outline: none;
 		&::-webkit-input-placeholder { /* WebKit browsers */
 			color: #CFCFCF;
@@ -233,7 +233,7 @@ body {
 textarea[name="descr"] {
 	width: 100%;
 	resize: none;
-	font-family: 'Helvetica', $fonts;
+	font-family: 'Proxima', $fonts;
 	min-height: 100px;
 	border: 1px solid #B5B1B1;
 	padding: 5px;
@@ -257,7 +257,7 @@ input[name="call-time"] {
 	background: rgba(0, 0, 0, 0);
 	padding: 5px 55px;
 	cursor: pointer;
-	font-family: 'Helvetica', $fonts;
+	font-family: 'Proxima', $fonts;
 	font-size: 15px;
 	transition: 0.4s;
 	&:hover {
@@ -269,7 +269,8 @@ input[name="call-time"] {
 //Communication-right
 
 .communication-right {
-	font-family: 'Helvetica', $fonts;
+	min-width: 500px;
+	font-family: 'Proxima', $fonts;
 	ul {
 		padding: 0;
 		margin: 0;
@@ -279,7 +280,9 @@ input[name="call-time"] {
 		color: #000;
 		outline: none;
 		text-decoration: none;
-		font-weight: 300;
+		font-family: 'Proxima';
+		font-weight: 400;
+		font-size: 16px;
 	}
 }
 
@@ -310,10 +313,15 @@ input[name="call-time"] {
 	justify-content: space-between;
 	max-width: 500px;
 	li {
-		display: flex;
-		align-items: center;
 		width: 45%;
 		margin: 15px 0;
+	}
+	a {
+		display: block;
+		display: flex;
+		align-items: center;
+		text-decoration: none;
+		outline: none;
 	}
 	span {
 		font-size: 13px;
@@ -354,7 +362,7 @@ input[name="call-time"] {
 	margin-top: 50px;
 	.wrap {
 		display: flex;
-		flex-wrap: wrap;
+		// flex-wrap: wrap;
 		justify-content: space-around;
 		align-items: center;
 	}
@@ -365,7 +373,7 @@ input[name="call-time"] {
 	background-size: contain;
 	background-position: center center;
 	background-repeat: no-repeat;
-	min-width: 500px;
+	min-width: 40%;
 	min-height: 600px;
 }
 
@@ -378,9 +386,11 @@ input[name="call-time"] {
 .big-business-right {
 	font-family: $fonts;
 	max-width: 700px;
+	padding: 0 20px;
+	min-width: 500px;
 	p {
 		font-size: 18px;
-		font-family: "Helvetica", $fonts;
+		font-family: "Proxima", $fonts;
 		font-weight: 300;
 	}
 }
@@ -406,6 +416,10 @@ input[name="call-time"] {
 	}
 }
 
+.inp-wrap {
+	min-width: 216px;
+}
+
 .inp-big-business {
 	font-size: 16px;
 	color: #fff;
@@ -416,7 +430,8 @@ input[name="call-time"] {
 	font-family: $fontsHel;
 	text-decoration: none;
 	outline: none;
-	padding: 5px 50px 5px 10px;
+	padding: 5px 10px;
+	// width: 100px;
 	border-radius: 20px;
 	&:hover {
 		color: #000;
@@ -431,13 +446,16 @@ input[name="call-time"] {
 /*Medium Business*/
 
 .medium-business {
-	// height: 100vh;
 	margin-top: 50px;
 	.wrap {
 		display: flex;
-		flex-wrap: wrap;
+		// flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
+	}
+	.big-business-right {
+		padding-right: 0;
+		padding-left: 40px;
 	}
 }
 
@@ -464,7 +482,7 @@ input[name="call-time"] {
 	background-size: contain;
 	background-position: center center;
 	background-repeat: no-repeat;
-	min-width: 450px;
+	min-width: 40%;
 	min-height: 600px;
 }
 
@@ -474,13 +492,16 @@ input[name="call-time"] {
 /*Startup*/
 
 .startup {
-	// height: 100vh;
 	margin-top: 50px;
 	.wrap {
 		display: flex;
-		flex-wrap: wrap;
+		// flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
+	}
+	.big-business-right {
+		padding-left: 0;
+		padding-right: 40px;
 	}
 }
 
@@ -489,7 +510,7 @@ input[name="call-time"] {
 	background-size: contain;
 	background-position: center center;
 	background-repeat: no-repeat;
-	min-width: 550px;
+	min-width: 40%;
 	min-height: 600px;
 	margin-right: 40px;
 }
@@ -501,11 +522,24 @@ input[name="call-time"] {
 
 .skills {
 	margin-top: 50px;
+	position: relative;
+}
+
+.skills-img {
+	background: url(../img/rabbit.gif) center no-repeat;
+	background-size: contain;
+	position: absolute;
+	min-width: 300px;
+	min-height: 300px;
+	right: 0;
 }
 
 .skills-wrap {
 	display: flex;
+	flex-wrap: wrap;
 	position: relative;
+	min-height: 350px;
+	padding-top: 40px;
 }
 
 .skills-item {
@@ -517,20 +551,98 @@ input[name="call-time"] {
 	text-decoration: none;
 	color: #000;
 	transition: 1s;
-	min-width: 100px;
 	font-family: $fontsHel;
+	position: absolute;
+	// width: 15%;
+	min-width: 200px !important;
 	&:hover {
 		color: #fff;
 		background: #181818;
 		transform: scale(2);
 		border: #181818;
 		animation: skills 1.2s linear;
+		z-index: 1000;
+	}
+	&:hover .skills-item-descr{
+		opacity: 1;
 	}
 }
 
 .skills-item-descr {
 	font-size: 7px;
-	display: none;
+	// padding-bottom: 20px;
+	// display: none;
+	opacity: 0;
+	transition: 2s;
+	color: #fff;
+	line-height: 1;
+	position: absolute;
+	max-width: 100px;
+}
+
+.skill-name {
+	margin-top: 20px;
+	padding-top: 50px;
+}
+
+.skill-smm {
+	min-width: 13%;
+	left: 8%;
+	top: 240px;
+}
+
+.skill-seo {
+	min-width: 15%;
+	left: 10%;
+	top: 140px;
+}
+
+.skill-advertising {
+	min-width: 13%;
+	left: 20%;
+	top: 270px;
+}
+
+.skill-site {
+	min-width: 15%;
+	left: 20%;
+	top: 50px;
+}
+
+.skill-consulting {
+	min-width: 15%;
+	left: 30%;
+	top: 200px;
+	min-height: 150px;
+	.skill-name {
+		position: absolute;
+		bottom: 15px;
+	}
+}
+
+.skill-creative {
+	min-width: 15%;
+	left: 40%;
+	top: 80px;
+}
+
+.skill-marketing {
+	min-width: 15%;
+	left: 48%;
+	top: 250px;
+	min-height: 150px;
+}
+
+.skill-analytics {
+	min-width: 15%;
+	left: 60%;
+	top: 100px;
+}
+
+.skill-email {
+	min-width: 15%;
+	left: 70%;
+	top: 200px;
 }
 
 /*Skills End*/
@@ -541,9 +653,10 @@ input[name="call-time"] {
 #red-carpet {
 	margin-top: 100px;
 	font-family: $fontsHel;
+	padding-top: 80px;
 	.wrap {
 		display: flex;
-		flex-wrap: wrap;
+		// flex-wrap: wrap;
 		justify-content: space-between;
 	}
 }
@@ -556,11 +669,11 @@ input[name="call-time"] {
 }
 
 .red-carpet-img {
-	background: url(../img/chaplin.gif);
+	background: url(../img/сhaplin1.gif);
 	background-size: contain;
 	background-position: center center;
 	background-repeat: no-repeat;
-	min-width: 550px;
+	min-width: 40%;
 	min-height: 400px;
 	// margin-right: 40px;
 }
@@ -641,7 +754,7 @@ input[name="call-time"] {
 
 .account-agency-flex {
 	display: flex;
-	flex-wrap: wrap;
+	// flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-around;
 }
@@ -658,6 +771,7 @@ input[name="call-time"] {
 }
 
 .account-agency-left {
+	padding-left: 20px;
 	p {
 		max-width: 450px;
 		font-style: 17px;
@@ -688,7 +802,7 @@ input[name="call-time"] {
 	background-size: contain;
 	background-position: center center;
 	background-repeat: no-repeat;
-	min-width: 650px;
+	min-width: 50%;
 	min-height: 450px;
 }
 
@@ -1093,22 +1207,24 @@ input[name="call-time"] {
 	width: 100%;
 	height: 100%;
 	background: #fff;
-	// left: 100%;
-	left: 0;
+	left: 100%;
+	// left: 0;
 	top: 0;
 	right: 0;
 	bottom: 0;
-	padding: 40px 100px;
+	padding: 10px 100px;
 	z-index: 1001;
 	font-family: $fonts;
 	overflow: auto;
-	display: none; //DELETE
+	// display: none; //DELETE
 }
 
 .package-selected-content {
 	position: absolute;
 	top: 50%;
 	left: 50%;
+	// text-align: center;
+	width: 60%;
 	transform: translate(-50%, -50%);
 }
 
@@ -1118,11 +1234,305 @@ input[name="call-time"] {
 	margin-bottom: 50px;
 }
 
+.package-selected form {
+	padding: 50px;
+	position: relative;
+	min-height: 400px;
+	width: 100%;
+	margin: 0 auto;
+	-webkit-box-shadow: 0px 13px 29px 8px rgba(0,0,0,0.09);
+	-moz-box-shadow: 0px 13px 29px 8px rgba(0,0,0,0.09);
+	box-shadow: 0px 13px 29px 8px rgba(0,0,0,0.09);
+}
+
+.package-select-flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.documents-form {
+	position: absolute;
+	bottom: 30px;
+	right: 10px;
+	max-width: 50%;
+	span {
+		font-size: 10px;
+		padding-left: 15px;
+	}
+}
+
+.documents-form ul {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0;
+}
+
+.documents-form li {
+	width: 50%;
+	display: flex;
+	align-items: center;
+	padding: 10px 0;
+}
+
+.documents-form-img {
+	min-width: 20px;
+	min-height: 30px;
+}
+
+.package-selected input {
+	border: none;
+	border-bottom: 2px solid #707070;
+	font-size: 17px;
+	padding: 10px 0;
+	width: 45%;
+	margin-bottom: 20px;
+	&::-webkit-input-placeholder { /* WebKit browsers */
+		color: #CFCFCF;
+	}
+	&:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+		color: #CFCFCF;
+	}
+	&::-moz-placeholder { /* Mozilla Firefox 19+ */
+		color: #CFCFCF;
+	}
+	&:-ms-input-placeholder { /* Internet Explorer 10+ */
+		color: #CFCFCF;
+	}
+}
+
+.package-selected-btn {
+	outline: none;
+	background: rgba(0, 0, 0, 0);
+	border: 1px solid #D81240;
+	transition: 0.5s;
+	color: #000;
+	font-size: 13px;
+	padding: 8px 80px;
+	border-radius: 20px;
+	cursor: pointer;
+	// position: absolute;
+	// bottom: 10px;
+	// left: 10px;
+	margin-top: 100px;
+	&:hover {
+		background: #D81240;
+		color: #fff;
+	}
+}
+
 //Package is selected End
 
 /***Modal Window End ***/
 
 /**** MAIN CONTENT END ****/
+
+/**** MEDIA ****/
+
+// Экстрабольшие девайсы (большие десктопы, >= 1200px)
+// @media (min-width: 1200px) { ... }
+
+// // Большие девайсы (десктопы, >= 992px)
+@media screen and (max-width: 1000px) {
+	
+	.communication .wrap {
+		flex-wrap: wrap;
+	}
+
+	.callback {
+		margin-right: 0;
+	}
+
+	.communication-right {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding-top: 50px;
+		width: 90%;
+	}
+
+	.documents {
+		margin-top: 0;
+	}
+
+	.contacts-list li {
+		font-size: 13px;
+	}
+
+	//Big-businnes
+
+	.big-business {
+		margin: 0;
+	}
+
+	.big-business-right {
+		p {
+			font-size: 15px;
+		}
+	}
+
+	.for-you {
+		font-size: 25px;
+	}
+
+	.business-list li span {
+		font-size: 13px;
+	}
+
+	.business-list li {
+		margin: 7px 0;
+	}
+
+	.inp-big-business {
+		font-size: 13px;
+	}
+
+	//Medium-business
+	.inp-med-business {
+		font-size: 13px;
+	}
+
+	//Carpet
+	.red-carpet-block {
+		padding: 15px;
+	}
+
+	.carpet-item {
+		margin: 10px auto;
+	}
+
+	.people-img {
+		min-width: 100px;
+		min-height: 100px;
+		margin: 0;
+		margin-right: 15px;
+	}
+
+}
+
+@media screen and (max-width: 950px) {
+
+	.communication-right {
+		justify-content: center;
+	}
+
+	.big-business-img,
+	.medium-business-img,
+	.startup-img {
+		min-height: 400px;
+	}
+
+	.documents {
+		display: none;
+	}
+
+	.medium-business {
+		margin: 0;
+	}
+
+}
+
+// Средние девайсы («таблетки», >= 768px)
+@media screen and (max-width: 768px) {
+
+	.big-business-img,
+	.medium-business-img,
+	.startup-img,
+	.skills-img,
+	.red-carpet-img,
+	.account-agency-img {
+		display: none;
+	}
+
+	.skills-wrap {
+		justify-content: center;
+	}
+
+	.skills-item {
+		position: static;
+	}
+
+	.skill-consulting .skill-name {
+		position: static;
+	}
+
+	.startup .big-business-right {
+		padding: 40px 15px;
+		min-width: 340px;
+	}
+
+	.medium-business .big-business-right {
+		padding: 40px 15px;
+	}
+
+	.big-business-right {
+		width: 75%;
+		padding: 40px 15px;
+	}
+
+	.red-carpet-block {
+		flex-direction: column;
+		margin: 0 auto;
+		align-items: center;
+	}
+
+	#red-carpet .wrap {
+		justify-content: center;
+	}
+}
+
+// Малые девайсы («ландшафтные телефоны», >= 576px)
+@media screen and (max-width: 576px) {
+
+	.form-flex div {
+		width: 100%;
+	}
+
+	.communication-right {
+		min-width: 100%;
+	}
+
+	.contacts-list li {
+		font-size: 11px;
+	}
+
+	.business-h {
+		font-size: 30px;
+	}
+
+	.business-list li {
+		width: 100%;
+		text-align: center;
+	}
+
+	.for-you {
+		display: block;
+		text-align: center;
+	}
+
+	.business-h {
+		text-align: center;
+	}
+
+	.big-business-right p {
+		text-align: center;
+	}
+
+	.big-business-right {
+		min-width: 340px;
+	}
+
+}
+
+
+
+
+
+
+
+/**** MEDIA END ****/
 
 //FONTS
 @font-face {
@@ -1146,6 +1556,41 @@ input[name="call-time"] {
 	src: url("../fonts/HelveticaNeueBold.ttf") format("truetype"); 
 	font-weight: 700; 
 } 
+
+@font-face {
+	font-family: 'Proxima';
+	src: url('../fonts/ProximaNovaT-Thin.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima';
+	src: url('../fonts/ProximaNova-Light.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima';
+	src: url('../fonts/ProximaNova-Semibold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima';
+	src: url('../fonts/ProximaNova-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: bold;
+}
+
+@font-face {
+	font-family: 'Proxima';
+	src: url('../fonts/ProximaNova-Extrabld.ttf') format('truetype');
+	font-weight: 800;
+	font-style: normal;
+}
 
 //ANIMATION
 

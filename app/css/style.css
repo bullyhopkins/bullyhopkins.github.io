@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -319,7 +320,7 @@ template {
   z-index: 1000;
   cursor: none;
   overflow: hidden;
-  font-family: 'Montserrat';
+  font-family: 'Proxima';
   display: none; }
 
 .welcome {
@@ -507,7 +508,7 @@ body {
     width: 100%;
     padding: 10px 0;
     font-size: 15px;
-    font-family: "Helvetica", "Montserrat", arial, serif;
+    font-family: "Proxima", "Proxima", arial, serif;
     outline: none; }
     .callback input::-webkit-input-placeholder {
       /* WebKit browsers */
@@ -551,7 +552,7 @@ body {
 textarea[name="descr"] {
   width: 100%;
   resize: none;
-  font-family: "Helvetica", "Montserrat", arial, serif;
+  font-family: "Proxima", "Proxima", arial, serif;
   min-height: 100px;
   border: 1px solid #B5B1B1;
   padding: 5px; }
@@ -560,7 +561,7 @@ input[name="call-time"] {
   width: 100%; }
 
 .callback-h {
-  font-family: "Montserrat", arial, serif;
+  font-family: "Proxima", arial, serif;
   font-weight: bold;
   font-size: 25px;
   margin-bottom: 15px; }
@@ -572,7 +573,7 @@ input[name="call-time"] {
   background: rgba(0, 0, 0, 0);
   padding: 5px 55px;
   cursor: pointer;
-  font-family: "Helvetica", "Montserrat", arial, serif;
+  font-family: "Proxima", "Proxima", arial, serif;
   font-size: 15px;
   -webkit-transition: 0.4s;
   -o-transition: 0.4s;
@@ -582,7 +583,8 @@ input[name="call-time"] {
     color: #fff; }
 
 .communication-right {
-  font-family: "Helvetica", "Montserrat", arial, serif; }
+  min-width: 500px;
+  font-family: "Proxima", "Proxima", arial, serif; }
   .communication-right ul {
     padding: 0;
     margin: 0;
@@ -591,12 +593,14 @@ input[name="call-time"] {
     color: #000;
     outline: none;
     text-decoration: none;
-    font-weight: 300; }
+    font-family: 'Proxima';
+    font-weight: 400;
+    font-size: 16px; }
 
 .contacts-h,
 .documents-h {
   font-size: 30px;
-  font-family: "Montserrat", arial, serif;
+  font-family: "Proxima", arial, serif;
   font-weight: bold; }
 
 .contacts-list li {
@@ -623,6 +627,10 @@ input[name="call-time"] {
           justify-content: space-between;
   max-width: 500px; }
   .documents-list li {
+    width: 45%;
+    margin: 15px 0; }
+  .documents-list a {
+    display: block;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -631,8 +639,8 @@ input[name="call-time"] {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 45%;
-    margin: 15px 0; }
+    text-decoration: none;
+    outline: none; }
   .documents-list span {
     font-size: 13px; }
 
@@ -665,9 +673,6 @@ input[name="call-time"] {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
             justify-content: space-around;
@@ -682,25 +687,27 @@ input[name="call-time"] {
           background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
-  min-width: 500px;
+  min-width: 40%;
   min-height: 600px; }
 
 .business-h {
   font-size: 40px;
   font-weight: bold;
-  font-family: "Montserrat", arial, serif; }
+  font-family: "Proxima", arial, serif; }
 
 .big-business-right {
-  font-family: "Montserrat", arial, serif;
-  max-width: 700px; }
+  font-family: "Proxima", arial, serif;
+  max-width: 700px;
+  padding: 0 20px;
+  min-width: 500px; }
   .big-business-right p {
     font-size: 18px;
-    font-family: "Helvetica", "Montserrat", arial, serif;
+    font-family: "Proxima", "Proxima", arial, serif;
     font-weight: 300; }
 
 .for-you {
   font-size: 30px;
-  font-family: "Helvetica", "Montserrat", arial, serif;
+  font-family: "Proxima", "Montserrat", arial, serif;
   font-weight: 300; }
 
 .business-list {
@@ -720,6 +727,9 @@ input[name="call-time"] {
     .business-list li span {
       font-size: 16px; }
 
+.inp-wrap {
+  min-width: 216px; }
+
 .inp-big-business {
   font-size: 16px;
   color: #fff;
@@ -729,10 +739,10 @@ input[name="call-time"] {
   -o-transition: 0.4s;
   transition: 0.4s;
   font-weight: 700;
-  font-family: "Helvetica", "Montserrat", arial, serif;
+  font-family: "Proxima", "Montserrat", arial, serif;
   text-decoration: none;
   outline: none;
-  padding: 5px 50px 5px 10px;
+  padding: 5px 10px;
   -webkit-border-radius: 20px;
           border-radius: 20px; }
   .inp-big-business:hover {
@@ -748,9 +758,6 @@ input[name="call-time"] {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
@@ -759,6 +766,9 @@ input[name="call-time"] {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
+  .medium-business .big-business-right {
+    padding-right: 0;
+    padding-left: 40px; }
 
 .inp-med-business {
   font-size: 16px;
@@ -769,7 +779,7 @@ input[name="call-time"] {
   -o-transition: 0.4s;
   transition: 0.4s;
   font-weight: 700;
-  font-family: "Helvetica", "Montserrat", arial, serif;
+  font-family: "Proxima", "Montserrat", arial, serif;
   text-decoration: none;
   outline: none;
   padding: 6px 15px;
@@ -785,7 +795,7 @@ input[name="call-time"] {
           background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
-  min-width: 450px;
+  min-width: 40%;
   min-height: 600px; }
 
 /*Medium Business End*/
@@ -797,9 +807,6 @@ input[name="call-time"] {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
@@ -808,6 +815,9 @@ input[name="call-time"] {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
+  .startup .big-business-right {
+    padding-left: 0;
+    padding-right: 40px; }
 
 .startup-img {
   background: url(../img/cosm.gif);
@@ -815,21 +825,36 @@ input[name="call-time"] {
           background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
-  min-width: 550px;
+  min-width: 40%;
   min-height: 600px;
   margin-right: 40px; }
 
 /*Startup End*/
 /*Skills*/
 .skills {
-  margin-top: 50px; }
+  margin-top: 50px;
+  position: relative; }
+
+.skills-img {
+  background: url(../img/rabbit.gif) center no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+  position: absolute;
+  min-width: 300px;
+  min-height: 300px;
+  right: 0; }
 
 .skills-wrap {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  position: relative; }
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  position: relative;
+  min-height: 350px;
+  padding-top: 40px; }
 
 .skills-item {
   padding: 15px;
@@ -842,8 +867,9 @@ input[name="call-time"] {
   -webkit-transition: 1s;
   -o-transition: 1s;
   transition: 1s;
-  min-width: 100px;
-  font-family: "Helvetica", "Montserrat", arial, serif; }
+  font-family: "Proxima", "Montserrat", arial, serif;
+  position: absolute;
+  min-width: 200px !important; }
   .skills-item:hover {
     color: #fff;
     background: #181818;
@@ -852,42 +878,104 @@ input[name="call-time"] {
             transform: scale(2);
     border: #181818;
     -webkit-animation: skills 1.2s linear;
-            animation: skills 1.2s linear; }
+            animation: skills 1.2s linear;
+    z-index: 1000; }
+  .skills-item:hover .skills-item-descr {
+    opacity: 1; }
 
 .skills-item-descr {
   font-size: 7px;
-  display: none; }
+  opacity: 0;
+  -webkit-transition: 2s;
+  -o-transition: 2s;
+  transition: 2s;
+  color: #fff;
+  line-height: 1;
+  position: absolute;
+  max-width: 100px; }
+
+.skill-name {
+  margin-top: 20px;
+  padding-top: 50px; }
+
+.skill-smm {
+  min-width: 13%;
+  left: 8%;
+  top: 240px; }
+
+.skill-seo {
+  min-width: 15%;
+  left: 10%;
+  top: 140px; }
+
+.skill-advertising {
+  min-width: 13%;
+  left: 20%;
+  top: 270px; }
+
+.skill-site {
+  min-width: 15%;
+  left: 20%;
+  top: 50px; }
+
+.skill-consulting {
+  min-width: 15%;
+  left: 30%;
+  top: 200px;
+  min-height: 150px; }
+  .skill-consulting .skill-name {
+    position: absolute;
+    bottom: 15px; }
+
+.skill-creative {
+  min-width: 15%;
+  left: 40%;
+  top: 80px; }
+
+.skill-marketing {
+  min-width: 15%;
+  left: 48%;
+  top: 250px;
+  min-height: 150px; }
+
+.skill-analytics {
+  min-width: 15%;
+  left: 60%;
+  top: 100px; }
+
+.skill-email {
+  min-width: 15%;
+  left: 70%;
+  top: 200px; }
 
 /*Skills End*/
 /*Red Carpet*/
 #red-carpet {
   margin-top: 100px;
-  font-family: "Helvetica", "Montserrat", arial, serif; }
+  font-family: "Proxima", "Montserrat", arial, serif;
+  padding-top: 80px; }
   #red-carpet .wrap {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between; }
 
 .business-h {
-  font-family: "Montserrat", arial, serif; }
+  font-family: "Proxima", arial, serif; }
   .business-h span {
     color: #FF003C; }
 
 .red-carpet-img {
-  background: url(../img/chaplin.gif);
+  background: url(../img/сhaplin1.gif);
   -webkit-background-size: contain;
           background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
-  min-width: 550px;
+  min-width: 40%;
   min-height: 400px; }
 
 .red-carpet-h {
@@ -957,7 +1045,7 @@ input[name="call-time"] {
 /*Account Agency*/
 .account-agency {
   padding: 70px 0;
-  font-family: "Helvetica", "Montserrat", arial, serif;
+  font-family: "Proxima", "Montserrat", arial, serif;
   position: relative;
   margin-top: 100px; }
 
@@ -966,9 +1054,6 @@ input[name="call-time"] {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -980,16 +1065,18 @@ input[name="call-time"] {
 .account-agency-h {
   font-size: 45px;
   font-weight: bold;
-  font-family: "Montserrat", arial, serif;
+  font-family: "Proxima", arial, serif;
   line-height: 60px;
   margin: 0; }
   .account-agency-h span {
     color: #FF003C; }
 
-.account-agency-left p {
-  max-width: 450px;
-  font-style: 17px;
-  margin: 30px 0; }
+.account-agency-left {
+  padding-left: 20px; }
+  .account-agency-left p {
+    max-width: 450px;
+    font-style: 17px;
+    margin: 30px 0; }
 
 .account-agency-inp {
   text-decoration: none;
@@ -1015,7 +1102,7 @@ input[name="call-time"] {
           background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
-  min-width: 650px;
+  min-width: 50%;
   min-height: 450px; }
 
 /*Account Agency End*/
@@ -1041,7 +1128,7 @@ input[name="call-time"] {
   bottom: 0;
   left: 100%;
   right: 0;
-  font-family: "Montserrat", arial, serif; }
+  font-family: "Proxima", arial, serif; }
 
 .list-menu {
   display: -webkit-box;
@@ -1071,7 +1158,7 @@ input[name="call-time"] {
     font-size: 15px; }
   .list-menu .menu-inp {
     background: #F42A59;
-    font-family: "Helvetica", "Montserrat", arial, serif;
+    font-family: "Proxima", "Montserrat", arial, serif;
     color: #fff;
     font-weight: bold;
     padding: 7px 35px;
@@ -1099,7 +1186,7 @@ input[name="call-time"] {
   bottom: 0;
   padding: 40px 100px;
   z-index: 1001;
-  font-family: "Montserrat", arial, serif;
+  font-family: "Proxima", arial, serif;
   overflow: auto; }
 
 .window-back {
@@ -1109,7 +1196,7 @@ input[name="call-time"] {
   cursor: pointer; }
   .window-back span {
     font-size: 12px;
-    font-family: "Helvetica", "Montserrat", arial, serif;
+    font-family: "Proxima", "Montserrat", arial, serif;
     letter-spacing: 1px; }
 
 .back-img {
@@ -1180,7 +1267,7 @@ input[name="call-time"] {
     margin: 0;
     list-style: none; }
   .startup-tariff li {
-    font-family: "Helvetica", "Montserrat", arial, serif;
+    font-family: "Proxima", "Montserrat", arial, serif;
     font-size: 15px;
     position: relative;
     padding-left: 30px;
@@ -1206,7 +1293,7 @@ input[name="call-time"] {
   margin-bottom: 30px; }
   .startup-tariff-descr span {
     font-size: 15px;
-    font-family: "Helvetica", "Montserrat", arial, serif; }
+    font-family: "Proxima", "Montserrat", arial, serif; }
 
 .strtatap-tariff-inp {
   color: #fff;
@@ -1237,7 +1324,7 @@ input[name="call-time"] {
     color: #D81240; }
 
 .individual-package {
-  font-family: "Helvetica", "Montserrat", arial, serif;
+  font-family: "Proxima", "Montserrat", arial, serif;
   text-decoration: none;
   outline: none;
   border: 2px solid #D81240;
@@ -1265,7 +1352,7 @@ input[name="call-time"] {
   bottom: 0;
   padding: 40px 100px;
   z-index: 1001;
-  font-family: "Montserrat", arial, serif;
+  font-family: "Proxima", arial, serif;
   overflow: auto; }
 
 .medium-window-back {
@@ -1275,7 +1362,7 @@ input[name="call-time"] {
   cursor: pointer; }
   .medium-window-back span {
     font-size: 12px;
-    font-family: "Helvetica", "Montserrat", arial, serif;
+    font-family: "Proxima", "Montserrat", arial, serif;
     letter-spacing: 1px; }
 
 .custom-window {
@@ -1289,11 +1376,11 @@ input[name="call-time"] {
   bottom: 0;
   padding: 40px 100px;
   z-index: 1001;
-  font-family: "Montserrat", arial, serif;
+  font-family: "Proxima", arial, serif;
   overflow: auto; }
 
 .tool-selection {
-  font-family: "Helvetica", "Montserrat", arial, serif;
+  font-family: "Proxima", "Montserrat", arial, serif;
   font-size: 22px;
   color: #707070;
   padding-left: 20px;
@@ -1391,7 +1478,7 @@ input[name="call-time"] {
   cursor: pointer; }
   .custom-window-back span {
     font-size: 12px;
-    font-family: "Helvetica", "Montserrat", arial, serif;
+    font-family: "Proxima", "Montserrat", arial, serif;
     letter-spacing: 1px; }
 
 .background-text {
@@ -1415,20 +1502,20 @@ input[name="call-time"] {
   width: 100%;
   height: 100%;
   background: #fff;
-  left: 0;
+  left: 100%;
   top: 0;
   right: 0;
   bottom: 0;
-  padding: 40px 100px;
+  padding: 10px 100px;
   z-index: 1001;
-  font-family: "Montserrat", arial, serif;
-  overflow: auto;
-  display: none; }
+  font-family: "Proxima", arial, serif;
+  overflow: auto; }
 
 .package-selected-content {
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 60%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
@@ -1438,8 +1525,235 @@ input[name="call-time"] {
   font-weight: 700;
   margin-bottom: 50px; }
 
+.package-selected form {
+  padding: 50px;
+  position: relative;
+  min-height: 400px;
+  width: 100%;
+  margin: 0 auto;
+  -webkit-box-shadow: 0px 13px 29px 8px rgba(0, 0, 0, 0.09);
+  box-shadow: 0px 13px 29px 8px rgba(0, 0, 0, 0.09); }
+
+.package-select-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.documents-form {
+  position: absolute;
+  bottom: 30px;
+  right: 10px;
+  max-width: 50%; }
+  .documents-form span {
+    font-size: 10px;
+    padding-left: 15px; }
+
+.documents-form ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  padding: 0;
+  margin: 0; }
+
+.documents-form li {
+  width: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0; }
+
+.documents-form-img {
+  min-width: 20px;
+  min-height: 30px; }
+
+.package-selected input {
+  border: none;
+  border-bottom: 2px solid #707070;
+  font-size: 17px;
+  padding: 10px 0;
+  width: 45%;
+  margin-bottom: 20px; }
+  .package-selected input::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #CFCFCF; }
+  .package-selected input:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #CFCFCF; }
+  .package-selected input::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #CFCFCF; }
+  .package-selected input:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #CFCFCF; }
+
+.package-selected-btn {
+  outline: none;
+  background: rgba(0, 0, 0, 0);
+  border: 1px solid #D81240;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  color: #000;
+  font-size: 13px;
+  padding: 8px 80px;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  cursor: pointer;
+  margin-top: 100px; }
+  .package-selected-btn:hover {
+    background: #D81240;
+    color: #fff; }
+
 /***Modal Window End ***/
 /**** MAIN CONTENT END ****/
+/**** MEDIA ****/
+@media screen and (max-width: 1000px) {
+  .communication .wrap {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .callback {
+    margin-right: 0; }
+  .communication-right {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 50px;
+    width: 90%; }
+  .documents {
+    margin-top: 0; }
+  .contacts-list li {
+    font-size: 13px; }
+  .big-business {
+    margin: 0; }
+  .big-business-right p {
+    font-size: 15px; }
+  .for-you {
+    font-size: 25px; }
+  .business-list li span {
+    font-size: 13px; }
+  .business-list li {
+    margin: 7px 0; }
+  .inp-big-business {
+    font-size: 13px; }
+  .inp-med-business {
+    font-size: 13px; }
+  .red-carpet-block {
+    padding: 15px; }
+  .carpet-item {
+    margin: 10px auto; }
+  .people-img {
+    min-width: 100px;
+    min-height: 100px;
+    margin: 0;
+    margin-right: 15px; } }
+
+@media screen and (max-width: 950px) {
+  .communication-right {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .big-business-img,
+  .medium-business-img,
+  .startup-img {
+    min-height: 400px; }
+  .documents {
+    display: none; }
+  .medium-business {
+    margin: 0; } }
+
+@media screen and (max-width: 768px) {
+  .big-business-img,
+  .medium-business-img,
+  .startup-img,
+  .skills-img,
+  .red-carpet-img,
+  .account-agency-img {
+    display: none; }
+  .skills-wrap {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .skills-item {
+    position: static; }
+  .skill-consulting .skill-name {
+    position: static; }
+  .startup .big-business-right {
+    padding: 40px 15px;
+    min-width: 340px; }
+  .medium-business .big-business-right {
+    padding: 40px 15px; }
+  .big-business-right {
+    width: 75%;
+    padding: 40px 15px; }
+  .red-carpet-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  #red-carpet .wrap {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
+
+@media screen and (max-width: 576px) {
+  .form-flex div {
+    width: 100%; }
+  .communication-right {
+    min-width: 100%; }
+  .contacts-list li {
+    font-size: 11px; }
+  .business-h {
+    font-size: 30px; }
+  .business-list li {
+    width: 100%;
+    text-align: center; }
+  .for-you {
+    display: block;
+    text-align: center; }
+  .business-h {
+    text-align: center; }
+  .big-business-right p {
+    text-align: center; }
+  .big-business-right {
+    min-width: 340px; } }
+
+/**** MEDIA END ****/
 @font-face {
   font-family: "Helvetica";
   src: url("../fonts/HelveticaNeue.ttf") format("truetype");
@@ -1455,6 +1769,36 @@ input[name="call-time"] {
   font-family: "Helvetica";
   src: url("../fonts/HelveticaNeueBold.ttf") format("truetype");
   font-weight: 700; }
+
+@font-face {
+  font-family: 'Proxima';
+  src: url("../fonts/ProximaNovaT-Thin.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima';
+  src: url("../fonts/ProximaNova-Light.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima';
+  src: url("../fonts/ProximaNova-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima';
+  src: url("../fonts/ProximaNova-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: bold; }
+
+@font-face {
+  font-family: 'Proxima';
+  src: url("../fonts/ProximaNova-Extrabld.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal; }
 
 @-webkit-keyframes pulse {
   0% {
