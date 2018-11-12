@@ -11,6 +11,35 @@ $(function () {
 	// 	});
 	// }
 
+	//MOB MENU
+	$('.mob-menu-open').on('click', function () {
+		$('.menu-mobile').animate({
+			left: 0
+		}, 1000);
+	});
+
+	//Slider skills
+	$('.slider-skills').slick({
+		infinite: true,
+		slidesToShow: 2,
+		slidesToScroll: 1,
+		responsive: [
+			{
+				breakpoint: 400,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			}
+		]
+	});
+
+	$('.multiple-items').slick({
+		infinite: true,
+		slidesToShow: 3,
+		slidesToScroll: 3
+	});
+
 	//Включить свет
 	$('.light').on('click', function () {
 		$('#preloader').fadeOut(1000);
@@ -18,14 +47,6 @@ $(function () {
 		//Скролл снизу вверх
 		$(document).scrollTop($('body').height());
 	});
-
-	// // Skills animation
-	// $('.skills-item').hover(function(){
-	// 	$('.skills-item-descr').slideToggle(300);
-	// },
-	// function () {
-	// 	$('.skills-item-descr').slideToggle(300);
-	// });
 
 	//Menu
 	$('.oscar img').on('click', function () {

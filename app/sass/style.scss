@@ -3,10 +3,10 @@ $main-color: #D81240;
 $fonts: 'Proxima', arial, serif;
 $fontsHel: "Proxima", 'Montserrat', arial, serif;
 
-html,
-body {
-	overflow: hidden;
-}
+// html,
+// body {
+// 	overflow: hidden;
+// }
 
 a,
 button,
@@ -35,7 +35,7 @@ input {
 	cursor: none;
 	overflow: hidden;
 	font-family: 'Proxima';
-	// display: none; //delete
+	display: none; //delete
 }
 
 .welcome {
@@ -140,7 +140,7 @@ body {
 	background: url(../img/path.png);
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: center bottom;
 
 }
 
@@ -211,6 +211,33 @@ body {
 	}
 }
 
+.communication-right .account-agency-h {
+	display: none;
+}
+
+.mob-location {
+	display: none;
+}
+
+.mob-icon {
+	min-width: 20px;
+	min-height: 20px;
+	display: inline-block;
+	margin-right: 15px;
+	display: none;
+}
+
+.location-mob {
+	background: url(../img/location-mob.svg) center no-repeat;
+	background-size: contain;
+}
+.call-mob {
+	background: url(../img/mob-call.svg) center no-repeat;
+}
+.mes-mob {
+	background: url(../img/mes-mob.svg) center no-repeat;
+}
+
 .form-flex {
 	display: flex;
 	flex-wrap: wrap;
@@ -265,6 +292,30 @@ input[name="call-time"] {
 	}
 }
 
+.collback-mob-inp {
+	outline: none;
+	text-decoration: none;
+	background: rgba(0, 0, 0, 0);
+	border: 2px solid red;
+	transition: 0.5s;
+	padding: 8px 40px;
+	border-radius: 30px;
+	font-weight: 500;
+	font-family: $fonts;
+	display: none;
+	&:hover {
+		color: #fff;
+		background: red;
+	}
+}
+
+.callback-mob-call {
+	font-size: 18px;
+	font-weight: 700;
+	padding-bottom: 30px;
+	display: none;
+}
+
 //Communication-right
 
 .communication-right {
@@ -296,6 +347,8 @@ input[name="call-time"] {
 	li {
 		margin: 30px 0;
 		font-size: 15px;
+		display: flex;
+		align-items: center;
 	}
 	span {
 		margin-right: 20px;
@@ -376,6 +429,16 @@ input[name="call-time"] {
 	min-height: 600px;
 }
 
+.big-img-mob {
+	background: url(../img/jackson-mob.png);
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	min-width: 300px;
+	min-height: 400px;
+	display: none;
+}
+
 .business-h {
 	font-size: 40px;
 	font-weight: bold;
@@ -430,8 +493,10 @@ input[name="call-time"] {
 	text-decoration: none;
 	outline: none;
 	padding: 5px 10px;
-	// width: 100px;
 	border-radius: 20px;
+	span {
+		display: none;
+	}
 	&:hover {
 		color: #000;
 		background: rgba(0, 0, 0, 0);
@@ -448,13 +513,31 @@ input[name="call-time"] {
 	margin-top: 50px;
 	.wrap {
 		display: flex;
-		// flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
 	}
 	.big-business-right {
 		padding-right: 0;
 		padding-left: 40px;
+	}
+}
+
+.med-mob-img {
+	background: url(../img/shiva-mob.png);
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	min-width: 400px;
+	min-height: 500px;
+	position: absolute;
+	top: 0;
+	right: -100px;
+	display: none;
+}
+
+.medium-business .business-h {
+	br {
+		display: none;
 	}
 }
 
@@ -514,6 +597,19 @@ input[name="call-time"] {
 	margin-right: 40px;
 }
 
+.startup-mob-img {
+	background: url(../img/cosmo-mob.png);
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	min-width: 400px;
+	min-height: 500px;
+	position: absolute;
+	top: 20px;
+	right: -150px;
+	display: none;
+}
+
 /*Startup End*/
 
 
@@ -539,6 +635,87 @@ input[name="call-time"] {
 	position: relative;
 	min-height: 350px;
 	padding-top: 40px;
+}
+
+.slider-skills {
+	display: none;
+	padding-top: 20px;
+}
+
+.swipe {
+	display: flex;
+	align-items: center;
+	font-family: $fonts;
+	font-weight: 600;
+	padding: 15px 20px;
+}
+
+.skills-mob-wrap {
+	display: none;
+}
+
+.skills-mob {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	padding: 20px;
+	position: relative;
+	.business-h {
+		position: absolute;
+		right: 20px;
+	}
+}
+
+.skills-mob-img {
+	background: url(../img/rabbit.gif) center no-repeat;
+	background-size: contain;
+	min-width: 80%;
+	min-height: 300px;
+	left: -70px;
+	top: -40px;
+	position: absolute;
+}
+
+.swipe-img {
+	display: flex;
+	align-items: center;
+	padding-left: 15px;
+	img {
+		max-width: 10px;
+	}
+}
+
+.slider-item {
+	background: #fff;
+	padding: 20px 10px;
+	color: #000;
+	font-family: $fonts;
+	min-height: 160px;
+	border: 1px solid #eee;
+	border-bottom: 3px solid $main-color;
+	margin: 0 5px; 
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	.skill-name {
+		margin-top: 0;
+		padding-top: 0;
+		position: absolute;
+		bottom: 20px;
+	}
+	.skills-item-descr {
+		position: static;
+		font-size: 10px;
+	}
+}
+
+.slick-current {
+	background: #000;
+	color: #fff;
+	.skills-item-descr {
+		opacity: 1;
+		color: #fff;
+	}
 }
 
 .skills-item {
@@ -693,9 +870,10 @@ input[name="call-time"] {
 	width: 50%;
 	display: flex;
 	align-items: center;
-	a {
+	outline: none;
+	text-decoration: none;
+	span {
 		text-transform: uppercase;
-		text-decoration: none;
 		font-size: 20px;
 		color: #FF003C;
 		font-weight: bold;
@@ -802,6 +980,28 @@ input[name="call-time"] {
 	background-repeat: no-repeat;
 	min-width: 50%;
 	min-height: 450px;
+}
+
+.agency-mob-img {
+	background: url(../img/monro-mob.png);
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	min-width: 300px;
+	min-height: 450px;
+	position: absolute;
+	top: 0;
+	right: -40px;
+	display: none;
+}
+
+.agency-h-mob {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	font-size: 30px;
+	font-weight: 600;
+	display: none;
 }
 
 /*Account Agency End*/
@@ -1340,6 +1540,101 @@ input[name="call-time"] {
 
 /***Modal Window End ***/
 
+/* Mob Menu */
+
+.bottom-line {
+	background: #fff;
+	padding: 15px;
+	display: flex;
+	justify-content: flex-end;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: 300;
+	display: none;
+	a {
+		display: flex;
+		align-items: center;
+		text-decoration: none;
+		outline: none;
+		color: #000;
+		font-family: $fonts;
+		font-weight: 600;
+	}
+	img {
+		max-width: 20px;
+		margin-left: 15px;
+	}
+}
+
+.menu-mobile {
+	position: fixed;
+	width: 100%;
+	background: #fff;
+	z-index: 700;
+	height: 100%;
+	top: 0;
+	left: 100%;
+	right: 0;
+	bottom: 0;
+	padding: 30px;
+	overflow: auto;
+	nav {
+		padding-bottom: 30px;
+	}
+}
+
+.list-mob-menu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	a {
+		font-size: 18px;
+		color: #000;
+		font-family: $fonts;
+	}
+	li {
+		padding: 15px 0;
+	}
+}
+
+.menu-mobile-h {
+	font-size: 30px;
+	font-family: $fonts;
+	padding-left: 50px;
+}
+
+.menu-mob-close {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	border-radius: 50%;
+	border: 2px solid $main-color;
+	color: $main-color;
+	padding: 5px 8px;
+	cursor: pointer;
+}
+
+.mob-menu-inp {
+	background: $main-color;
+	border: 2px solid $main-color;
+	color: #fff;
+	font-weight: 600;
+	font-family: $fonts;
+	padding: 8px 50px;
+	border-radius: 20px;
+	transition: 0.5s;
+	&:hover {
+		background: rgba(0, 0, 0, 0);
+		color: #000;
+	}
+}
+
+/* Mob Menu End */
+
 /**** MAIN CONTENT END ****/
 
 /**** MEDIA ****/
@@ -1578,7 +1873,7 @@ input[name="call-time"] {
 	}
 
 	.red-carpet-block {
-		flex-direction: column;
+		// flex-direction: column;
 		margin: 0 auto;
 		align-items: center;
 	}
@@ -1637,8 +1932,85 @@ input[name="call-time"] {
 
 }
 
+@media screen and (max-width: 600px) {
+	.slider-skills {
+		display: block;
+	}
+
+	.skills-wrap {
+		display: none;
+	}
+
+	.skills .business-h {
+		display: none;
+	}
+
+	.skills-mob-wrap {
+		display: block;
+	}
+
+	.skills-mob {
+		.skills-img {
+			display: block;
+		}
+		.business-h {
+			display: block;
+		}
+	}
+}
+
 // Малые девайсы («ландшафтные телефоны», >= 576px)
 @media screen and (max-width: 576px) {
+
+	.callback{
+		display: none;
+	}
+
+	.location-text {
+		display: none;
+	}
+
+	.callback-mob-call,
+	.collback-mob-inp {
+		display: block;
+	}
+
+	.contacts-h {
+		font-size: 20px;
+	}
+
+	.mob-location {
+		display: inline;
+	}
+
+	.contacts-list {
+		span {
+			font-weight: normal;
+			font-size: 16px;
+		}
+	}
+
+	.communication-right .account-agency-h {
+		display: block;
+		font-size: 30px;
+		line-height: 30px;
+		padding-bottom: 20px;
+		padding-left: 60px;
+	}
+
+	.communication-right {
+		padding-top: 20px;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.contacts-text {
+		display: none;
+	}
+
+	.mob-icon {
+		display: inline-block;
+	}
 
 	.welcome {
 		font-size: 18px;
@@ -1681,20 +2053,10 @@ input[name="call-time"] {
 
 	.business-list li {
 		width: 100%;
-		text-align: center;
 	}
 
 	.for-you {
 		display: block;
-		text-align: center;
-	}
-
-	.business-h {
-		text-align: center;
-	}
-
-	.big-business-right p {
-		text-align: center;
 	}
 
 	.big-business-right {
@@ -1702,7 +2064,10 @@ input[name="call-time"] {
 	}
 
 	.logo-img {
-		display: none;
+		position: fixed;
+		top: 25px;
+		left: 20px;
+		z-index: 1000;
 	}
 
 	.callback-h {
@@ -1736,6 +2101,190 @@ input[name="call-time"] {
 		width: 100%;
 	}
 
+	//Big-bussines
+	.big-business {
+		position: relative;
+	}
+
+	.big-img-mob {
+		display: block;
+		position: absolute;
+		top: 50px;
+		left: 0;
+		transform: rotate(20deg);
+	}
+
+	.big-business-right {
+		position: relative;
+		z-index: 2;
+		padding-top: 300px;
+	}
+
+	.big-business-right {
+		width: 100%;
+		padding-left: 150px;
+	}
+
+	.inp-big-business {
+		position: absolute;
+		bottom: 0;
+		padding: 10px;
+		font-weight: normal;
+		left: 50%;
+		transform: translateX(-50%);
+		text-align: center;
+		width: 70%;
+	}
+
+	.inp-big-business span {
+		display: inline;
+		font-weight: normal !important;
+	}
+
+	//Medium Bussiness
+	.medium-business .business-h {
+		margin-top: 40px;
+		padding-bottom: 300px;
+	}
+
+	.medium-business {
+		position: relative;
+	}
+
+	.med-mob-img {
+		display: block;
+	}
+
+	.medium-business .business-h {
+		br {
+			display: block;
+		}
+	}
+
+	.medium-business .big-business-right {
+		padding: 40px 40px 60px 40px;
+	}
+
+	.for-you {
+		color: red;
+		font-size: 20px;
+		font-weight: 600;
+	}
+
+	.big-business-right p {
+		font-weight: 600;
+	}
+
+	.business-list li span {
+		font-weight: 600;
+	}
+
+	.medium-business p {
+		br {
+			display: none;
+		}
+	}
+
+	.inp-med-business {
+		position: absolute;
+		bottom: 0;
+		padding: 10px;
+		font-weight: normal;
+		left: 50%;
+		transform: translateX(-50%);
+		text-align: center;
+		width: 70%;
+	}
+
+	//Sturtup
+	.startup {
+		position: relative;
+	}
+
+	.startup-mob-img {
+		display: block;
+	}
+
+	.startup .big-business-right {
+		padding: 40px 40px 60px 40px;
+	}
+
+	.startup .business-h {
+		margin-top: 40px;
+		padding-bottom: 300px;
+	}
+
+	//Red Carpet
+	.red-carpet-block {
+		background: rgba(0, 0, 0, 0);
+	}
+
+	.red-carpet-h {
+		display: none;
+	}
+
+	.carpet-item-img {
+		margin: 0;
+	}
+
+	.carpet-item {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.item-brain {
+		margin-top: -50px;
+	}
+	.item-hands {
+		left: -30px;
+	}
+	.item-chess {
+		margin-top: -50px;
+	}
+	.item-people {
+		margin-left: -30px;
+	}
+
+	.carpet-item span {
+		font-size: 15px;
+	}
+
+	//Account-agency
+	.account-agency {
+		margin: 0;
+		position: relative;
+		padding-top: 350px;
+	}
+
+	.account-agency-h {
+		font-size: 30px;
+		line-height: 35px;
+	}
+
+	.account-agency-left p {
+		font-size: 18px;
+	}
+
+	.account-agency-left {
+		position: relative;
+		z-index: 2;
+	}
+
+	.account-agency-inp {
+		position: absolute;
+		top: -60px;
+		font-size: 10px;
+		padding: 10px 20px;
+	}
+
+	.agency-mob-img,
+	.agency-h-mob {
+		display: block;
+	}
+
+	.oscar {
+		display: none;
+	}
 }
 
 /**** MEDIA END ****/
