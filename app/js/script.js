@@ -5,6 +5,12 @@ $(function () {
 		$('.hand').css({'top': e.pageY - 25, 'left': e.pageX + 3})
 	});
 
+	if ($(window).width() < 1000) {
+		$(document).touchstart(function(e){
+			$('.hand').css({'top': e.pageY - 25, 'left': e.pageX + 3})
+		});
+	}
+
 	//Включить свет
 	$('.light').on('click', function () {
 		$('#preloader').fadeOut(1000);

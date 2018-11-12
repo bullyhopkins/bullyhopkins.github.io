@@ -368,7 +368,9 @@ body {
   width: 200px;
   height: 200px;
   position: absolute;
-  z-index: 1010; }
+  z-index: 1010;
+  right: 30px;
+  bottom: 30px; }
 
 #position {
   color: #fff; }
