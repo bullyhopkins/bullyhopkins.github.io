@@ -1126,7 +1126,8 @@ input[name="call-time"] {
   width: 100%;
   padding: 20px 0;
   bottom: 0;
-  left: 100%;
+  display: none;
+  left: 0;
   right: 0;
   font-family: "Proxima", arial, serif; }
 
@@ -1173,6 +1174,12 @@ input[name="call-time"] {
     .list-menu .menu-inp:hover {
       background: rgba(0, 0, 0, 0);
       color: #000; }
+
+.mobile-menu-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer; }
 
 /***Modal Window***/
 .sturtup-window {
@@ -1642,7 +1649,29 @@ input[name="call-time"] {
 
 @media screen and (max-width: 1070px) {
   .startup-tariff {
-    width: 100%; } }
+    width: 100%; }
+  .menu {
+    height: 100%;
+    overflow: auto;
+    width: 230px; }
+    .menu nav {
+      overflow: auto; }
+    .menu ul {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-justify-content: space-around;
+          -ms-flex-pack: distribute;
+              justify-content: space-around;
+      position: absolute;
+      height: 100%;
+      overflow: auto; }
+    .menu li {
+      text-align: center; }
+    .menu .menu-inp {
+      margin: 0; } }
 
 @media screen and (max-width: 1000px) {
   .communication .wrap {

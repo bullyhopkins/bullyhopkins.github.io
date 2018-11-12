@@ -25,9 +25,13 @@ $(function () {
 	//Menu
 	$('.oscar img').on('click', function () {
 		$('.oscar').fadeOut(500);
-		$('.menu').animate({
-			left: 0
-		}, 700);
+		$('.menu').fadeIn(500);
+	});
+
+	//Menu Mobile 
+	$('.mobile-menu-close').on('click', function () {
+		$('.oscar').fadeIn(500);
+		$('.menu').fadeOut(500);
 	});
 
 	//Sturtup window
@@ -102,4 +106,5 @@ $(function () {
 		}, 1000);
 		e.preventDefault();
 	});
+
 });
