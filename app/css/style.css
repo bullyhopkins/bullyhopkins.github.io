@@ -306,6 +306,12 @@ html,
 body {
   overflow: hidden; }
 
+a,
+button,
+input {
+  text-decoration: none;
+  outline: none; }
+
 .wrap {
   max-width: 1300px;
   margin: 0 auto; }
