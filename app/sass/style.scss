@@ -3,10 +3,10 @@ $main-color: #D81240;
 $fonts: 'Proxima', arial, serif;
 $fontsHel: "Proxima", 'Montserrat', arial, serif;
 
-// html,
-// body {
-// 	overflow: hidden;
-// }
+html,
+body {
+	overflow: hidden;
+}
 
 .wrap {
 	max-width: 1300px;
@@ -19,7 +19,7 @@ $fontsHel: "Proxima", 'Montserrat', arial, serif;
 
 #preloader {
 	background-color: #000;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -28,7 +28,7 @@ $fontsHel: "Proxima", 'Montserrat', arial, serif;
 	cursor: none;
 	overflow: hidden;
 	font-family: 'Proxima';
-	display: none; //delete
+	// display: none; //delete
 }
 
 .welcome {
@@ -43,7 +43,7 @@ $fontsHel: "Proxima", 'Montserrat', arial, serif;
 	top: 50%;
 	left: 50%;
 	transform: translateX(-50%)translateY(-50%);
-	min-width: 400px;
+	min-width: 70%;
 	min-height: 400px;
 	background-image: url(../img/monro2.gif);
 	background-position: center center;
@@ -56,10 +56,10 @@ $fontsHel: "Proxima", 'Montserrat', arial, serif;
 }
 
 .hand {
-	max-width: 200px;
-	max-height: 200px;
+	width: 200px;
+	height: 200px;
 	position: absolute;
-	z-index: 1001;
+	z-index: 1010;
 }
 
 #position {
@@ -67,8 +67,9 @@ $fontsHel: "Proxima", 'Montserrat', arial, serif;
 }
 
 .logo {
-	max-width: 70px;
-	max-height: 70px;
+	width: 15%;
+	max-width: 50px;
+	max-height: 50px;
 	position: absolute;
 	top: 20px;
 	left: 25px;
@@ -108,17 +109,6 @@ $fontsHel: "Proxima", 'Montserrat', arial, serif;
 	font-size: 18px;
 	line-height: 25px;
 	letter-spacing: 9px;
-}
-
-.preloader-dots {
-	position: absolute;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	top: 50%;
-	right: 30px;
-	transform: translateY(-50%);
 }
 
 .dot {
@@ -1641,6 +1631,22 @@ input[name="call-time"] {
 
 // Малые девайсы («ландшафтные телефоны», >= 576px)
 @media screen and (max-width: 576px) {
+
+	.welcome {
+		font-size: 18px;
+		font-weight: 600;
+	}
+
+	#preloader .inp-pulse {
+		margin: 0;
+		// min-width: 25px;
+		// min-height: 25px;
+	}
+
+	.hand {
+		width: 150px;
+		height: 150px;
+	}
 
 	.form-flex div {
 		width: 100%;

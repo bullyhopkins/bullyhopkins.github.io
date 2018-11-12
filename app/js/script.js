@@ -1,20 +1,19 @@
 $(function () {
 
-	//Скролл снизу вверх
-	$(document).scrollTop($('body').height());
-
 	//Cлежение руки за курсором
 	$(document).mousemove(function(e){
 		$('.hand').css({'top': e.pageY - 25, 'left': e.pageX + 3})
 	});
 
 	//Включить свет
-	$('.inp-light').on('click', function () {
+	$('.light').on('click', function () {
 		$('#preloader').fadeOut(1000);
 		$('html, body').css({ 'overflow': 'auto' });
+		//Скролл снизу вверх
+		$(document).scrollTop($('body').height());
 	});
 
-	//Skills animation
+	// // Skills animation
 	// $('.skills-item').hover(function(){
 	// 	$('.skills-item-descr').slideToggle(300);
 	// },

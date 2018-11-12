@@ -302,6 +302,10 @@ template {
 [hidden] {
   display: none; }
 
+html,
+body {
+  overflow: hidden; }
+
 .wrap {
   max-width: 1300px;
   margin: 0 auto; }
@@ -312,7 +316,7 @@ template {
 
 #preloader {
   background-color: #000;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -320,8 +324,7 @@ template {
   z-index: 1000;
   cursor: none;
   overflow: hidden;
-  font-family: 'Proxima';
-  display: none; }
+  font-family: 'Proxima'; }
 
 .welcome {
   color: #fff;
@@ -336,7 +339,7 @@ template {
   -webkit-transform: translateX(-50%) translateY(-50%);
       -ms-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
-  min-width: 400px;
+  min-width: 70%;
   min-height: 400px;
   background-image: url(../img/monro2.gif);
   background-position: center center;
@@ -362,17 +365,18 @@ template {
           align-items: center; }
 
 .hand {
-  max-width: 200px;
-  max-height: 200px;
+  width: 200px;
+  height: 200px;
   position: absolute;
-  z-index: 1001; }
+  z-index: 1010; }
 
 #position {
   color: #fff; }
 
 .logo {
-  max-width: 70px;
-  max-height: 70px;
+  width: 15%;
+  max-width: 50px;
+  max-height: 50px;
   position: absolute;
   top: 20px;
   left: 25px; }
@@ -413,31 +417,6 @@ template {
   font-size: 18px;
   line-height: 25px;
   letter-spacing: 9px; }
-
-.preloader-dots {
-  position: absolute;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  top: 50%;
-  right: 30px;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%); }
 
 .dot {
   border: 2px solid #472f2f;
@@ -1832,6 +1811,14 @@ input[name="call-time"] {
     padding: 80px 20px; } }
 
 @media screen and (max-width: 576px) {
+  .welcome {
+    font-size: 18px;
+    font-weight: 600; }
+  #preloader .inp-pulse {
+    margin: 0; }
+  .hand {
+    width: 150px;
+    height: 150px; }
   .form-flex div {
     width: 100%; }
   .communication-right {
