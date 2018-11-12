@@ -369,7 +369,7 @@ body {
   height: 200px;
   position: absolute;
   z-index: 1010;
-  right: 30px;
+  right: -50px;
   bottom: 30px; }
 
 #position {
