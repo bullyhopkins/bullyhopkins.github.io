@@ -560,7 +560,7 @@ input[name="call-time"] {
 }
 
 .medium-business-img {
-	background: url(../img/shiva.gif);
+	background: url(../img/shiva+.gif);
 	background-size: contain;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -588,7 +588,7 @@ input[name="call-time"] {
 }
 
 .startup-img {
-	background: url(../img/cosmo.gif);
+	background: url(../img/cosmo1.gif);
 	background-size: contain;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -1552,7 +1552,7 @@ input[name="call-time"] {
 	right: 0;
 	left: 0;
 	z-index: 300;
-	display: none;
+	// display: none; 
 	a {
 		display: flex;
 		align-items: center;

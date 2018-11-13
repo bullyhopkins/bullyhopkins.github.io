@@ -18,6 +18,13 @@ $(function () {
 		}, 1000);
 	});
 
+	//Close Mob Menu
+	$('.menu-mob-close').on('click', function () {
+		$('.menu-mobile').animate({
+			left: 100 + "%"
+		}, 1000);
+	});
+
 	//Slider skills
 	$('.slider-skills').slick({
 		infinite: true,
