@@ -1279,13 +1279,13 @@ input[name="call-time"] {
     color: white; }
 
 .account-agency-img {
-  background: url(../img/monro1.gif);
+  background: url(../img/monroend.gif);
   -webkit-background-size: contain;
           background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
   min-width: 50%;
-  min-height: 450px; }
+  min-height: 420px; }
 
 .agency-mob-img {
   background: url(../img/monro-mob.png);
