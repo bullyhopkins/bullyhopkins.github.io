@@ -310,7 +310,8 @@ input {
 
 .wrap {
   max-width: 1300px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  overflow: hidden; }
 
 * {
   -webkit-box-sizing: border-box;
