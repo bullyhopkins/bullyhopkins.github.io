@@ -1853,7 +1853,8 @@ input[name="call-time"] {
   bottom: 0;
   right: 0;
   left: 0;
-  z-index: 300; }
+  z-index: 300;
+  display: none; }
   .bottom-line a {
     display: -webkit-box;
     display: -webkit-flex;
