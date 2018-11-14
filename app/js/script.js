@@ -1,5 +1,19 @@
 $(function () {
 
+	//Scroll
+	// var winHeight = $(window).innerHeight();
+	// $(document).ready(function () {
+	// 	$(".panel").height(winHeight);
+	// 	$("body").height(winHeight*$(".panel").length);
+	// });
+
+	// window.addEventListener('resize', function (event) {
+	// 	$(".panel").height($(window).innerHeight());
+	// });
+	// $(window).on('scroll',function(){
+	// 	$(".panelCon").css('bottom',$(window).scrollTop()*-1);
+	// });
+
 	//Cлежение руки за курсором
 	$(document).mousemove(function(e){
 		$('.hand').css({'top': e.pageY - 25, 'left': e.pageX + 3})
@@ -30,6 +44,7 @@ $(function () {
 		infinite: true,
 		slidesToShow: 2,
 		slidesToScroll: 1,
+		arrows: false,
 		responsive: [
 			{
 				breakpoint: 400,
@@ -58,12 +73,14 @@ $(function () {
 	//Menu
 	$('.oscar img').on('click', function () {
 		$('.oscar').fadeOut(500);
+		$('.call-fix-wrap').fadeOut(400);
 		$('.menu').fadeIn(500);
 	});
 
 	//Menu Mobile 
 	$('.mobile-menu-close').on('click', function () {
 		$('.oscar').fadeIn(500);
+		$('.call-fix-wrap').fadeIn(400);
 		$('.menu').fadeOut(500);
 	});
 
@@ -138,6 +155,33 @@ $(function () {
 			scrollTop: $('#red-carpet').offset().top
 		}, 1000);
 		e.preventDefault();
+	});
+
+	//Red Carpet
+	var $brain = $('.item-brain');
+	var $hands = $('.item-hands');
+	var $chess = $('.item-chess');
+	var $people = $('.item-people');
+	var $brainCont = $('.brain-content');
+	var $handsCont = $('.hands-content');
+	var $chessCont = $('.chess-content');
+	var $peopleCont = $('.people-content');
+
+	$brain.hover(function () {
+		$handsCont.fadeOut(300);
+		$chessCont.fadeOut(300);
+		$peopleCont.fadeOut(300);
+		setTimeout(function () {
+			$('.brain-descr').fadeIn(500);
+		}, 300);
+	}, 
+	function () {
+		$('.brain-descr').fadeOut(300);
+		setTimeout(function () {
+			$handsCont.fadeIn(500);
+			$chessCont.fadeIn(500);
+			$peopleCont.fadeIn(500);
+		}, 300);
 	});
 
 });

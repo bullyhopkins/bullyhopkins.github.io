@@ -310,8 +310,7 @@ input {
 
 .wrap {
   max-width: 1300px;
-  margin: 0 auto;
-  overflow: hidden; }
+  margin: 0 auto; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -439,6 +438,9 @@ input {
   min-height: 15px; }
 
 /**** MAIN CONTENT ****/
+.main-content {
+  overflow: hidden; }
+
 body {
   background: url(../img/path.png);
   -webkit-background-size: cover;
@@ -452,7 +454,7 @@ body {
 
 .logo-img {
   background: url(../img/logo.svg) center no-repeat;
-  position: absolute;
+  position: fixed;
   top: 20px;
   left: 20px;
   min-width: 50px;
@@ -572,7 +574,7 @@ input[name="call-time"] {
 .callback-h {
   font-family: "Proxima", arial, serif;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 26px;
   margin-bottom: 15px; }
 
 .callback-btn {
@@ -632,13 +634,13 @@ input[name="call-time"] {
 
 .contacts-h,
 .documents-h {
-  font-size: 30px;
+  font-size: 35px;
   font-family: "Proxima", arial, serif;
   font-weight: bold; }
 
 .contacts-list li {
   margin: 30px 0;
-  font-size: 15px;
+  font-size: 17px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -742,7 +744,7 @@ input[name="call-time"] {
   display: none; }
 
 .business-h {
-  font-size: 40px;
+  font-size: 50px;
   font-weight: bold;
   font-family: "Proxima", arial, serif; }
 
@@ -753,13 +755,12 @@ input[name="call-time"] {
   min-width: 500px; }
   .big-business-right p {
     font-size: 18px;
-    font-family: "Proxima", "Proxima", arial, serif;
-    font-weight: 300; }
+    font-family: "Proxima", "Proxima", arial, serif; }
 
 .for-you {
   font-size: 30px;
   font-family: "Proxima", "Montserrat", arial, serif;
-  font-weight: 300; }
+  font-weight: 500; }
 
 .business-list {
   margin: 0;
@@ -824,16 +825,10 @@ input[name="call-time"] {
     padding-left: 40px; }
 
 .med-mob-img {
-  background: url(../img/shiva-mob.png);
-  -webkit-background-size: contain;
-          background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat;
-  min-width: 400px;
-  min-height: 500px;
   position: absolute;
-  top: 0;
-  right: -100px;
+  top: 70px;
+  right: 0;
+  max-width: 250px;
   display: none; }
 
 .medium-business .business-h br {
@@ -888,6 +883,9 @@ input[name="call-time"] {
     padding-left: 0;
     padding-right: 40px; }
 
+.skills .business-h {
+  padding-left: 10%; }
+
 .startup-img {
   background: url(../img/cosmo1.gif);
   -webkit-background-size: contain;
@@ -899,17 +897,11 @@ input[name="call-time"] {
   margin-right: 40px; }
 
 .startup-mob-img {
-  background: url(../img/cosmo-mob.png);
-  -webkit-background-size: contain;
-          background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat;
-  min-width: 400px;
-  min-height: 500px;
   position: absolute;
-  top: 20px;
-  right: -150px;
-  display: none; }
+  top: 60px;
+  right: 0;
+  display: none;
+  max-width: 270px; }
 
 /*Startup End*/
 /*Skills*/
@@ -1058,8 +1050,6 @@ input[name="call-time"] {
         -ms-transform: scale(2);
             transform: scale(2);
     border: #181818;
-    -webkit-animation: skills 1.2s linear;
-            animation: skills 1.2s linear;
     z-index: 1000; }
   .skills-item:hover .skills-item-descr {
     opacity: 1; }
@@ -1161,7 +1151,8 @@ input[name="call-time"] {
 
 .red-carpet-h {
   text-align: right;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  padding-right: 15%; }
 
 .red-carpet-block {
   padding: 50px;
@@ -1172,10 +1163,24 @@ input[name="call-time"] {
   display: flex;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
+          flex-wrap: wrap;
+  width: 700px;
+  height: 360px; }
 
 .carpet-item {
   width: 50%;
+  outline: none;
+  text-decoration: none;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s; }
+  .carpet-item span {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #FF003C;
+    font-weight: bold; }
+
+.carpet-item-cont {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1183,14 +1188,10 @@ input[name="call-time"] {
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center;
-  outline: none;
-  text-decoration: none; }
-  .carpet-item span {
-    text-transform: uppercase;
-    font-size: 20px;
-    color: #FF003C;
-    font-weight: bold; }
+          align-items: center; }
+
+.brain-descr {
+  display: none; }
 
 .carpet-item-img {
   min-width: 60px;
@@ -1308,6 +1309,32 @@ input[name="call-time"] {
   font-weight: 600;
   display: none; }
 
+.scroll-down {
+  margin-left: 20%;
+  color: #fff;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.scroll-down img {
+  max-width: 13px; }
+
+.take-oscar {
+  color: #fff;
+  margin-left: 25%;
+  font-size: 15px;
+  letter-spacing: 3px; }
+
 /*Account Agency End*/
 .oscar {
   position: fixed;
@@ -1359,7 +1386,8 @@ input[name="call-time"] {
     text-decoration: none;
     outline: none;
     color: #000;
-    font-size: 15px; }
+    font-size: 15px;
+    font-weight: 600; }
   .list-menu .menu-inp {
     background: #F42A59;
     font-family: "Proxima", "Montserrat", arial, serif;
@@ -1934,6 +1962,30 @@ input[name="call-time"] {
     color: #000; }
 
 /* Mob Menu End */
+/* Заказать звонок */
+.call-fix-wrap {
+  position: fixed;
+  left: 30px;
+  bottom: 30px;
+  z-index: 600; }
+
+.call-fix-inp {
+  background: #D81240;
+  border: 2px solid #D81240;
+  color: #fff;
+  font-weight: 600;
+  font-family: "Proxima", arial, serif;
+  padding: 8px 50px;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
+  .call-fix-inp:hover {
+    background: rgba(0, 0, 0, 0);
+    color: #000; }
+
+/* Заказать звонок End */
 /**** MAIN CONTENT END ****/
 /**** MEDIA ****/
 @media screen and (max-width: 1200px) {

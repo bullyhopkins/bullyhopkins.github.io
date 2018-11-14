@@ -18,7 +18,7 @@ input {
 .wrap {
 	max-width: 1300px;
 	margin: 0 auto;
-	overflow: hidden;
+	// overflow: hidden;
 }
 
 * {
@@ -137,6 +137,10 @@ input {
 }
 /**** MAIN CONTENT ****/
 
+.main-content {
+	overflow: hidden;
+}
+
 body {
 	background: url(../img/path.png);
 	background-size: cover;
@@ -155,7 +159,7 @@ body {
 
 .logo-img {
 	background: url(../img/logo.svg) center no-repeat;
-	position: absolute;
+	position: fixed;
 	top: 20px;
 	left: 20px;
 	min-width: 50px;
@@ -274,7 +278,7 @@ input[name="call-time"] {
 .callback-h {
 	font-family: $fonts;
 	font-weight: bold;
-	font-size: 25px;
+	font-size: 26px;
 	margin-bottom: 15px;
 }
 
@@ -339,7 +343,7 @@ input[name="call-time"] {
 
 .contacts-h,
 .documents-h {
-	font-size: 30px;
+	font-size: 35px;
 	font-family: $fonts;
 	font-weight: bold;
 }
@@ -347,7 +351,7 @@ input[name="call-time"] {
 .contacts-list {
 	li {
 		margin: 30px 0;
-		font-size: 15px;
+		font-size: 17px;
 		display: flex;
 		align-items: center;
 	}
@@ -441,7 +445,7 @@ input[name="call-time"] {
 }
 
 .business-h {
-	font-size: 40px;
+	font-size: 50px;
 	font-weight: bold;
 	font-family: $fonts;
 }
@@ -454,14 +458,14 @@ input[name="call-time"] {
 	p {
 		font-size: 18px;
 		font-family: "Proxima", $fonts;
-		font-weight: 300;
+		// font-weight: 500;
 	}
 }
 
 .for-you {
 	font-size: 30px;
 	font-family: $fontsHel;
-	font-weight: 300;
+	font-weight: 500;
 }
 
 .business-list {
@@ -524,15 +528,16 @@ input[name="call-time"] {
 }
 
 .med-mob-img {
-	background: url(../img/shiva-mob.png);
-	background-size: contain;
-	background-position: center center;
-	background-repeat: no-repeat;
-	min-width: 400px;
-	min-height: 500px;
+	// background: url(../img/shiva-mob.png);
+	// background-size: contain;
+	// background-position: center center;
+	// background-repeat: no-repeat;
+	// min-width: 400px;
+	// min-height: 500px;
 	position: absolute;
-	top: 0;
-	right: -100px;
+	top: 70px;
+	right: 0;
+	max-width: 250px;
 	display: none;
 }
 
@@ -588,6 +593,10 @@ input[name="call-time"] {
 	}
 }
 
+.skills .business-h {
+	padding-left: 10%;
+}
+
 .startup-img {
 	background: url(../img/cosmo1.gif);
 	background-size: contain;
@@ -599,16 +608,17 @@ input[name="call-time"] {
 }
 
 .startup-mob-img {
-	background: url(../img/cosmo-mob.png);
-	background-size: contain;
-	background-position: center center;
-	background-repeat: no-repeat;
-	min-width: 400px;
-	min-height: 500px;
+	// background: url(../img/cosmo-mob1.png);
+	// background-size: contain;
+	// background-position: center center;
+	// background-repeat: no-repeat;
+	// min-width: 400px;
+	// min-height: 500px;
 	position: absolute;
-	top: 20px;
-	right: -150px;
+	top: 60px;
+	right: 0;
 	display: none;
+	max-width: 270px;
 }
 
 /*Startup End*/
@@ -737,7 +747,7 @@ input[name="call-time"] {
 		background: #181818;
 		transform: scale(2);
 		border: #181818;
-		animation: skills 1.2s linear;
+		// animation: skills 1.2s linear;
 		z-index: 1000;
 	}
 	&:hover .skills-item-descr{
@@ -858,6 +868,7 @@ input[name="call-time"] {
 .red-carpet-h {
 	text-align: right;
 	margin-bottom: 40px;
+	padding-right: 15%;
 }
 
 .red-carpet-block {
@@ -865,20 +876,30 @@ input[name="call-time"] {
 	background: #fff;
 	display: flex;
 	flex-wrap: wrap;
+	width: 700px;
+	height: 360px;
 }
 
 .carpet-item {
 	width: 50%;
-	display: flex;
-	align-items: center;
 	outline: none;
 	text-decoration: none;
+	transition: 1s;
 	span {
 		text-transform: uppercase;
 		font-size: 20px;
 		color: #FF003C;
 		font-weight: bold;
 	}
+}
+
+.carpet-item-cont {
+	display: flex;
+	align-items: center;
+}
+
+.brain-descr {
+	display: none
 }
 
 .carpet-item-img {
@@ -1005,6 +1026,26 @@ input[name="call-time"] {
 	display: none;
 }
 
+.scroll-down {
+	margin-left: 20%;
+	color: #fff;
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+	// margin-top: -200px;
+}
+
+.scroll-down img {
+	max-width: 13px;
+}
+
+.take-oscar {
+	color: #fff;
+	margin-left: 25%;
+	font-size: 15px;
+	letter-spacing: 3px;
+}
+
 /*Account Agency End*/
 
 //OSCAR
@@ -1057,6 +1098,7 @@ input[name="call-time"] {
 		outline: none;
 		color: #000;
 		font-size: 15px;
+		font-weight: 600;
 	}
 	.menu-inp {
 		background: #F42A59;
@@ -1636,6 +1678,32 @@ input[name="call-time"] {
 
 /* Mob Menu End */
 
+/* Заказать звонок */
+
+.call-fix-wrap {
+	position: fixed;
+	left: 30px;
+	bottom: 30px;
+	z-index: 600;
+}
+
+.call-fix-inp {
+	background: $main-color;
+	border: 2px solid $main-color;
+	color: #fff;
+	font-weight: 600;
+	font-family: $fonts;
+	padding: 8px 50px;
+	border-radius: 20px;
+	transition: 0.5s;
+	&:hover {
+		background: rgba(0, 0, 0, 0);
+		color: #000;
+	}
+}
+
+/* Заказать звонок End */
+
 /**** MAIN CONTENT END ****/
 
 /**** MEDIA ****/
@@ -1962,6 +2030,10 @@ input[name="call-time"] {
 
 // Малые девайсы («ландшафтные телефоны», >= 576px)
 @media screen and (max-width: 576px) {
+
+	// #red-carpet {
+	// 	display: none;
+	// }
 
 	.callback{
 		display: none;
