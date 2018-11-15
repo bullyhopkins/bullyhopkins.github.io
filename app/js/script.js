@@ -14,10 +14,10 @@ $(function () {
 	// 	$(".panelCon").css('bottom',$(window).scrollTop()*-1);
 	// });
 
-	//Cлежение руки за курсором
-	$(document).mousemove(function(e){
-		$('.hand').css({'top': e.pageY - 25, 'left': e.pageX + 3})
-	});
+	// //Cлежение руки за курсором
+	// $(document).mousemove(function(e){
+	// 	$('.hand').css({'top': e.pageY - 25, 'left': e.pageX + 3})
+	// });
 
 	// if ($(window).width() < 1000) {
 	// 	$(document).touchstart(function(e){
@@ -167,6 +167,7 @@ $(function () {
 	var $chessCont = $('.chess-content');
 	var $peopleCont = $('.people-content');
 
+	//Brain
 	$brain.hover(function () {
 		$handsCont.fadeOut(300);
 		$chessCont.fadeOut(300);
@@ -181,6 +182,60 @@ $(function () {
 			$handsCont.fadeIn(500);
 			$chessCont.fadeIn(500);
 			$peopleCont.fadeIn(500);
+		}, 300);
+	});
+
+	//Hands
+	$hands.hover(function () {
+		$brainCont.fadeOut(300);
+		$chessCont.fadeOut(300);
+		$peopleCont.fadeOut(300);
+		setTimeout(function () {
+			$('.hands-descr').fadeIn(500);
+		}, 300);
+	}, 
+	function () {
+		$('.hands-descr').fadeOut(300);
+		setTimeout(function () {
+			$brainCont.fadeIn(500);
+			$chessCont.fadeIn(500);
+			$peopleCont.fadeIn(500);
+		}, 300);
+	});
+
+	//Chess
+	$chess.hover(function () {
+		$brainCont.fadeOut(300);
+		$handsCont.fadeOut(300);
+		$peopleCont.fadeOut(300);
+		setTimeout(function () {
+			$('.chess-descr').fadeIn(500);
+		}, 300);
+	}, 
+	function () {
+		$('.chess-descr').fadeOut(300);
+		setTimeout(function () {
+			$brainCont.fadeIn(500);
+			$handsCont.fadeIn(500);
+			$peopleCont.fadeIn(500);
+		}, 300);
+	});
+
+	//People
+	$people.hover(function () {
+		$brainCont.fadeOut(300);
+		$handsCont.fadeOut(300);
+		$chessCont.fadeOut(300);
+		setTimeout(function () {
+			$('.people-descr').fadeIn(500);
+		}, 300);
+	}, 
+	function () {
+		$('.people-descr').fadeOut(300);
+		setTimeout(function () {
+			$brainCont.fadeIn(500);
+			$handsCont.fadeIn(500);
+			$chessCont.fadeIn(500);
 		}, 300);
 	});
 

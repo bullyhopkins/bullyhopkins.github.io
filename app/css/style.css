@@ -302,6 +302,11 @@ template {
 [hidden] {
   display: none; }
 
+html,
+body {
+  margin: 0;
+  padding: 0; }
+
 a,
 button,
 input {
@@ -439,7 +444,10 @@ input {
 
 /**** MAIN CONTENT ****/
 .main-content {
-  overflow: hidden; }
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 0; }
 
 body {
   background: url(../img/path.png);
@@ -734,13 +742,7 @@ input[name="call-time"] {
   min-height: 600px; }
 
 .big-img-mob {
-  background: url(../img/jackson-mob.png);
-  -webkit-background-size: contain;
-          background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat;
-  min-width: 300px;
-  min-height: 400px;
+  max-width: 270px;
   display: none; }
 
 .business-h {
@@ -1171,9 +1173,18 @@ input[name="call-time"] {
   width: 50%;
   outline: none;
   text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-transition: 1s;
   -o-transition: 1s;
-  transition: 1s; }
+  transition: 1s;
+  height: 120px; }
   .carpet-item span {
     text-transform: uppercase;
     font-size: 20px;
@@ -1190,7 +1201,10 @@ input[name="call-time"] {
       -ms-flex-align: center;
           align-items: center; }
 
-.brain-descr {
+.brain-descr,
+.hands-descr,
+.chess-descr,
+.people-descr {
   display: none; }
 
 .carpet-item-img {
@@ -1222,7 +1236,7 @@ input[name="call-time"] {
   background-position: center center; }
 
 .carpet-item-mt {
-  margin-top: 80px; }
+  margin-top: 50px; }
 
 /*Red Carpet End*/
 /*Account Agency*/
@@ -1330,15 +1344,16 @@ input[name="call-time"] {
   max-width: 13px; }
 
 .take-oscar {
-  color: #fff;
-  margin-left: 25%;
-  font-size: 15px;
+  position: absolute;
+  top: -50px;
+  left: 20px;
+  font-size: 13px;
   letter-spacing: 3px; }
 
 /*Account Agency End*/
 .oscar {
   position: fixed;
-  bottom: 50px;
+  bottom: 80px;
   right: -100px; }
   .oscar .inp-pulse {
     top: -25px;
@@ -1965,7 +1980,7 @@ input[name="call-time"] {
 /* Заказать звонок */
 .call-fix-wrap {
   position: fixed;
-  left: 30px;
+  right: 30px;
   bottom: 30px;
   z-index: 600; }
 
@@ -2067,7 +2082,15 @@ input[name="call-time"] {
   .red-carpet-block {
     padding: 15px; }
   .carpet-item {
-    margin: 10px auto; }
+    margin: 10px auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
   .people-img {
     min-width: 100px;
     min-height: 100px;
@@ -2283,11 +2306,8 @@ input[name="call-time"] {
   .big-img-mob {
     display: block;
     position: absolute;
-    top: 50px;
-    left: 0;
-    -webkit-transform: rotate(20deg);
-        -ms-transform: rotate(20deg);
-            transform: rotate(20deg); }
+    top: 0;
+    left: 0; }
   .big-business-right {
     position: relative;
     z-index: 2;
@@ -2351,7 +2371,8 @@ input[name="call-time"] {
     margin-top: 40px;
     padding-bottom: 300px; }
   .red-carpet-block {
-    background: rgba(0, 0, 0, 0); }
+    background: rgba(0, 0, 0, 0);
+    display: none; }
   .red-carpet-h {
     display: none; }
   .carpet-item-img {
