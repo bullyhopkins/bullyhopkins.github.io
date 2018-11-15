@@ -1182,10 +1182,14 @@ input[name="call-time"] {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
   -webkit-transition: 1s;
   -o-transition: 1s;
   transition: 1s;
@@ -1204,13 +1208,28 @@ input[name="call-time"] {
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 1; }
+
+.carpet-item-none {
+  opacity: 0; }
 
 .brain-descr,
 .hands-descr,
 .chess-descr,
 .people-descr {
-  display: none; }
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0;
+  width: 100%;
+  position: absolute; }
+
+.descr-active {
+  opacity: 1 !important; }
 
 .carpet-item-img {
   min-width: 60px;
@@ -1235,7 +1254,7 @@ input[name="call-time"] {
 .people-img {
   min-width: 120px;
   min-height: 120px;
-  margin-left: -60px;
+  margin-left: -20px;
   background: url(../img/people.svg);
   background-repeat: no-repeat;
   background-position: center center; }

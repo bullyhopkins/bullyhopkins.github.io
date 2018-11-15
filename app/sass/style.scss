@@ -895,7 +895,9 @@ input[name="call-time"] {
 	outline: none;
 	text-decoration: none;
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
+	position: relative;
 	transition: 1s;
 	height: 120px;
 	span {
@@ -909,13 +911,27 @@ input[name="call-time"] {
 .carpet-item-cont {
 	display: flex;
 	align-items: center;
+	// position: absolute;
+	transition: 0.3s;
+	opacity: 1;
+}
+
+.carpet-item-none {
+	opacity: 0;
 }
 
 .brain-descr,
 .hands-descr,
 .chess-descr,
 .people-descr {
-	display: none
+	transition: 0.3s;
+	opacity: 0;
+	width: 100%;
+	position: absolute;
+}
+
+.descr-active {
+	opacity: 1 !important;
 }
 
 .carpet-item-img {
@@ -945,7 +961,7 @@ input[name="call-time"] {
 .people-img {
 	min-width: 120px;
 	min-height: 120px;
-	margin-left: -60px;
+	margin-left: -20px;
 	background: url(../img/people.svg);
 	background-repeat: no-repeat;
 	background-position: center center;

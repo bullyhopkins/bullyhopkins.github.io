@@ -167,79 +167,58 @@ $(function () {
 	var $chessCont = $('.chess-content');
 	var $peopleCont = $('.people-content');
 
-	//Brain
 	$brain.hover(function () {
-		$handsCont.stop(true, true).fadeOut(300);
-		$chessCont.stop(true, true).fadeOut(300);
-		$peopleCont.stop(true, true).fadeOut(300);
-		setTimeout(function () {
-			$('.brain-descr').stop(true, true).fadeIn(500);
-		}, 300);
-	}, 
+		$handsCont.toggleClass('carpet-item-none');
+		$chessCont.toggleClass('carpet-item-none');
+		$peopleCont.toggleClass('carpet-item-none');
+		$('.brain-descr').toggleClass('descr-active');
+	},
 	function () {
-		$('.brain-descr').stop(true, true).fadeOut(300);
-		setTimeout(function () {
-			$handsCont.stop(true, true).fadeIn(500);
-			$chessCont.stop(true, true).fadeIn(500);
-			$peopleCont.stop(true, true).fadeIn(500);
-		}, 300);
+		$('.brain-descr').toggleClass('descr-active');
+		$handsCont.toggleClass('carpet-item-none');
+		$chessCont.toggleClass('carpet-item-none');
+		$peopleCont.toggleClass('carpet-item-none');
 	});
 
-	//Hands
 	$hands.hover(function () {
-		$brainCont.stop(true, true).fadeOut(300);
-		$chessCont.stop(true, true).fadeOut(300);
-		$peopleCont.stop(true, true).fadeOut(300);
-		setTimeout(function () {
-			$('.hands-descr').stop(true, true).fadeIn(500);
-		}, 300);
-	}, 
+		$brainCont.toggleClass('carpet-item-none');
+		$chessCont.toggleClass('carpet-item-none');
+		$peopleCont.toggleClass('carpet-item-none');
+		$('.hands-descr').toggleClass('descr-active');
+	},
 	function () {
-		$('.hands-descr').stop(true, true).fadeOut(300);
-		setTimeout(function () {
-			$brainCont.stop(true, true).fadeIn(500);
-			$chessCont.stop(true, true).fadeIn(500);
-			$peopleCont.stop(true, true).fadeIn(500);
-		}, 300);
+		$('.hands-descr').toggleClass('descr-active');
+		$brainCont.toggleClass('carpet-item-none');
+		$chessCont.toggleClass('carpet-item-none');
+		$peopleCont.toggleClass('carpet-item-none');
 	});
 
-	//Chess
 	$chess.hover(function () {
-		$brainCont.stop(true, true).fadeOut(300);
-		$handsCont.stop(true, true).fadeOut(300);
-		$peopleCont.stop(true, true).fadeOut(300);
-		setTimeout(function () {
-			$('.chess-descr').stop(true, true).fadeIn(500);
-		}, 300);
-	}, 
+		$brainCont.toggleClass('carpet-item-none');
+		$handsCont.toggleClass('carpet-item-none');
+		$peopleCont.toggleClass('carpet-item-none');
+		$('.chess-descr').toggleClass('descr-active');
+	},
 	function () {
-		$('.chess-descr').stop(true, true).fadeOut(300);
-		setTimeout(function () {
-			$brainCont.stop(true, true).fadeIn(500);
-			$handsCont.stop(true, true).fadeIn(500);
-			$peopleCont.stop(true, true).fadeIn(500);
-		}, 300);
+		$('.chess-descr').toggleClass('descr-active');
+		$brainCont.toggleClass('carpet-item-none');
+		$handsCont.toggleClass('carpet-item-none');
+		$peopleCont.toggleClass('carpet-item-none');
 	});
 
-	//People
 	$people.hover(function () {
-		$(this).stop(true, true);
-		$brainCont.fadeOut(300);
-		$handsCont.fadeOut(300);
-		$chessCont.fadeOut(300);
-		setTimeout(function () {
-			$('.people-descr').fadeIn(500);
-		}, 300);
-	}, 
+		$brainCont.toggleClass('carpet-item-none');
+		$handsCont.toggleClass('carpet-item-none');
+		$chessCont.toggleClass('carpet-item-none');
+		$('.people-descr').toggleClass('descr-active');
+	},
 	function () {
-		$(this).stop(true, true);
-		$('.people-descr').fadeOut(300);
-		setTimeout(function () {
-			$brainCont.fadeIn(500);
-			$handsCont.fadeIn(500);
-			$chessCont.fadeIn(500);
-		}, 300);
+		$('.people-descr').toggleClass('descr-active');
+		$brainCont.toggleClass('carpet-item-none');
+		$handsCont.toggleClass('carpet-item-none');
+		$chessCont.toggleClass('carpet-item-none');
 	});
+
 
 	//Paralax Skills
 	var skillsItem = $('.skills-item');
