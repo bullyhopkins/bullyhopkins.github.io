@@ -912,7 +912,7 @@ input[name="call-time"] {
   position: relative; }
 
 .skills-img {
-  background: url(../img/rabbit.gif) center no-repeat;
+  background: url(../img/krolik.gif) center no-repeat;
   -webkit-background-size: contain;
           background-size: contain;
   position: absolute;
@@ -930,7 +930,11 @@ input[name="call-time"] {
           flex-wrap: wrap;
   position: relative;
   min-height: 350px;
-  padding-top: 40px; }
+  padding-top: 40px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-perspective: 500px;
+          perspective: 500px; }
 
 .slider-skills {
   display: none;
@@ -1039,20 +1043,21 @@ input[name="call-time"] {
   outline: none;
   text-decoration: none;
   color: #000;
-  -webkit-transition: 1s;
-  -o-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
   font-family: "Proxima", "Montserrat", arial, serif;
   position: absolute;
-  min-width: 200px !important; }
+  min-width: 250px !important; }
   .skills-item:hover {
     color: #fff;
     background: #181818;
-    -webkit-transform: scale(2);
-        -ms-transform: scale(2);
-            transform: scale(2);
+    -webkit-transform: translateZ(50px) !important;
+            transform: translateZ(50px) !important;
     border: #181818;
-    z-index: 1000; }
+    z-index: 1000;
+    -webkit-box-shadow: 14px 11px 21px 16px rgba(0, 0, 0, 0.51);
+    box-shadow: 14px 11px 21px 16px rgba(0, 0, 0, 0.51); }
   .skills-item:hover .skills-item-descr {
     opacity: 1; }
 

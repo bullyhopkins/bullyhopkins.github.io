@@ -169,60 +169,61 @@ $(function () {
 
 	//Brain
 	$brain.hover(function () {
-		$handsCont.fadeOut(300);
-		$chessCont.fadeOut(300);
-		$peopleCont.fadeOut(300);
+		$handsCont.stop(true, true).fadeOut(300);
+		$chessCont.stop(true, true).fadeOut(300);
+		$peopleCont.stop(true, true).fadeOut(300);
 		setTimeout(function () {
-			$('.brain-descr').fadeIn(500);
+			$('.brain-descr').stop(true, true).fadeIn(500);
 		}, 300);
 	}, 
 	function () {
-		$('.brain-descr').fadeOut(300);
+		$('.brain-descr').stop(true, true).fadeOut(300);
 		setTimeout(function () {
-			$handsCont.fadeIn(500);
-			$chessCont.fadeIn(500);
-			$peopleCont.fadeIn(500);
+			$handsCont.stop(true, true).fadeIn(500);
+			$chessCont.stop(true, true).fadeIn(500);
+			$peopleCont.stop(true, true).fadeIn(500);
 		}, 300);
 	});
 
 	//Hands
 	$hands.hover(function () {
-		$brainCont.fadeOut(300);
-		$chessCont.fadeOut(300);
-		$peopleCont.fadeOut(300);
+		$brainCont.stop(true, true).fadeOut(300);
+		$chessCont.stop(true, true).fadeOut(300);
+		$peopleCont.stop(true, true).fadeOut(300);
 		setTimeout(function () {
-			$('.hands-descr').fadeIn(500);
+			$('.hands-descr').stop(true, true).fadeIn(500);
 		}, 300);
 	}, 
 	function () {
-		$('.hands-descr').fadeOut(300);
+		$('.hands-descr').stop(true, true).fadeOut(300);
 		setTimeout(function () {
-			$brainCont.fadeIn(500);
-			$chessCont.fadeIn(500);
-			$peopleCont.fadeIn(500);
+			$brainCont.stop(true, true).fadeIn(500);
+			$chessCont.stop(true, true).fadeIn(500);
+			$peopleCont.stop(true, true).fadeIn(500);
 		}, 300);
 	});
 
 	//Chess
 	$chess.hover(function () {
-		$brainCont.fadeOut(300);
-		$handsCont.fadeOut(300);
-		$peopleCont.fadeOut(300);
+		$brainCont.stop(true, true).fadeOut(300);
+		$handsCont.stop(true, true).fadeOut(300);
+		$peopleCont.stop(true, true).fadeOut(300);
 		setTimeout(function () {
-			$('.chess-descr').fadeIn(500);
+			$('.chess-descr').stop(true, true).fadeIn(500);
 		}, 300);
 	}, 
 	function () {
-		$('.chess-descr').fadeOut(300);
+		$('.chess-descr').stop(true, true).fadeOut(300);
 		setTimeout(function () {
-			$brainCont.fadeIn(500);
-			$handsCont.fadeIn(500);
-			$peopleCont.fadeIn(500);
+			$brainCont.stop(true, true).fadeIn(500);
+			$handsCont.stop(true, true).fadeIn(500);
+			$peopleCont.stop(true, true).fadeIn(500);
 		}, 300);
 	});
 
 	//People
 	$people.hover(function () {
+		$(this).stop(true, true);
 		$brainCont.fadeOut(300);
 		$handsCont.fadeOut(300);
 		$chessCont.fadeOut(300);
@@ -231,12 +232,28 @@ $(function () {
 		}, 300);
 	}, 
 	function () {
+		$(this).stop(true, true);
 		$('.people-descr').fadeOut(300);
 		setTimeout(function () {
 			$brainCont.fadeIn(500);
 			$handsCont.fadeIn(500);
 			$chessCont.fadeIn(500);
 		}, 300);
+	});
+
+	//Paralax Skills
+	var skillsItem = $('.skills-item');
+
+	$(document).on('mousemove', function (e) {
+		var x = e.pageX;
+		var bodyWidth = $('body').width() / 2;
+		var mouse = x - bodyWidth ;
+
+		skillsItem.css({
+			transform: 'rotateY(' + (x - bodyWidth) / 60 + 'deg)'
+		});
+
+		console.log(mouse);
 	});
 
 });

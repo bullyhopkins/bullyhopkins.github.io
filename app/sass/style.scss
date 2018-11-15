@@ -634,7 +634,7 @@ input[name="call-time"] {
 }
 
 .skills-img {
-	background: url(../img/rabbit.gif) center no-repeat;
+	background: url(../img/krolik.gif) center no-repeat;
 	background-size: contain;
 	position: absolute;
 	min-width: 300px;
@@ -648,6 +648,8 @@ input[name="call-time"] {
 	position: relative;
 	min-height: 350px;
 	padding-top: 40px;
+	transform-style: preserve-3d;
+	perspective: 500px;
 }
 
 .slider-skills {
@@ -739,18 +741,24 @@ input[name="call-time"] {
 	outline: none;
 	text-decoration: none;
 	color: #000;
-	transition: 1s;
+	transition: 0.3s;
 	font-family: $fontsHel;
 	position: absolute;
 	// width: 15%;
-	min-width: 200px !important;
+	min-width: 250px !important;
+	// transform-style: preserve-3d;
+	// perspective: 500px;
+	// transform: perspective(10000px) rotateY(50deg);
 	&:hover {
 		color: #fff;
 		background: #181818;
-		transform: scale(2);
+		// transform: scale(2);
+		transform: translateZ(50px)!important;
 		border: #181818;
-		// animation: skills 1.2s linear;
 		z-index: 1000;
+		-webkit-box-shadow: 14px 11px 21px 16px rgba(0,0,0,0.51);
+		-moz-box-shadow: 14px 11px 21px 16px rgba(0,0,0,0.51);
+		box-shadow: 14px 11px 21px 16px rgba(0,0,0,0.51);
 	}
 	&:hover .skills-item-descr{
 		opacity: 1;
