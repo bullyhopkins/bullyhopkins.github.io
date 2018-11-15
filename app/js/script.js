@@ -14,10 +14,24 @@ $(function () {
 	// 	$(".panelCon").css('bottom',$(window).scrollTop()*-1);
 	// });
 
-	// //Cлежение руки за курсором
-	// $(document).mousemove(function(e){
-	// 	$('.hand').css({'top': e.pageY - 25, 'left': e.pageX + 3})
-	// });
+	//Cлежение руки за курсором
+	$(document).mousemove(function(e){
+		$('.hand').css({'top': e.pageY - 25, 'left': e.pageX + 3})
+	});
+
+	//Включить свет
+	$('.light').on('click', function () {
+		$('#preloader').fadeOut(1000);
+		$('html, body').css({ 'overflow': 'auto' });
+		//Скролл снизу вверх
+		$(document).scrollTop($('body').height());
+	});
+
+	document.addEventListener('touchstart', function(event) {
+		event.preventDefault();
+		event.stopPropagation();
+		$('.hand').css({'top': e.pageY, 'left': e.pageX})
+	}, false);
 
 	// if ($(window).width() < 1000) {
 	// 	$(document).touchstart(function(e){
@@ -62,27 +76,19 @@ $(function () {
 		slidesToScroll: 3
 	});
 
-	//Включить свет
-	$('.light').on('click', function () {
-		$('#preloader').fadeOut(1000);
-		$('html, body').css({ 'overflow': 'auto' });
-		//Скролл снизу вверх
-		$(document).scrollTop($('body').height());
-	});
+	// //Menu
+	// $('.oscar img').on('click', function () {
+	// 	$('.oscar').fadeOut(500);
+	// 	$('.call-fix-wrap').fadeOut(400);
+	// 	$('.menu').fadeIn(500);
+	// });
 
-	//Menu
-	$('.oscar img').on('click', function () {
-		$('.oscar').fadeOut(500);
-		$('.call-fix-wrap').fadeOut(400);
-		$('.menu').fadeIn(500);
-	});
-
-	//Menu Mobile 
-	$('.mobile-menu-close').on('click', function () {
-		$('.oscar').fadeIn(500);
-		$('.call-fix-wrap').fadeIn(400);
-		$('.menu').fadeOut(500);
-	});
+	// //Menu Mobile 
+	// $('.mobile-menu-close').on('click', function () {
+	// 	$('.oscar').fadeIn(500);
+	// 	$('.call-fix-wrap').fadeIn(400);
+	// 	$('.menu').fadeOut(500);
+	// });
 
 	//Sturtup window
 	$('#sturtup-inp').on('click', function (event) {
@@ -168,7 +174,7 @@ $(function () {
 	var $peopleCont = $('.people-content');
 
 	$brain.hover(function () {
-		$('.red-carpet-block .inp-pulse').css('display', 'none');
+		$('.red-carpet-block .inp-pulse').fadeOut(500);
 		$handsCont.toggleClass('carpet-item-none');
 		$chessCont.toggleClass('carpet-item-none');
 		$peopleCont.toggleClass('carpet-item-none');
@@ -182,6 +188,7 @@ $(function () {
 	});
 
 	$hands.hover(function () {
+		$('.red-carpet-block .inp-pulse').fadeOut(500);
 		$brainCont.toggleClass('carpet-item-none');
 		$chessCont.toggleClass('carpet-item-none');
 		$peopleCont.toggleClass('carpet-item-none');
@@ -195,6 +202,7 @@ $(function () {
 	});
 
 	$chess.hover(function () {
+		$('.red-carpet-block .inp-pulse').fadeOut(500);
 		$brainCont.toggleClass('carpet-item-none');
 		$handsCont.toggleClass('carpet-item-none');
 		$peopleCont.toggleClass('carpet-item-none');
@@ -208,6 +216,7 @@ $(function () {
 	});
 
 	$people.hover(function () {
+		$('.red-carpet-block .inp-pulse').fadeOut(500);
 		$brainCont.toggleClass('carpet-item-none');
 		$handsCont.toggleClass('carpet-item-none');
 		$chessCont.toggleClass('carpet-item-none');
@@ -243,10 +252,20 @@ $(function () {
 		var relX = e.pageX - parentOffset.left;
 		var relY = e.pageY - parentOffset.top;
 		$('.cursor-carpet-block').css({
+			display: 'block',
 			top: relY + "px",
 			left: relX + "px"
 		});
-		console.log(relY);
+		if (parentOffset.left  + 5 > e.pageX) {
+			$('.cursor-carpet-block').css({
+				display: 'none'
+			});
+		} else if (parentOffset.top  + 5 > e.pageY) {
+			$('.cursor-carpet-block').css({
+				display: 'none'
+			});
+		}
+		console.log(e.pageX);
  });
 
 });

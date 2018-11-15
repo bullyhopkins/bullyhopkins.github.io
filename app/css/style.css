@@ -305,7 +305,8 @@ template {
 html,
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  overflow: hidden; }
 
 a,
 button,
@@ -329,10 +330,8 @@ input {
   width: 100%;
   height: 100%;
   z-index: 1000;
-  cursor: none;
   overflow: hidden;
-  font-family: 'Proxima';
-  display: none; }
+  font-family: 'Proxima'; }
 
 .welcome {
   color: #fff;
@@ -1184,6 +1183,7 @@ input[name="call-time"] {
   -webkit-border-radius: 50%;
           border-radius: 50%;
   top: 0;
+  display: none;
   left: 0; }
 
 .red-carpet-block .inp-pulse {
@@ -1192,6 +1192,9 @@ input[name="call-time"] {
   position: absolute;
   bottom: -15px;
   left: 30%; }
+  .red-carpet-block .inp-pulse:before {
+    -webkit-animation: pulseCarpet 2s linear infinite;
+            animation: pulseCarpet 2s linear infinite; }
 
 .carpet-item {
   width: 50%;
@@ -1246,7 +1249,8 @@ input[name="call-time"] {
   transition: 0.3s;
   opacity: 0;
   width: 100%;
-  position: absolute; }
+  position: absolute;
+  z-index: 2; }
 
 .descr-active {
   opacity: 1 !important; }
@@ -2533,6 +2537,30 @@ input[name="call-time"] {
   100% {
     height: 80px;
     width: 80px;
+    opacity: 0; } }
+
+@-webkit-keyframes pulseCarpet {
+  0% {
+    height: 0;
+    width: 0;
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    height: 40px;
+    width: 40px;
+    opacity: 0; } }
+
+@keyframes pulseCarpet {
+  0% {
+    height: 0;
+    width: 0;
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    height: 40px;
+    width: 40px;
     opacity: 0; } }
 
 @-webkit-keyframes pulse-list {
