@@ -888,6 +888,26 @@ input[name="call-time"] {
 	flex-wrap: wrap;
 	width: 700px;
 	height: 360px;
+	cursor: none;
+	position: relative;
+}
+
+.cursor-carpet-block {
+	width: 10px;
+	height: 10px;
+	background: red;
+	position: absolute;
+	border-radius: 50%;
+	top: 0;
+	left: 0;
+}
+
+.red-carpet-block .inp-pulse {
+	min-width: 15px;
+	min-height: 15px;
+	position: absolute;
+	bottom: -15px;
+	left: 30%;
 }
 
 .carpet-item {
@@ -900,6 +920,7 @@ input[name="call-time"] {
 	position: relative;
 	transition: 1s;
 	height: 120px;
+	cursor: none;
 	span {
 		text-transform: uppercase;
 		font-size: 20px;

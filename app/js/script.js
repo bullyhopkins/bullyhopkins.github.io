@@ -168,6 +168,7 @@ $(function () {
 	var $peopleCont = $('.people-content');
 
 	$brain.hover(function () {
+		$('.red-carpet-block .inp-pulse').css('display', 'none');
 		$handsCont.toggleClass('carpet-item-none');
 		$chessCont.toggleClass('carpet-item-none');
 		$peopleCont.toggleClass('carpet-item-none');
@@ -232,7 +233,20 @@ $(function () {
 			transform: 'rotateY(' + (x - bodyWidth) / 60 + 'deg)'
 		});
 
-		console.log(mouse);
+		// console.log(mouse);
 	});
+
+	//Red Carpet cursor
+	$(".red-carpet-block").mousemove(function(e){
+		var parentOffset = $(this).offset(); 
+		//or $(this).offset(); if you really just want the current element offset
+		var relX = e.pageX - parentOffset.left;
+		var relY = e.pageY - parentOffset.top;
+		$('.cursor-carpet-block').css({
+			top: relY + "px",
+			left: relX + "px"
+		});
+		console.log(relY);
+ });
 
 });
