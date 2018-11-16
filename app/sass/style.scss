@@ -748,15 +748,10 @@ input[name="call-time"] {
 	transition: 0.3s;
 	font-family: $fontsHel;
 	position: absolute;
-	// width: 15%;
 	min-width: 250px !important;
-	// transform-style: preserve-3d;
-	// perspective: 500px;
-	// transform: perspective(10000px) rotateY(50deg);
 	&:hover {
 		color: #fff;
 		background: #181818;
-		// transform: scale(2);
 		transform: translateZ(50px)!important;
 		border: #181818;
 		z-index: 1000;
@@ -1704,6 +1699,15 @@ input[name="call-time"] {
 	}
 }
 
+.logo-mob {
+	max-width: 60px;
+}
+
+.mob-top {
+	display: flex;
+	align-items: center;
+}
+
 .list-mob-menu {
 	list-style: none;
 	padding: 0;
@@ -1723,7 +1727,8 @@ input[name="call-time"] {
 .menu-mobile-h {
 	font-size: 30px;
 	font-family: $fonts;
-	padding-left: 50px;
+	padding-left: 20px;
+	display: inline-block;
 }
 
 .menu-mob-close {
@@ -1913,6 +1918,10 @@ input[name="call-time"] {
 		min-height: 100px;
 		margin: 0;
 		margin-right: 15px;
+	}
+
+	.skroll-wrap {
+		background-size: cover;
 	}
 
 }
@@ -2435,6 +2444,14 @@ input[name="call-time"] {
 	}
 
 	.oscar {
+		display: none;
+	}
+
+	.bottom-line {
+		display: flex;
+	}
+
+	.call-fix-inp {
 		display: none;
 	}
 }

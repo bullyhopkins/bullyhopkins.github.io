@@ -1995,6 +1995,19 @@ input[name="call-time"] {
   .menu-mobile nav {
     padding-bottom: 30px; }
 
+.logo-mob {
+  max-width: 60px; }
+
+.mob-top {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
 .list-mob-menu {
   list-style: none;
   padding: 0;
@@ -2011,7 +2024,8 @@ input[name="call-time"] {
 .menu-mobile-h {
   font-size: 30px;
   font-family: "Proxima", arial, serif;
-  padding-left: 50px; }
+  padding-left: 20px;
+  display: inline-block; }
 
 .menu-mob-close {
   position: absolute;
@@ -2159,7 +2173,10 @@ input[name="call-time"] {
     min-width: 100px;
     min-height: 100px;
     margin: 0;
-    margin-right: 15px; } }
+    margin-right: 15px; }
+  .skroll-wrap {
+    -webkit-background-size: cover;
+            background-size: cover; } }
 
 @media screen and (max-width: 950px) {
   .communication-right {
@@ -2482,6 +2499,13 @@ input[name="call-time"] {
   .agency-h-mob {
     display: block; }
   .oscar {
+    display: none; }
+  .bottom-line {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .call-fix-inp {
     display: none; } }
 
 /**** MEDIA END ****/
