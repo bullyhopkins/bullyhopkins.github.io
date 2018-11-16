@@ -445,11 +445,15 @@ input {
 .skroll-wrap {
   position: fixed;
   bottom: 0;
-  left: 0;
+  left: 50%;
   width: 100%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  max-width: 1300px;
   background: url(../img/path.png);
-  -webkit-background-size: cover;
-          background-size: cover;
+  -webkit-background-size: contain;
+          background-size: contain;
   background-repeat: no-repeat;
   background-position: center bottom; }
 
@@ -1457,6 +1461,8 @@ input[name="call-time"] {
     color: #000;
     font-size: 15px;
     font-weight: 600; }
+    .list-menu a:hover {
+      border-bottom: 2px solid #000; }
   .list-menu .menu-inp {
     background: #F42A59;
     font-family: "Proxima", "Montserrat", arial, serif;
@@ -1474,6 +1480,10 @@ input[name="call-time"] {
     .list-menu .menu-inp:hover {
       background: rgba(0, 0, 0, 0);
       color: #000; }
+  .list-menu .menu-pink {
+    color: #D81240; }
+    .list-menu .menu-pink:hover {
+      border-bottom: 2px solid #D81240; }
 
 .mobile-menu-close {
   position: absolute;

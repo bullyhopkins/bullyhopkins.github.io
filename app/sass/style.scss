@@ -141,10 +141,13 @@ input {
 .skroll-wrap {
 	position: fixed;
 	bottom: 0;
-	left: 0;
+	left: 50%;
 	width: 100%;
+	transform: translateX(-50%);
+	// top: -150px;
+	max-width: 1300px;
 	background: url(../img/path.png);
-	background-size: cover;
+	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center bottom;
 }
@@ -160,10 +163,7 @@ input {
 }
 
 // body {
-// 	background: url(../img/path.png);
-// 	background-size: cover;
-// 	background-repeat: no-repeat;
-// 	background-position: center bottom;
+// 	margin-top: -130px;
 // }
 
 /*Communication*/
@@ -1166,6 +1166,9 @@ input[name="call-time"] {
 		color: #000;
 		font-size: 15px;
 		font-weight: 600;
+		&:hover {
+			border-bottom: 2px solid #000;
+		}
 	}
 	.menu-inp {
 		background: #F42A59;
@@ -1181,6 +1184,12 @@ input[name="call-time"] {
 		&:hover {
 			background: rgba(0, 0, 0, 0);
 			color: #000;
+		}
+	}
+	.menu-pink {
+		color: $main-color;
+		&:hover {
+			border-bottom: 2px solid $main-color;
 		}
 	}
 }

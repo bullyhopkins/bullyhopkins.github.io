@@ -4,7 +4,29 @@ $(function () {
 	var winHeight = $(window).innerHeight();
 	// $(document).ready(function () {
 	// 	$(".panel").height(winHeight);
-		$("body").height(winHeight*$(".panel").length);
+	// var $communHeight = $('.communication').innerHeight();
+	// var $bigHeight = $('.big-business').innerHeight();
+	// var $medHeight = $('.medium-business').innerHeight();
+	// var $startupHeight = $('.startup').innerHeight();
+	// var $skillsHeight = $('.skills').innerHeight();
+	// var $carpetHeight = $('.red-carpet').innerHeight();
+	// var $agencyHeight = $('.account-agency').innerHeight();
+
+	// var mainHeight = $communHeight + $bigHeight + $medHeight + $startupHeight + $skillsHeight + $carpetHeight + $agencyHeight;
+
+	// function panelHeight () {
+	// 	var heightsPanel = 0;
+	// 	$('.panel').each(function (ind, elem) {
+	// 		heightsPanel += $(elem).outerHeight();
+	// 	});
+	// 	return heightsPanel;
+	// }
+
+	// var s = $communHeight + $bigHeight + $medHeight + $startupHeight + $skillsHeight;
+
+	// console.log(s);
+
+	$("body").height($('.skroll-wrap').outerHeight());
 	// });
 
 	// window.addEventListener('resize', function (event) {
