@@ -1791,8 +1791,19 @@ input[name="call-time"] {
 
 @media screen and (max-width: 1200px) {
 
-	.documents-form { 
-		display: none;
+	.documents-form {
+		position: static;
+		max-width: 100%;
+		padding-top: 50px;
+	}
+
+	.documents-form-h {
+		text-align: center;
+	}
+
+	.documents-form li {
+		display: flex;
+		justify-content: center;
 	}
 
 	.inp-form-wrap {
@@ -2453,6 +2464,15 @@ input[name="call-time"] {
 
 	.call-fix-inp {
 		display: none;
+	}
+
+	.documents-form-h {
+		text-align-last: left;
+	}
+
+	.documents-form li {
+		width: 100%;
+		justify-content: flex-start
 	}
 }
 

@@ -2,47 +2,10 @@ $(function () {
 
 	//Scroll
 	var winHeight = $(window).innerHeight();
-	// $(document).ready(function () {
-	// 	$(".panel").height(winHeight);
-	// var $communHeight = $('.communication').innerHeight();
-	// var $bigHeight = $('.big-business').innerHeight();
-	// var $medHeight = $('.medium-business').innerHeight();
-	// var $startupHeight = $('.startup').innerHeight();
-	// var $skillsHeight = $('.skills').innerHeight();
-	// var $carpetHeight = $('.red-carpet').innerHeight();
-	// var $agencyHeight = $('.account-agency').innerHeight();
-
-	// var mainHeight = $communHeight + $bigHeight + $medHeight + $startupHeight + $skillsHeight + $carpetHeight + $agencyHeight;
-
-	// function panelHeight () {
-	// 	var heightsPanel = 0;
-	// 	$('.panel').each(function (ind, elem) {
-	// 		heightsPanel += $(elem).outerHeight();
-	// 	});
-	// 	return heightsPanel;
-	// }
-
-	// var s = $communHeight + $bigHeight + $medHeight + $startupHeight + $skillsHeight;
-
-	// console.log(s);
 
 	$("body").height($('.skroll-wrap').outerHeight());
-	// });
-
-	// window.addEventListener('resize', function (event) {
-	// 	$(".panel").height($(window).innerHeight());
-	// });
 	$(window).on('scroll',function(){
 		$(".skroll-wrap").css('bottom',$(window).scrollTop()*-1);
-	});
-
-	//Scroll
-	$('body').scroll(function () {
-		var $bodySkroll =	$('body').scrollTop();
-
-		if ($bodySkroll > 0) {
-			$('body').scrollTop() - 1;
-		}
 	});
 
 	//Cлежение руки за курсором
@@ -153,7 +116,6 @@ $(function () {
 
 	//Custom Window
 	$('.custom-inp').on('click', function (event) {
-		event.preventDefault();
 		$('.custom-window').animate({
 			left: 0
 		}, 1500);
@@ -175,6 +137,13 @@ $(function () {
 		}, 1500);
 		$('html, body').css({ 'overflow': 'hidden' });
 	});
+
+	$('.collback-mob-inp').on('click', function () {
+		$('.package-selected').animate({
+			left: 0
+		}, 1500);
+		$('html, body').css({ 'overflow': 'hidden' });
+	});
 	
 	function noScroll () {
 		$('html, body').css({ 'overflow': 'hidden' });
@@ -184,7 +153,7 @@ $(function () {
 	$('.account-agency-inp').on('click', function(e){
 		$('html,body').stop().animate({
 			scrollTop: $('#red-carpet').offset().top
-		}, 1000);
+		}, 800);
 		e.preventDefault();
 	});
 

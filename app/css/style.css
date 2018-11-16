@@ -2083,7 +2083,20 @@ input[name="call-time"] {
 /**** MEDIA ****/
 @media screen and (max-width: 1200px) {
   .documents-form {
-    display: none; }
+    position: static;
+    max-width: 100%;
+    padding-top: 50px; }
+  .documents-form-h {
+    text-align: center; }
+  .documents-form li {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   .inp-form-wrap {
     text-align: center; }
   .package-selected-btn {
@@ -2506,7 +2519,16 @@ input[name="call-time"] {
     display: -ms-flexbox;
     display: flex; }
   .call-fix-inp {
-    display: none; } }
+    display: none; }
+  .documents-form-h {
+    -moz-text-align-last: left;
+         text-align-last: left; }
+  .documents-form li {
+    width: 100%;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; } }
 
 /**** MEDIA END ****/
 @font-face {
