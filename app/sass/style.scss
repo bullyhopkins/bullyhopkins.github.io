@@ -7,7 +7,7 @@ html,
 body {
 	margin: 0;
 	padding: 0;
-	overflow: hidden;
+	// overflow: hidden;
 }
 
 a,
@@ -35,10 +35,9 @@ input {
 	width: 100%;
 	height: 100%;
 	z-index: 1000;
-	// cursor: none;
 	overflow: hidden;
 	font-family: 'Proxima';
-	// display: none; //delete
+	display: none; //delete
 }
 
 .welcome {
@@ -139,6 +138,17 @@ input {
 }
 /**** MAIN CONTENT ****/
 
+.skroll-wrap {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: url(../img/path.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+
 .main-content {
 	overflow: hidden;
 	position: fixed;
@@ -149,13 +159,12 @@ input {
 	// max-width: 320px;
 }
 
-body {
-	background: url(../img/path.png);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center bottom;
-
-}
+// body {
+// 	background: url(../img/path.png);
+// 	background-size: cover;
+// 	background-repeat: no-repeat;
+// 	background-position: center bottom;
+// }
 
 /*Communication*/
 
@@ -611,12 +620,6 @@ input[name="call-time"] {
 }
 
 .startup-mob-img {
-	// background: url(../img/cosmo-mob1.png);
-	// background-size: contain;
-	// background-position: center center;
-	// background-repeat: no-repeat;
-	// min-width: 400px;
-	// min-height: 500px;
 	position: absolute;
 	top: 60px;
 	right: 0;
@@ -891,6 +894,9 @@ input[name="call-time"] {
 	height: 360px;
 	cursor: none;
 	position: relative;
+	&:hover .cursor-carpet-block {
+		display: block
+	}
 }
 
 .cursor-carpet-block {
