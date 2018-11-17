@@ -7,7 +7,7 @@ html,
 body {
 	margin: 0;
 	padding: 0;
-	overflow: hidden;
+	// overflow: hidden;
 }
 
 a,
@@ -37,7 +37,7 @@ input {
 	z-index: 1000;
 	overflow: hidden;
 	font-family: 'Proxima';
-	// display: none; //delete
+	display: none; //delete
 }
 
 .welcome {
@@ -54,7 +54,7 @@ input {
 	transform: translateX(-50%)translateY(-50%);
 	min-width: 70%;
 	min-height: 400px;
-	background-image: url(../img/monroend.gif);
+	background-image: url(../img/monro_dark.gif);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -199,7 +199,7 @@ input {
 	margin-right: 5%;
 	span {
 		display: block;
-		font-size: 11px;
+		font-size: 14px;
 		color: #BF002C;
 	}
 	.not-obligatory {
@@ -363,6 +363,10 @@ input[name="call-time"] {
 	font-size: 35px;
 	font-family: $fonts;
 	font-weight: bold;
+}
+
+.main-phone {
+	margin-left: -10px;
 }
 
 .contacts-list {
@@ -653,8 +657,7 @@ input[name="call-time"] {
 	position: relative;
 	min-height: 350px;
 	padding-top: 40px;
-	transform-style: preserve-3d;
-	perspective: 500px;
+	perspective: 1000px;
 }
 
 .slider-skills {
@@ -731,6 +734,15 @@ input[name="call-time"] {
 	}
 }
 
+.red-circle {
+	width: 10px;
+	height: 10px;
+	background: red;
+	border-radius: 50%;
+	position: absolute;
+	display: none;
+}
+
 .slick-current {
 	background: #000;
 	color: #fff;
@@ -751,39 +763,47 @@ input[name="call-time"] {
 	color: #000;
 	transition: 0.3s;
 	font-family: $fontsHel;
+	// -webkit-transform-style: preserve-3d;
 	position: absolute;
+	// -webkit-backface-visibility: hidden;
 	min-width: 252px !important;
-	perspective: 500;
-	&:hover {
-		will-change: transform;
-		color: #fff;
-		background: #181818;
-		transform: translateZ(25px) scale(1.5) !important;
-		-moz-transform: translateZ(25px) scale(1.5) !important;
-		border: #181818;
-		z-index: 1000;
-		-webkit-box-shadow: 14px 11px 21px 16px rgba(0,0,0,0.51);
-		-moz-box-shadow: 14px 11px 21px 16px rgba(0,0,0,0.51);
-		box-shadow: 14px 11px 21px 16px rgba(0,0,0,0.51);
-	}
-	&:hover .skills-item-descr{
-		opacity: 1;
-		// font-size: 20px;
-	}
+	// &:hover {
+	// 	-webkit-backface-visibility: hidden;
+	// 	will-change: transform;
+	// 	color: #fff;
+	// 	background: #181818;
+	// 	transform: translateZ(100px) scaleZ(5) !important;
+	// 	-moz-transform: translateZ(100px) scaleZ(5) !important;
+	// 	border: #181818;
+	// 	z-index: 1000;
+	// 	-webkit-box-shadow: 14px 11px 21px 16px rgba(0,0,0,0.51);
+	// 	-moz-box-shadow: 14px 11px 21px 16px rgba(0,0,0,0.51);
+	// 	box-shadow: 14px 11px 21px 16px rgba(0,0,0,0.51);
+	// }
+	// &:hover .red-circle {
+	// 	display: block;
+	// }
+	// &:hover .skills-item-descr{
+	// 	opacity: 1;
+	// 	// font-size: 20px;
+	// }
 }
 
 .skills-active {
 	will-change: transform;
 	color: #fff;
 	background: #181818;
-	transform: translateZ(25px) scale(1.5) !important;
-	-moz-transform: translateZ(25px) scale(1.5) !important;
+	transform: translateZ(25px) scale(1.4) !important;
+	// -moz-transform: translateZ(25px) scale(1.6) !important;
 	border: #181818;
+	perspective: 1000px;
+	// transform: none !important;
+	transform-style: preserve-3d;
 	z-index: 1000;
-	// transform: rotateY(20deg) translateZ(500px);
 	-webkit-box-shadow: 14px 11px 21px 16px rgba(0,0,0,0.51);
 	-moz-box-shadow: 14px 11px 21px 16px rgba(0,0,0,0.51);
 	box-shadow: 14px 11px 21px 16px rgba(0,0,0,0.51);
+	// transform: rotate3d(1, 1, 1, 20deg) !important;
 	.skills-item-descr{
 		opacity: 1;
 		// font-size: 20px;
@@ -802,6 +822,7 @@ input[name="call-time"] {
 
 .skills-item-descr {
 	font-size: 0.6rem;
+	-webkit-backface-visibility: hidden;
 	// padding-bottom: 20px;
 	// display: none;
 	opacity: 0;
@@ -992,7 +1013,7 @@ input[name="call-time"] {
 	opacity: 0;
 	width: 100%;
 	position: absolute;
-	z-index: 2;
+	z-index: 1001;
 }
 
 .descr-active {
@@ -1000,27 +1021,50 @@ input[name="call-time"] {
 }
 
 .carpet-item-img {
-	min-width: 60px;
-	min-height: 60px;
+	min-width: 80px;
+	min-height: 80px;
 	margin-right: 20px;
 }
 
 .brain {
-	background: url(../img/brain.svg);
+	background: url(../img/brain.png);
 	background-repeat: no-repeat;
 	background-position: center center;
+	background-size: cover;
+}
+
+.item-brain:hover .brain {
+	background: url(../img/brain_color.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
 }
 
 .hands {
-	background: url(../img/hands.svg);
+	background: url(../img/hands.png);
 	background-repeat: no-repeat;
 	background-position: center center;
+	background-size: cover;
 }
 
-.chess {
-	background: url(../img/chess.svg);
+.item-hands:hover .hands {
+	background: url(../img/hands_color.png);
 	background-repeat: no-repeat;
 	background-position: center center;
+	background-size: cover;
+}
+.chess {
+	background: url(../img/chess.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+}
+
+.item-chess:hover .chess {
+	background: url(../img/chess_color.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
 }
 
 .people-img {
@@ -1035,24 +1079,6 @@ input[name="call-time"] {
 
 .item-people:hover .people-img {
 	background: url(../img/people_color.png);
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: center center;
-}
-.item-brain:hover .brain {
-	background: url(../img/brain-col.png);
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: center center;
-}
-.item-chess:hover .chess {
-	background: url(../img/chess-col.png);
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: center center;
-}
-.item-hands:hover .hands {
-	background: url(../img/hands-col.png);
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center center;
@@ -1183,6 +1209,7 @@ input[name="call-time"] {
 	position: fixed;
 	bottom: 80px;
 	right: -100px;
+	z-index: 100;
 	.inp-pulse {
 		top: -25px;
 		left: 40px;
@@ -1608,6 +1635,18 @@ input[name="call-time"] {
 	// display: none; //DELETE
 }
 
+.selected-window-back {
+	position: absolute;
+	top: 15%;
+	left: 10px;
+	cursor: pointer;
+	span {
+		font-size: 12px;
+		font-family: $fontsHel;
+		letter-spacing: 1px;
+	}
+}
+
 .package-selected-content {
 	position: absolute;
 	top: 50%;
@@ -1727,25 +1766,44 @@ input[name="call-time"] {
 	background: #fff;
 	padding: 15px;
 	display: flex;
-	justify-content: flex-end;
+	justify-content: space-between;
 	position: fixed;
 	bottom: 0;
 	right: 0;
+	font-family: $fonts;
 	left: 0;
 	z-index: 300;
 	display: none; 
-	a {
-		display: flex;
-		align-items: center;
-		text-decoration: none;
-		outline: none;
-		color: #000;
-		font-family: $fonts;
-		font-weight: 600;
-	}
 	img {
 		max-width: 20px;
 		margin-left: 15px;
+	}
+}
+
+.mob-menu-open {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	outline: none;
+	color: #000;
+	font-family: $fonts;
+	font-weight: 600;
+}
+
+.bottom-line-inp {
+	border: 1px solid $main-color;
+	background: $main-color;
+	color: #fff;
+	text-decoration: none;
+	outline: none;
+	font-weight: bold;
+	font-size: 15px;
+	border-radius: 20px;
+	padding: 8px 50px;
+	transition: 0.3s;
+	&:hover {
+		background: rgba(0, 0, 0, 0);
+		color: #000;
 	}
 }
 
@@ -2052,6 +2110,12 @@ input[name="call-time"] {
 	}
 
 	.medium-window-back {
+		left: auto;
+		right: 20px;
+		top: 20px;
+	}
+
+	.selected-window-back {
 		left: auto;
 		right: 20px;
 		top: 20px;

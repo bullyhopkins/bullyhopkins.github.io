@@ -100,6 +100,8 @@ $(function () {
 			left: 0
 		}, 1500);
 		setTimeout(noScroll, 2000);
+
+		return false;
 	});
 
 	//Закрытие Sturtup window
@@ -108,6 +110,8 @@ $(function () {
 			left: '100%'
 		}, 1500);
 		$('html, body').css({ 'overflow': 'auto' });
+
+		return false;
 	});
 
 
@@ -118,6 +122,8 @@ $(function () {
 			left: 0
 		}, 1500);
 		setTimeout(noScroll, 2000);
+
+		return false;
 	});
 
 	//Закрытие Medium-window
@@ -126,6 +132,8 @@ $(function () {
 			left: '100%'
 		}, 1500);
 		$('html, body').css({ 'overflow': 'auto' });
+
+		return false;
 	});
 
 
@@ -135,6 +143,8 @@ $(function () {
 			left: 0
 		}, 1500);
 		setTimeout(noScroll, 2000);
+
+		return false;
 	});
 
 	//Закрытие Custom Window
@@ -143,6 +153,8 @@ $(function () {
 			left: '100%'
 		}, 1500);
 		$('html, body').css({ 'overflow': 'auto' });
+
+		return false;
 	});
 	
 	//Модальное окно после выбора пакета
@@ -151,13 +163,28 @@ $(function () {
 			left: 0
 		}, 1500);
 		$('html, body').css({ 'overflow': 'hidden' });
+
+		return false;
 	});
 
+	//Закрытие окна после выбора пакета
+	$('.selected-window-back').on('click', function () {
+		$('.package-selected').animate({
+			left: '100%'
+		}, 1500);
+		$('html, body').css({ 'overflow': 'auto' });
+
+		return false;
+	});
+
+	//Контакты "Заказать звонок"
 	$('.collback-mob-inp').on('click', function () {
 		$('.package-selected').animate({
 			left: 0
 		}, 1500);
 		$('html, body').css({ 'overflow': 'hidden' });
+
+		return false;
 	});
 	
 	function noScroll () {
@@ -169,6 +196,16 @@ $(function () {
 		var agencyHeight = $('.account-agency').outerHeight();
 		$('html,body').stop().animate({
 			scrollTop: -$('#red-carpet').offset().top
+		}, 800);
+		// $(".skroll-wrap").css('bottom',$(window).scrollTop()*+10);
+		e.preventDefault();
+	});
+
+	//Якорь на контакты в menu-mobile
+	$('.bottom-line-inp').on('click', function(e){
+		var agencyHeight = $('.account-agency').outerHeight();
+		$('html,body').stop().animate({
+			scrollTop: -$('.communication').offset().top
 		}, 800);
 		// $(".skroll-wrap").css('bottom',$(window).scrollTop()*+10);
 		e.preventDefault();
@@ -245,10 +282,10 @@ $(function () {
 	var skillsItem = $('.skills-item');
 
 	skillsItem.hover(function () {
-		$('.skill-seo .inp-pulse').fadeOut(500);
-		skillsItem.each(function (ind, elem) {
-			$(elem).removeClass('skills-active');
-		});
+		$('.skill-advertising .inp-pulse').fadeOut(0);
+		// skillsItem.each(function (ind, elem) {
+		// 	$(elem).removeClass('skills-active');
+		// });
 	});
 
 	$(document).on('mousemove', function (e) {
@@ -257,7 +294,8 @@ $(function () {
 		var mouse = x - bodyWidth ;
 
 		skillsItem.css({
-			transform: 'rotateY(' + (x - bodyWidth) / 60 + 'deg)'
+			transform: 'rotateY(' + (x - bodyWidth) / 60 + 'deg)',
+			'transform-style': 'preserve-3d',
 		});
 		
 	});
@@ -273,7 +311,7 @@ $(function () {
 			top: relY + "px",
 			left: relX + "px"
 		});
-		console.log(e.pageX);
  });
+
 
 });
