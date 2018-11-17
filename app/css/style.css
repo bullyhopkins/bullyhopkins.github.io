@@ -863,7 +863,7 @@ input[name="call-time"] {
     background: rgba(0, 0, 0, 0); }
 
 .medium-business-img {
-  background: url(../img/shiva1.gif);
+  background: url(../img/shivaend.gif);
   -webkit-background-size: contain;
           background-size: contain;
   background-position: center center;
@@ -919,7 +919,7 @@ input[name="call-time"] {
   position: relative; }
 
 .skills-img {
-  background: url(../img/krolik.gif) center no-repeat;
+  background: url(../img/rabbit.gif) center no-repeat;
   -webkit-background-size: contain;
           background-size: contain;
   position: absolute;
@@ -1184,7 +1184,7 @@ input[name="call-time"] {
     color: #FF003C; }
 
 .red-carpet-img {
-  background: url(../img/сhaplin1.gif);
+  background: url(../img/chaplinend.gif);
   -webkit-background-size: contain;
           background-size: contain;
   background-position: center center;
@@ -1326,6 +1326,27 @@ input[name="call-time"] {
 
 .item-people:hover .people-img {
   background: url(../img/people_color.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-position: center center; }
+
+.item-brain:hover .brain {
+  background: url(../img/brain-col.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-position: center center; }
+
+.item-chess:hover .chess {
+  background: url(../img/chess-col.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-position: center center; }
+
+.item-hands:hover .hands {
+  background: url(../img/hands-col.png);
   background-repeat: no-repeat;
   -webkit-background-size: contain;
           background-size: contain;

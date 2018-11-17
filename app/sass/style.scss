@@ -578,7 +578,7 @@ input[name="call-time"] {
 }
 
 .medium-business-img {
-	background: url(../img/shiva1.gif);
+	background: url(../img/shivaend.gif);
 	background-size: contain;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -638,7 +638,7 @@ input[name="call-time"] {
 }
 
 .skills-img {
-	background: url(../img/krolik.gif) center no-repeat;
+	background: url(../img/rabbit.gif) center no-repeat;
 	background-size: contain;
 	position: absolute;
 	min-width: 300px;
@@ -754,8 +754,6 @@ input[name="call-time"] {
 	position: absolute;
 	min-width: 252px !important;
 	perspective: 500;
-	// transform: scale(2);
-	// perspective: 300px;
 	&:hover {
 		will-change: transform;
 		color: #fff;
@@ -764,7 +762,6 @@ input[name="call-time"] {
 		-moz-transform: translateZ(25px) scale(1.5) !important;
 		border: #181818;
 		z-index: 1000;
-		// transform: rotateY(20deg) translateZ(500px);
 		-webkit-box-shadow: 14px 11px 21px 16px rgba(0,0,0,0.51);
 		-moz-box-shadow: 14px 11px 21px 16px rgba(0,0,0,0.51);
 		box-shadow: 14px 11px 21px 16px rgba(0,0,0,0.51);
@@ -905,7 +902,7 @@ input[name="call-time"] {
 }
 
 .red-carpet-img {
-	background: url(../img/сhaplin1.gif);
+	background: url(../img/chaplinend.gif);
 	background-size: contain;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -1042,6 +1039,25 @@ input[name="call-time"] {
 	background-size: contain;
 	background-position: center center;
 }
+.item-brain:hover .brain {
+	background: url(../img/brain-col.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
+}
+.item-chess:hover .chess {
+	background: url(../img/chess-col.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
+}
+.item-hands:hover .hands {
+	background: url(../img/hands-col.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
+}
+
 
 .carpet-item-mt {
 	margin-top: 50px;
