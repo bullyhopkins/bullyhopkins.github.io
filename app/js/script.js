@@ -292,8 +292,7 @@ $(function () {
 		var mouse = x - bodyWidth ;
 
 		skillsItem.css({
-			transform: 'rotateY(' + (x - bodyWidth) / 60 + 'deg)',
-			'transform-style': 'preserve-3d',
+			transform: 'rotateY(' + (x - bodyWidth) / 60 + 'deg)'
 		});
 		
 	});

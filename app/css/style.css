@@ -1076,9 +1076,9 @@ input[name="call-time"] {
     will-change: transform;
     color: #fff;
     background: #181818;
-    -webkit-transform: translateZ(25px) scale(1.4) !important;
-            transform: translateZ(25px) scale(1.4) !important;
-    -moz-transform: translateZ(25px) scale(1.4) !important;
+    -webkit-transform: translateZ(50px) scale(1.4) !important;
+            transform: translateZ(50px) scale(1.4) !important;
+    -moz-transform: translateZ(50px) scale(1.4) !important;
     border: #181818;
     z-index: 1000;
     -webkit-box-shadow: 14px 11px 21px 16px rgba(0, 0, 0, 0.51);
