@@ -24,7 +24,7 @@ $(function () {
 		$('.hand').css({'top': e.pageY - 25, 'left': e.pageX + 3})
 	});
 
-	document.querySelector('#preloader').addEventListener('touchmove', function (e) {
+	$(document).on('touchmove', function (e) {
 		$('.hand').css({'top': e.pageY , 'left': e.pageX })
 	});
 
@@ -36,11 +36,11 @@ $(function () {
 		$(document).scrollTop(-$('body').height());
 	});
 
-	document.addEventListener('touchstart', function(event) {
-		event.preventDefault();
-		event.stopPropagation();
-		$('.hand').css({'top': e.pageY, 'left': e.pageX})
-	}, false);
+	// document.addEventListener('touchstart', function(event) {
+	// 	event.preventDefault();
+	// 	event.stopPropagation();
+	// 	$('.hand').css({'top': e.pageY, 'left': e.pageX})
+	// }, false);
 
 	//MOB MENU
 	$('.mob-menu-open').on('click', function () {

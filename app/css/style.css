@@ -348,7 +348,7 @@ input {
           transform: translateX(-50%) translateY(-50%);
   min-width: 70%;
   min-height: 400px;
-  background-image: url(../img/monro2.gif);
+  background-image: url(../img/monroend.gif);
   background-position: center center;
   background-repeat: no-repeat;
   -webkit-background-size: contain;
@@ -928,6 +928,7 @@ input[name="call-time"] {
   right: 0; }
 
 .skills-wrap {
+  will-change: transform;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1045,6 +1046,7 @@ input[name="call-time"] {
     color: #fff; }
 
 .skills-item {
+  will-change: transform;
   padding: 15px;
   background: #fff;
   border: 1px solid #EDEDED;
@@ -1061,6 +1063,7 @@ input[name="call-time"] {
   -webkit-perspective: 500;
           perspective: 500; }
   .skills-item:hover {
+    will-change: transform;
     color: #fff;
     background: #181818;
     -webkit-transform: translateZ(25px) scale(1.5) !important;
@@ -1074,6 +1077,7 @@ input[name="call-time"] {
     opacity: 1; }
 
 .skills-active {
+  will-change: transform;
   color: #fff;
   background: #181818;
   -webkit-transform: translateZ(25px) scale(1.5) !important;

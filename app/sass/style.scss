@@ -54,7 +54,7 @@ input {
 	transform: translateX(-50%)translateY(-50%);
 	min-width: 70%;
 	min-height: 400px;
-	background-image: url(../img/monro2.gif);
+	background-image: url(../img/monroend.gif);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -647,6 +647,7 @@ input[name="call-time"] {
 }
 
 .skills-wrap {
+	will-change: transform;
 	display: flex;
 	flex-wrap: wrap;
 	position: relative;
@@ -740,6 +741,7 @@ input[name="call-time"] {
 }
 
 .skills-item {
+	will-change: transform;
 	padding: 15px;
 	background: #fff;
 	border: 1px solid #EDEDED;
@@ -755,6 +757,7 @@ input[name="call-time"] {
 	// transform: scale(2);
 	// perspective: 300px;
 	&:hover {
+		will-change: transform;
 		color: #fff;
 		background: #181818;
 		transform: translateZ(25px) scale(1.5) !important;
@@ -773,6 +776,7 @@ input[name="call-time"] {
 }
 
 .skills-active {
+	will-change: transform;
 	color: #fff;
 	background: #181818;
 	transform: translateZ(25px) scale(1.5) !important;
