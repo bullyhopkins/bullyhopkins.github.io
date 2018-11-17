@@ -1071,6 +1071,8 @@ input[name="call-time"] {
   -webkit-transform-style: preserve-3d;
   position: absolute;
   min-width: 252px !important; }
+  .skills-item hr {
+    display: none; }
   .skills-item:hover {
     -webkit-backface-visibility: hidden;
     will-change: transform;
@@ -1087,6 +1089,8 @@ input[name="call-time"] {
     display: block; }
   .skills-item:hover .skills-item-descr {
     opacity: 1; }
+  .skills-item:hover hr {
+    display: block; }
 
 .skills-active {
   will-change: transform;
@@ -1238,6 +1242,7 @@ input[name="call-time"] {
   -webkit-border-radius: 50%;
           border-radius: 50%;
   top: 0;
+  z-index: 100;
   display: none;
   left: 0; }
 
@@ -1442,6 +1447,23 @@ input[name="call-time"] {
   min-height: 420px;
   position: relative; }
 
+.mob-scroll-up {
+  position: absolute;
+  right: 40%;
+  top: 10%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Proxima", arial, serif;
+  font-size: 17px;
+  display: none; }
+  .mob-scroll-up img {
+    max-width: 15px;
+    margin-right: 10px; }
+  .mob-scroll-up span {
+    display: block; }
+
 .agency-mob-img {
   background: url(../img/monro-mob.png);
   -webkit-background-size: contain;
@@ -1457,7 +1479,7 @@ input[name="call-time"] {
 
 .agency-h-mob {
   position: absolute;
-  top: 20px;
+  top: -20px;
   left: 20px;
   font-size: 30px;
   font-weight: 600;
@@ -2577,6 +2599,11 @@ input[name="call-time"] {
             transform: translateX(-50%);
     text-align: center;
     width: 70%; }
+  .mob-scroll-up {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
   .startup {
     position: relative; }
   .startup-mob-img {
@@ -2616,7 +2643,7 @@ input[name="call-time"] {
   .account-agency {
     margin: 0;
     position: relative;
-    padding-top: 350px; }
+    padding-top: 400px; }
   .account-agency-h {
     font-size: 30px;
     line-height: 35px; }

@@ -47,6 +47,7 @@ $(function () {
 		$('.menu-mobile').animate({
 			left: 0
 		}, 1000);
+		return false;
 	});
 
 	//Close Mob Menu
@@ -162,6 +163,9 @@ $(function () {
 		$('.package-selected').animate({
 			left: 0
 		}, 1500);
+		$('.package-selected-content p').css({
+			'display': 'block'
+		});
 		$('html, body').css({ 'overflow': 'hidden' });
 
 		return false;
@@ -182,6 +186,45 @@ $(function () {
 		$('.package-selected').animate({
 			left: 0
 		}, 1500);
+		$('.package-selected-content p').css({
+			'display': 'none'
+		});
+		$('html, body').css({ 'overflow': 'hidden' });
+
+		return false;
+	});
+
+	$('.menu-inp').on('click', function () {
+		$('.package-selected').animate({
+			left: 0
+		}, 1500);
+		$('.package-selected-content p').css({
+			'display': 'none'
+		});
+		$('html, body').css({ 'overflow': 'hidden' });
+
+		return false;
+	});
+
+	$('.call-fix-inp').on('click', function () {
+		$('.package-selected').animate({
+			left: 0
+		}, 1500);
+		$('.package-selected-content p').css({
+			'display': 'none'
+		});
+		$('html, body').css({ 'overflow': 'hidden' });
+
+		return false;
+	});
+
+	$('.mob-menu-inp').on('click', function () {
+		$('.package-selected').animate({
+			left: 0
+		}, 1500);
+		$('.package-selected-content p').css({
+			'display': 'none'
+		});
 		$('html, body').css({ 'overflow': 'hidden' });
 
 		return false;
