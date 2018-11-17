@@ -305,7 +305,8 @@ template {
 html,
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  overflow: hidden; }
 
 a,
 button,
@@ -330,8 +331,7 @@ input {
   height: 100%;
   z-index: 1000;
   overflow: hidden;
-  font-family: 'Proxima';
-  display: none; }
+  font-family: 'Proxima'; }
 
 .welcome {
   color: #fff;

@@ -28,13 +28,13 @@ $(function () {
 		$('.hand').css({'top': e.pageY , 'left': e.pageX })
 	});
 
-	//Включить свет
-	// $('.light').on('click', function () {
-	// 	$('#preloader').fadeOut(1000);
-	// 	$('html, body').css({ 'overflow': 'auto' });
-	// 	//Скролл снизу вверх
-	// 	$(document).scrollTop($('body').height());
-	// });
+	// Включить свет
+	$('.light').on('click', function () {
+		$('#preloader').fadeOut(1000);
+		$('html, body').css({ 'overflow': 'auto' });
+		//Скролл снизу вверх
+		$(document).scrollTop(-$('body').height());
+	});
 
 	document.addEventListener('touchstart', function(event) {
 		event.preventDefault();
