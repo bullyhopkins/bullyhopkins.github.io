@@ -305,7 +305,8 @@ template {
 html,
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  overflow: hidden; }
 
 a,
 button,
@@ -330,8 +331,7 @@ input {
   height: 100%;
   z-index: 1000;
   overflow: hidden;
-  font-family: 'Proxima';
-  display: none; }
+  font-family: 'Proxima'; }
 
 .welcome {
   color: #fff;
@@ -942,8 +942,8 @@ input[name="call-time"] {
   position: relative;
   min-height: 350px;
   padding-top: 40px;
-  -webkit-perspective: 1000px;
-          perspective: 1000px; }
+  -webkit-perspective: 500px;
+          perspective: 500px; }
 
 .slider-skills {
   display: none;
@@ -1068,8 +1068,25 @@ input[name="call-time"] {
   -o-transition: 0.3s;
   transition: 0.3s;
   font-family: "Proxima", "Montserrat", arial, serif;
+  -webkit-transform-style: preserve-3d;
   position: absolute;
   min-width: 252px !important; }
+  .skills-item:hover {
+    -webkit-backface-visibility: hidden;
+    will-change: transform;
+    color: #fff;
+    background: #181818;
+    -webkit-transform: translateZ(25px) scale(1.4) !important;
+            transform: translateZ(25px) scale(1.4) !important;
+    -moz-transform: translateZ(25px) scale(1.4) !important;
+    border: #181818;
+    z-index: 1000;
+    -webkit-box-shadow: 14px 11px 21px 16px rgba(0, 0, 0, 0.51);
+    box-shadow: 14px 11px 21px 16px rgba(0, 0, 0, 0.51); }
+  .skills-item:hover .red-circle {
+    display: block; }
+  .skills-item:hover .skills-item-descr {
+    opacity: 1; }
 
 .skills-active {
   will-change: transform;

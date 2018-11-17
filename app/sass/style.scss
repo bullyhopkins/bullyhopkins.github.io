@@ -7,7 +7,7 @@ html,
 body {
 	margin: 0;
 	padding: 0;
-	// overflow: hidden;
+	overflow: hidden;
 }
 
 a,
@@ -37,7 +37,7 @@ input {
 	z-index: 1000;
 	overflow: hidden;
 	font-family: 'Proxima';
-	display: none; //delete
+	// display: none; //delete
 }
 
 .welcome {
@@ -162,15 +162,10 @@ input {
 	// max-width: 320px;
 }
 
-// body {
-// 	margin-top: -130px;
-// }
-
 /*Communication*/
 
 
 .communication {
-	// min-height: 100vh;
 	position: relative;
 }
 
@@ -657,7 +652,7 @@ input[name="call-time"] {
 	position: relative;
 	min-height: 350px;
 	padding-top: 40px;
-	perspective: 1000px;
+	perspective: 500px;
 }
 
 .slider-skills {
@@ -763,30 +758,30 @@ input[name="call-time"] {
 	color: #000;
 	transition: 0.3s;
 	font-family: $fontsHel;
-	// -webkit-transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
 	position: absolute;
 	// -webkit-backface-visibility: hidden;
 	min-width: 252px !important;
-	// &:hover {
-	// 	-webkit-backface-visibility: hidden;
-	// 	will-change: transform;
-	// 	color: #fff;
-	// 	background: #181818;
-	// 	transform: translateZ(100px) scaleZ(5) !important;
-	// 	-moz-transform: translateZ(100px) scaleZ(5) !important;
-	// 	border: #181818;
-	// 	z-index: 1000;
-	// 	-webkit-box-shadow: 14px 11px 21px 16px rgba(0,0,0,0.51);
-	// 	-moz-box-shadow: 14px 11px 21px 16px rgba(0,0,0,0.51);
-	// 	box-shadow: 14px 11px 21px 16px rgba(0,0,0,0.51);
-	// }
-	// &:hover .red-circle {
-	// 	display: block;
-	// }
-	// &:hover .skills-item-descr{
-	// 	opacity: 1;
-	// 	// font-size: 20px;
-	// }
+	&:hover {
+		-webkit-backface-visibility: hidden;
+		will-change: transform;
+		color: #fff;
+		background: #181818;
+		transform: translateZ(25px) scale(1.4) !important;
+		-moz-transform: translateZ(25px) scale(1.4) !important;
+		border: #181818;
+		z-index: 1000;
+		-webkit-box-shadow: 14px 11px 21px 16px rgba(0,0,0,0.51);
+		-moz-box-shadow: 14px 11px 21px 16px rgba(0,0,0,0.51);
+		box-shadow: 14px 11px 21px 16px rgba(0,0,0,0.51);
+	}
+	&:hover .red-circle {
+		display: block;
+	}
+	&:hover .skills-item-descr{
+		opacity: 1;
+		// font-size: 20px;
+	}
 }
 
 .skills-active {

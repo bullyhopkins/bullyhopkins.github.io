@@ -197,7 +197,6 @@ $(function () {
 		$('html,body').stop().animate({
 			scrollTop: -$('#red-carpet').offset().top
 		}, 800);
-		// $(".skroll-wrap").css('bottom',$(window).scrollTop()*+10);
 		e.preventDefault();
 	});
 
@@ -207,7 +206,6 @@ $(function () {
 		$('html,body').stop().animate({
 			scrollTop: -$('.communication').offset().top
 		}, 800);
-		// $(".skroll-wrap").css('bottom',$(window).scrollTop()*+10);
 		e.preventDefault();
 	});
 
@@ -283,9 +281,9 @@ $(function () {
 
 	skillsItem.hover(function () {
 		$('.skill-advertising .inp-pulse').fadeOut(0);
-		// skillsItem.each(function (ind, elem) {
-		// 	$(elem).removeClass('skills-active');
-		// });
+		skillsItem.each(function (ind, elem) {
+			$(elem).removeClass('skills-active');
+		});
 	});
 
 	$(document).on('mousemove', function (e) {
@@ -303,11 +301,9 @@ $(function () {
 	//Red Carpet cursor
 	$(".red-carpet-block").mousemove(function(e){
 		var parentOffset = $(this).offset(); 
-		//or $(this).offset(); if you really just want the current element offset
 		var relX = e.pageX - parentOffset.left;
 		var relY = e.pageY - parentOffset.top;
 		$('.cursor-carpet-block').css({
-			// display: 'block',
 			top: relY + "px",
 			left: relX + "px"
 		});
