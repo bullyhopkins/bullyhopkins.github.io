@@ -982,7 +982,7 @@ input[name="call-time"] {
     right: 20px; }
 
 .skills-mob-img {
-  background: url(../img/rabbit.gif) center no-repeat;
+  background: url(../img/krolik.gif) center no-repeat;
   -webkit-background-size: contain;
           background-size: contain;
   min-width: 80%;
@@ -1055,12 +1055,13 @@ input[name="call-time"] {
   transition: 0.3s;
   font-family: "Proxima", "Montserrat", arial, serif;
   position: absolute;
-  min-width: 250px !important; }
+  min-width: 252px !important; }
   .skills-item:hover {
     color: #fff;
     background: #181818;
-    -webkit-transform: translateZ(50px) !important;
-            transform: translateZ(50px) !important;
+    -webkit-transform: translateZ(25px) scale(1.5) !important;
+            transform: translateZ(25px) scale(1.5) !important;
+    -moz-transform: translateZ(25px) scale(1.5) !important;
     border: #181818;
     z-index: 1000;
     -webkit-box-shadow: 14px 11px 21px 16px rgba(0, 0, 0, 0.51);
@@ -1069,11 +1070,8 @@ input[name="call-time"] {
     opacity: 1; }
 
 .skills-item-descr {
-  font-size: 7px;
+  font-size: 8px;
   opacity: 0;
-  -webkit-transition: 2s;
-  -o-transition: 2s;
-  transition: 2s;
   color: #fff;
   line-height: 1;
   position: absolute;
@@ -1289,8 +1287,17 @@ input[name="call-time"] {
   min-width: 120px;
   min-height: 120px;
   margin-left: -20px;
-  background: url(../img/people.svg);
+  background: url(../img/people.png);
   background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-position: center center; }
+
+.item-people:hover .people-img {
+  background: url(../img/people_color.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
   background-position: center center; }
 
 .carpet-item-mt {
@@ -2258,7 +2265,8 @@ input[name="call-time"] {
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    width: 100%; }
   #red-carpet .wrap {
     -webkit-box-pack: center;
     -webkit-justify-content: center;

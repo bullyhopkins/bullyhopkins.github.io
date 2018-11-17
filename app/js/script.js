@@ -235,8 +235,7 @@ $(function () {
 		skillsItem.css({
 			transform: 'rotateY(' + (x - bodyWidth) / 60 + 'deg)'
 		});
-
-		// console.log(mouse);
+		
 	});
 
 	//Red Carpet cursor

@@ -686,7 +686,7 @@ input[name="call-time"] {
 }
 
 .skills-mob-img {
-	background: url(../img/rabbit.gif) center no-repeat;
+	background: url(../img/krolik.gif) center no-repeat;
 	background-size: contain;
 	min-width: 80%;
 	min-height: 300px;
@@ -748,28 +748,32 @@ input[name="call-time"] {
 	transition: 0.3s;
 	font-family: $fontsHel;
 	position: absolute;
-	min-width: 250px !important;
+	min-width: 252px !important;
+	// perspective: 300px;
 	&:hover {
 		color: #fff;
 		background: #181818;
-		transform: translateZ(50px)!important;
+		transform: translateZ(25px) scale(1.5) !important;
+		-moz-transform: translateZ(25px) scale(1.5) !important;
 		border: #181818;
 		z-index: 1000;
+		// transform: rotateY(20deg) translateZ(500px);
 		-webkit-box-shadow: 14px 11px 21px 16px rgba(0,0,0,0.51);
 		-moz-box-shadow: 14px 11px 21px 16px rgba(0,0,0,0.51);
 		box-shadow: 14px 11px 21px 16px rgba(0,0,0,0.51);
 	}
 	&:hover .skills-item-descr{
 		opacity: 1;
+		// font-size: 20px;
 	}
 }
 
 .skills-item-descr {
-	font-size: 7px;
+	font-size: 8px;
 	// padding-bottom: 20px;
 	// display: none;
 	opacity: 0;
-	transition: 2s;
+	// transition: 2s;
 	color: #fff;
 	line-height: 1;
 	position: absolute;
@@ -990,8 +994,16 @@ input[name="call-time"] {
 	min-width: 120px;
 	min-height: 120px;
 	margin-left: -20px;
-	background: url(../img/people.svg);
+	background: url(../img/people.png);
 	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
+}
+
+.item-people:hover .people-img {
+	background: url(../img/people_color.png);
+	background-repeat: no-repeat;
+	background-size: contain;
 	background-position: center center;
 }
 
@@ -2043,6 +2055,7 @@ input[name="call-time"] {
 		// flex-direction: column;
 		margin: 0 auto;
 		align-items: center;
+		width: 100%;
 	}
 
 	#red-carpet .wrap {
