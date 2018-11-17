@@ -1025,15 +1025,17 @@ input[name="call-time"] {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  min-height: 250px; }
   .slider-item .skill-name {
     margin-top: 0;
     padding-top: 0;
     position: absolute;
-    bottom: 20px; }
+    bottom: 20px;
+    font-size: 30px; }
   .slider-item .skills-item-descr {
     position: static;
-    font-size: 10px; }
+    font-size: 15px; }
 
 .slick-current {
   background: #000;
@@ -1055,7 +1057,9 @@ input[name="call-time"] {
   transition: 0.3s;
   font-family: "Proxima", "Montserrat", arial, serif;
   position: absolute;
-  min-width: 252px !important; }
+  min-width: 252px !important;
+  -webkit-perspective: 500;
+          perspective: 500; }
   .skills-item:hover {
     color: #fff;
     background: #181818;
@@ -1069,17 +1073,40 @@ input[name="call-time"] {
   .skills-item:hover .skills-item-descr {
     opacity: 1; }
 
+.skills-active {
+  color: #fff;
+  background: #181818;
+  -webkit-transform: translateZ(25px) scale(1.5) !important;
+          transform: translateZ(25px) scale(1.5) !important;
+  -moz-transform: translateZ(25px) scale(1.5) !important;
+  border: #181818;
+  z-index: 1000;
+  -webkit-box-shadow: 14px 11px 21px 16px rgba(0, 0, 0, 0.51);
+  box-shadow: 14px 11px 21px 16px rgba(0, 0, 0, 0.51); }
+  .skills-active .skills-item-descr {
+    opacity: 1; }
+  .skills-active .inp-pulse {
+    right: 20px;
+    bottom: 10px;
+    position: absolute;
+    min-width: 15px;
+    min-height: 15px; }
+    .skills-active .inp-pulse:before {
+      -webkit-animation: pulseCarpet 2s linear infinite;
+              animation: pulseCarpet 2s linear infinite; }
+
 .skills-item-descr {
-  font-size: 8px;
+  font-size: 0.6rem;
   opacity: 0;
   color: #fff;
   line-height: 1;
   position: absolute;
-  max-width: 100px; }
+  max-width: 60%; }
 
 .skill-name {
   margin-top: 20px;
-  padding-top: 50px; }
+  padding-top: 50px;
+  font-size: 20px; }
 
 .skill-smm {
   min-width: 13%;
@@ -1365,7 +1392,8 @@ input[name="call-time"] {
   background-position: center center;
   background-repeat: no-repeat;
   min-width: 50%;
-  min-height: 420px; }
+  min-height: 420px;
+  position: relative; }
 
 .agency-mob-img {
   background: url(../img/monro-mob.png);
@@ -1389,7 +1417,9 @@ input[name="call-time"] {
   display: none; }
 
 .scroll-down {
-  margin-left: 20%;
+  left: 15%;
+  top: -50px;
+  position: absolute;
   color: #fff;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -2136,7 +2166,9 @@ input[name="call-time"] {
     .menu li {
       text-align: center; }
     .menu .menu-inp {
-      margin: 0; } }
+      margin: 0; }
+  .red-carpet-block {
+    width: 100%; } }
 
 @media screen and (max-width: 1000px) {
   .communication .wrap {
@@ -2536,7 +2568,10 @@ input[name="call-time"] {
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
         -ms-flex-pack: start;
-            justify-content: flex-start; } }
+            justify-content: flex-start; }
+  .account-agency-left p br {
+    display: none;
+    padding: 30px; } }
 
 /**** MEDIA END ****/
 @font-face {

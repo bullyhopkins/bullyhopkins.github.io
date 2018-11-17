@@ -716,15 +716,17 @@ input[name="call-time"] {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	min-height: 250px;
 	.skill-name {
 		margin-top: 0;
 		padding-top: 0;
 		position: absolute;
 		bottom: 20px;
+		font-size: 30px;
 	}
 	.skills-item-descr {
 		position: static;
-		font-size: 10px;
+		font-size: 15px;
 	}
 }
 
@@ -749,6 +751,8 @@ input[name="call-time"] {
 	font-family: $fontsHel;
 	position: absolute;
 	min-width: 252px !important;
+	perspective: 500;
+	// transform: scale(2);
 	// perspective: 300px;
 	&:hover {
 		color: #fff;
@@ -768,8 +772,35 @@ input[name="call-time"] {
 	}
 }
 
+.skills-active {
+	color: #fff;
+	background: #181818;
+	transform: translateZ(25px) scale(1.5) !important;
+	-moz-transform: translateZ(25px) scale(1.5) !important;
+	border: #181818;
+	z-index: 1000;
+	// transform: rotateY(20deg) translateZ(500px);
+	-webkit-box-shadow: 14px 11px 21px 16px rgba(0,0,0,0.51);
+	-moz-box-shadow: 14px 11px 21px 16px rgba(0,0,0,0.51);
+	box-shadow: 14px 11px 21px 16px rgba(0,0,0,0.51);
+	.skills-item-descr{
+		opacity: 1;
+		// font-size: 20px;
+	}
+	.inp-pulse {
+		right: 20px;
+		bottom: 10px;
+		position: absolute;
+		min-width: 15px;
+		min-height: 15px;
+		&:before {
+			animation: pulseCarpet 2s linear infinite;
+		}
+	}
+}
+
 .skills-item-descr {
-	font-size: 8px;
+	font-size: 0.6rem;
 	// padding-bottom: 20px;
 	// display: none;
 	opacity: 0;
@@ -777,12 +808,13 @@ input[name="call-time"] {
 	color: #fff;
 	line-height: 1;
 	position: absolute;
-	max-width: 100px;
+	max-width: 60%;
 }
 
 .skill-name {
 	margin-top: 20px;
 	padding-top: 50px;
+	font-size: 20px;
 }
 
 .skill-smm {
@@ -1074,6 +1106,7 @@ input[name="call-time"] {
 	background-repeat: no-repeat;
 	min-width: 50%;
 	min-height: 420px;
+	position: relative;
 }
 
 .agency-mob-img {
@@ -1099,7 +1132,9 @@ input[name="call-time"] {
 }
 
 .scroll-down {
-	margin-left: 20%;
+	left: 15%;
+	top: -50px;
+	position: absolute;
 	color: #fff;
 	display: inline-flex;
 	flex-direction: column;
@@ -1863,6 +1898,10 @@ input[name="call-time"] {
 		}
 	}
 
+	.red-carpet-block {
+		width: 100%;
+	}
+
 }
 
 // // Большие девайсы (десктопы, >= 992px)
@@ -1950,6 +1989,10 @@ input[name="call-time"] {
 }
 
 @media screen and (max-width: 950px) {
+
+	// body {
+	// 	margin-top: -450px;
+	// }
 
 	.communication-right {
 		justify-content: center;
@@ -2486,6 +2529,11 @@ input[name="call-time"] {
 	.documents-form li {
 		width: 100%;
 		justify-content: flex-start
+	}
+
+	.account-agency-left p br {
+		display: none;
+		padding: 30px;
 	}
 }
 

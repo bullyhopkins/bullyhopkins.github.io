@@ -1,16 +1,31 @@
 $(function () {
 
 	//Scroll
-	var winHeight = $(window).innerHeight();
+	// var winHeight = $(window).innerHeight();
 
-	$("body").height($('.skroll-wrap').outerHeight());
+	// function bodHeight () {
+	// 	var mainHeight = 0;
+	// 	$('.panel').each(function (ind, elem) {
+	// 		mainHeight += $(elem).outerHeight();
+	// 	});
+	// 	return mainHeight;
+	// }
+
+	$("body").height($('.skroll-wrap').innerHeight());
+
+	console.log($('.skroll-wrap').innerHeight());
 	$(window).on('scroll',function(){
+		$("body").height($('.skroll-wrap').innerHeight());
 		$(".skroll-wrap").css('bottom',$(window).scrollTop()*-1);
 	});
 
 	//Cлежение руки за курсором
 	$(document).mousemove(function(e){
 		$('.hand').css({'top': e.pageY - 25, 'left': e.pageX + 3})
+	});
+
+	document.querySelector('#preloader').addEventListener('touchmove', function () {
+		$('.hand').css({'top': e.pageY , 'left': e.pageX })
 	});
 
 	//Включить свет
@@ -151,9 +166,11 @@ $(function () {
 
 	//Ссылка о компании
 	$('.account-agency-inp').on('click', function(e){
+		var agencyHeight = $('.account-agency').outerHeight();
 		$('html,body').stop().animate({
-			scrollTop: $('#red-carpet').offset().top
+			scrollTop: -$('#red-carpet').offset().top
 		}, 800);
+		// $(".skroll-wrap").css('bottom',$(window).scrollTop()*+10);
 		e.preventDefault();
 	});
 
@@ -226,6 +243,13 @@ $(function () {
 
 	//Paralax Skills
 	var skillsItem = $('.skills-item');
+
+	skillsItem.hover(function () {
+		$('.skill-seo .inp-pulse').fadeOut(500);
+		skillsItem.each(function (ind, elem) {
+			$(elem).removeClass('skills-active');
+		});
+	});
 
 	$(document).on('mousemove', function (e) {
 		var x = e.pageX;
