@@ -24,7 +24,7 @@ $(function () {
 		$('.hand').css({'top': e.pageY - 25, 'left': e.pageX + 3})
 	});
 
-	document.querySelector('#preloader').addEventListener('touchmove', function () {
+	document.querySelector('#preloader').addEventListener('touchmove', function (e) {
 		$('.hand').css({'top': e.pageY , 'left': e.pageX })
 	});
 
