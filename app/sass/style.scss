@@ -442,12 +442,13 @@ input[name="call-time"] {
 }
 
 .big-business-img {
-	background: url(../img/jakson.gif);
+	// background: url(../img/jakson.gif);
 	background-size: contain;
 	background-position: center center;
 	background-repeat: no-repeat;
 	min-width: 40%;
 	min-height: 600px;
+	animation: jakson 2s infinite;
 }
 
 .big-img-mob {
@@ -577,12 +578,13 @@ input[name="call-time"] {
 }
 
 .medium-business-img {
-	background: url(../img/shivaend.gif);
+	// background: url(../img/shivaend.gif);
 	background-size: contain;
 	background-position: center center;
 	background-repeat: no-repeat;
 	min-width: 40%;
 	min-height: 500px;
+	animation: shiva 4s linear infinite;
 }
 
 /*Medium Business End*/
@@ -643,6 +645,7 @@ input[name="call-time"] {
 	min-width: 300px;
 	min-height: 300px;
 	right: 0;
+	animation: rabbit 3s linear infinite;
 }
 
 .skills-wrap {
@@ -924,13 +927,14 @@ input[name="call-time"] {
 }
 
 .red-carpet-img {
-	background: url(../img/chaplinend.gif);
+	// background: url(../img/chaplinend.gif);
 	background-size: contain;
 	background-position: center center;
 	background-repeat: no-repeat;
 	min-width: 40%;
 	min-height: 400px;
 	// margin-right: 40px;
+	animation: chaplin 2s infinite;
 }
 
 .red-carpet-h {
@@ -1148,13 +1152,14 @@ input[name="call-time"] {
 }
 
 .account-agency-img {
-	background: url(../img/monroend.gif);
+	// background: url(../img/monroend.gif);
 	background-size: contain;
 	background-position: center center;
 	background-repeat: no-repeat;
 	min-width: 50%;
 	min-height: 420px;
 	position: relative;
+	animation: monro 0.5s linear infinite;
 }
 
 .mob-scroll-up {
@@ -1299,8 +1304,14 @@ input[name="call-time"] {
 	.menu-pink {
 		color: $main-color;
 		&:hover {
-			border-bottom: 2px solid $main-color;
+			border-bottom: 1px solid $main-color;
 		}
+	}
+}
+
+.list-mob-menu {
+	.menu-pink {
+		color: $main-color;
 	}
 }
 
@@ -2298,6 +2309,10 @@ input[name="call-time"] {
 		display: none;
 	}
 
+	.hand {
+		display: none;
+	}
+
 	.callback{
 		display: none;
 	}
@@ -2801,5 +2816,96 @@ input[name="call-time"] {
 	}
 	100% {
 		transform: scale(1);
+	}
+}
+
+@keyframes jakson {
+	from {
+		background: url(../img/m1.png) center no-repeat;
+		background-size: contain;
+	}
+	to {
+		background: url(../img/m2.png) center no-repeat;
+		background-size: contain;
+	}
+}
+
+@keyframes chaplin {
+	from {
+		background: url(../img/ch1.png) center no-repeat;
+		background-size: contain;
+	}
+	to {
+		background: url(../img/ch2.png) center no-repeat;
+		background-size: contain;
+	}
+}
+
+@keyframes shiva {
+	0% {
+		background: url(../img/sh1.png) center no-repeat;
+		background-size: contain;
+	}
+	20% {
+		background: url(../img/sh2.png) center no-repeat;
+		background-size: contain;
+	}
+	40% {
+		background: url(../img/sh3.png) center no-repeat;
+		background-size: contain;
+	}
+	60% {
+		background: url(../img/sh4.png) center no-repeat;
+		background-size: contain;
+	}
+	80% {
+		background: url(../img/sh5.png) center no-repeat;
+		background-size: contain;
+	}
+	100% {
+		background: url(../img/sh6.png) center no-repeat;
+		background-size: contain;
+	}
+}
+
+@keyframes rabbit {
+	0% {
+		background: url(../img/rab1.png) center no-repeat;
+		background-size: contain;
+	}
+	20% {
+		background: url(../img/rab2.png) center no-repeat;
+		background-size: contain;
+	}
+	40% {
+		background: url(../img/rab3.png) center no-repeat;
+		background-size: contain;
+	}
+	60% {
+		background: url(../img/rab4.png) center no-repeat;
+		background-size: contain;
+	}
+	80% {
+		background: url(../img/rab5.png) center no-repeat;
+		background-size: contain;
+	}
+	100% {
+		background: url(../img/rab6.png) center no-repeat;
+		background-size: contain;
+	}
+}
+
+@keyframes monro {
+	0% {
+		background: url(../img/mon1.png) center no-repeat;
+		background-size: contain;
+	}
+	50% {
+		background: url(../img/mon2.png) center no-repeat;
+		background-size: contain;
+	}
+	100% {
+		background: url(../img/mon3.png) center no-repeat;
+		background-size: contain;
 	}
 }
