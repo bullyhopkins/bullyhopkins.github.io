@@ -1832,7 +1832,7 @@ input[name="call-time"] {
 	position: fixed;
 	width: 100%;
 	background: #fff;
-	z-index: 700;
+	z-index: 1000;
 	height: 100%;
 	top: 0;
 	left: 100%;
@@ -2293,6 +2293,10 @@ input[name="call-time"] {
 	// #red-carpet {
 	// 	display: none;
 	// }
+	
+	#preloader .logo {
+		display: none;
+	}
 
 	.callback{
 		display: none;
