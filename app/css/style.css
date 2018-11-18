@@ -872,7 +872,7 @@ input[name="call-time"] {
   background-position: center center;
   background-repeat: no-repeat;
   min-width: 40%;
-  min-height: 600px; }
+  min-height: 500px; }
 
 /*Medium Business End*/
 /*Startup*/
@@ -1335,14 +1335,14 @@ input[name="call-time"] {
           background-size: cover; }
 
 .hands {
-  background: url(../img/hands.png);
+  background: url(../img/hands1.png);
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-background-size: cover;
           background-size: cover; }
 
 .item-hands:hover .hands {
-  background: url(../img/hands_color.png);
+  background: url(../img/hands_color1.png);
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-background-size: cover;
@@ -1510,8 +1510,9 @@ input[name="call-time"] {
 .take-oscar {
   position: absolute;
   top: -50px;
-  left: 20px;
-  font-size: 13px;
+  left: 15px;
+  font-size: 12px;
+  font-family: "Proxima", arial, serif;
   letter-spacing: 3px; }
 
 /*Account Agency End*/
