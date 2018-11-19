@@ -645,7 +645,7 @@ input[name="call-time"] {
 	min-width: 300px;
 	min-height: 300px;
 	right: 0;
-	animation: rabbit 3s linear infinite;
+	animation: rabbit 4s linear infinite;
 }
 
 .skills-wrap {
@@ -2873,20 +2873,24 @@ input[name="call-time"] {
 		background: url(../img/rab1.png) center no-repeat;
 		background-size: contain;
 	}
-	20% {
+	15% {
 		background: url(../img/rab2.png) center no-repeat;
 		background-size: contain;
 	}
-	40% {
+	30% {
 		background: url(../img/rab3.png) center no-repeat;
 		background-size: contain;
 	}
-	60% {
+	45% {
 		background: url(../img/rab4.png) center no-repeat;
 		background-size: contain;
 	}
-	80% {
+	60% {
 		background: url(../img/rab5.png) center no-repeat;
+		background-size: contain;
+	}
+	75% {
+		background: url(../img/rab6.png) center no-repeat;
 		background-size: contain;
 	}
 	100% {
