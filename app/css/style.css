@@ -532,7 +532,8 @@ header {
   display: none; }
 
 .trip-tabs-content {
-  background: #f9f9f9; }
+  background: #f9f9f9;
+  display: none; }
 
 .trip-item-right {
   display: -webkit-box;
@@ -625,9 +626,6 @@ header {
       -webkit-transform: translateY(-50%);
           -ms-transform: translateY(-50%);
               transform: translateY(-50%); }
-
-.trip-tabs-content {
-  display: none; }
 
 .active-content {
   display: block; }

@@ -9,20 +9,30 @@ $(function () {
 
   //TABS
   $('.tabs-list li').on('click', function () {
-    $('.tabs-list li').each(function (inx, elem) {
-      $(elem).removeClass('active-tab');
-    });
-    $(this).addClass('active-tab');
+    $(this)
+      .addClass('active-tab').siblings().removeClass('active-tab')
+      .closest('.trip-item').find('.trip-tabs-content').removeClass('active-content').eq($(this).index()).addClass('active-content');
+    // $('.tabs-list li').each(function (inx, elem) {
+    //   $(elem).removeClass('active-tab');
+    // });
+
+    // $('.trip-tabs-content').removeClass('active');
+
+    // var tab = this.attr('data-tab');
+
+    
+    // $(this).addClass('active-tab');
+
+    // $('.'+tab).addClass('active');
+
     return false;
   });
 
+  //Slide-trip-item
   $('.learn-more-left').on('click', function () {
-    $('.sub-trip-item').closest('.sub-trip-item').slideDown();
-    $('.learn-more-left').fadeOut(400);
-    $('.learn-more').fadeOut(400);
-    // $(this)
-    //   .addClass('active').siblings().removeClass('active')
-    //   .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+    $(this).parentsUntil('.trip-item').children('.sub-trip-item').slideDown();
+    $(this).parentsUntil('.trip-item').children('.learn-more').fadeOut(400);
+    $(this).fadeOut(400);
     return false;
   });
 
