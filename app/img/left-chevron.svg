@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="33px" height="33px" viewBox="0 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>68110E2F-2DF6-4516-A72F-307EC61F74AD</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <filter x="-48.0%" y="-48.0%" width="196.0%" height="196.0%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="left-chevron" transform="translate(4.000000, 2.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g filter="url(#filter-1)" id="Shape">
+                <path d="M12.5,0 C5.59642857,0 0,5.59642857 0,12.5 C0,19.4035714 5.59642857,25 12.5,25 C19.4035714,25 25,19.4035714 25,12.5 C25,5.59642857 19.4035714,0 12.5,0 Z M15.2072527,18.3742308 L14.0397802,19.5378571 L7.02483516,12.5 L14.0397802,5.46214286 L15.2072527,6.62576923 L9.35214286,12.5 L15.2072527,18.3742308 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg>

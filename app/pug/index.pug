@@ -1,0 +1,598 @@
+doctype
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    title Test Pug
+    link(rel="stylesheet" href="css/bootstrap-grid.min.css")
+    link(rel="stylesheet" href="css/style.css")
+    link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous")
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&amp;subset=greek,vietnamese" rel="stylesheet")
+  body
+    //HEADER
+    header.top-menu
+      .container
+        .row.justify-content-between
+          .menu-left
+            img(src="img/logo.png", alt="logo")
+          .menu-middle
+            nav
+              ul.menu-list
+                li 
+                  a(href="#") Ceļojumi
+                li 
+                  a(href="#").active-menu Galamērķi
+                li 
+                  a(href="#") Kalendārs
+                li 
+                  a(href="#") Karte
+                li 
+                  a(href="#") Blogs
+                li
+                  a(href="#") Dāvanu karte
+                li
+                  a(href="#") Par mums
+          a.phone(href="tel:+37167242429")
+            .phone-menu-img
+            span +371 67242429
+          .open-menu-mobile
+            <i class="fas fa-bars"></i>
+  //MAIN
+  main
+    .bread-crumb
+      .container
+        .row.align-items-center
+          a(href="#") Vanillatravel.lv
+          span /
+          a(href="#") Ceļojumi
+          span /
+          span Kategorijas
+    
+    .container
+      .page-h Ceļojums uz Albāniju
+
+    section.contact
+      .container
+        .row
+          .col-md-8.state-slider
+            .slider-wrap
+              img(src="img/1.jpg", alt="")
+              img(src="img/1.jpg", alt="")
+              img(src="img/1.jpg", alt="")
+          .col-md-4
+            .state-descr
+              ul.state-descr-list
+                li Neskarta daba un ainaviski skati
+                li Daudzveidīgs kultūras un dabas mantojums
+                li Dzidras vidusjūras pludmales bez tūristu masām
+                li Drošs galamērķis
+                li UNESCO atzīta arhitektūra
+                li Viesmīlīgi iedzīvotāji un lieliska vietējā virtuve
+              .state-descr-bot
+                a.phone(href="tel:+37167242429")
+                  .phone-descr-img
+                  span +371 67242429
+                a.message(href="#")
+                  .message-img
+                  span travel@vanillatravel.com
+
+    section.consult
+      .container
+        .row
+          .consult-left.col-md-10
+            .consult-h Balkānu pussalas nosargātā pērle- Albānija
+            ul.consult-list
+              li Labākās pludmales Eiropā- bez tūristu masām
+              li Labākās pludmales Eiropā- bez tūristu masām
+              li Labākās pludmales Eiropā- bez tūristu masām
+              li Labākās pludmales Eiropā- bez tūristu masām
+          .consult-right.col-md-2
+            a(href="#") Pieteikties konsultācijai par ceļojumu
+
+    .container
+      .proposals-h 
+        span Izdevīgākie piedāvājumi
+        .piggy-bank
+
+    .trip-item
+      .container
+        .row
+          .col-md-10.trip-item-left
+            .trip-item-h
+              | All Inclusive pludmales atpūta Ēģiptē, lidojums 28. novembrī
+            .row.col-auto
+              img(src="img/1.jpg", alt="")
+              .trip-list-wrap
+                ul.trip-item-list
+                  li Pludmales viesnīca Titanic Beach SPA & Aqua Park 5* ar plašu tertoriju
+                  li Pludmales viesnīca Titanic Beach SPA & Aqua Park 5* ar plašu tertoriju
+                  li Pludmales viesnīca Titanic Beach SPA & Aqua Park 5* ar plašu tertoriju
+                  li Pludmales viesnīca Titanic Beach SPA & Aqua Park 5* ar plašu tertoriju
+                  li Pludmales viesnīca Titanic Beach SPA & Aqua Park 5* ar plašu tertoriju
+                  li Pludmales viesnīca Titanic Beach SPA & Aqua Park 5* ar plašu tertoriju
+                  li Pludmales viesnīca Titanic Beach SPA & Aqua Park 5* ar plašu tertoriju
+                span.warning Pēdējās 7 vietas!
+              a.learn-more-left(href="#") Uzzināt vairāk
+                span &rarr;
+          .col-md-2.trip-item-right
+            span.price €489
+            span.past-price 
+              s €889
+            p.trip-right-descr
+              | * katram pieaugušajam divvietīgā numurā ar ēdināšanu Viss iekļauts
+            a.learn-more(href="#") Uzzināt vairāk
+        .sub-trip-item
+          .row
+            .col-md-10.sub-trip-left
+              .trip-tabs
+                ul.tabs-list
+                  li.active-tab
+                    a(href="#") Ceļojuma cenā iekļauts
+                  li 
+                    a(href="#") Cenas noteikumi
+                  li 
+                    a(href="#") Papildus izdevumi
+              .trip-tabs-content.active-content
+                ul.content-list
+                  li tiešais lidojums no Rīgas
+                  li tiešais lidojums no Rīgas
+                  li tiešais lidojums no Rīgas
+                  li tiešais lidojums no Rīgas
+                  li tiešais lidojums no Rīgas
+              .trip-tabs-content
+                ul.content-list
+                  li tiešais lidojums no Rīgas
+                  li tiešais lidojums no Rīgas
+                  li tiešais lidojums no Rīgas
+                  li tiešais lidojums no Rīgas
+                  li tiešais lidojums no Rīgas
+              .trip-tabs-content
+                ul.content-list
+                  li tiešais lidojums no Rīgas
+                  li tiešais lidojums no Rīgas
+                  li tiešais lidojums no Rīgas
+                  li tiešais lidojums no Rīgas
+                  li tiešais lidojums no Rīgas
+            .col-md-2.sub-trip-right
+              a.sub-phone(href="tel:+37167242429")
+                .sub-phone-img
+                span +371 67242429
+              a.sub-trip-btn(href="#") Rezervēt
+
+
+    .trip-item
+      .container
+        .row
+          .col-md-10.trip-item-left
+            .trip-item-h
+              | All Inclusive pludmales atpūta Ēģiptē, lidojums 28. novembrī
+            .row.col-auto
+              img(src="img/1.jpg", alt="")
+              .trip-list-wrap
+                ul.trip-item-list
+                  li Pludmales viesnīca Titanic Beach SPA & Aqua Park 5* ar plašu tertoriju
+                  li Pludmales viesnīca Titanic Beach SPA & Aqua Park 5* ar plašu tertoriju
+                  li Pludmales viesnīca Titanic Beach SPA & Aqua Park 5* ar plašu tertoriju
+                  li Pludmales viesnīca Titanic Beach SPA & Aqua Park 5* ar plašu tertoriju
+                  li Pludmales viesnīca Titanic Beach SPA & Aqua Park 5* ar plašu tertoriju
+                  li Pludmales viesnīca Titanic Beach SPA & Aqua Park 5* ar plašu tertoriju
+                  li Pludmales viesnīca Titanic Beach SPA & Aqua Park 5* ar plašu tertoriju
+                span.warning Pēdējās 7 vietas!
+              a.learn-more-left(href="#") Uzzināt vairāk
+                span &rarr;
+          .col-md-2.trip-item-right
+            span.price €489
+            span.past-price 
+              s €889
+            p.trip-right-descr
+              | * katram pieaugušajam divvietīgā numurā ar ēdināšanu Viss iekļauts
+            a.learn-more(href="#") Uzzināt vairāk
+        .sub-trip-item
+          .row
+            .col-md-10.sub-trip-left
+              .trip-tabs
+                ul.tabs-list
+                  li.active-tab
+                    a(href="#") Ceļojuma cenā iekļauts
+                  li 
+                    a(href="#") Cenas noteikumi
+                  li 
+                    a(href="#") Papildus izdevumi
+              .trip-tabs-content.active-content
+                ul.content-list
+                  li tiešais lidojums no Rīgas
+                  li tiešais lidojums no Rīgas
+                  li tiešais lidojums no Rīgas
+                  li tiešais lidojums no Rīgas
+                  li tiešais lidojums no Rīgas
+              .trip-tabs-content
+                ul.content-list
+                  li tiešais lidojums no Rīgas
+                  li tiešais lidojums no Rīgas
+                  li tiešais lidojums no Rīgas
+                  li tiešais lidojums no Rīgas
+                  li tiešais lidojums no Rīgas
+              .trip-tabs-content
+                ul.content-list
+                  li tiešais lidojums no Rīgas
+                  li tiešais lidojums no Rīgas
+                  li tiešais lidojums no Rīgas
+                  li tiešais lidojums no Rīgas
+                  li tiešais lidojums no Rīgas
+            .col-md-2.sub-trip-right
+              a.sub-phone(href="tel:+37167242429")
+                .sub-phone-img
+                span +371 67242429
+              a.sub-trip-btn(href="#") Rezervēt
+
+
+    .trip-item
+      .container
+        .row
+          .col-md-10.trip-item-left
+            .trip-item-h
+              | All Inclusive pludmales atpūta Ēģiptē, lidojums 28. novembrī
+            .row.col-auto
+              img(src="img/1.jpg", alt="")
+              .trip-list-wrap
+                ul.trip-item-list
+                  li Pludmales viesnīca Titanic Beach SPA & Aqua Park 5* ar plašu tertoriju
+                  li Pludmales viesnīca Titanic Beach SPA & Aqua Park 5* ar plašu tertoriju
+                  li Pludmales viesnīca Titanic Beach SPA & Aqua Park 5* ar plašu tertoriju
+                  li Pludmales viesnīca Titanic Beach SPA & Aqua Park 5* ar plašu tertoriju
+                  li Pludmales viesnīca Titanic Beach SPA & Aqua Park 5* ar plašu tertoriju
+                  li Pludmales viesnīca Titanic Beach SPA & Aqua Park 5* ar plašu tertoriju
+                  li Pludmales viesnīca Titanic Beach SPA & Aqua Park 5* ar plašu tertoriju
+                span.warning Pēdējās 7 vietas!
+              a.learn-more-left(href="#") Uzzināt vairāk
+                span &rarr;
+          .col-md-2.trip-item-right
+            span.price €489
+            span.past-price 
+              s €889
+            p.trip-right-descr
+              | * katram pieaugušajam divvietīgā numurā ar ēdināšanu Viss iekļauts
+            a.learn-more(href="#") Uzzināt vairāk
+        .sub-trip-item
+          .row
+            .col-md-10.sub-trip-left
+              .trip-tabs
+                ul.tabs-list
+                  li.active-tab
+                    a(href="#") Ceļojuma cenā iekļauts
+                  li 
+                    a(href="#") Cenas noteikumi
+                  li 
+                    a(href="#") Papildus izdevumi
+              .trip-tabs-content.active-content
+                ul.content-list
+                  li tiešais lidojums no Rīgas
+                  li tiešais lidojums no Rīgas
+                  li tiešais lidojums no Rīgas
+                  li tiešais lidojums no Rīgas
+                  li tiešais lidojums no Rīgas
+              .trip-tabs-content
+                ul.content-list
+                  li tiešais lidojums no Rīgas
+                  li tiešais lidojums no Rīgas
+                  li tiešais lidojums no Rīgas
+                  li tiešais lidojums no Rīgas
+                  li tiešais lidojums no Rīgas
+              .trip-tabs-content
+                ul.content-list
+                  li tiešais lidojums no Rīgas
+                  li tiešais lidojums no Rīgas
+                  li tiešais lidojums no Rīgas
+                  li tiešais lidojums no Rīgas
+                  li tiešais lidojums no Rīgas
+            .col-md-2.sub-trip-right
+              a.sub-phone(href="tel:+37167242429")
+                .sub-phone-img
+                span +371 67242429
+              a.sub-trip-btn(href="#") Rezervēt
+    
+    .container
+      .tour-search-h
+        | Ceļojumu meklēšana Online
+
+
+    section.tour-search
+      .container
+        .row
+          .col-md-10.tour-search-left
+            .search-h Ceļojumu meklēšana Online
+            span Ceļojumi ar tiešajiem lidojumiem no Rīgas uz Albāniju maijā.
+          .col-md-2.tour-search-right
+            a(href="#")
+              .search-img
+              span Meklēt ceļojumu
+
+
+    .container
+      .comments-h
+        | Atsauksmes
+
+    section.comments
+      .container
+        .comments-slider
+          .row.comments-item
+            .col-md-6
+              .row.align-items-center.justify-content-between.comments-info
+                div
+                  span.assessment 10.0
+                  span Lieliski
+                .stars.justify-content-end
+                  i.fas.fa-star
+                  i.fas.fa-star
+                  i.fas.fa-star
+                  i.fas.fa-star
+                  i.fas.fa-star
+              .comments-progress
+                .row.justify-content-between.align-items-center
+                  span.col-md-7 Ceļojuma atbilstība gaidītajam
+                  .progress-bar.col-md-auto
+                    span.progress-percent 100%
+                    .scale 
+                .row.justify-content-between.align-items-center
+                  span.col-md-7 Ceļojuma konsultanta servisa novērtējums
+                  .progress-bar.col-md-auto
+                    span.progress-percent 5 no 5
+                    .scale 
+                .row.justify-content-between.align-items-center
+                  span.col-md-7 Cik lielā mērā Jūs rekomendētu Vanilla Travel 
+                    | pakalpojumusdraugiem un paziņām?
+                  .progress-bar.col-md-auto
+                    span.progress-percent 100%
+                    .scale 
+            .col-md-6.comments-right
+              div
+                span Name:
+                span Aija Kleinhofa
+              div
+                span Galamērķis:
+                span Portugal, Madeira
+              div
+                span Palika iekšā:
+                span Novembris 2018
+              p Pēc iespējas vairāk informācijas par ceļojuma galamērķi, piejamajām ekskursijām.
+              .comments-data 16 Nov 2018
+          .row.comments-item
+            .col-md-6
+              .row.align-items-center.justify-content-between.comments-info
+                div
+                  span.assessment 10.0
+                  span Lieliski
+                .stars.justify-content-end
+                  i.fas.fa-star
+                  i.fas.fa-star
+                  i.fas.fa-star
+                  i.fas.fa-star
+                  i.fas.fa-star
+              .comments-progress
+                .row.justify-content-between.align-items-center
+                  span.col-md-7 Ceļojuma atbilstība gaidītajam
+                  .progress-bar.col-md-auto
+                    span.progress-percent 100%
+                    .scale 
+                .row.justify-content-between.align-items-center
+                  span.col-md-7 Ceļojuma konsultanta servisa novērtējums
+                  .progress-bar.col-md-auto
+                    span.progress-percent 5 no 5
+                    .scale 
+                .row.justify-content-between.align-items-center
+                  span.col-md-7 Cik lielā mērā Jūs rekomendētu Vanilla Travel 
+                    | pakalpojumusdraugiem un paziņām?
+                  .progress-bar.col-md-auto
+                    span.progress-percent 100%
+                    .scale 
+            .col-md-6.comments-right
+              div
+                span Name:
+                span Aija Kleinhofa
+              div
+                span Galamērķis:
+                span Portugal, Madeira
+              div
+                span Palika iekšā:
+                span Novembris 2018
+              p Pēc iespējas vairāk informācijas par ceļojuma galamērķi, piejamajām ekskursijām.
+              .comments-data 16 Nov 2018
+          .row.comments-item
+            .col-md-6
+              .row.align-items-center.justify-content-between.comments-info
+                div
+                  span.assessment 10.0
+                  span Lieliski
+                .stars.justify-content-end
+                  i.fas.fa-star
+                  i.fas.fa-star
+                  i.fas.fa-star
+                  i.fas.fa-star
+                  i.fas.fa-star
+              .comments-progress
+                .row.justify-content-between.align-items-center
+                  span.col-md-7 Ceļojuma atbilstība gaidītajam
+                  .progress-bar.col-md-auto
+                    span.progress-percent 100%
+                    .scale 
+                .row.justify-content-between.align-items-center
+                  span.col-md-7 Ceļojuma konsultanta servisa novērtējums
+                  .progress-bar.col-md-auto
+                    span.progress-percent 5 no 5
+                    .scale 
+                .row.justify-content-between.align-items-center
+                  span.col-md-7 Cik lielā mērā Jūs rekomendētu Vanilla Travel 
+                    | pakalpojumusdraugiem un paziņām?
+                  .progress-bar.col-md-auto
+                    span.progress-percent 100%
+                    .scale 
+            .col-md-6.comments-right
+              div
+                span.span-name-one Name:
+                span.span-descr-one Aija Kleinhofa
+              div
+                span.span-name Galamērķis:
+                span.span-descr Portugal, Madeira
+              div
+                span.span-name Palika iekšā:
+                span.span-descr Novembris 2018
+              p Pēc iespējas vairāk informācijas par ceļojuma galamērķi, piejamajām ekskursijām.
+              .comments-data 16 Nov 2018
+
+    .container
+      .row.justify-content-end
+        a(href="#").all-comments Skatīt visas atsauksmes
+          span &rarr;
+        
+  //FOOTER
+  footer
+    .container
+      .footer-h Ceļojumi
+      .ul.footer-list
+        li
+          a(href="#") lorem
+        li
+          a(href="#") lorem
+        li
+          a(href="#") lorem
+        li
+          a(href="#") lorem
+        li
+          a(href="#") lorem
+        li
+          a(href="#") lorem
+        li
+          a(href="#") lorem
+        li
+          a(href="#") lorem
+        li
+          a(href="#") lorem
+        li
+          a(href="#") lorem
+        li
+          a(href="#") lorem
+        li
+          a(href="#") lorem
+        li
+          a(href="#") lorem
+        li
+          a(href="#") lorem
+        li
+          a(href="#") lorem
+        li
+          a(href="#") lorem
+        li
+          a(href="#") lorem
+        li
+          a(href="#") lorem
+        li
+          a(href="#") lorem
+        li
+          a(href="#") lorem
+        li
+          a(href="#") lorem
+        li
+          a(href="#") lorem
+        li
+          a(href="#") lorem
+        li
+          a(href="#") lorem
+        li
+          a(href="#") lorem
+        li
+          a(href="#") lorem
+        li
+          a(href="#") lorem
+        li
+          a(href="#") lorem
+        li
+          a(href="#") lorem
+        li
+          a(href="#") lorem
+        li
+          a(href="#") lorem
+        li
+          a(href="#") lorem
+        li
+          a(href="#") lorem
+        li
+          a(href="#") lorem
+      .footer-h Galamērķi
+      .ul.footer-list
+        li
+          a(href="#") lorem
+        li
+          a(href="#") lorem
+        li
+          a(href="#") lorem
+        li
+          a(href="#") lorem
+        li
+          a(href="#") lorem
+        li
+          a(href="#") lorem
+        li
+          a(href="#") lorem
+        li
+          a(href="#") lorem
+        li
+          a(href="#") lorem
+        li
+          a(href="#") lorem
+        li
+          a(href="#") lorem
+        li
+          a(href="#") lorem
+        li
+          a(href="#") lorem
+        li
+          a(href="#") lorem
+        li
+          a(href="#") lorem
+        li
+          a(href="#") lorem
+        li
+          a(href="#") lorem
+        li
+          a(href="#") lorem
+        li
+          a(href="#") lorem
+        li
+          a(href="#") lorem
+      .col-md-12.footer-bottom
+        .footer-h Mēs sociālajos tīklos
+        .row.justify-content-between.align-items-end
+          .social-links
+            a(href="#")
+              img(src="img/vanilla.png", alt="")
+            a(href="#")
+              img(src="img/face.png", alt="")
+          .footer-logo
+            img(src="img/partners.png", alt="")
+      .row.justify-content-center.footer-bot
+        form(action="#").footer-form
+          .foot-search-h SAŅEMIET ATPŪTAS IETEIKUMUS E-PASTĀ
+          .form-wrap
+            input(type="text" placeholder="E-pasts")
+            input(type="submit" value="PIETEIKTIES")
+
+    .mobile-menu
+      .mobile-logo-img
+      ul.mobile-menu-list
+        li 
+          a(href="#") Ceļojumi
+        li 
+          a(href="#").active-menu Galamērķi
+        li 
+          a(href="#") Kalendārs
+        li 
+          a(href="#") Karte
+        li 
+          a(href="#") Blogs
+        li
+          a(href="#") Dāvanu karte
+        li
+          a(href="#") Par mums
+
+  script(src="libs/jquery.min.js")
+  script(src="libs/slick.min.js")
+  script(src="js/script.js")
