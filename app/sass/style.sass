@@ -21,7 +21,7 @@ a
 
 header
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1)
-  background: #fff
+  background: #f9f9f9
   padding-top: 20px
   a
     color: #000
@@ -36,7 +36,7 @@ header
     display: block
     padding: 20px 15px
     position: relative
-    font-size: 13px
+    font-size: 16px
     font-weight: 600
     letter-spacing: -0.3px
     transition: 0.3s
@@ -76,19 +76,27 @@ header
   display: flex
   align-items: center
   font-size: 13px
+  span
+    font-size: 15px
+    font-weight: 600
 
 .phone-menu-img
   background: url(../img/phone.svg) center no-repeat
   background-size: contain
   min-width: 25px
   min-height: 25px
+
+.open-menu-mobile
+  display: none
+  font-size: 25px
+  cursor: pointer
 //HEADER END
 
 
 //MAIN
 
 .bread-crumb
-  padding: 15px
+  padding: 5px
   padding-left: 40px
   a
     color: $main-color
@@ -112,20 +120,27 @@ header
 
 .contact
   padding-bottom: 40px
+  .container
+    padding: 0
 
 .state-descr
   box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.1)
   padding: 0
+  height: 100%
+  display: flex
+  flex-direction: column
+  justify-content: flex-end
+  background: #fff
 
 .state-descr-list
-  padding: 20px 20px 20px 40px
+  padding: 20px
   // padding: 0
   font-weight: bold
   list-style: none
   margin: 0
   background: #fff
   li
-    font-size: 13px
+    font-size: 15px
     font-family: "Helvetica", Arial, serif
     position: relative
     padding-left: 25px
@@ -133,6 +148,7 @@ header
     &::before
       content: "*"
       font-size: 30px 
+      font-weight: 300
       color: $main-color
       position: absolute
       left: 0
@@ -140,11 +156,11 @@ header
       transform: translateY(-50%)
 
 .state-descr-bot
-  padding: 20px
+  padding: 30px
   background: #b1b223
   span
     margin-left: 15px
-    font-size: 15px
+    font-size: 16px
     font-weight: 600
   .phone
     padding: 0
@@ -235,8 +251,10 @@ header
     max-width: 30%
 
 .trip-item-h
-  font-size: 18px
+  font-size: 22px
+  font-weight: 600
   margin-bottom: 15px
+  padding-left: 20px
   color: #b1b223
 
 .trip-item-left
@@ -298,6 +316,7 @@ header
 .sub-trip-right
   background: #d8d8d8
   text-align: center
+  padding: 20px 0
   display: flex
   flex-direction: column
   align-items: center
@@ -449,6 +468,7 @@ header
 
 .comments-item
   margin: 0 20px
+  width: 100%
 
 .comments-right
   background: #fff
@@ -636,15 +656,62 @@ footer
 //MENU MOBILE
 .mobile-menu
   position: fixed
+  left: -100%
+  top: 0
+  height: 100%
   background: #fff
-  min-width: 40%
+  width: 40%
   min-height: 100%
   z-index: 5
+  padding: 30px 0
+  min-width: 270px
 
 .mobile-logo-img
-  background: url(../img/logo.png)
+  background: url(../img/logo.png) center no-repeat
+  background-size: contain
+  min-height: 70px
   width: 100%
+  margin: 30px 0
 
+.mobile-menu-list
+  list-style: none
+  padding: 0
+  margin: 0
+  li
+    border-bottom: 1px solid #f9f9f9
+  a
+    font-size: 16px
+    color: #000
+    font-weight: 600
+    display: block
+    padding: 10px 20px
+    transition: 0.3s
+    &:hover
+      background: #f9f9f9
+      color: $main-color
+
+.close-mob-menu
+  position: absolute
+  top: 10px
+  right: 10px
+  cursor: pointer
+  &:hover
+    color: $main-color
+
+.footer-copy
+  color: #8c8c8c
+  font-size: 12px
+  display: block
+  margin-top: -15px
+
+.active
+  display: block
+
+
+@media screen and (max-width: 1200px)
+  .state-descr-list
+    li
+      font-size: 13px
 
 @media screen and (max-width: 992px)
   .footer-bot
@@ -658,6 +725,13 @@ footer
     .phone
       display: none
 
+  .consult-right
+    a
+      padding: 10px
+
+  .open-menu-mobile
+    display: block
+
 @media screen and (max-width: 768px)
   .trip-item img
     max-width: 100%
@@ -667,6 +741,12 @@ footer
       min-width: 200px
     input[type="submit"]
       min-width: 30px
+
+  header
+    padding: 20px
+  
+  .trip-list-wrap
+    padding: 15px
     
 
 @font-face

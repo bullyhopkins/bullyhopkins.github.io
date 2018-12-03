@@ -11,7 +11,7 @@ html(lang="en")
     //HEADER
     header.top-menu
       .container
-        .row.justify-content-between
+        .row.justify-content-between.align-items-center
           .menu-left
             img(src="img/logo.png", alt="logo")
           .menu-middle
@@ -53,12 +53,12 @@ html(lang="en")
     section.contact
       .container
         .row
-          .col-md-8.state-slider
+          .col-lg-8.col-md-12.state-slider
             .slider-wrap
               img(src="img/1.jpg", alt="")
               img(src="img/1.jpg", alt="")
               img(src="img/1.jpg", alt="")
-          .col-md-4
+          .col-lg-4.col-md-12
             .state-descr
               ul.state-descr-list
                 li Neskarta daba un ainaviski skati
@@ -99,7 +99,7 @@ html(lang="en")
           .col-md-10.trip-item-left
             .trip-item-h
               | All Inclusive pludmales atpūta Ēģiptē, lidojums 28. novembrī
-            .row.col-auto
+            .row.col-auto.align-items-center
               img(src="img/1.jpg", alt="")
               .trip-list-wrap
                 ul.trip-item-list
@@ -165,7 +165,7 @@ html(lang="en")
           .col-md-10.trip-item-left
             .trip-item-h
               | All Inclusive pludmales atpūta Ēģiptē, lidojums 28. novembrī
-            .row.col-auto
+            .row.col-auto.align-items-center
               img(src="img/1.jpg", alt="")
               .trip-list-wrap
                 ul.trip-item-list
@@ -231,7 +231,7 @@ html(lang="en")
           .col-md-10.trip-item-left
             .trip-item-h
               | All Inclusive pludmales atpūta Ēģiptē, lidojums 28. novembrī
-            .row.col-auto
+            .row.col-auto.align-items-center
               img(src="img/1.jpg", alt="")
               .trip-list-wrap
                 ul.trip-item-list
@@ -435,7 +435,7 @@ html(lang="en")
               div
                 span.span-name Palika iekšā:
                 span.span-descr Novembris 2018
-              p Pēc iespējas vairāk informācijas par ceļojuma galamērķi, piejamajām ekskursijām.
+              p Pēc iespējas vairāk informācijas par ceļojuma galamērķi, piejamajām ekskursijām.
               .comments-data 16 Nov 2018
 
     .container
@@ -574,24 +574,26 @@ html(lang="en")
           .form-wrap
             input(type="text" placeholder="E-pasts")
             input(type="submit" value="PIETEIKTIES")
+      span.footer-copy © Vanilla Travel 2018
 
-    .mobile-menu
-      .mobile-logo-img
-      ul.mobile-menu-list
-        li 
-          a(href="#") Ceļojumi
-        li 
-          a(href="#").active-menu Galamērķi
-        li 
-          a(href="#") Kalendārs
-        li 
-          a(href="#") Karte
-        li 
-          a(href="#") Blogs
-        li
-          a(href="#") Dāvanu karte
-        li
-          a(href="#") Par mums
+  .mobile-menu
+    span.close-mob-menu &#10006;
+    .mobile-logo-img
+    ul.mobile-menu-list
+      li 
+        a(href="#") Ceļojumi
+      li 
+        a(href="#").active-menu Galamērķi
+      li 
+        a(href="#") Kalendārs
+      li 
+        a(href="#") Karte
+      li 
+        a(href="#") Blogs
+      li
+        a(href="#") Dāvanu karte
+      li
+        a(href="#") Par mums
 
   script(src="libs/jquery.min.js")
   script(src="libs/slick.min.js")
