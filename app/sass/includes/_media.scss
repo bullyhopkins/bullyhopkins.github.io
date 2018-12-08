@@ -1,0 +1,48 @@
+//MEDIA
+@media screen and (max-width: 996px) {
+  .contacts-foot {
+    i {
+      font-size: 20px;
+      margin-right: 10px;
+    }
+    li {
+      padding: 15px 0;
+    }
+    span {
+      font-size: 18px;
+    }
+    a {
+      font-size: 18px;
+      &:hover {
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+    .footer-phone {
+      i {
+        transform: rotate(90deg);
+      }
+      a {
+        font-size: 18px;
+      }
+    }
+  }
+
+  footer .footer-nav {
+    display: none;
+  }
+
+  footer .footer-nav-list{
+    a {
+      font-size: 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  footer {
+    p {
+      font-size: 13px
+    }
+  }
+}
