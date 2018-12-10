@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>VOGpractice</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jquery.formstyler.css">
+  <!-- <link rel="stylesheet" href="css/jquery.formstyler.theme.css"> -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+
+        <a href="#" class="logo">
+          <!-- <img src="img/logo.svg" alt=""> -->
+        </a>
+
+        <div class="head-middle d-flex align-items-center">
+          <nav>
+            <ul class="list-menu d-none d-lg-flex">
+              <li>
+                <a href="#">О нас</a>
+              </li>
+              <li>
+                <a href="#">Новости</a>
+              </li>
+              <li>
+                <a href="amenities.html">Услуги</a>
+              </li>
+              <li>
+                <a href="#">Интересные статьи</a>
+              </li>
+              <li>
+                <a href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <form action="#">
+            <select name="lang" id="">
+              <option value="ru">RU</option>
+              <option value="en">EN</option>
+            </select>
+          </form>
+          <div class="open-mobile-menu d-lg-none">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+
+        <a href="tel:+74956488078" class="top-phone d-none d-lg-block">
+          <i class="fas fa-phone"></i>
+          <span>+7 (495) 648-80-78</span>
+        </a>
+
+        <a href="#" class="top-btn d-none d-lg-block">Задать вопрос</a>
+
+      </div>
+    </div>
+  </header>
+  <!-- HEADER END -->
+
+  <!-- MAIN -->
+  <main>
+
+  <!-- Top-contacts -->
+  <section class="top-contacts">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5">
+          <h2 class="contacts-h">Контакты</h2>
+          <ul class="contacts-list">
+            <li>
+              <div class="contacts-list-img contacts-location-img"></div>
+              127106, г. Москва, ул. Гостиничная, д.5
+            </li>
+            <li>
+              <div class="contacts-list-img contacts-phone-img"></div>
+              <a href="tel:84956488078" class="contacts-phone">8 (495) 648 80 78</a>
+            </li>
+            <li>
+              <div class="contacts-list-img contacts-message-img"></div>
+              <a href="#">info@vog-practice.ru</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg top-contacts-img">
+          <img src="img/contacts/top.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Top-contacts End -->
+
+  <!-- Map -->
+  <section class="map">
+    <div class="container">
+      <div class="map-wrap">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af8781003b85cd1acd87f5b6148ccc6d7b63a7b1abc46527c3950b5e5ed50b73f&amp;width=100%25&amp;height=400&amp;lang=ru_UA&amp;scroll=true"></script>
+      </div>
+    </div>
+  </section>
+  <!-- Map End -->
+
+  <!-- Cotacts-form -->
+  <section class="callback">
+    <div class="container">
+      <div class="form-wrap col-lg-5 col-md-8 col-sm-12">
+        <form action="#" class="contacts-form">
+          <div class="div">
+            <input type="text" placeholder="Ф.И.О">
+          </div>
+          <div class="div">
+            <input type="tel" placeholder="+7 (_) _ _ _">
+          </div>
+          <div class="div">
+            <input type="email" placeholder="E-mail">
+          </div>
+          <textarea placeholder="Ваш вопрос"></textarea>
+          <button type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- Cotacts-form End -->
+
+  </main>
+  <!-- MAIN END -->
+  
+
+  <script src="libs/jquery.js"></script>
+  <script src="libs/slick.js"></script>
+  <script src="libs/jquery.formstyler.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

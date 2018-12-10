@@ -1,4 +1,13 @@
 //MEDIA
+@media screen and (max-width: 1200px) {
+  .top-btn {
+    font-size: 18px;
+  }
+  .top-phone {
+    font-size: 15px;
+  }
+}
+
 @media screen and (max-width: 996px) {
   .contacts-foot {
     i {
@@ -39,6 +48,108 @@
   }
 }
 
+@media screen and (max-width: 996px) {
+  .amenities-list {
+    a {
+      font-size: 13px;
+    }
+  }
+
+  .article-item {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .amenities {
+    padding: 40px 10px;
+  }
+
+  .main-h {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+
+  .amenities-h {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .about-h {
+    font-size: 24px;
+  }
+
+  .about {
+    .about-clients {
+      font-size: 15px;
+      margin: 40px 0;
+    }
+    p {
+      font-size: 15px;
+    }
+    span {
+      font-size: 15px;
+    }
+  }
+
+  .news {
+    font-size: 40px 0;
+  }
+
+  .news-h {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+
+  .interesting-article {
+    padding: 40px 0;
+  }
+
+  .article-h {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+
+  .comments {
+    padding: 40px 0;
+  }
+
+  .comments-h {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+
+  .comment-user,
+  .sub-info-user {
+    font-size: 14px;
+  }
+
+  .comments-item {
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .partners {
+    padding: 40px 0;
+  }
+
+  .partners-h {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+
+  .interesting-article { 
+    a {
+      span {
+        font-size: 18px;
+      }
+    }
+  }
+  .contacts-form {
+    padding: 30px 15px 30px 15px;
+  }
+}
 @media screen and (max-width: 400px) {
   footer {
     p {

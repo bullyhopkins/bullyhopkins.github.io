@@ -1,5 +1,23 @@
 $(function () {
 
+  //SHADOW-HEAD
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+      $('header').addClass('header-shadow');
+    } else {
+      $('header').removeClass('header-shadow');
+    }
+  });
+
+  //CASTOM SELECT
+  setTimeout(function () {
+    $('select').styler({
+      selectSearch: true
+    });
+  }, 100);
+
+  // $(document).
+
   $('.news-slider').slick({
     dots: true,
     arrows: true,
