@@ -20,35 +20,34 @@ header {
   -webkit-box-shadow: 0 0 11px 0 rgba(201, 201, 201, 0.5);
           box-shadow: 0 0 11px 0 rgba(201, 201, 201, 0.5); }
 
-header .jq-selectbox__select {
-  cursor: pointer;
-  position: relative;
-  padding: 0 15px; }
-  header .jq-selectbox__select::after {
-    font-family: 'FontAwesome';
-    content: '\f107';
+.ik_select {
+  cursor: pointer; }
+
+.ik_select {
+  margin-left: 30px; }
+  .ik_select::after {
+    content: "";
+    display: block;
+    min-width: 10px;
+    min-height: 10px;
+    background: url(../img/arrow.svg) center no-repeat;
+    -webkit-background-size: contain;
+            background-size: contain;
     position: absolute;
-    right: 0;
-    color: red;
-    font-size: 20px;
     top: 50%;
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
-            transform: translateY(-50%); }
+            transform: translateY(-50%);
+    right: -12px; }
 
-.jq-selectbox__select-text {
-  font-size: 22px; }
-
-.jq-selectbox__dropdown ul {
+.lang-list .ik_select_list ul {
   padding: 0;
-  padding-left: -10px;
-  background: #fff; }
-  .jq-selectbox__dropdown ul li {
-    cursor: pointer;
-    padding: 5px 10px;
-    font-size: 20px; }
-    .jq-selectbox__dropdown ul li:hover {
-      background: #eee; }
+  margin: 0;
+  list-style: none;
+  text-align: center; }
+
+.lang-list .ik_select_list li {
+  cursor: pointer; }
 
 .logo {
   background: url(../img/logo.svg) center no-repeat;
@@ -532,7 +531,22 @@ footer {
       background: #ed4848;
       color: #fff; }
 
-/*****PAGE CONTACTS ENS******/
+/*****PAGE CONTACTS END******/
+/*****AMENITIES******/
+.amenities-select .ik_select {
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid #000;
+  padding: 5px 15px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px; }
+
+.amenities-list .ik_select_list ul {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+/*****AMENITIES END******/
 /* Slider */
 .slick-slider {
   position: relative;

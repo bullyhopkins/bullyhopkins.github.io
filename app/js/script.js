@@ -10,11 +10,20 @@ $(function () {
   });
 
   //CASTOM SELECT
-  setTimeout(function () {
-    $('select').styler({
-      selectSearch: true
-    });
-  }, 100);
+  $('select[name="lang"]').ikSelect({
+    // autoWidth: true,
+    dynamicWidth: false,
+    ddCustomClass: 'lang-list',
+    customClass: 'lang-sel'
+  });
+
+  $('select[name="amenities"]').ikSelect({
+    autoWidth: false,
+    // dynamicWidth: true,
+    // equalWidths: false,
+    ddFullWidth: false,
+    ddCustomClass: 'amenities-list'
+  });
 
   // $(document).
 
