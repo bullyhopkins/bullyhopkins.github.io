@@ -176,6 +176,7 @@ header {
 //Mobile-menu-list
 .mobile-menu {
   position: fixed;
+  width: 100%;
   left: -100%;
   top: 0;
   background: #eee;
@@ -219,14 +220,14 @@ header {
 
 .close-mob-menu {
   display: inline-block;
-  border-radius: 50%;
-  border: 1px solid $red;
-  color: $red;
-  padding: 0 5px;
+  color: #999;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 15px;
+  right: 15px;
   cursor: pointer;
+  i {
+    font-size: 23px;
+  }
   // min-width: 40px;
   // min-height: 20px;
 }
