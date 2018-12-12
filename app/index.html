@@ -18,24 +18,22 @@
     <div class="container">
       <div class="row justify-content-between align-items-center">
 
-        <a href="#" class="logo">
-          <!-- <img src="img/logo.svg" alt=""> -->
-        </a>
+        <a href="index.html" class="logo"></a>
 
         <div class="head-middle d-flex align-items-center">
           <nav>
             <ul class="list-menu d-none d-lg-flex">
               <li>
-                <a href="#">О нас</a>
+                <a href="#about-us" class="anchor">О нас</a>
               </li>
               <li>
-                <a href="#">Новости</a>
+                <a href="#news" class="anchor">Новости</a>
               </li>
               <li>
                 <a href="amenities.html">Услуги</a>
               </li>
               <li>
-                <a href="#">Интересные статьи</a>
+                <a href="#interesting-article" class="anchor">Интересные статьи</a>
               </li>
               <li>
                 <a href="contacts.html">Контакты</a>
@@ -60,6 +58,31 @@
 
         <a href="#" class="top-btn d-none d-lg-block">Задать вопрос</a>
 
+      </div>
+      <div class="mobile-menu">
+        <span class="close-mob-menu">&#10006;</span>
+        <nav>
+          <ul class="mobile-menu-list">
+            <li>
+              <a href="#">О нас</a>
+            </li>
+            <li>
+              <a href="#">Новости</a>
+            </li>
+            <li>
+              <a href="amenities.html">Услуги</a>
+            </li>
+            <li>
+              <a href="#">Интересные статьи</a>
+            </li>
+            <li>
+              <a href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="phone-menu-mobile">
+          <a href="tel:+74956488078">+7 (495) 648-80-78</a>
+        </div>
       </div>
     </div>
   </header>
@@ -113,7 +136,7 @@
     <!-- Amenities End -->
 
     <!-- About -->
-    <section class="about">
+    <section class="about" id="about-us">
       <div class="container">
         <h2 class="about-h">О нас</h2>
         <span class="about-clients">Уважаемые клиенты</span>
@@ -124,7 +147,7 @@
     <!-- About End -->
 
     <!-- News -->
-    <section class="news">
+    <section class="news" id="news">
       <div class="container">
 
         <h2 class="news-h">Новости</h2>
@@ -241,29 +264,29 @@
     <!-- News End -->
 
     <!-- Interesting Article -->
-    <section class="interesting-article">
+    <section class="interesting-article" id="interesting-article">
       <div class="container">
         <h2 class="article-h">Интересные статьи</h2>
         <div class="row">
-          <a href="#" class="article-item col-lg col-md-6">
+          <a href="post.html" class="article-item col-lg col-md-6">
             <div class="article-img">
               <img src="img/slider-img.jpg" alt="">
             </div>
             <span>Миграционный учет для ВКС <i class="fas fa-angle-right"></i></span>
           </a>
-          <a href="#" class="article-item col-lg col-md-6">
+          <a href="post.html" class="article-item col-lg col-md-6">
             <div class="article-img">
               <img src="img/slider-img.jpg" alt="">
             </div>
-            <span>Проблемы получения вида ни жительство и разрешения на временное проживание в ММЦ Сахарово <i class="fas fa-angle-right"></i></span>
+            <span>Проблемы получения вида на жительство и разрешения на временное проживание в ММЦ Сахарово <i class="fas fa-angle-right"></i></span>
           </a>
-          <a href="#" class="article-item col-lg col-md-6">
+          <a href="post.html" class="article-item col-lg col-md-6">
             <div class="article-img">
               <img src="img/slider-img.jpg" alt="">
             </div>
             <span>Новости 2018г. <i class="fas fa-angle-right"></i></span>
           </a>
-          <a href="#" class="article-item col-lg col-md-6">
+          <a href="post.html" class="article-item col-lg col-md-6">
             <div class="article-img">
               <img src="img/slider-img.jpg" alt="">
             </div>
@@ -406,6 +429,31 @@
       </div>
     </section>
     <!-- Partners End -->
+
+    <!-- Popup -->
+    <section class="popup">
+      <div class="popup-wrap">
+        <form action="#" class="form-popup">
+          <span class="close-popup">&#10006;</span>
+          <div>
+            <input type="text" placeholder="Ф.И.О">
+          </div>
+          <div>
+            <input type="tel" placeholder="+7 (__) _ _ _">
+          </div>
+          <div>
+            <input type="email" placeholder="E-mail">
+          </div>
+          <div>
+            <textarea name="popup" placeholder="Ваш вопрос"></textarea>
+          </div>
+          <div class="popup-btn-wrap">
+            <button type="submit">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- Popup End -->
 
   </main>
   <!-- MAIN END -->

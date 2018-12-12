@@ -9,6 +9,38 @@ $(function () {
     }
   });
 
+  //LINKS
+  $(".anchor").on("click", function (event) {
+    event.preventDefault();
+    var id  = $(this).attr('href'),
+        top = $(id).offset().top - $('header').height();
+    $('body,html').animate({scrollTop: top}, 1000);
+  });
+
+  //Mob-menu
+  $('.open-mobile-menu').on('click', function () {
+    $('.mobile-menu').animate({
+      left: 0
+    }, 500);
+  });
+
+  $('.close-mob-menu').on('click', function () {
+    $('.mobile-menu').animate({
+      left: '-100%'
+    }, 500);
+  });
+
+  //POPUP
+  $('.top-btn').on('click', function () {
+    $('.popup').fadeIn(300);
+    return false;
+  });
+
+  $('.close-popup').on('click', function () {
+    $('.popup').fadeOut(300);
+    return false;
+  });
+
   //CASTOM SELECT
   $('select[name="lang"]').ikSelect({
     // autoWidth: true,
@@ -22,7 +54,8 @@ $(function () {
     // dynamicWidth: true,
     // equalWidths: false,
     ddFullWidth: false,
-    ddCustomClass: 'amenities-list'
+    customClass: 'amenities-sel',
+    ddCustomClass: 'amenities-list-sel'
   });
 
   // $(document).
@@ -34,6 +67,7 @@ $(function () {
     prevArrow: $('.prev'),
     slidesToShow: 3,
     slidesToScroll: 3,
+    infinite: false,
     responsive: [
       {
         breakpoint: 1024,
@@ -63,6 +97,7 @@ $(function () {
     prevArrow: $('.prev-com'),
     slidesToShow: 2,
     slidesToScroll: 2,
+    infinite: false,
     responsive: [
       {
         breakpoint: 900,
@@ -77,7 +112,7 @@ $(function () {
           slidesToShow: 1,
           slidesToScroll: 1,
           dots: false,
-          arrows: false
+          // arrows: false
         }
       }
     ]

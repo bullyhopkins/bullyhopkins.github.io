@@ -26,16 +26,16 @@
           <nav>
             <ul class="list-menu d-none d-lg-flex">
               <li>
-                <a href="#">О нас</a>
+                <a href="#about-us" class="anchor">О нас</a>
               </li>
               <li>
-                <a href="#">Новости</a>
+                <a href="#news" class="anchor">Новости</a>
               </li>
               <li>
                 <a href="amenities.html">Услуги</a>
               </li>
               <li>
-                <a href="#">Интересные статьи</a>
+                <a href="#interesting-article" class="anchor">Интересные статьи</a>
               </li>
               <li>
                 <a href="contacts.html">Контакты</a>
@@ -129,8 +129,86 @@
   </section>
   <!-- Cotacts-form End -->
 
+  <!-- Popup -->
+  <section class="popup">
+    <div class="popup-wrap">
+      <form action="#" class="form-popup">
+        <span class="close-popup">&#10006;</span>
+        <div>
+          <input type="text" placeholder="Ф.И.О">
+        </div>
+        <div>
+          <input type="tel" placeholder="+7 (__) _ _ _">
+        </div>
+        <div>
+          <input type="email" placeholder="E-mail">
+        </div>
+        <div>
+          <textarea name="popup" placeholder="Ваш вопрос"></textarea>
+        </div>
+        <div class="popup-btn-wrap">
+          <button type="submit">Отправить</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <!-- Popup End -->
+
   </main>
   <!-- MAIN END -->
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-lg-auto col-sm-6 col-12">
+          <div class="footer-logo"></div>
+          <span class="copy">ООО «ВИ ОУ ДЖИ ПРАКТИК»</span>
+          <p>Использование материалов
+            <br>только с письменного разрешении компании.</p>
+        </div>
+        <div class="footer-nav col-lg-auto">
+          <nav>
+            <ul class="footer-nav-list">
+              <li>
+                <a href="#">О нас</a>
+              </li>
+              <li>
+                <a href="#">Новости</a>
+              </li>
+              <li>
+                <a href="#">Услуги</a>
+              </li>
+              <li>
+                <a href="#">Интересные статьи</a>
+              </li>
+              <li>
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-lg-auto col-6 col-12">
+          <ul class="contacts-foot">
+            <li class="footer-phone">
+              <i class="fas fa-phone"></i>
+              <a href="tel:+74956488078">+7 (495) 648-80-78</a>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <a href="#">info@vog-practice.ru</a>
+            </li>
+            <li class="d-flex">
+              <i class="far fa-clock"></i>
+              <span>с 10:00 до 19:00 
+                <br>без выходных<span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- FOOTER END -->
   
 
   <script src="libs/jquery.js"></script>

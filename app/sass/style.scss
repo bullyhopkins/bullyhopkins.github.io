@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 $text-color: #333333;
+$red: #ed4848;
 
 body,
 html {
@@ -15,7 +16,7 @@ html {
 
 // HEADER
 header {
-  // position: fixed;
+  position: fixed;
   padding: 0 10px;
   width: 100%;
   background: #fff;
@@ -65,7 +66,7 @@ header {
   cursor: pointer;
 }
 
-.ik_select {
+.lang-sel .ik_select {
   margin-left: 30px;
   &::after {
     content: "";
@@ -135,7 +136,7 @@ select[name="lang"] {
   font-weight: bold;
   font-size: 24px;
   &:hover {
-    color: #d24141;
+    color: $red;
     text-decoration: none;
   }
   i {
@@ -145,14 +146,14 @@ select[name="lang"] {
 
 .top-btn {
   font-size: 20px;
-  color: #d24141;
-  border: 1px solid #d24141;
+  color: $red;
+  border: 1px solid $red;
   padding: 5px 30px;
   border-radius: 20px;
   transition: 0.3s;
   &:hover {
     color: #fff;
-    background: #d24141;
+    background: $red;
     text-decoration: none;
   }
 }
@@ -164,8 +165,73 @@ select[name="lang"] {
     font-size: 30px;
   }
 }
+
+//Mobile-menu-list
+.mobile-menu {
+  position: fixed;
+  left: -100%;
+  top: 0;
+  background: #eee;
+  z-index: 100;
+  height: 100%;
+  padding: 30px;
+}
+
+.phone-menu-mobile {
+  padding-top: 30px;
+  a {
+    text-decoration: none;
+    color: $red;
+    font-size: 24px;
+    font-weight: 600;
+    &:hover {
+      color: $red;
+      text-decoration: none;
+    }
+  }
+}
+
+.mobile-menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-top: 40px;
+  li {
+    padding: 10px 0;
+  }
+  a {
+    color: $text-color;
+    text-decoration: none;
+    font-size: 24px;
+    &:hover {
+      color: $text-color;
+      text-decoration: none;
+    }
+  }
+}
+
+.close-mob-menu {
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid $red;
+  color: $red;
+  padding: 0 5px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  // min-width: 40px;
+  // min-height: 20px;
+}
+//Mobile-menu-list End
 // HEADER END
+
+
 // MAIN
+
+main {
+  padding-top: 100px;
+}
 
 //AMENITIES
 .amenities {
@@ -636,6 +702,7 @@ footer {
     min-width: 100%;
     box-shadow: inset 0 0 8px 0 rgba(0, 0, 0, .15);
     outline: none;
+    background: rgba(0,0,0,0);
   }
   textarea {
     border-radius: 5px;
@@ -646,6 +713,7 @@ footer {
     box-shadow: inset 0 0 8px 0 rgba(0, 0, 0, .15);
     margin-bottom: 40px;
     outline: none;
+    background: rgba(0,0,0,0);
   }
   button {
     color: #ed4848;
@@ -667,25 +735,241 @@ footer {
 
 
 /*****AMENITIES******/
+
+.main-amenities {
+  padding: 90px 15px;
+  background: url(../img/background.png) no-repeat;
+  background-position: left bottom;
+  background-size: 900px;
+}
+
+.am-h {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 70px;
+}
+
+.am-more {
+  color: #333333;
+  // border-bottom: 1px solid #333333;
+  text-decoration: underline;
+  display: inline-block;
+  margin-top: 30px;
+  font-size: 18px;
+  &:hover {
+    color: #333333;
+    text-decoration: none;
+  }
+}
+
+.amenities-page-btn {
+  min-width: 320px;
+  padding: 5px 20px;
+  display: inline-block;
+  margin-top: 60px;
+  border: 1px solid $red;
+  background: $red;
+  color: #fff;
+  transition: 0.3s;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 20px;
+  &:hover {
+    background: rgba(0,0,0,0);
+    color: $text-color;
+    text-decoration: none;
+  }
+}
+
+.amenities-right {
+  img {
+    width: 100%;
+  }
+}
+
 .amenities-select {
   .ik_select {
     width: 100%;
     cursor: pointer;
-    border: 1px solid #000;
+    border: 1px solid #d0d0d0;
     padding: 5px 15px;
     border-radius: 5px;
   }
 }
 
-.amenities-list .ik_select_list {
+.amenities-list-sel {
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #d0d0d0;
+  // padding: 5px 15px;
+  width: 100%;
+  overflow: hidden;
+  &::after {
+    content: "";
+    display: block;
+    min-width: 10px;
+    min-height: 10px;
+    background: url(../img/arrow.svg) center no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -12px;
+  }
+  li {
+    padding: 5px 15px;
+    &:hover {
+      background: #eee;
+    }
+  }
   ul {
     padding: 0;
     margin: 0;
     list-style: none;
+    width: 100%;
+    // margin-left: -10px;
   }
 }
 
 /*****AMENITIES END******/
+
+
+
+/*****POST******/
+.main-post {
+  padding: 80px 15px;
+}
+
+.post-main-img {
+  padding: 0;
+  img {
+    max-width: 100%;
+  }
+}
+
+.post-h {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 44px;
+  margin: 70px 0;
+}
+
+.post-item {
+  padding: 0 20px;
+}
+
+.post-p {
+  font-size: 23px;
+  // padding: 0 15px;
+  // line-height: 2;
+  text-align: justify;
+  line-height: 29px;
+  margin-top: 0;
+  margin-bottom: 0;
+  // text-justify: distribute;
+  word-spacing: -2px;
+}
+
+.post-img {
+  padding-top: 20px;
+  display: inline-block;
+  img {
+    max-width: 100%;
+  }
+}
+/*****POST END******/
+
+
+/*****POPUP******/
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 300;
+  display: none;
+}
+
+.popup-wrap {
+  background: rgba(255, 255, 255, 0.63);
+  padding: 15px;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.form-popup {
+  background: #fff;
+  border-radius: 3px;
+  padding: 60px 50px 40px 50px;
+  position: relative;
+  input {
+    border-radius: 5px;
+    border: none;
+    border: 1px solid #eee;
+    padding: 10px 20px;
+    min-width: 100%;
+    box-shadow: inset 0 0 8px 0 rgba(0, 0, 0, .15);
+    outline: none;
+    background: rgba(0,0,0,0);
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  textarea {
+    border-radius: 5px;
+    border: none;
+    border: 1px solid #eee;
+    padding: 10px 20px;
+    min-width: 100%;
+    box-shadow: inset 0 0 8px 0 rgba(0, 0, 0, .15);
+    outline: none;
+    background: rgba(0,0,0,0);
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  button {
+    border: 1px solid $red;
+    border-radius: 40px;
+    background: $red;
+    color: #fff;
+    outline: none;
+    transition: 0.3s;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 300;
+    padding: 5px 20px;
+    &:hover {
+      color: $text-color;
+      background: rgba(0,0,0,0);
+    }
+  }
+}
+
+.popup-btn-wrap {
+  text-align: center;
+}
+
+.close-popup {
+  border: 1px solid #999;
+  color: #999;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 50%;
+  padding: 0 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    color: $text-color;
+    border: 1px solid $text-color;
+  }
+}
+/*****POPUP END******/
 
 @import 'includes/slick';
 @import 'includes/slick-theme';

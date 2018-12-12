@@ -60,6 +60,31 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .next-com,
+  .prev-com {
+    // top: 50%;
+    // transform: translateY(-50%);
+    display: none !important;
+  }
+
+  .post-h {
+    font-size: 30px;
+    margin: 40px 0;
+  }
+
+  .comments-slider {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .next,
+  .prev {
+    display: none !important;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .amenities {
     padding: 40px 10px;
@@ -77,15 +102,20 @@
 
   .about-h {
     font-size: 24px;
+    // margin-bottom: 40px;
+    margin: 0;
   }
 
   .about {
+    padding: 40px 15px;
     .about-clients {
       font-size: 15px;
       margin: 40px 0;
+      display: inline-block;
     }
     p {
       font-size: 15px;
+      margin: 0;
     }
     span {
       font-size: 15px;
@@ -94,6 +124,7 @@
 
   .news {
     font-size: 40px 0;
+    padding: 40px 15px;
   }
 
   .news-h {
@@ -149,11 +180,39 @@
   .contacts-form {
     padding: 30px 15px 30px 15px;
   }
+
+  .popup-wrap {
+    padding: 0;
+    width: 100%;
+  }
+
+  .form-popup {
+    padding: 40px 20px;
+    input {
+      width: 100%;
+      font-size: 20px;
+    }
+    textarea {
+      width: 100%;
+      font-size: 20px;
+    }
+    button {
+      font-size: 20px;
+    }
+  }
+  .post-p {
+    text-align: left;
+    font-size: 17px;
+  }
 }
 @media screen and (max-width: 400px) {
   footer {
     p {
       font-size: 13px
     }
+  }
+
+  .form-popup {
+    width: 100%;
   }
 }
