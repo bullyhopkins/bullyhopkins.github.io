@@ -63,9 +63,16 @@
 @media screen and (max-width: 768px) {
   .next-com,
   .prev-com {
-    // top: 50%;
-    // transform: translateY(-50%);
-    display: none !important;
+    top: 50%;
+    transform: translateY(-50%);
+    // display: none !important;
+  }
+
+  .next-com {
+    right: -15px;
+  }
+  .prev-com {
+    left: -15px;
   }
 
   .post-h {
@@ -76,13 +83,36 @@
   .comments-slider {
     padding: 0;
   }
+
+  .wrap-amaenities-item {
+    text-align: center;
+  }
+
+  .amenities-right {
+    padding-top: 50px;
+  }
+
+  .amenities-page-btn {
+    font-size: 15px;
+    min-width: 100%;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .next,
   .prev {
-    display: none !important;
+    top: 50%;
+    transform: translateY(-50%);
+    // display: none !important;
   }
+  
+  .next {
+    right: -15px;
+  }
+  .prev {
+    left: -15px;
+  }
+
 }
 
 @media screen and (max-width: 500px) {

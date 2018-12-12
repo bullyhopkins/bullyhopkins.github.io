@@ -7,43 +7,40 @@
   <title>VOGpractice</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/jquery.formstyler.css">
-  <!-- <link rel="stylesheet" href="css/jquery.formstyler.theme.css"> -->
+  <link rel="stylesheet" href="libs/selectmenu/jquery-ui.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
   <!-- HEADER -->
-  <header>
+  <header class="head">
     <div class="container">
       <div class="row justify-content-between align-items-center">
 
-        <a href="#" class="logo">
-          <!-- <img src="img/logo.svg" alt=""> -->
-        </a>
+        <a href="index.html" class="logo"></a>
 
         <div class="head-middle d-flex align-items-center">
           <nav>
             <ul class="list-menu d-none d-lg-flex">
               <li>
-                <a href="#about-us" class="anchor">О нас</a>
+                <a href="index.html#about-us" class="anchor">О нас</a>
               </li>
               <li>
-                <a href="#news" class="anchor">Новости</a>
+                <a href="index.html#news" class="anchor">Новости</a>
               </li>
               <li>
                 <a href="amenities.html">Услуги</a>
               </li>
               <li>
-                <a href="#interesting-article" class="anchor">Интересные статьи</a>
+                <a href="index.html#interesting-article" class="anchor">Интересные статьи</a>
               </li>
               <li>
                 <a href="contacts.html">Контакты</a>
               </li>
             </ul>
           </nav>
-          <form action="#">
-            <select name="lang" id="">
+          <form action="#" class="form-lang">
+            <select name="lang" class="lang-sel">
               <option value="ru">RU</option>
               <option value="en">EN</option>
             </select>
@@ -66,21 +63,20 @@
         <nav>
           <ul class="mobile-menu-list">
             <li>
-              <a href="#">О нас</a>
+              <a href="index.html#about-us" class="anchor">О нас</a>
             </li>
             <li>
-              <a href="#">Новости</a>
+              <a href="index.html#news" class="anchor">Новости</a>
             </li>
             <li>
               <a href="amenities.html">Услуги</a>
             </li>
             <li>
-              <a href="#">Интересные статьи</a>
+              <a href="index.html#interesting-article" class="anchor">Интересные статьи</a>
             </li>
             <li>
               <a href="contacts.html">Контакты</a>
             </li>
-          </ul>
         </nav>
         <div class="phone-menu-mobile">
           <a href="tel:+74956488078">+7 (495) 648-80-78</a>
@@ -99,40 +95,177 @@
           <div class="col-md-7">
             <h1 class="am-h">Услуги</h1>
             <form action="" class="amenities-select">
-              <select name="amenities" id="">
-                <option value="">1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, odio.</option>
-                <option value="">2 Lorem ipsum dolor sit, amet consectetur adipisicing elit.</option>
-                <option value="">3 Lorem ipsum dolor sit, amet consectetur adipisicing elit.</option>
-                <option value="">4 Lorem ipsum dolor sit, amet consectetur adipisicing elit.</option>
+              <select name="amenities" class="am-sel">
+                <option value="">Услуга</option>
+                <option value="">Услуга</option>
+                <option value="">Услуга</option>
+                <option value="">Услуга</option>
+                <option value="">Услуга</option>
+                <option value="">Услуга</option>
               </select>
             </form>
 
-            <div>
+            <div class="wrap-amaenities-item">
               <a href="#" class="am-more">Узнать подробнее</a>
             </div>
 
-            <div>
+            <div class="wrap-amaenities-item">
               <a href="#" class="amenities-page-btn">Запросить коммерческое предложение</a>
             </div>
 
           </div>
-          <div class="col-md-5 amenities-right">
+          <div class="col-md-5 col-12 amenities-right">
             <img src="img/amenities/am-img.png" alt="">
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Comments -->
+    <section class="comments">
+      <div class="container">
+        <h2 class="comments-h">Отзывы наших клиентов</h2>
+        <div class="comments-slider-wrap">
+
+          <div class="comments-slider">
+
+            <div class="comments-item col-lg">
+              <div class="comments-item-img"></div>
+              <div class="comment-user">Имя Фамилия</div>
+              <div class="sub-info-user">страна / должность</div>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam id qui quis. Harum excepturi aut eum molestiae, ratione velit modi, iste non ut ipsa architecto ullam ipsum esse dolor debitis at, omnis tempora. Voluptatem reiciendis facilis quidem eveniet ipsam, sunt hic impedit, rem praesentium eius ut ullam quod minus architecto totam. Voluptatibus explicabo laboriosam laborum alias consectetur sed architecto iste dignissimos. Ratione illum suscipit magni pariatur consequuntur quam unde alias?</p>
+            </div>
+            <div class="comments-item col-lg">
+              <div class="comments-item-img"></div>
+              <div class="comment-user">Имя Фамилия</div>
+              <div class="sub-info-user">страна / должность</div>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam id qui quis. Harum excepturi aut eum molestiae, ratione velit modi, iste non ut ipsa architecto ullam ipsum esse dolor debitis at, omnis tempora. Voluptatem reiciendis facilis quidem eveniet ipsam, sunt hic impedit, rem praesentium eius ut ullam quod minus architecto totam. Voluptatibus explicabo laboriosam laborum alias consectetur sed architecto iste dignissimos. Ratione illum suscipit magni pariatur consequuntur quam unde alias?</p>
+            </div><!--comments-item-->
+
+            <div class="comments-item col-lg">
+              <div class="comments-item-img"></div>
+              <div class="comment-user">Имя Фамилия</div>
+              <div class="sub-info-user">страна / должность</div>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam id qui quis. Harum excepturi aut eum molestiae, ratione velit modi, iste non ut ipsa architecto ullam ipsum esse dolor debitis at, omnis tempora. Voluptatem reiciendis facilis quidem eveniet ipsam, sunt hic impedit, rem praesentium eius ut ullam quod minus architecto totam. Voluptatibus explicabo laboriosam laborum alias consectetur sed architecto iste dignissimos. Ratione illum suscipit magni pariatur consequuntur quam unde alias?</p>
+            </div>
+            <div class="comments-item col-lg">
+              <div class="comments-item-img"></div>
+              <div class="comment-user">Имя Фамилия</div>
+              <div class="sub-info-user">страна / должность</div>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam id qui quis. Harum excepturi aut eum molestiae, ratione velit modi, iste non ut ipsa architecto ullam ipsum esse dolor debitis at, omnis tempora. Voluptatem reiciendis facilis quidem eveniet ipsam, sunt hic impedit, rem praesentium eius ut ullam quod minus architecto totam. Voluptatibus explicabo laboriosam laborum alias consectetur sed architecto iste dignissimos. Ratione illum suscipit magni pariatur consequuntur quam unde alias?</p>
+            </div><!--comments-item-->
+
+            <div class="comments-item col-lg">
+              <div class="comments-item-img"></div>
+              <div class="comment-user">Имя Фамилия</div>
+              <div class="sub-info-user">страна / должность</div>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam id qui quis. Harum excepturi aut eum molestiae, ratione velit modi, iste non ut ipsa architecto ullam ipsum esse dolor debitis at, omnis tempora. Voluptatem reiciendis facilis quidem eveniet ipsam, sunt hic impedit, rem praesentium eius ut ullam quod minus architecto totam. Voluptatibus explicabo laboriosam laborum alias consectetur sed architecto iste dignissimos. Ratione illum suscipit magni pariatur consequuntur quam unde alias?</p>
+            </div>
+            <div class="comments-item col-lg">
+              <div class="comments-item-img"></div>
+              <div class="comment-user">Имя Фамилия</div>
+              <div class="sub-info-user">страна / должность</div>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam id qui quis. Harum excepturi aut eum molestiae, ratione velit modi, iste non ut ipsa architecto ullam ipsum esse dolor debitis at, omnis tempora. Voluptatem reiciendis facilis quidem eveniet ipsam, sunt hic impedit, rem praesentium eius ut ullam quod minus architecto totam. Voluptatibus explicabo laboriosam laborum alias consectetur sed architecto iste dignissimos. Ratione illum suscipit magni pariatur consequuntur quam unde alias?</p>
+            </div><!--comments-item-->
+
+            <div class="comments-item col-lg">
+              <div class="comments-item-img"></div>
+              <div class="comment-user">Имя Фамилия</div>
+              <div class="sub-info-user">страна / должность</div>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam id qui quis. Harum excepturi aut eum molestiae, ratione velit modi, iste non ut ipsa architecto ullam ipsum esse dolor debitis at, omnis tempora. Voluptatem reiciendis facilis quidem eveniet ipsam, sunt hic impedit, rem praesentium eius ut ullam quod minus architecto totam. Voluptatibus explicabo laboriosam laborum alias consectetur sed architecto iste dignissimos. Ratione illum suscipit magni pariatur consequuntur quam unde alias?</p>
+            </div>
+            <div class="comments-item col-lg">
+              <div class="comments-item-img"></div>
+              <div class="comment-user">Имя Фамилия</div>
+              <div class="sub-info-user">страна / должность</div>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam id qui quis. Harum excepturi aut eum molestiae, ratione velit modi, iste non ut ipsa architecto ullam ipsum esse dolor debitis at, omnis tempora. Voluptatem reiciendis facilis quidem eveniet ipsam, sunt hic impedit, rem praesentium eius ut ullam quod minus architecto totam. Voluptatibus explicabo laboriosam laborum alias consectetur sed architecto iste dignissimos. Ratione illum suscipit magni pariatur consequuntur quam unde alias?</p>
+            </div><!--comments-item-->
+
+            <div class="comments-item col-lg">
+              <div class="comments-item-img"></div>
+              <div class="comment-user">Имя Фамилия</div>
+              <div class="sub-info-user">страна / должность</div>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam id qui quis. Harum excepturi aut eum molestiae, ratione velit modi, iste non ut ipsa architecto ullam ipsum esse dolor debitis at, omnis tempora. Voluptatem reiciendis facilis quidem eveniet ipsam, sunt hic impedit, rem praesentium eius ut ullam quod minus architecto totam. Voluptatibus explicabo laboriosam laborum alias consectetur sed architecto iste dignissimos. Ratione illum suscipit magni pariatur consequuntur quam unde alias?</p>
+            </div>
+            <div class="comments-item col-lg">
+              <div class="comments-item-img"></div>
+              <div class="comment-user">Имя Фамилия</div>
+              <div class="sub-info-user">страна / должность</div>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam id qui quis. Harum excepturi aut eum molestiae, ratione velit modi, iste non ut ipsa architecto ullam ipsum esse dolor debitis at, omnis tempora. Voluptatem reiciendis facilis quidem eveniet ipsam, sunt hic impedit, rem praesentium eius ut ullam quod minus architecto totam. Voluptatibus explicabo laboriosam laborum alias consectetur sed architecto iste dignissimos. Ratione illum suscipit magni pariatur consequuntur quam unde alias?</p>
+            </div><!--comments-item-->
+
+            <div class="comments-item col-lg">
+              <div class="comments-item-img"></div>
+              <div class="comment-user">Имя Фамилия</div>
+              <div class="sub-info-user">страна / должность</div>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam id qui quis. Harum excepturi aut eum molestiae, ratione velit modi, iste non ut ipsa architecto ullam ipsum esse dolor debitis at, omnis tempora. Voluptatem reiciendis facilis quidem eveniet ipsam, sunt hic impedit, rem praesentium eius ut ullam quod minus architecto totam. Voluptatibus explicabo laboriosam laborum alias consectetur sed architecto iste dignissimos. Ratione illum suscipit magni pariatur consequuntur quam unde alias?</p>
+            </div>
+            <div class="comments-item col-lg">
+              <div class="comments-item-img"></div>
+              <div class="comment-user">Имя Фамилия</div>
+              <div class="sub-info-user">страна / должность</div>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam id qui quis. Harum excepturi aut eum molestiae, ratione velit modi, iste non ut ipsa architecto ullam ipsum esse dolor debitis at, omnis tempora. Voluptatem reiciendis facilis quidem eveniet ipsam, sunt hic impedit, rem praesentium eius ut ullam quod minus architecto totam. Voluptatibus explicabo laboriosam laborum alias consectetur sed architecto iste dignissimos. Ratione illum suscipit magni pariatur consequuntur quam unde alias?</p>
+            </div><!--comments-item-->
+          </div><!--comments-slider-->
+
+          <div class="next-com">
+            <i class="fas fa-angle-right"></i>
+          </div>
+          <div class="prev-com">
+            <i class="fas fa-angle-left"></i>
+          </div>
+
+        </div><!--comments-slider-wrap-->
+      </div>
+    </section>
+    <!-- Comments End -->
+
+    <!-- Partners -->
+    <section class="partners">
+      <div class="container">
+        <h2 class="partners-h">Партнеры</h2>
+        <div class="row">
+          <a href="#" class="col-lg-3 col-6 partners-item">
+            <img src="img/nin.svg" alt="">
+          </a>
+          <a href="#" class="col-lg-3 col-6 partners-item">
+            <img src="img/nin.svg" alt="">
+          </a>
+          <a href="#" class="col-lg-3 col-6 partners-item">
+            <img src="img/nin.svg" alt="">
+          </a>
+          <a href="#" class="col-lg-3 col-6 partners-item">
+            <img src="img/nin.svg" alt="">
+          </a>
+          <a href="#" class="col-lg-3 col-6 partners-item">
+            <img src="img/nin.svg" alt="">
+          </a>
+          <a href="#" class="col-lg-3 col-6 partners-item">
+            <img src="img/nin.svg" alt="">
+          </a>
+          <a href="#" class="col-lg-3 col-6 partners-item">
+            <img src="img/nin.svg" alt="">
+          </a>
+          <a href="#" class="col-lg-3 col-6 partners-item">
+            <img src="img/nin.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Partners End -->
+
     <!-- Popup -->
     <section class="popup">
       <div class="popup-wrap">
         <form action="#" class="form-popup">
-          <span class="close-popup">&#10006;</span>
+          <span class="close-popup">
+            <i class="far fa-times-circle"></i>
+          </span>
           <div>
             <input type="text" placeholder="Ф.И.О">
           </div>
           <div>
-            <input type="tel" placeholder="+7 (__) _ _ _">
+            <input type="tel" onkeyup="var yratext=/['А-я','A-я','\s',':']/; if(yratext.test(this.value)) this.value=''" placeholder="+7 (__) _ _ _">
           </div>
           <div>
             <input type="email" placeholder="E-mail">
@@ -207,7 +340,7 @@
 
   <script src="libs/jquery.js"></script>
   <script src="libs/slick.js"></script>
-  <script src="libs/jquery.ikSelect.min.js"></script>
+  <script src="libs/selectmenu/jquery-ui.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

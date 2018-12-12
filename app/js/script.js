@@ -11,10 +11,10 @@ $(function () {
 
   //LINKS
   $(".anchor").on("click", function (event) {
-    event.preventDefault();
     var id  = $(this).attr('href'),
         top = $(id).offset().top - $('header').height();
     $('body,html').animate({scrollTop: top}, 1000);
+    event.preventDefault();
   });
 
   //Mob-menu
@@ -41,24 +41,8 @@ $(function () {
     return false;
   });
 
-  //CASTOM SELECT
-  $('select[name="lang"]').ikSelect({
-    // autoWidth: true,
-    dynamicWidth: false,
-    ddCustomClass: 'lang-list',
-    customClass: 'lang-sel'
-  });
-
-  $('select[name="amenities"]').ikSelect({
-    autoWidth: false,
-    // dynamicWidth: true,
-    // equalWidths: false,
-    ddFullWidth: false,
-    customClass: 'amenities-sel',
-    ddCustomClass: 'amenities-list-sel'
-  });
-
-  // $(document).
+  $('.am-sel').selectmenu();
+  $('.lang-sel').selectmenu();
 
   $('.news-slider').slick({
     dots: true,

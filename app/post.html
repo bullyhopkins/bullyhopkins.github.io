@@ -7,43 +7,40 @@
   <title>VOGpractice</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/jquery.formstyler.css">
-  <!-- <link rel="stylesheet" href="css/jquery.formstyler.theme.css"> -->
+  <link rel="stylesheet" href="libs/selectmenu/jquery-ui.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
   <!-- HEADER -->
-  <header>
+  <header class="head">
     <div class="container">
       <div class="row justify-content-between align-items-center">
 
-        <a href="#" class="logo">
-          <!-- <img src="img/logo.svg" alt=""> -->
-        </a>
+        <a href="index.html" class="logo"></a>
 
         <div class="head-middle d-flex align-items-center">
           <nav>
             <ul class="list-menu d-none d-lg-flex">
               <li>
-                <a href="#about-us" class="anchor">О нас</a>
+                <a href="index.html#about-us" class="anchor">О нас</a>
               </li>
               <li>
-                <a href="#news" class="anchor">Новости</a>
+                <a href="index.html#news" class="anchor">Новости</a>
               </li>
               <li>
                 <a href="amenities.html">Услуги</a>
               </li>
               <li>
-                <a href="#interesting-article" class="anchor">Интересные статьи</a>
+                <a href="index.html#interesting-article" class="anchor">Интересные статьи</a>
               </li>
               <li>
                 <a href="contacts.html">Контакты</a>
               </li>
             </ul>
           </nav>
-          <form action="#">
-            <select name="lang" id="">
+          <form action="#" class="form-lang">
+            <select name="lang" class="lang-sel">
               <option value="ru">RU</option>
               <option value="en">EN</option>
             </select>
@@ -66,16 +63,16 @@
         <nav>
           <ul class="mobile-menu-list">
             <li>
-              <a href="#">О нас</a>
+              <a href="index.html#about-us" class="anchor">О нас</a>
             </li>
             <li>
-              <a href="#">Новости</a>
+              <a href="index.html#news" class="anchor">Новости</a>
             </li>
             <li>
               <a href="amenities.html">Услуги</a>
             </li>
             <li>
-              <a href="#">Интересные статьи</a>
+              <a href="index.html#interesting-article" class="anchor">Интересные статьи</a>
             </li>
             <li>
               <a href="contacts.html">Контакты</a>
@@ -125,12 +122,14 @@
     <section class="popup">
       <div class="popup-wrap">
         <form action="#" class="form-popup">
-          <span class="close-popup">&#10006;</span>
+          <span class="close-popup">
+            <i class="far fa-times-circle"></i>
+          </span>
           <div>
             <input type="text" placeholder="Ф.И.О">
           </div>
           <div>
-            <input type="tel" placeholder="+7 (__) _ _ _">
+            <input type="tel" onkeyup="var yratext=/['А-я','A-я','\s',':']/; if(yratext.test(this.value)) this.value=''" placeholder="+7 (__) _ _ _">
           </div>
           <div>
             <input type="email" placeholder="E-mail">
@@ -205,7 +204,7 @@
 
   <script src="libs/jquery.js"></script>
   <script src="libs/slick.js"></script>
-  <script src="libs/jquery.ikSelect.min.js"></script>
+  <script src="libs/selectmenu/jquery-ui.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
