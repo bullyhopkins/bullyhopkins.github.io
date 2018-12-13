@@ -84,7 +84,8 @@ header {
   height: 100%;
   padding: 30px; }
   .mobile-menu .form-lang {
-    max-width: 60px; }
+    max-width: 60px;
+    margin-left: -14px; }
 
 .phone-menu-mobile {
   padding: 30px 0; }
@@ -704,7 +705,7 @@ footer {
   display: none; }
 
 .popup-wrap {
-  background: rgba(255, 255, 255, 0.63);
+  background: rgba(255, 255, 255, 0.3);
   padding: 15px;
   -webkit-border-radius: 5px;
           border-radius: 5px;
@@ -716,7 +717,7 @@ footer {
           transform: translate(-50%, -50%); }
 
 .form-popup {
-  background: #fff;
+  background: #e7e7e7;
   -webkit-border-radius: 3px;
           border-radius: 3px;
   padding: 60px 50px 40px 50px;
@@ -727,12 +728,12 @@ footer {
             border-radius: 5px;
     border: none;
     border: 1px solid #eee;
+    background: #eee;
     padding: 10px 20px;
     min-width: 100%;
     -webkit-box-shadow: inset 0 0 8px 0 rgba(0, 0, 0, 0.15);
             box-shadow: inset 0 0 8px 0 rgba(0, 0, 0, 0.15);
     outline: none;
-    background: rgba(0, 0, 0, 0);
     font-size: 24px;
     margin-bottom: 30px; }
   .form-popup textarea {
@@ -747,7 +748,8 @@ footer {
     outline: none;
     background: rgba(0, 0, 0, 0);
     font-size: 24px;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    background: #eee; }
   .form-popup button {
     border: 1px solid #ed4848;
     -webkit-border-radius: 40px;
@@ -833,7 +835,7 @@ footer {
   border: none; }
 
 .amenities-select .ui-widget.ui-widget-content {
-  border: 1px solid #43BD85;
+  border: 1px solid #bdbdbd;
   padding: 0; }
 
 .amenities-select .ui-menu .ui-menu-item > div {
@@ -1270,15 +1272,18 @@ footer {
     padding: 30px 15px 30px 15px; }
   .popup-wrap {
     padding: 0;
-    width: 100%; }
+    width: 100%;
+    height: 100%; }
   .form-popup {
     padding: 40px 20px; }
     .form-popup input {
       width: 100%;
-      font-size: 20px; }
+      font-size: 20px;
+      margin-bottom: 20px; }
     .form-popup textarea {
       width: 100%;
-      font-size: 20px; }
+      font-size: 20px;
+      margin-bottom: 20px; }
     .form-popup button {
       font-size: 20px; }
   .post-p {
@@ -1289,4 +1294,5 @@ footer {
   footer p {
     font-size: 13px; }
   .form-popup {
-    width: 100%; } }
+    width: 100%;
+    height: 100%; } }

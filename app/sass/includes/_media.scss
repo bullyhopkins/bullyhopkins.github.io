@@ -221,6 +221,7 @@
   .popup-wrap {
     padding: 0;
     width: 100%;
+    height: 100%;
   }
 
   .form-popup {
@@ -228,10 +229,12 @@
     input {
       width: 100%;
       font-size: 20px;
+      margin-bottom: 20px;
     }
     textarea {
       width: 100%;
       font-size: 20px;
+      margin-bottom: 20px;
     }
     button {
       font-size: 20px;
@@ -251,5 +254,6 @@
 
   .form-popup {
     width: 100%;
+    height: 100%;
   }
 }
