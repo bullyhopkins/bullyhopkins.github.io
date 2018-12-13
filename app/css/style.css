@@ -79,7 +79,7 @@ header {
   width: 100%;
   left: -100%;
   top: 0;
-  background: #eee;
+  background: #fff;
   z-index: 100;
   height: 100%;
   padding: 30px; }
@@ -94,6 +94,10 @@ header {
     .phone-menu-mobile a:hover {
       color: #ed4848;
       text-decoration: none; }
+    .phone-menu-mobile a i {
+      -webkit-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+              transform: rotate(90deg); }
 
 .mobile-menu-list {
   list-style: none;
@@ -107,6 +111,7 @@ header {
     text-decoration: none;
     font-size: 24px; }
     .mobile-menu-list a:hover {
+      border-bottom: 2px solid #333333;
       color: #333333;
       text-decoration: none; }
 

@@ -54,17 +54,6 @@ header {
   }
 }
 
-// select[name="lang"] {
-//   border: none;
-//   outline: none;
-//   margin: 50px;
-//   border: 1px solid #111;
-//   background: transparent;
-//   option {
-//     text-transform: uppercase;
-//   }
-// }
-
 .top-phone {
   color: #ed4848;
   font-weight: bold;
@@ -106,7 +95,7 @@ header {
   width: 100%;
   left: -100%;
   top: 0;
-  background: #eee;
+  background: #fff;
   z-index: 100;
   height: 100%;
   padding: 30px;
@@ -122,6 +111,9 @@ header {
     &:hover {
       color: $red;
       text-decoration: none;
+    }
+    i {
+      transform: rotate(90deg);
     }
   }
 }
@@ -139,6 +131,7 @@ header {
     text-decoration: none;
     font-size: 24px;
     &:hover {
+      border-bottom: 2px solid $text-color;
       color: $text-color;
       text-decoration: none;
     }
