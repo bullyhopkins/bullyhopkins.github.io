@@ -99,6 +99,9 @@ header {
   z-index: 100;
   height: 100%;
   padding: 30px;
+  .form-lang {
+    max-width: 60px;
+  }
 }
 
 .phone-menu-mobile {
@@ -129,7 +132,7 @@ header {
   a {
     color: $text-color;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 20px;
     &:hover {
       border-bottom: 2px solid $text-color;
       color: $text-color;
