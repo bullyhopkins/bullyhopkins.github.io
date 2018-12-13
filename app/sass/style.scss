@@ -28,79 +28,6 @@ header {
   box-shadow: 0 0 11px 0 hsla(0, 0%, 79%, .5);
 }
 
-// header .jq-selectbox__select {
-//   cursor: pointer;
-//   position: relative;
-//   padding: 0 15px;
-//   &::after {
-//     font-family: 'FontAwesome';
-//     content: '\f107';
-//     position: absolute;
-//     right: 0;
-//     color: red;
-//     font-size: 20px;
-//     top: 50%;
-//     transform: translateY(-50%);
-//   }
-// }
-
-// .jq-selectbox__select-text {
-//   font-size: 22px;
-// }
-
-// .jq-selectbox__dropdown ul {
-//   padding: 0;
-//   padding-left: -10px;
-//   background: #fff;
-//   li {
-//     cursor: pointer;
-//     padding: 5px 10px;
-//     font-size: 20px;
-//     &:hover {
-//       background: #eee;
-//     }
-//   }
-// }
-
-//finish sel
-
-// .ik_select {
-//   cursor: pointer;
-// }
-
-// .lang-sel .ik_select {
-//   // position: fixed !important;
-//   margin-left: 30px;
-//   &::after {
-//     content: "";
-//     display: block;
-//     min-width: 10px;
-//     min-height: 10px;
-//     background: url(../img/arrow.svg) center no-repeat;
-//     background-size: contain;
-//     position: absolute;
-//     top: 50%;
-//     transform: translateY(-50%);
-//     right: -12px;
-//   }
-// }
-
-// .lang-list {
-//   background: #fff;
-//   // position: fixed !important;
-//   .ik_select_list {
-//     ul {
-//       padding: 0;
-//       margin: 0;
-//       list-style: none;
-//       text-align: center;
-//     }
-//     li {
-//       cursor: pointer;
-//     }
-//   }
-// }
-
 .logo {
   background: url(../img/logo.svg) center no-repeat;
   background-size: contain;
@@ -865,6 +792,19 @@ footer {
   padding: 0;
   img {
     max-width: 100%;
+  }
+}
+
+.amenities-details {
+  font-size: 36px;
+  margin-bottom: 70px;
+  a {
+    color: $text-color;
+    border-bottom: 2px solid $text-color;
+    &:hover {
+      text-decoration: none;
+      border-bottom: none;
+    }
   }
 }
 

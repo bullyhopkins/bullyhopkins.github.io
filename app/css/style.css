@@ -653,6 +653,16 @@ footer {
   .post-main-img img {
     max-width: 100%; }
 
+.amenities-details {
+  font-size: 36px;
+  margin-bottom: 70px; }
+  .amenities-details a {
+    color: #333333;
+    border-bottom: 2px solid #333333; }
+    .amenities-details a:hover {
+      text-decoration: none;
+      border-bottom: none; }
+
 .post-h {
   font-size: 48px;
   font-weight: bold;
@@ -1180,7 +1190,11 @@ footer {
     padding-top: 50px; }
   .amenities-page-btn {
     font-size: 15px;
-    min-width: 100%; } }
+    min-width: 100%; }
+  .amenities-details {
+    font-size: 16px; }
+    .amenities-details a {
+      font-size: 16px; } }
 
 @media screen and (max-width: 600px) {
   .next,
