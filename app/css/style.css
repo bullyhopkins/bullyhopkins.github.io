@@ -39,7 +39,7 @@ header {
   text-decoration: none;
   font-family: arial;
   font-weight: 700;
-  font-size: 17px;
+  font-size: 12px;
   padding: 15px 40px;
   display: block;
   -webkit-border-radius: 24px;
@@ -48,7 +48,8 @@ header {
   border: 1px solid #000;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
-  transition: 0.3s; }
+  transition: 0.3s;
+  letter-spacing: 2px; }
   .social-btn:hover {
     background: rgba(0, 0, 0, 0);
     color: #000; }
