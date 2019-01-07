@@ -71,19 +71,19 @@ header {
   width: 30%; }
 
 .cover-wrap-img {
-  max-width: 250px;
+  max-width: 310px;
   overflow: hidden;
   margin: 0 auto;
   margin-top: 30px;
   cursor: pointer; }
   .cover-wrap-img img {
     width: 100%;
-    -webkit-transition: 1s;
-    -o-transition: 1s;
-    transition: 1s; }
+    -webkit-transition: 1.5s;
+    -o-transition: 1.5s;
+    transition: 1.5s; }
     .cover-wrap-img img:hover {
-      -webkit-transform: scale(1.2);
-          -ms-transform: scale(1.2);
-              transform: scale(1.2); }
+      -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+              transform: scale(1.1); }
 
 /**** MAIN END ****/
