@@ -1,0 +1,171 @@
+// Up
+.amenities-select .ui-button {
+	background: #fff;
+	margin: 0;
+	border: none;
+	padding: 0; 
+	height: 40px;
+  width: 100% !important;
+	line-height: 40px;
+	text-indent: 15px;
+	border: 1px solid #bdbdbd;
+	&:hover, 
+	&:focus {
+		background: none;
+		outline: none;
+		color: #000;
+		.ui-icon {
+			background-image: none;
+		}
+	}
+}
+
+// Arrow
+.amenities-select .ui-selectmenu-icon.ui-icon {
+	width: 15px;
+	height: 15px;
+	background-image: none;
+	background-size: contain;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 15px;
+	&:after {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		min-width: 10px;
+		min-height: 10px;
+		background: url(../img/black-arrow-down.svg) center no-repeat;
+		background-size: contain;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	&:hover {
+		background-image: none;
+	}
+}
+
+//ACTIVE arrow
+.amenities-select .ui-selectmenu-button-open {
+	.ui-selectmenu-icon.ui-icon {
+		border: none;
+	}
+}
+
+// Dropdown
+.amenities-select .ui-widget.ui-widget-content {
+	border: 1px solid #bdbdbd;
+	padding: 0;
+}
+
+// Dropdown  item
+.amenities-select .ui-menu .ui-menu-item {
+	> div {
+		padding: 0;
+		background: none;
+		margin: 0;
+		border: none;
+		padding: 0;
+		height: 40px;
+		line-height: 40px;
+		text-indent: 10px;
+	}
+}
+
+// Dropdown item hover
+.ui-widget-content .ui-state-active {
+	background-color: $text-color !important;
+	border: none;
+  margin: 0;
+}
+
+
+//LANG
+.head .ui-button {
+	background: #fff;
+	margin: 0;
+	border: none;
+	padding: 0; 
+	height: 40px;
+  width: 100% !important;
+	line-height: 40px;
+	text-indent: 15px;
+	position: relative;
+	&:hover, 
+	&:focus {
+		background: none;
+		outline: none;
+		color: $text-color;
+		.ui-icon {
+			background-image: none;
+		}
+	}
+}
+
+// Arrow
+.head .ui-selectmenu-icon.ui-icon {
+	width: 10px;
+	height: 10px;
+	background-image: none;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 5px;
+	&:after {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		min-width: 10px;
+		min-height: 10px;
+		background: url(../img/chevron-arrow-down.svg) center no-repeat;
+		background-size: contain;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	&:hover {
+		background-image: none;
+	}
+}
+
+//ACTIVE arrow
+.head .ui-selectmenu-button-open {
+	.ui-selectmenu-icon.ui-icon {
+		border: none;
+	}
+}
+
+// Dropdown
+.head .ui-widget.ui-widget-content {
+	border: 1px solid #43BD85;
+	padding: 0;
+}
+
+// Dropdown  item
+.head .ui-menu .ui-menu-item {
+	> div {
+		padding: 0;
+		background: none;
+		margin: 0;
+		border: none;
+		padding: 0;
+		height: 40px;
+		line-height: 40px;
+		text-indent: 10px;
+	}
+}
+
+// Dropdown item hover
+.ui-widget-content .ui-state-active {
+	color: $text-color !important;
+	background-color: #d7d7d7 !important;
+	border: none;
+  margin: 0;
+}
+
+//MOB MENU LANG
+.mobile-menu .ui-selectmenu-text {
+	font-size: 25px;
+}

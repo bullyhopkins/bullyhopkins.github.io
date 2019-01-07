@@ -1,0 +1,262 @@
+//MEDIA
+@media screen and (max-width: 1200px) {
+  .top-btn {
+    font-size: 18px;
+  }
+  .top-phone {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 996px) {
+  .contacts-foot {
+    i {
+      font-size: 20px;
+      margin-right: 10px;
+    }
+    li {
+      padding: 15px 0;
+    }
+    span {
+      font-size: 18px;
+    }
+    a {
+      font-size: 18px;
+      &:hover {
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+    .footer-phone {
+      i {
+        transform: rotate(90deg);
+      }
+      a {
+        font-size: 18px;
+      }
+    }
+  }
+
+  footer .footer-nav {
+    display: none;
+  }
+
+  footer .footer-nav-list{
+    a {
+      font-size: 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 996px) {
+  .amenities-list {
+    a {
+      font-size: 13px;
+    }
+  }
+
+  .article-item {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .next-com,
+  .prev-com {
+    top: 50%;
+    transform: translateY(-50%);
+    // display: none !important;
+  }
+
+  .next-com {
+    right: -15px;
+  }
+  .prev-com {
+    left: -15px;
+  }
+
+  .post-h {
+    font-size: 30px;
+    margin: 40px 0;
+  }
+
+  .comments-slider {
+    padding: 0;
+  }
+
+  .wrap-amaenities-item {
+    text-align: center;
+  }
+
+  .amenities-right {
+    padding-top: 50px;
+  }
+
+  .amenities-page-btn {
+    font-size: 15px;
+    min-width: 100%;
+  }
+
+  .amenities-details {
+    font-size: 16px;
+    a {
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .next,
+  .prev {
+    top: 50%;
+    transform: translateY(-50%);
+    // display: none !important;
+  }
+  
+  .next {
+    right: -15px;
+  }
+  .prev {
+    left: -15px;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  .amenities {
+    padding: 40px 10px;
+  }
+
+  .main-h {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+
+  .amenities-h {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .about-h {
+    font-size: 24px;
+    // margin-bottom: 40px;
+    margin: 0;
+  }
+
+  .about {
+    padding: 40px 15px;
+    .about-clients {
+      font-size: 15px;
+      margin: 40px 0;
+      display: inline-block;
+    }
+    p {
+      font-size: 15px;
+      margin: 0;
+    }
+    span {
+      font-size: 15px;
+    }
+  }
+
+  .news {
+    font-size: 40px 0;
+    padding: 40px 15px;
+  }
+
+  .news-h {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+
+  .interesting-article {
+    padding: 40px 0;
+  }
+
+  .article-h {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+
+  .comments {
+    padding: 40px 0;
+  }
+
+  .comments-h {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+
+  .comment-user,
+  .sub-info-user {
+    font-size: 14px;
+  }
+
+  .comments-item {
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .partners {
+    padding: 40px 0;
+  }
+
+  .partners-h {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+
+  .interesting-article { 
+    a {
+      span {
+        font-size: 18px;
+      }
+    }
+  }
+  .contacts-form {
+    padding: 30px 15px 30px 15px;
+  }
+
+  .popup-wrap {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .form-popup {
+    padding: 40px;
+    input {
+      width: 100%;
+      font-size: 20px;
+      margin-bottom: 30px;
+      padding: 5px 10px;
+    }
+    textarea {
+      width: 100%;
+      font-size: 20px;
+      margin-bottom: 40px;
+      padding: 5px 10px;
+    }
+    button {
+      font-size: 18px;
+      padding: 3px 20px;
+    }
+  }
+  .post-p {
+    text-align: left;
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 400px) {
+  footer {
+    p {
+      font-size: 13px
+    }
+  }
+
+  .form-popup {
+    width: 100%;
+    height: 100%;
+  }
+}
