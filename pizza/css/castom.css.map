@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,WAAW,CAAC,EAAE,CAAC,MAAM,CAAC;EACpB,aAAa,EAAE,GAAG;EAClB,OAAO,EAAE,KAAK;EACd,UAAU,EAAE,OAAO;EACnB,KAAK,EAAE,eAAe;EACtB,MAAM,EAAE,eAAe;CAKxB;;AAVD,AAME,WANS,CAAC,EAAE,CAAC,MAAM,AAMlB,QAAQ,CAAC;EACR,OAAO,EAAE,EAAE;EACX,OAAO,EAAE,eAAe;CACzB",
+    "sources": [
+        "castom.scss"
+    ],
+    "names": [],
+    "file": "castom.css"
+}

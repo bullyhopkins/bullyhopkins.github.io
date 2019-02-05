@@ -1,0 +1,13 @@
+.slick-dots li button {
+  border-radius: 50%;
+  display: block;
+  background: #bebebe;
+  width: 15px !important;
+  height: 15px !important;
+}
+
+.slick-dots li button::before {
+  content: '';
+  display: none !important;
+}
+/*# sourceMappingURL=castom.css.map */

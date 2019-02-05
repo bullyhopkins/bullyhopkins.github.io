@@ -1,0 +1,28 @@
+.slick-dots li button {
+  border-radius: 50%;
+  display: block;
+  background: #bebebe;
+  width: 5px !important;
+  height: 5px !important;
+  &::before {
+    content: '';
+    display: none !important;
+  }
+}
+
+.slick-dots {
+  bottom: -40px;
+  right: 25px;
+  width: auto;
+  .slick-active {
+    border-radius: 50%;
+    border: 3px solid $orange;
+    width: 15px;
+    height: 15px;
+  }
+}
+
+// .slick-active {
+//   border-radius: 50%;
+//   border: 5px solid $orange;
+// }
