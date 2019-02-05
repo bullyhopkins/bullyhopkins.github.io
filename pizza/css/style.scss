@@ -1,6 +1,7 @@
 $fonts: 'Open Sans', arial, sans-serif;
 $gray: #646464;
-
+$orange: #f9ae03;
+$liteGray: #989898;
 
 body {
   padding: 0;
@@ -24,6 +25,11 @@ a {
 /* HEADER */
 header {
   background: #fff;
+  border-bottom: 1px solid $gray;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
 }
 
 .flex-wrap {
@@ -40,10 +46,10 @@ header {
 
 .logo {
   background: url(../img/sprite.png) no-repeat;
-  background-position: -3px -78px;
+  background-position: -3px -87px;
   display: inline-block;
   min-width: 140px;
-  min-height: 100px;
+  min-height: 90px;
 }
 
 .head-menu {
@@ -135,12 +141,218 @@ header {
 /* HEADER END */
 
 /* SIDEBAR */
+.left-sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  padding-top: 130px;
+}
+
 .sidebar-menu {
   list-style: none;
+  padding: 0;
+  margin: 0;
+  li {
+    padding: 5px 15px;
+  }
+  a {
+    display: flex;
+    align-items: center;
+    color: $gray;
+  }
+  span {
+    display: none;
+  }
+}
+
+.sidebar-img {
+  min-width: 40px;
+  min-height: 30px;
+}
+
+
+.pizza-icon {
+  background: url(../img/sprite.png) no-repeat;
+  background-position: -76px -40px;
+}
+.burger-icon {
+  background: url(../img/sprite.png) no-repeat;
+  background-position: 0px -32px;
+}
+.salad-icon {
+  background: url(../img/sprite.png) no-repeat;
+  background-position: -114px -38px;
+}
+.additives-icon {
+  background: url(../img/sprite.png) no-repeat;
+  background-position: -149px -38px;
+}
+.winglets-icon {
+  background: url(../img/sprite.png) no-repeat;
+  background-position: -41px -34px;
+}
+.drinks-icon {
+  background: url(../img/sprite.png) no-repeat;
+  background-position: -184px -38px;
 }
 /* SIDEBAR END */
 
+/* RIGHT SIDEBAR */
+.right-sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  background: #fff;
+  padding-top: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // text-align: center;
+}
+
+.add-products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  span {
+    font-size: 14px;
+    color: $gray;
+  }
+}
+
+.add-products-icon {
+  background: url(../img/shopping.png) center no-repeat;
+  background-size: contain;
+  min-width: 50px;
+  min-height: 60px;
+  margin-right: 15px;
+}
+
+.products-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 20px;
+  li {
+    width: 30%;
+    text-align: center;
+  }
+  a {
+    font-size: 14px;
+    color: $liteGray;
+    transition: 0.3s;
+    &:hover {
+      color: $orange;
+    }
+  }
+}
+
+.min-sum {
+  border-top: 1px solid $liteGray; 
+  border-bottom: 1px solid $liteGray;
+  padding: 10px 15px;
+  span {
+    font-size: 14px;
+    color: $orange;
+    font-weight: 600;
+  }
+}
+
+.basket-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.place-order {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.my-price {
+  color: $liteGray;
+  font-size: 22px;
+  position: relative;
+  // display: block;
+  // border-bottom: 2px solid $liteGray;
+  &:before {
+    content: '';
+    display: inline-block;
+    background: $liteGray;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+  }
+}
+
+.place-order-btn {
+  padding: 10px 20px;
+  background: $liteGray;
+  border: 1px solid $liteGray;
+  color: #fff;
+  // font-weight: 700;
+  border-radius: 20px;
+  transition: 0.3s;
+  font-size: 14px;
+  &:hover {
+    background: rgba(0,0,0,0);
+    color: $liteGray;
+  }
+}
+/* RIGHT SIDEBAR END */
+
 /* MAIN */
+main {
+  padding-left: 70px;
+  padding-top: 110px;
+  padding-right: 340px;
+}
+
+.pizza-top {
+  background: url(../img/pizza-bg.png) center no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  padding-left: 60px;
+  .wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: flex-start;
+  }
+}
+
+.pizza-h {
+  font-size: 62px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.order-btn {
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 40px;
+  padding: 20px 50px;
+  background: rgba(0,0,0,0);
+  transition: 0.3s;
+  font-size: 24px;
+  font-weight: 700;
+  &:hover {
+    background: #fff;
+    color: #000;
+  }
+}
+
 /* MAIN END */
 /* FOOTER */
 /* FOOTER END */

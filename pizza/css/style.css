@@ -22,6 +22,11 @@ a {
 /* HEADER */
 header {
   background: #fff;
+  border-bottom: 1px solid #646464;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
 }
 
 .flex-wrap {
@@ -47,10 +52,10 @@ header {
 
 .logo {
   background: url(../img/sprite.png) no-repeat;
-  background-position: -3px -78px;
+  background-position: -3px -87px;
   display: inline-block;
   min-width: 140px;
-  min-height: 100px;
+  min-height: 90px;
 }
 
 .head-menu {
@@ -161,12 +166,268 @@ header {
 
 /* HEADER END */
 /* SIDEBAR */
+.left-sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  padding-top: 130px;
+}
+
 .sidebar-menu {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-menu li {
+  padding: 5px 15px;
+}
+
+.sidebar-menu a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #646464;
+}
+
+.sidebar-menu span {
+  display: none;
+}
+
+.sidebar-img {
+  min-width: 40px;
+  min-height: 30px;
+}
+
+.pizza-icon {
+  background: url(../img/sprite.png) no-repeat;
+  background-position: -76px -40px;
+}
+
+.burger-icon {
+  background: url(../img/sprite.png) no-repeat;
+  background-position: 0px -32px;
+}
+
+.salad-icon {
+  background: url(../img/sprite.png) no-repeat;
+  background-position: -114px -38px;
+}
+
+.additives-icon {
+  background: url(../img/sprite.png) no-repeat;
+  background-position: -149px -38px;
+}
+
+.winglets-icon {
+  background: url(../img/sprite.png) no-repeat;
+  background-position: -41px -34px;
+}
+
+.drinks-icon {
+  background: url(../img/sprite.png) no-repeat;
+  background-position: -184px -38px;
 }
 
 /* SIDEBAR END */
+/* RIGHT SIDEBAR */
+.right-sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  background: #fff;
+  padding-top: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.add-products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.add-products span {
+  font-size: 14px;
+  color: #646464;
+}
+
+.add-products-icon {
+  background: url(../img/shopping.png) center no-repeat;
+  background-size: contain;
+  min-width: 50px;
+  min-height: 60px;
+  margin-right: 15px;
+}
+
+.products-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 20px;
+}
+
+.products-list li {
+  width: 30%;
+  text-align: center;
+}
+
+.products-list a {
+  font-size: 14px;
+  color: #989898;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.products-list a:hover {
+  color: #f9ae03;
+}
+
+.min-sum {
+  border-top: 1px solid #989898;
+  border-bottom: 1px solid #989898;
+  padding: 10px 15px;
+}
+
+.min-sum span {
+  font-size: 14px;
+  color: #f9ae03;
+  font-weight: 600;
+}
+
+.basket-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.place-order {
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.my-price {
+  color: #989898;
+  font-size: 22px;
+  position: relative;
+}
+
+.my-price:before {
+  content: '';
+  display: inline-block;
+  background: #989898;
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+}
+
+.place-order-btn {
+  padding: 10px 20px;
+  background: #989898;
+  border: 1px solid #989898;
+  color: #fff;
+  border-radius: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.place-order-btn:hover {
+  background: rgba(0, 0, 0, 0);
+  color: #989898;
+}
+
+/* RIGHT SIDEBAR END */
 /* MAIN */
+main {
+  padding-left: 70px;
+  padding-top: 110px;
+  padding-right: 340px;
+}
+
+.pizza-top {
+  background: url(../img/pizza-bg.png) center no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  padding-left: 60px;
+}
+
+.pizza-top .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.pizza-h {
+  font-size: 62px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.order-btn {
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 40px;
+  padding: 20px 50px;
+  background: rgba(0, 0, 0, 0);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.order-btn:hover {
+  background: #fff;
+  color: #000;
+}
+
 /* MAIN END */
 /* FOOTER */
 /* FOOTER END */
