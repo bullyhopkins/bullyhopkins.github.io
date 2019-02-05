@@ -1,0 +1,146 @@
+$fonts: 'Open Sans', arial, sans-serif;
+$gray: #646464;
+
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: $fonts;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrap {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+/* HEADER */
+header {
+  background: #fff;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.head-left,
+.head-right {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  background: url(../img/sprite.png) no-repeat;
+  background-position: -3px -78px;
+  display: inline-block;
+  min-width: 140px;
+  min-height: 100px;
+}
+
+.head-menu {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  li {
+    padding: 0 10px;
+  }
+  a {
+    color: $gray;
+    font-size: 14px;
+  }
+}
+
+.delivery {
+  background: url(../img/sprite.png) no-repeat;
+  background-position: -316px -4px;
+  margin-right: 20px;
+  min-width: 30px;
+  min-height: 30px;
+}
+
+.phones {
+  display: flex;
+  align-items: center;
+  a {
+    display: flex;
+    align-items: center;
+  }
+  span {
+    font-size: 14px;
+    color: $gray;
+  }
+  padding-right: 20px;
+}
+
+.phones-left {
+  margin-right: 20px;
+}
+
+.phones-img {
+  min-width: 15px;
+  min-height: 15px;
+}
+
+.phone-icon {
+  background: url(../img/sprite.png) no-repeat;
+  background-position: -290px -15px;
+}
+
+.viber-icon {
+  background: url(../img/sprite.png) no-repeat;
+  background-position: -363px -53px;
+}
+
+.sign-in {
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.sign-in-img {
+  background: url(../img/sprite.png) no-repeat;
+  background-position: -355px -10px;
+  min-width: 30px;
+  min-height: 30px;
+}
+
+.social-links {
+  padding-left: 20px;
+  a {
+    display: inline-block;
+    min-width: 15px;
+    min-height: 15px;
+  }
+}
+
+.head-insta {
+  background: url(../img/sprite.png) no-repeat;
+  background-position: -267px -14px;
+}
+
+.head-face {
+  background: url(../img/sprite.png) no-repeat;
+  background-position: -238px -14px;
+}
+
+/* HEADER END */
+
+/* SIDEBAR */
+.sidebar-menu {
+  list-style: none;
+}
+/* SIDEBAR END */
+
+/* MAIN */
+/* MAIN END */
+/* FOOTER */
+/* FOOTER END */
