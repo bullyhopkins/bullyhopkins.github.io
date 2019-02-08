@@ -172,7 +172,7 @@ img {
 }
 
 .secPdng {
-    padding: 90px 0
+    padding: 50px 0
 }
 
 .secPdngB {
@@ -702,10 +702,89 @@ a.preview-single-pages-content {
 */
 
 header {
-    background: url(../img/volna1.png);
-    /* background-position: 0 0; */
-    background-size: cover;
-    /* background-repeat: repeat-x; */
+    background: url(../../img/vvolna.png);
+    background-position: 0 0;
+    background-size: contain;
+    background-repeat: repeat-x;
+    padding: 30px 15px;
+}
+
+header .logo {
+    display: inline-block;
+    /* position: relative; */
+}
+
+/* .logo img {
+    margin-bottom: 20px;
+} */
+
+.logo-sub {
+    display: block;
+    color: #fff;
+    font-size: 13px;
+    margin-top: -15px;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.logo-descr {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    display: block;
+    text-align: center;
+    /* position: absolute;
+    bottom: 0;
+    left: 0; */
+}
+
+.head-right {
+    text-align: right;
+}
+
+.head-phone a {
+    color: rgb(29, 102, 165);
+    font-weight: 700;
+    padding: 0 10px;
+    font-size: 18px
+}
+
+.head-phone i {
+    transform: rotate(110deg);
+    color: #fff;
+}
+
+.head-location {
+    color: #fff;
+    font-size: 13px;
+    display: inline-block;
+    margin: 10px 0;
+    position: relative;
+}
+
+.head-location::before {
+    content: "";
+    display: block;
+    background: rgb(128, 128, 165);
+    width: 800%;
+    min-height: 2px;
+    position: absolute;
+    bottom: 0;
+    right: 110%;
+}
+
+.head-menu {
+    list-style: none;
+}
+
+.head-menu li {
+    padding: 0 5px;
+}
+
+.head-menu a {
+    color: #fff;
+    text-transform: uppercase;
 }
 
 header .langIcon {
@@ -1506,13 +1585,13 @@ header a.cart i {
 
 .homeContent {
     color: #fff;
-    padding: 140px 0
+    padding: 70px 0;
 }
 
 .homeContent span.topTxt {
     font-size: 16px;
     font-family: 'Open Sans', 'Roboto', arial;
-    margin-bottom: 15px
+    margin-bottom: 15px;
 }
 
 .homeContent span.h2 {
@@ -1525,7 +1604,7 @@ header a.cart i {
 }
 
 .v2 .homeContent {
-    color: #233141
+    color: #233141;
 }
 
 .v2 .homeSlider1.owl-carousel .homeContent span.topTxt.animated {
@@ -1572,9 +1651,9 @@ header a.cart i {
 
 
 .homeContent p {
-    font-size: 18px;
-    line-height: 30px;
-    margin: 0;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 10px 0;
     font-family: 'Open Sans', 'Roboto', arial;
 }
 
@@ -1626,6 +1705,9 @@ header a.cart i {
 
 .slide1-descr {
     padding-left: 50px;
+    font-size: 15px;
+    color: rgb(112, 112, 112);
+    padding-top: 50px;
 }
 
 .slider-price {
@@ -1980,7 +2062,7 @@ header a.cart i {
 .domainArea {
     background: #233141 url(../../img/icon/domain-bg.jpg);
     color: #fff;
-    padding: 60px 0;
+    padding: 20px 0;
     background-repeat: repeat;
     overflow: hidden
 }
@@ -1988,11 +2070,101 @@ header a.cart i {
 .domainArea-h {
     font-size: 25px;
     color: #fff;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.domainArea-span1 {
+    color: #288FEB;
+    font-weight: 700;
+}
+
+.domainArea-span2 {
+    color: #233141;
     font-weight: 700;
 }
 
 .domainArea-list {
     list-style: none;
+}
+
+.domainArea-bot {
+    text-align: right;
+    margin-top: -30px;
+}
+
+.domainArea-bot p span {
+    font-size: 17px;
+}
+
+.domainArea-right-block {
+    padding-right: 40px;
+}
+
+.domainArea-price {
+    color: rgb(169, 215, 255);
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+}
+
+.domainArea-price-bot {
+    position: relative;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.domainArea .domainArea-price-bot span {
+    font-size: 25px;
+}
+
+.leftPrice {
+    color: #288FEB;
+}
+
+.rightPrice {
+    color: #233141;
+}
+
+.leftPrice::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: #288FEB;
+    width: 150px;
+    min-height: 1px;
+    right: 0;
+    top: -11px;
+}
+
+.rightPrice::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: rgb(188, 214, 253);
+    width: 150px;
+    min-height: 1px;
+    right: 0;
+    top: -11px;
+}
+
+.domainArea-day {
+    font-size: 15px;
+    font-weight: 600;
+    padding-left: 15px;
+    display: block;
+    margin-top: -40px;
+}
+
+.leftDay {
+    color: #288FEB;
+}
+
+.rightDay {
+    color: #233141;
 }
 
 .domainTxt {
@@ -2163,7 +2335,9 @@ form.domainForm {
     width: 100%;
     -webkit-transition: .4s;
     transition: .4s;
-    margin: 20px 0
+    margin: 20px 0;
+    position: relative;
+    /* height: 90%; */
 }
 
 .singlePrice {
@@ -2254,9 +2428,24 @@ form.domainForm {
     margin-right: 11px;
 }
 
+.priceBodyEnd {
+    margin: 65px 0 60px 0;
+}
+
 .priceBtn {
     font-size: 20px;
     font-weight: 600;
+}
+
+.pricingArea-descr {
+    font-size: 18px;
+    color: #233141;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.pricingArea-descr span {
+    color: #288EEB;
 }
 
 /*
@@ -2266,21 +2455,22 @@ form.domainForm {
 */
 
 .ctaCol {
-    padding: 0 85px;
+    padding: 0 40px;
 }
 
 .ctaCol .h2 {
     font-family: 'Open Sans', 'Roboto', arial;
     font-size: 30px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     line-height: 40px;
+    font-weight: 700;
 }
 
 .ctaTxt {
     color: #7a828a;
     font-family: 'Open Sans', 'Roboto', arial;
     font-size: 17px;
-    line-height: 30px;
+    line-height: 23px;
     display: table;
 }
 
@@ -2289,12 +2479,17 @@ form.domainForm {
     vertical-align: middle
 }
 
+.ctaCell p {
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
 .ctaTxt p {
     margin: 0;
 }
 
 .ctaTxt .Btn {
-    margin-top: 40px;
+    margin-top: 10px;
 }
 
 .ctaImgOne img {
@@ -2415,6 +2610,51 @@ footer {
 
 .partners a:hover {
     filter: none;
+}
+
+.footer-descr {
+    color: #fff;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+/*CONTACTS*/
+.contacts {
+    padding: 20px 15px;
+}
+
+.social-links img {
+    /* max-width: 35px;
+    filter: grayscale(1);
+    transition: 0.3s; */
+    width: 100%;
+}
+
+.social-links a {
+    display: inline-block;
+    max-width: 35px;
+    filter: grayscale(1);
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    filter: none;
+}
+
+.copy {
+    margin-top: 30px;
+}
+
+.contacts-h {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #233141;
+}
+
+.foot-phones a {
+    color: #738191;
+    font-size: 16px;
 }
 
 .footerTxt {
@@ -3178,6 +3418,12 @@ h4.price {
 
 .domainCta {
     text-align: center;
+}
+
+.more-read {
+    font-size: 17px;
+    display: inline-block;
+    padding-left: 10px;
 }
 
 
