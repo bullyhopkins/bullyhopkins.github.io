@@ -2657,6 +2657,10 @@ footer {
     font-size: 16px;
 }
 
+.foot-phones a:hover {
+    color: #3FA5FF;
+}
+
 .footerTxt {
     font-size: 14px;
     line-height: 26px;
@@ -4886,6 +4890,69 @@ dl.accordion {
     text-align: right;
 }
 
+/***************************************/
+
+/*email form page*/
+.substrate {
+    padding: 70px 15px;
+}
+
+.form-email {
+    border: 2px solid #98b4cc;
+    padding: 20px;
+    border-radius: 5px;
+    width: 35%;
+}
+
+.form-email div {
+    padding: 10px 0;
+}
+
+.form-email input {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #288feb;
+    font-size: 17px;
+    padding: 10px 5px;
+}
+
+.form-email textarea {
+    resize: none;
+    outline: none;
+    border: 2px solid #288feb;
+    border-radius: 2px;
+    width: 100%;
+    font-size: 17px;
+    padding: 10px 5px;
+    min-height: 200px;
+}
+
+.form-email button {
+    border: none;
+    cursor: pointer;
+}
+
+/***************************************/
+
+/* read page */
+.read-page {
+    padding: 50px 15px;
+}
+
+.read-page-h {
+    font-size: 35px;
+    font-weight: 700;
+    color: #233141;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.read-page-text {
+    font-size: 15px;
+    color: #233141;
+    line-height: 20px;
+}
 
 /*************************************************/
 
