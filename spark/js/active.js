@@ -191,6 +191,7 @@
                 nav: true,
                 dots: false,
                 smartSpeed: 50,
+                autoplayHoverPause: true,
                 responsive: {
                     0: {
                         smartSpeed: 500

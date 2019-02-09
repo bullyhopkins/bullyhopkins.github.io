@@ -180,12 +180,8 @@ px      68    160    252    344    436    528    620    712    */
         margin-bottom: 35px;
         padding-bottom: 35px;
     }
-
-
     /*	end1000*/
 }
-
-
 
 /*		tablet Layout: 768px.
 		Inherits styles from: Default Layout.
@@ -542,6 +538,36 @@ px      68    160    252    344    436    528    620    712    */
     /*	==================================== */
     /* Home4 Page End */
     /*	==================================== */
+    .head-location::before {
+        display: none;
+    }
+
+    .head-right {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .footer-descr {
+        padding-top: 40px;
+    }
+
+    .domainArea-right-block,
+    .domainArea-right {
+        text-align: center;
+        padding: 0;
+    }
+
+    .domainArea-bot {
+        text-align: center;
+    }
+
+    .domainArea-price-bot::before {
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    .domainArea-day {
+        margin: 0;
+    }
 }
 
 
@@ -676,9 +702,9 @@ px      68    160    252    344    436    528    620    712    */
         font-size: 23px;
         line-height: 30px
     }
-    .homeImgTable {
+    /* .homeImgTable {
         display: none !important;
-    }
+    } */
     .homeBtn {
         margin-top: 25px
     }
@@ -1368,6 +1394,77 @@ px      68    160    252    344    436    528    620    712    */
     /*	==================================== */
     /* Home4 Page End */
     /*	==================================== */
+
+    .head-location::before {
+        display: none;
+    }
+
+    .head-right {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .domainArea-bot {
+        margin: 0;
+        text-align: center;
+    }
+
+    .domainArea-day {
+        margin: 0;
+        padding: 0;
+    }
+
+    .domainArea-right {
+        padding: 0;
+    }
+
+    .domainArea-price-bot::before {
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    .v2 .domainArea-right-block {
+        margin-top: 40px;
+        padding: 0;
+        text-align: center;
+    }
+
+    .domainArea-span2,
+    .domainArea-price-bot,
+    .domainArea-day {
+        color: #288FEB;
+    }
+
+    .v2 .domainArea {
+        padding: 40px 0;
+    }
+
+    .homeImgTable {
+        height: auto;
+        margin: 30px 0;
+    }
+
+    .homeArea .homeContent {
+        padding: 0;
+    }
+
+    .slide2-descr {
+        padding-left: 0;
+        padding-top: 20px;
+    }
+
+    .slide2-descr br,
+    .slide1-descr br {
+        display: none;
+    }
+
+    .homeArea {
+        padding: 30px 0;
+    }
+
+    .more-read {
+        font-size: 13px;
+    }
 }
 
 
@@ -1397,5 +1494,19 @@ px      68    160    252    344    436    528    620    712    */
     }
     .home3 .homeArea.home3Area {
         height: 400px !important;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .head-phone a {
+        font-size: 13px;
+    }
+
+    .head-menu a {
+        font-size: 13px;
+    }
+
+    .footer-descr {
+        padding-top: 40px;
     }
 }

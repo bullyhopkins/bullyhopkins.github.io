@@ -706,7 +706,7 @@ header {
     background-position: 0 0;
     background-size: contain;
     background-repeat: repeat-x;
-    padding: 30px 15px;
+    padding: 30px 0;
 }
 
 header .logo {
@@ -770,7 +770,7 @@ header .logo {
     width: 800%;
     min-height: 2px;
     position: absolute;
-    bottom: 0;
+    bottom: -6px;
     right: 110%;
 }
 
@@ -2031,6 +2031,7 @@ header a.cart i {
     background: #233141;
     position: relative;
     z-index: 1;
+    padding: 30px 130px;
 }
 
 .v2 .domainArea:before {
@@ -2091,7 +2092,7 @@ header a.cart i {
 
 .domainArea-bot {
     text-align: right;
-    margin-top: -30px;
+    margin-top: -20px;
 }
 
 .domainArea-bot p span {
@@ -2156,7 +2157,7 @@ header a.cart i {
     font-weight: 600;
     padding-left: 15px;
     display: block;
-    margin-top: -40px;
+    margin-top: -50px;
 }
 
 .leftDay {
@@ -2165,6 +2166,10 @@ header a.cart i {
 
 .rightDay {
     color: #233141;
+}
+
+.mob-img {
+    padding: 20px 0;
 }
 
 .domainTxt {
@@ -2497,6 +2502,7 @@ form.domainForm {
 }
 
 .ctaColBtm {
+    padding-top: 30px;
     padding-left: 35px
 }
 
@@ -3428,6 +3434,10 @@ h4.price {
     font-size: 17px;
     display: inline-block;
     padding-left: 10px;
+}
+
+.read-img {
+    margin: 30px 0;
 }
 
 
