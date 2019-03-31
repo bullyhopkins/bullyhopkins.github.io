@@ -4,88 +4,493 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>MALIBOO</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Commode</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+
   <!-- HEADER -->
-  <header></header>
-  <!-- HEADER END -->
-  <!-- MAIN -->
-  <main>
-    <section class="social-links">
+  <header>
+    <section class="head-top">
       <div class="container">
-        <a href="#" class="social-btn">Behance</a>
-        <a href="#" class="social-btn">Instagram</a>
-        <a href="#" class="social-btn">Gmail</a>
+        <div class="row justify-content-center justify-content-lg-between align-items-center">
+          <div class="col-12 col-md-auto d-flex flex-wrap justify-content-center head-top-left">
+            <a href="tel:74957730562" class="head-top-phone">
+              <i class="fas fa-phone"></i>
+              <span>+7 (495) 773-05-62</span>
+            </a>
+            <a href="#" class="head-top-mail">
+              <i class="fas fa-share"></i>
+              <span>zakaz@lacommode.ru</span>
+            </a>
+          </div>
+          <div class="col-12 col-md-auto d-flex flex-wrap justify-content-center head-top-right">
+            <p class="work-week">
+              <i class="far fa-calendar-alt"></i>
+              <span>Пн-Сб</span>
+            </p>
+            <p class="work-time">
+              <i class="far fa-clock"></i>
+              <span>c 9:00 до 20:00</span>
+            </p>
+            <div class="head-social-links">
+              <a href="#">
+                <i class="fab fa-vk"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <section class="covers">
-      <div class="container">
 
-        <div class="cover-wrap">
-          <div class="cover-wrap-img">
-            <img src="img/dog.jpg" alt="">
+    <section class="head-bottom-block">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col">
+            <img src="img/logo.png" alt="" class="logo">
+          </div>
+          <div class="col-auto">
+            <nav>
+              <ul class="d-none d-lg-flex flex-wrap main-menu">
+                <li>
+                  <a href="#" class="active-page">Главная</a>
+                </li>
+                <li>
+                  <a href="#">Каталог</a>
+                </li>
+                <li>
+                  <a href="#">Акции</a>
+                </li>
+                <li>
+                  <a href="#">Наши работы</a>
+                </li>
+                <li>
+                  <a href="#">Доставка и сборка</a>
+                </li>
+                <li>
+                  <a href="#">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col d-block d-lg-none text-right">
+            <a href="#" class="open-menu">
+              <i class="fas fa-bars"></i>
+            </a>
           </div>
         </div>
-        <div class="cover-wrap">
-          <div class="cover-wrap-img">
-            <img src="img/1.jpg" alt="">
+      </div>
+      <div class="mob-menu-wrap">
+        <div class="close-menu">
+          <i class="fas fa-times"></i>
+        </div>
+        <div class="mob-logo">
+          <img src="img/logo.png" alt="">
+        </div>
+        <nav>
+          <ul class="mob-menu">
+            <li>
+              <a href="#" class="active-page">Главная</a>
+            </li>
+            <li>
+              <a href="#">Каталог</a>
+            </li>
+            <li>
+              <a href="#">Акции</a>
+            </li>
+            <li>
+              <a href="#">Наши работы</a>
+            </li>
+            <li>
+              <a href="#">Доставка и сборка</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+  </header>
+  <!-- HEADER END -->
+
+  <!-- MAIN -->
+  <main>
+    <section class="slider-main">
+      <div class="slider-wrap">
+        <div class="main-next next"></div>
+        <div class="main-prev prev"></div>
+        <div class="slider">
+          <div class="slide">
+            <div class="slide-info">
+              <h1 class="slide-h">
+                Роскошная мебель
+                <p>Для вашего уюта и комфорта</p>
+              </h1>
+              <p class="slide-sub-info">Свяжитесь с нашим консультантом и подберите мебель
+                <br>по вашиму вкусу и желанию</p>
+              <a href="#" class="slide-btn">Перейти в каталог</a>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-info">
+              <h1 class="slide-h">
+                Роскошная мебель
+                <p>Для вашего уюта и комфорта</p>
+                <!-- <p>FOR YOU</p> -->
+              </h1>
+              <p class="slide-sub-info">Свяжитесь с нашим консультантом и подберите мебель
+                <br>по вашиму вкусу и желанию</p>
+              <a href="#" class="slide-btn">Перейти в каталог</a>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-info">
+              <h1 class="slide-h">
+                Роскошная мебель
+                <p>Для вашего уюта и комфорта</p>
+                <!-- <p>FOR YOU</p> -->
+              </h1>
+              <p class="slide-sub-info">Свяжитесь с нашим консультантом и подберите мебель
+                <br>по вашиму вкусу и желанию</p>
+              <a href="#" class="slide-btn">Перейти в каталог</a>
+            </div>
           </div>
         </div>
-        <div class="cover-wrap">
-          <div class="cover-wrap-img">
-            <img src="img/3.jpg" alt="">
+      </div>
+    </section>
+
+    <section class="about-company">
+      <div class="container">
+        <div class="a-company-item">
+          <div class="row align-items-center">
+            <div class="col a-company-left order-1 order-md-0">
+              <div class="section-h a-company-h">
+                <span>O нашей</span>
+                компании
+              </div>
+              <div class="a-company-descr">
+                <p>Миссия нашей компании заключается в создании современных и красивых решений отделки помещений любой сложности и бюджета.</p>
+                <p>Свяжись с нашим персональным менеджером прямо сейчас и 
+                  воплоти мечту в явь!</p>
+              </div>
+              <div class="d-flex justify-content-center justify-content-md-start">
+                <a href="#" class="a-company-btn">Свяаться с менеджером</a>
+              </div>
+            </div>
+            <div class="col-12 col-md a-company-right">
+              <img src="img/about-us.png" alt="">
+            </div>
           </div>
         </div>
-        <div class="cover-wrap">
-          <div class="cover-wrap-img">
-            <img src="img/dog.jpg" alt="">
+      </div>
+    </section>
+
+    <section class="goods">
+      <div class="container">
+        <div class="section-h goods-h">
+          <span>Наши</span>
+          товары
+        </div>
+        <div class="slider-wrap g-slider-wrap">
+          <div class="goods-next"></div>
+          <div class="goods-prev"></div>
+          <div class="goods-slider">
+            <div class="d-inline-flex flex-wrap flex-sm-nowrap justify-content-around align-items-center goods-slide">
+              <div class="order-1 order-sm-0 g-slide-left">
+                <div class="g-slide-h">
+                  Шкафы-
+                  <span>купе</span>
+                </div>
+                <p class="g-slide-descr">Шкафы-купе- это настоящее произведение мебельного искусства.</p>
+                <a href="#" class="detailed">Подробнее...</a>
+              </div>
+              <div class="g-slide-right">
+                <img src="img/goods-slide1.png" alt="">
+              </div>
+            </div>
+            <div class="d-inline-flex flex-wrap flex-sm-nowrap justify-content-around align-items-center goods-slide">
+              <div class="order-1 order-sm-0 g-slide-left">
+                <div class="g-slide-h">
+                  Классические
+                  <span>шкафы</span>
+                </div>
+                <p class="g-slide-descr">Современный классический шкаф – это воплощение комфорта и красоты классического стиля</p>
+                <a href="#" class="detailed">Подробнее...</a>
+              </div>
+              <div class="g-slide-right">
+                <img src="img/goods-slide2.png" alt="">
+              </div>
+            </div>
+            <div class="d-flex flex-column flex-sm-row flex-wrap flex-sm-nowrap justify-content-around align-items-center goods-slide">
+              <div class="order-1 order-sm-0 g-slide-left">
+                <div class="g-slide-h">
+                  Кухни
+                  <span>на заказ</span>
+                </div>
+                <p class="g-slide-descr">Предлагаем мебель для кухни 
+                  на заказ по индивидуальным размерам.</p>
+                <a href="#" class="detailed">Подробнее...</a>
+              </div>
+              <div class="g-slide-right">
+                <img src="img/goods-slide3.png" alt="">
+              </div>
+            </div>
+            <div class="d-inline-flex flex-wrap flex-sm-nowrap justify-content-around align-items-center goods-slide">
+              <div class="order-1 order-sm-0 g-slide-left">
+                <div class="g-slide-h">
+                  Шкафы-
+                  <span>купе</span>
+                </div>
+                <p class="g-slide-descr">Шкафы-купе- это настоящее произведение мебельного искусства.</p>
+                <a href="#" class="detailed">Подробнее...</a>
+              </div>
+              <div class="g-slide-right">
+                <img src="img/goods-slide1.png" alt="">
+              </div>
+            </div>
+            <div class="d-inline-flex flex-wrap flex-sm-nowrap justify-content-around align-items-center goods-slide">
+              <div class="order-1 order-sm-0 g-slide-left">
+                <div class="g-slide-h">
+                  Классические
+                  <span>шкафы</span>
+                </div>
+                <p class="g-slide-descr">Современный классический шкаф – это воплощение комфорта и красоты классического стиля</p>
+                <a href="#" class="detailed">Подробнее...</a>
+              </div>
+              <div class="g-slide-right">
+                <img src="img/goods-slide2.png" alt="">
+              </div>
+            </div>
+            <div class="d-flex flex-column flex-sm-row flex-wrap flex-sm-nowrap justify-content-around align-items-center goods-slide">
+              <div class="order-1 order-sm-0 g-slide-left">
+                <div class="g-slide-h">
+                  Кухни
+                  <span>на заказ</span>
+                </div>
+                <p class="g-slide-descr">Предлагаем мебель для кухни 
+                  на заказ по индивидуальным размерам.</p>
+                <a href="#" class="detailed">Подробнее...</a>
+              </div>
+              <div class="g-slide-right">
+                <img src="img/goods-slide3.png" alt="">
+              </div>
+            </div>
+            <div class="d-inline-flex flex-wrap flex-sm-nowrap justify-content-around align-items-center goods-slide">
+              <div class="order-1 order-sm-0 g-slide-left">
+                <div class="g-slide-h">
+                  Шкафы-
+                  <span>купе</span>
+                </div>
+                <p class="g-slide-descr">Шкафы-купе- это настоящее произведение мебельного искусства.</p>
+                <a href="#" class="detailed">Подробнее...</a>
+              </div>
+              <div class="g-slide-right">
+                <img src="img/goods-slide1.png" alt="">
+              </div>
+            </div>
+            <div class="d-inline-flex flex-wrap flex-sm-nowrap justify-content-around align-items-center goods-slide">
+              <div class="order-1 order-sm-0 g-slide-left">
+                <div class="g-slide-h">
+                  Классические
+                  <span>шкафы</span>
+                </div>
+                <p class="g-slide-descr">Современный классический шкаф – это воплощение комфорта и красоты классического стиля</p>
+                <a href="#" class="detailed">Подробнее...</a>
+              </div>
+              <div class="g-slide-right">
+                <img src="img/goods-slide2.png" alt="">
+              </div>
+            </div>
+            <div class="d-flex flex-column flex-sm-row flex-wrap flex-sm-nowrap justify-content-around align-items-center goods-slide">
+              <div class="order-1 order-sm-0 g-slide-left">
+                <div class="g-slide-h">
+                  Кухни
+                  <span>на заказ</span>
+                </div>
+                <p class="g-slide-descr">Предлагаем мебель для кухни 
+                  на заказ по индивидуальным размерам.</p>
+                <a href="#" class="detailed">Подробнее...</a>
+              </div>
+              <div class="g-slide-right">
+                <img src="img/goods-slide3.png" alt="">
+              </div>
+            </div>
           </div>
         </div>
-        <div class="cover-wrap">
-          <div class="cover-wrap-img">
-            <img src="img/1.jpg" alt="">
+      </div>
+    </section>
+
+    <section class="stock">
+      <div class="container">
+        <div class="section-h stock-h">
+          <span>Акции</span>
+        </div>
+        <div class="row">
+          <div class="col-7 stock-bg">
+            <img src="img/stock.png" alt="">
+          </div>
+          <div class="stock-right-block">
+            <div class="stock-block-h">
+              При заказе кухни от 150000 руб, в подарок
+              <p><span>Система</span> фильтрации с обратным осмосом.</p>
+            </div>
+            <p class="stock-block-descr">Узнайте подробнее условия акции у персонального менеджера</p>
+            <a href="#" class="stock-btn">Связаться с менеджером</a>
           </div>
         </div>
-        <div class="cover-wrap">
-          <div class="cover-wrap-img">
-            <img src="img/3.jpg" alt="">
-          </div>
+      </div>
+    </section>
+
+    <section class="pluses">
+      <div class="container">
+        <div class="section-h pluses-h">
+          <span>Почему</span>
+          выбирают нас
         </div>
-        <div class="cover-wrap">
-          <div class="cover-wrap-img">
-            <img src="img/dog.jpg" alt="">
-          </div>
+        <div class="row">
+          <div class="col-12 col-lg-6 d-flex flex-wrap flex-sm-nowrap justify-content-center align-items-center plus-item">
+            <img src="img/plus1.png" alt="">
+            <div class="plus-info">
+              <div class="plus-item-h">
+                Работаем
+                <span>быстро</span>
+              </div>
+              <p class="plus-descr">Наша мебельная студия недорого изготовит и доставит по г. Москва и Московской области мебель на заказ в короткие гарантированные сроки.</p>
+            </div>
+          </div><!-- plus-item -->
+          <div class="col-12 col-lg-6 d-flex flex-wrap flex-sm-nowrap justify-content-center align-items-center plus-item">
+            <img src="img/plus2.png" alt="">
+            <div class="plus-info">
+              <div class="plus-item-h">
+                Работаем
+                <span>честно</span>
+              </div>
+              <p class="plus-descr">Мы не наживаемся на неосведомлённости клиентов. Будьте уверены – Вам не придётся переплачивать за работу дизайнера, замерщика или грузчиков. </p>
+            </div>
+          </div><!-- plus-item -->
+          <div class="col-12 col-lg-6 d-flex flex-wrap flex-sm-nowrap justify-content-center align-items-center plus-item">
+            <img src="img/plus3.png" alt="">
+            <div class="plus-info">
+              <div class="plus-item-h">
+                Эко
+                <span>логичость</span>
+              </div>
+              <p class="plus-descr">В нашей мебели концентрация токсичных веществ не превышает допустимого минимума.</p>
+            </div>
+          </div><!-- plus-item -->
+          <div class="col-12 col-lg-6 d-flex flex-wrap flex-sm-nowrap justify-content-center align-items-center plus-item">
+            <img src="img/plus4.png" alt="">
+            <div class="plus-info">
+              <div class="plus-item-h">
+                Точность
+                <span>до мм</span>
+              </div>
+              <p class="plus-descr">В своей работе мы большое внимание уделяем качеству изделий, замеры производятся опытными мастерами.</p>
+            </div>
+          </div><!-- plus-item -->
+        </div><!-- row -->
+        <div class="row justify-content-center">
+          <a href="#" class="pluses-btn">Связаться с менеджером</a>
         </div>
-        <div class="cover-wrap">
-          <div class="cover-wrap-img">
-            <img src="img/1.jpg" alt="">
-          </div>
-        </div>
-        <div class="cover-wrap">
-          <div class="cover-wrap-img">
-            <img src="img/3.jpg" alt="">
-          </div>
-        </div>
-        <div class="cover-wrap">
-          <div class="cover-wrap-img">
-            <img src="img/dog.jpg" alt="">
-          </div>
-        </div>
-        <div class="cover-wrap">
-          <div class="cover-wrap-img">
-            <img src="img/1.jpg" alt="">
-          </div>
-        </div>
-        <div class="cover-wrap">
-          <div class="cover-wrap-img">
-            <img src="img/3.jpg" alt="">
+      </div><!-- container -->
+    </section>
+
+    <section class="form">
+      <div class="container">
+        <div class="form-item">
+          <div class="row">
+            <div class="col-12 col-lg-5">
+              <form action="" class="form-left">
+                <div class="section-h form-h">
+                  <span>Остались</span>
+                  вопросы?
+                </div>
+                <div class="d-flex justify-content-center">
+                  <input type="text" class="form-name" placeholder="Имя">
+                </div>
+                <div class="d-flex justify-content-center">
+                  <textarea name="" id="" class="form-question" placeholder="Ваш вопрос"></textarea>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <button class="form-btn" type="submit">Получить консультацию</button>
+                </div>
+                <p class="form-descr">
+                  Мы заботимся о вашей конфедециальности!
+                  <br>Ваши данные не будут переданы третьим лицам
+                </p>
+              </form>
+            </div>
+            <div class="col d-none d-lg-block form-right">
+              <img src="img/form-img.png" alt="">
+            </div>
           </div>
         </div>
       </div>
     </section>
   </main>
   <!-- MAIN END -->
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="row justify-content-center justify-content-sm-between align-items-center foot-top-block">
+        <div class="col d-flex justify-content-center">
+          <img src="img/white-logo.png" alt="">
+        </div>
+        <div class="col-12 col-sm-auto">
+          <nav>
+            <ul class="footer-menu d-none d-xl-flex">
+              <li>
+                <a href="#" class="active-page">Главная</a>
+              </li>
+              <li>
+                <a href="#">Каталог</a>
+              </li>
+              <li>
+                <a href="#">Акции</a>
+              </li>
+              <li>
+                <a href="#">Наши работы</a>
+              </li>
+              <li>
+                <a href="#">Доставка и сборка</a>
+              </li>
+              <li>
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-12 col-sm d-flex justify-content-center text-right">
+          <div class="foot-social-links">
+            <a href="#">
+              <i class="fab fa-vk"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <p class="footer-text">Политика конфиденциальности</p>
+      <p class="protection-text">Все права защищены</p>
+    </div>
+  </footer>
+  <!-- FOOTER END -->
+
+  <script src="js/libs.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
