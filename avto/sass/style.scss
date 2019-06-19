@@ -1,0 +1,407 @@
+@import "./includes/normalize.scss";
+@import "./includes/vars.scss";
+
+body {
+  font-family: $fonts;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* HEADER */
+@import "pages/header.scss";
+
+/* INDEX */
+@import "pages/index.scss";
+
+/* FOOTER */
+@import "pages/footer.scss";
+
+/* PAGE-PRODUCT */
+@import "pages/product.scss";
+
+/* MEDIA */
+@media screen and (max-width: 1200px) {
+  //Top
+  .top-item {
+    width: 30%;
+  }
+
+  .content.active-cont {
+    justify-content: center;
+  }
+
+  //Index
+  .index-content {
+    margin: 0;
+  }
+
+  .main-content {
+    width: 100%;
+  }
+
+  .sidebar {
+    width: 100% ;
+    padding: 30px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .mob-logo {
+    max-width: 150px;
+  }
+
+  .bar-open-menu {
+    cursor: pointer;
+    font-size: 40px;
+  }
+
+  .close-mob-sidebar {
+    font-size: 20px;
+  }
+
+  .close-mob-sidebar,
+  .bar-open-menu,
+  .mob-logo {
+    display: block;
+  }
+
+  .sidebar-nav {
+    position: fixed;
+    background: $light-gray;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    right: -100%;
+    padding: 50px 20px 20px 20px;
+    min-width: 200px;
+    .bar-h {
+      display: none;
+    }
+  }
+
+  .close-mob-sidebar {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+
+  .sidebar-list {
+    padding: 30px 0 0 30px;
+  }
+
+  .sidebar-stock,
+  .sidebar-top,
+  .sidebar-pluses,
+  .sidebar-comments,
+  .sidebar-news {
+    max-width: 23%;
+    margin: 0;
+    display: none; //Delete
+  }
+
+}
+
+@media screen and (max-width: 1110px) {
+  // .category-item {
+  //   width: 45%;
+  // }
+  
+  .carservice-bottom {
+    justify-content: center;
+  }
+
+  .carservice-bottom .price-btn {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .bottom-head {
+    padding: 30px 15px;
+  }
+
+  .search-form {
+    margin: 20px 0;
+    width: 100%;
+    input {
+      width: 60%;
+      min-width: auto;
+    }
+    select {
+      width: 39%;
+    }
+    button {
+      width: 10%;
+    }
+  }
+
+  .form-wrap {
+    width: 90%;
+  }
+
+  .top-flex-wrap {
+    justify-content: center;
+  }
+
+  .logo {
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+  }
+
+  .middle-flex-wrap {
+    justify-content: space-between;
+    padding: 20px 15px;
+  }
+
+  .menu-list {
+    display: none;
+  }
+
+  .open-mob-menu {
+    display: block;
+  }
+
+  //Product
+  .product {
+    padding: 50px 15px;
+  }
+
+  .product-left {
+    margin-top: 30px;
+    order: 1;
+  }
+  .product-right {
+    margin: 0 50px;
+  }
+  
+  //Top
+  .top-item {
+    width: 47%;
+  }
+
+  //Carservice
+  .carservice-left {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    margin: 0;
+  }
+
+  .carservice .characteristic {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .carservice {
+    background-image: none;
+    background-color: $light-gray;
+  }
+
+  //Footer
+  .foot-menu-list {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  //Product
+  .product-right {
+    margin: 0;
+  }
+
+  //Category
+  .category-wrap {
+    justify-content: center;
+  }
+
+  .category-item {
+    width: 80%;
+  }
+
+  //Trust
+  .trust-item {
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 15px 0;
+    width: 60%;
+  }
+
+  .bottom-trust {
+    text-align: left;
+    padding-left: 20px;
+  }
+  
+  //Top
+  .top-item {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .trust-item {
+    width: 100%;
+    img {
+      max-width: 100px;
+    }
+  }
+
+  //News
+  .news-descr {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+  .search-form {
+    padding: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    input {
+      width: 80%;
+      min-width: auto;
+      border-right: none;
+      border-bottom: 2px solid #000;
+    }
+    select {
+      width: 50%;
+      margin: 20px 0;
+      padding: 10px 5px;
+      border: 1px solid #000;
+    }
+    button {
+      padding: 10px 40px;
+    }
+  }
+
+  .form-wrap {
+    width: 100%;
+    text-align: center;
+  }
+
+  .search-btn {
+    width: 50%;
+    padding: 10px 40px;
+    border-radius: 20px;
+    i {
+      display: inline-block;
+    }
+  }
+
+  .selected-form-right {
+    width: 100%;
+    margin: 0;
+    padding-top: 30px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  //Search-form
+  .search-form {
+    input {
+      width: 100%;
+    }
+    select {
+      width: 100%
+    }
+  }
+
+  .form-wrap {
+    width: 100%;
+    text-align: center;
+  }
+
+  .search-btn {
+    width: 50%;
+    padding: 10px 40px;
+    border-radius: 20px;
+  }
+
+  .main-content {
+    .product-price {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .product {
+      .price-btn {
+        width: 80%;
+        text-align: center;
+        margin-top: 20px;
+      }
+    }
+
+    .stock-furniture-desr {
+      font-size: 14px;
+    }
+  }
+
+  .top-head-left {
+    a {
+      padding: 10px;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .head-phone {
+    border: none;
+  }
+
+  //Top
+  .tab-list {
+    li {
+      width: 100%;
+    }
+    a {
+      display: block;
+      text-align: center;
+      padding: 15px;
+    }
+  }
+  
+  .top-item {
+    width: 100%;
+  }
+
+  //Carservice
+  .carservice-h {
+    font-size: 16px;
+  }
+
+  //Comments
+  .comments-slider {
+    width: 100%;
+  }
+
+  .comment-item {
+    width: 100%;
+  }
+
+  //Footer 
+  .logo-foot {
+    margin: 0 auto;
+  }
+
+  .foot-wrap {
+    justify-content: center;
+  }
+
+  .foot-contacts {
+    padding-top: 30px;
+  }
+}

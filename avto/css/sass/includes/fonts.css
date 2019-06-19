@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu-B.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700; }
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu-BI.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 700; }
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu-M.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600; }
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu-MI.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 600; }
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu-RI.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu-L.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300; }
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu-LI.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 300; }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiIiwic291cmNlcyI6WyJzYXNzL2luY2x1ZGVzL2ZvbnRzLmNzcyJdLCJzb3VyY2VzQ29udGVudCI6WyJAZm9udC1mYWNlIHtcbiAgZm9udC1mYW1pbHk6IFwiVWJ1bnR1XCI7XG4gIHNyYzogdXJsKFwiLi4vZm9udHMvVWJ1bnR1LUIudHRmXCIpIGZvcm1hdChcInRydWV0eXBlXCIpO1xuICBmb250LXN0eWxlOiBub3JtYWw7XG4gIGZvbnQtd2VpZ2h0OiA3MDA7IH1cblxuQGZvbnQtZmFjZSB7XG4gIGZvbnQtZmFtaWx5OiBcIlVidW50dVwiO1xuICBzcmM6IHVybChcIi4uL2ZvbnRzL1VidW50dS1CSS50dGZcIikgZm9ybWF0KFwidHJ1ZXR5cGVcIik7XG4gIGZvbnQtc3R5bGU6IGl0YWxpYztcbiAgZm9udC13ZWlnaHQ6IDcwMDsgfVxuXG5AZm9udC1mYWNlIHtcbiAgZm9udC1mYW1pbHk6IFwiVWJ1bnR1XCI7XG4gIHNyYzogdXJsKFwiLi4vZm9udHMvVWJ1bnR1LU0udHRmXCIpIGZvcm1hdChcInRydWV0eXBlXCIpO1xuICBmb250LXN0eWxlOiBub3JtYWw7XG4gIGZvbnQtd2VpZ2h0OiA2MDA7IH1cblxuQGZvbnQtZmFjZSB7XG4gIGZvbnQtZmFtaWx5OiBcIlVidW50dVwiO1xuICBzcmM6IHVybChcIi4uL2ZvbnRzL1VidW50dS1NSS50dGZcIikgZm9ybWF0KFwidHJ1ZXR5cGVcIik7XG4gIGZvbnQtc3R5bGU6IGl0YWxpYztcbiAgZm9udC13ZWlnaHQ6IDYwMDsgfVxuXG5AZm9udC1mYWNlIHtcbiAgZm9udC1mYW1pbHk6IFwiVWJ1bnR1XCI7XG4gIHNyYzogdXJsKFwiLi4vZm9udHMvVWJ1bnR1LVJlZ3VsYXIudHRmXCIpIGZvcm1hdChcInRydWV0eXBlXCIpO1xuICBmb250LXN0eWxlOiBub3JtYWw7XG4gIGZvbnQtd2VpZ2h0OiA0MDA7IH1cblxuQGZvbnQtZmFjZSB7XG4gIGZvbnQtZmFtaWx5OiBcIlVidW50dVwiO1xuICBzcmM6IHVybChcIi4uL2ZvbnRzL1VidW50dS1SSS50dGZcIikgZm9ybWF0KFwidHJ1ZXR5cGVcIik7XG4gIGZvbnQtc3R5bGU6IGl0YWxpYztcbiAgZm9udC13ZWlnaHQ6IDQwMDsgfVxuXG5AZm9udC1mYWNlIHtcbiAgZm9udC1mYW1pbHk6IFwiVWJ1bnR1XCI7XG4gIHNyYzogdXJsKFwiLi4vZm9udHMvVWJ1bnR1LUwudHRmXCIpIGZvcm1hdChcInRydWV0eXBlXCIpO1xuICBmb250LXN0eWxlOiBub3JtYWw7XG4gIGZvbnQtd2VpZ2h0OiAzMDA7IH1cblxuQGZvbnQtZmFjZSB7XG4gIGZvbnQtZmFtaWx5OiBcIlVidW50dVwiO1xuICBzcmM6IHVybChcIi4uL2ZvbnRzL1VidW50dS1MSS50dGZcIikgZm9ybWF0KFwidHJ1ZXR5cGVcIik7XG4gIGZvbnQtc3R5bGU6IGl0YWxpYztcbiAgZm9udC13ZWlnaHQ6IDMwMDsgfVxuIl0sImZpbGUiOiJzYXNzL2luY2x1ZGVzL2ZvbnRzLmNzcyJ9 */
