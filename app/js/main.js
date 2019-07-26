@@ -7,9 +7,30 @@ $(function () {
         $(".slide1-h").addClass("fadeInDown");
     }, 600);
 
+    $(".main-menu-list a").on("click", function (e) {
+        let page = $(this).attr("href");
+        $(".page").fadeOut(400);
+        if (page == "#slider1") {
+            $(".page").fadeOut(400);
+            $(page).fadeIn(400);
+            $(".slider1").slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                infinite: true,
+                autoplay: true,
+                autoplaySpeed: 3000
+            });
+        }
+        $(page).fadeIn(400);
+        // alert(pages);
+        return false;
+    });
+
     $(".main-menu-list li").on("click", function () {
         $(".main-menu-list li").removeClass("active-page");
         $(this).addClass("active-page");
+        // alert($(this).addClass("active-page"));
     });
 
     //Select 
@@ -66,5 +87,14 @@ $(function () {
         $(".num-pages-list li").removeClass("num-active-page");
         pagesNum[currentSlide].className += " num-active-page";
     });
+
+    //Contacts
+    function initMap() {
+        var coordinates = {lat: 56.971609, lng: 24.051450},
+        
+            map = new google.maps.Map(document.getElementById('cont-map'), {
+                center: coordinates
+            });
+    }
 
 });

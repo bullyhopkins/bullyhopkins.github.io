@@ -28,13 +28,21 @@ body {
 
 /* HEADER */
 .main-head {
+  background-image: url(../img/gradient.png);
+  background-repeat-z: repeat;
   position: absolute;
+  height: 228px;
   top: 0;
   left: 0;
   right: 0;
   color: #fff;
   padding-left: 286px;
-  z-index: 1000;
+  z-index: 100;
+  // /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,2a90f9+0&1+0,0.1+9 */
+  // background: -moz-linear-gradient(top,  rgba(42,144,249,1) 0%, rgba(42,144,249,0.1) 9%); /* FF3.6-15 */
+  // background: -webkit-linear-gradient(top,  rgba(42,144,249,1) 0%,rgba(42,144,249,0.1) 9%); /* Chrome10-25,Safari5.1-6 */
+  // background: linear-gradient(to bottom,  rgba(42,144,249,1) 0%,rgba(42,144,249,0.1) 9%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a90f9', endColorstr='#1a2a90f9',GradientType=0 ); /* IE6-9 */
   a {
     color: #fff;
   }
@@ -142,6 +150,7 @@ body {
 //Slider1 
 .slider1-wrap {
   width: 100%;
+  height: 100vh;
   position: relative;
   // display: none;
 }
@@ -208,6 +217,7 @@ body {
   bottom: 0;
   background: rgba(0,0,0,0.2);
   color: #fff;
+  z-index: 200;
 }
 
 .logo {
@@ -332,12 +342,24 @@ body {
   width: 100%;
   height: 100vh;
   padding-left: 276px;
+  overflow: auto;
+  padding-top: 300px;
   display: none;
   .container {
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+}
+
+.cont-map {
+  width: 100%;
+  height: 400px;
+  margin-bottom: 30px;
+  iframe {
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -351,6 +373,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding: 0 10px;
 }
 
 .cont-h {
@@ -449,6 +472,61 @@ body {
   a {
     color: $blue;
     font-size: 14px;
+  }
+}
+
+.cont-required {
+  display: inline-block;
+  margin: 10px 0;
+}
+
+//Checkbox
+.cont-check {
+  position: relative;
+  // padding-top: 10px;
+  a {
+    font-size: 14px;
+    color: $blue;
+  }
+}
+
+.check-inp {
+  position: absolute;
+  visibility: hidden;
+}
+
+.check-mark {
+  display: inline-block;
+  position: relative;
+  width: 1.3em;
+  height: 1.3em;
+  vertical-align: middle;
+  margin-right: 0.2em;
+  // height: 20px;
+  border-radius: 2px;
+  border: 1px solid $light-gray;
+}
+
+.cont-right-bottom {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.cont-btn {
+  background: $blue;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  min-width: 160px;
+  padding: 15px 15px;
+  border: none;
+  border: 2px solid $blue;
+  text-transform: uppercase;
+  transition: 0.3s;
+  cursor: pointer;
+  &:hover {
+    background: rgba(0,0,0,0);
   }
 }
 

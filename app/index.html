@@ -19,7 +19,7 @@
           <nav class="main-menu">
             <ul class="main-menu-list">
               <li class="active-page">
-                <a href="#">Home</a>
+                <a href="#slider1">Home</a>
               </li>
               <li>
                 <a href="#">About Us</a>
@@ -34,7 +34,7 @@
                 <a href="#">Partners</a>
               </li>
               <li>
-                <a href="#">Contacts</a>
+                <a href="#contacts">Contacts</a>
               </li>
             </ul>
           </nav>
@@ -59,14 +59,14 @@
 
   <main>
 
-    <div class="slider1-wrap">
+    <div class="slider1-wrap page" id="slider1">
       <ul class="num-pages-list">
         <li class="num-active-page">01</li>
         <li>02</li>
         <li>03</li>
         <li>04</li>
       </ul>
-      <div class="slider1 page">
+      <div class="slider1">
 
         <div class="slider1-slide slide1">
           <div class="container">
@@ -103,10 +103,12 @@
       </div>
     </div>
 
-    <div class="contacts page">
+    <div class="contacts page" id="contacts">
       <div class="container">
         <div class="cont-block">
-          <div class="cont-map"></div>
+          <div class="cont-map" id="cont-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2174.676419075253!2d24.049311315542603!3d56.97147510481026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTbCsDU4JzE3LjMiTiAyNMKwMDMnMDUuNCJF!5e0!3m2!1sru!2sua!4v1564174393364!5m2!1sru!2sua" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
           <div class="cont-bottom">
             <div class="cont-bottom-left">
               <div class="cont-h">Contact Us</div>
@@ -177,25 +179,26 @@
               </div>
               <div class="cont-right-middle">
                 <div>
-                  <span>*-Required fields</span>
+                  <span class="cont-required">*-Required fields</span>
                   <div>
-                    <!-- <input type="checkbox">
-                    <div class="cont-check-descr">
-                      <span>I accept Company Ltd.</span>
-                      <a href="#">privacy policy</a>
-                    </div> -->
-                    <input type="checkbox" class="checkbox" id="checkbox"/>
-                    <label for="checkbox">Я переключаю чекбокс</label>
-
-                    <input type="radio" class="radio" id="radio"/>
-                    <label for="radio">А я переключаю радиокнопку</label>
+                    <label class="cont-check">
+                      <input type="checkbox" class="check-inp">
+                      <span class="check-mark"></span>
+                      <span class="checkbox-content">
+                        I accept Company Ltd.
+                        <a href="#">privacy policy</a>
+                      </span>
+                    </label>
                   </div>
                 </div>
+              </div><!-- cont-right-middle -->
+              <div class="cont-right-bottom">
+                <button type="submit" class="cont-btn">Send Message</button>
               </div>
-            </form>
-          </div>
-        </div>
-      </div>
+            </form><!-- Cont-bottom-right -->
+          </div><!-- Cont-bottom -->
+        </div><!-- Cont-block -->
+      </div><!-- Container -->
     </div>
 
     <aside class="sidebar">
@@ -246,6 +249,7 @@
 
   <script src="js/libs.min.js"></script>
   <script src="js/scroll/private-scroll.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0bPMVrx3rcr-WrOJcDnW3ioO-hzPRoLY"></script>
   <script src="js/main.js"></script>
 </body>
 
