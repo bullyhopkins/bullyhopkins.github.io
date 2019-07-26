@@ -13,10 +13,6 @@ html {
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
-* {
-  box-sizing: border-box;
-}
-
 /* Sections
    ========================================================================== */
 
@@ -26,7 +22,6 @@ html {
 
 body {
   margin: 0;
-  padding: 0;
 }
 
 /**
@@ -81,14 +76,10 @@ pre {
 a {
   background-color: transparent;
   text-decoration: none;
+  transition: 0.3s;
   &:hover {
     text-decoration: none;
   }
-}
-
-p {
-  margin: 0;
-  padding: 0;
 }
 
 /**
@@ -172,6 +163,8 @@ img {
  */
 
 button,
+button:active,
+button:focus,
 input,
 optgroup,
 select,
@@ -180,6 +173,7 @@ textarea {
   font-size: 100%; /* 1 */
   line-height: 1.15; /* 1 */
   margin: 0; /* 2 */
+  outline: none;
 }
 
 /**

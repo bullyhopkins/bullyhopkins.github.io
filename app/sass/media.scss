@@ -1,0 +1,34 @@
+@media screen and (max-width: 1290px) {
+
+  .main-menu-list {
+    margin: 0;
+  }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+  .sidebar-list {
+    a { 
+      padding: 15px 0;
+      justify-content: center;
+    }
+    span {
+      display: none;
+    }
+    img {
+      margin: 0;
+    }
+  }
+
+  .logo {
+    img {
+      max-width: 50px;
+    }
+  }
+
+  .main-head {
+    padding-left: 210px;
+  }
+
+}
