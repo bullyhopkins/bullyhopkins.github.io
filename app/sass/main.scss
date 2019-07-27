@@ -64,6 +64,12 @@ body {
   margin-left: 20px;
   li {
     position: relative;
+  }
+  a {
+    display: block;
+    position: relative;
+    font-size: 20px;
+    padding: 20px;
     &::before {
       content: "";
       height: 0px;
@@ -75,12 +81,7 @@ body {
       transform: translateX(-50%);
       transition: 0.6s;
     }
-  }
-  a {
-    display: block;
-    position: relative;
-    font-size: 20px;
-    padding: 20px;
+    // z-index: 1000;
   }
 
   .active-page {
@@ -138,6 +139,7 @@ body {
 
 .hidden {
   opacity: 0;
+  pointer-events: visible;
 }
 
 .section-h,
@@ -148,11 +150,19 @@ body {
 }
 
 //Slider1 
+.page {
+  transition: 0.3s;
+}
+
 .slider1-wrap {
   width: 100%;
   height: 100vh;
   position: relative;
   // display: none;
+  // .swiper-slide {
+  //   width: 100% !important;
+  //   margin-right: 0 !important;
+  // }
 }
 
 .slider1 {
@@ -294,7 +304,7 @@ body {
   padding: 0 20px;
   margin: 0;
   margin-left: -340px;
-  z-index: 1;
+  z-index: 100;
   li {
     padding: 5px 60px;
     font-size: 17px;
@@ -344,7 +354,6 @@ body {
   padding-left: 276px;
   overflow: auto;
   padding-top: 300px;
-  display: none;
   .container {
     height: 100vh;
     display: flex;
