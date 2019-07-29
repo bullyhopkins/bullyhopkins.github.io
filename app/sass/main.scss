@@ -1,0 +1,131 @@
+@import "includes/vars.scss";
+@import "includes/normalize.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+/* HEADER END */
+
+/* MAIN */
+
+.preloader {
+  position: fixed;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.pre-logo-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.square {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  // transform-origin: 100% -100% 0%;
+}
+
+.sq-thin {
+  border: 1px solid #000;
+}
+
+.sq-fat {
+  border: 3px solid #000;
+  &.sq-red {
+    border-color: $red;
+  }
+}
+
+.sq1 {
+  // transform: rotate(45deg);
+  margin-left: -40px;
+  margin-top: -40px;
+  animation: 5s sq1 0.5s ease-in-out forwards;
+}
+.sq2 {
+  transform: translate(-50%, -50%);
+}
+.sq3 {
+  // transform: rotate(25deg);
+  margin-left: -40px;
+  margin-top: -40px;
+  animation: 5s sq3 1s ease-in-out forwards;
+}
+.sq4 {
+  // transform: rotate(-25deg);
+  margin-left: -40px;
+  margin-top: -40px;
+  animation: 5s sq4 1s ease-in-out forwards;
+}
+
+.logo-m-wrap {
+  height: 0;
+  overflow: hidden;
+  animation: 5s logoM 0.5s ease-in-out forwards;
+  img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* MAIN END */
+
+/* FOOTER */
+/* FOOTER END */
+
+//Animation
+@keyframes sq1 {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(1845deg);
+  }
+}
+@keyframes sq3 {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(-1865deg);
+  }
+}
+@keyframes sq4 {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(1865deg);
+  }
+}
+@keyframes logoM {
+  from {
+    height: 0;
+  }
+  to {
+    height: 40px;
+  }
+}
