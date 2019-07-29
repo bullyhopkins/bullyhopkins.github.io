@@ -1,5 +1,18 @@
 $(function () {
 
+    //Mob-menu
+    $(".open-mob-menu").on("click", function () {
+        $(".mob-menu").animate({
+            right: 0
+        }, 500);
+    });
+
+    $(".close-menu").on("click", function () {
+        $(".mob-menu").animate({
+            right: "-100%"
+        }, 500);
+    });
+
     setInterval(() => {
         $(".slide1-sub-h").addClass("fadeInDown");
     }, 300);
@@ -57,14 +70,14 @@ $(function () {
         slider1.slideTo($(this).index());
     });
 
-    $(".main-menu-list a").on("click", function (e) {
+    $(".main-menu-list a, .mob-menu-list a").on("click", function (e) {
         let page = $(this).attr("href");
         if ($(this).hasClass("active-page")) {
             return false;
         }
         $(".page").fadeOut(400);
         $("." + page).fadeIn(400);
-        $(".main-menu-list a").removeClass("active-page");
+        $(".main-menu-list a, .mob-menu-list a").removeClass("active-page");
         $(this).addClass("active-page");
         return false;
     });

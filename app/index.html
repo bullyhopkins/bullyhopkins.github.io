@@ -40,18 +40,23 @@
           </nav>
         </div>
         <div class="head-right">
-          <a href="#" class="login head-btn">
-            <img src="img/user.svg" alt="">
-            <span>Login</span>
-          </a>
-          <a href="#" class="message head-btn">
-            <img src="img/message.svg" alt="">
-            <span>Send message</span>
-          </a>
+          <div class="head-btns-wrap">
+            <a href="#" class="login head-btn">
+              <img src="img/user.svg" alt="">
+              <span>Login</span>
+            </a>
+            <a href="#" class="message head-btn">
+              <img src="img/message.svg" alt="">
+              <span>Send message</span>
+            </a>
+          </div>
           <select name="" id="" class="select">
             <option value="en">eng</option>
             <option value="en">ru</option>
           </select>
+          <div class="open-mob-menu">
+            <img src="img/menu-button.svg" alt="">
+          </div>
         </div>
       </div>
     </div>
@@ -104,15 +109,17 @@
     </div>
 
     <div class="contacts page" id="contacts">
-      <div class="container">
-        <div class="cont-block">
-          <div class="cont-map" id="cont-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2174.676419075253!2d24.049311315542603!3d56.97147510481026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTbCsDU4JzE3LjMiTiAyNMKwMDMnMDUuNCJF!5e0!3m2!1sru!2sua!4v1564174393364!5m2!1sru!2sua" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-          </div>
-          <div class="cont-bottom">
-            <div class="cont-bottom-left">
-              <div class="cont-h">Contact Us</div>
-              <div class="cont-left-top">
+      <div class="cont-block">
+        <div class="cont-map" id="cont-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2174.676419075253!2d24.049311315542603!3d56.97147510481026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTbCsDU4JzE3LjMiTiAyNMKwMDMnMDUuNCJF!5e0!3m2!1sru!2sua!4v1564174393364!5m2!1sru!2sua"
+            width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="cont-bottom">
+          <div class="cont-bottom-left">
+            <div class="cont-h">Contact Us</div>
+            <div class="cont-left-top">
+              <div>
                 <div class="cont-sub-h">Office and factory:</div>
                 <ul class="cont-list">
                   <li>
@@ -131,74 +138,75 @@
                     <a href="tel:+37167466159">+371 67466159</a>
                   </li>
                 </ul>
-                <ul class="mail-list">
-                  <li>
-                    <img src="img/cont-message.svg" alt="mail">
-                    <a href="mailto:sekretare@companyname.lv">sekretare@companyname.lv</a>
-                  </li>
-                  <li>
-                    <img src="img/cont-message.svg" alt="mail">
-                    <a href="mailto:sales@companyname.lv">sales@companyname.lv</a>
-                  </li>
-                  <li>
-                    <img src="img/cont-message.svg" alt="mail">
-                    <a href="mailto:piling@companyname.lv">piling@companyname.lv</a>
-                  </li>
-                  <li>
-                    <img src="img/cont-message.svg" alt="mail">
-                    <a href="mailto:pilling@companyname.lv">pilling@companyname.lv</a>
-                  </li>
-                  <li>
-                    <img src="img/cont-message.svg" alt="mail">
-                    <a href="mailto:deltabloc@companyname.lv">deltabloc@companyname.lv</a>
-                  </li>
-                </ul>
               </div>
-              <div class="cont-left-bottom">
-                <div class="cont-sub-h">Name Ltd.:</div>
-                <p class="cont-sub-info">Reg.No. 50103005351
-                  <br>97 Spilves Street, Riga, LV-1055, Latvia
-                  <br>Bank: OP Corporate Bank plc Latvia
-                  <br> SWIFT code: OK64YLV2X
-                  <br>Bank No.: LV82O64640005100035077</p>
-              </div>
+              <ul class="mail-list">
+                <li>
+                  <img src="img/cont-message.svg" alt="mail">
+                  <a href="mailto:sekretare@companyname.lv">sekretare@companyname.lv</a>
+                </li>
+                <li>
+                  <img src="img/cont-message.svg" alt="mail">
+                  <a href="mailto:sales@companyname.lv">sales@companyname.lv</a>
+                </li>
+                <li>
+                  <img src="img/cont-message.svg" alt="mail">
+                  <a href="mailto:piling@companyname.lv">piling@companyname.lv</a>
+                </li>
+                <li>
+                  <img src="img/cont-message.svg" alt="mail">
+                  <a href="mailto:pilling@companyname.lv">pilling@companyname.lv</a>
+                </li>
+                <li>
+                  <img src="img/cont-message.svg" alt="mail">
+                  <a href="mailto:deltabloc@companyname.lv">deltabloc@companyname.lv</a>
+                </li>
+              </ul>
             </div>
-            <form action="#" class="cont-bottom-right">
-              <div class="cont-h">Send us message!</div>
-              <div class="cont-inp-wrap">
-                <input type="text" placeholder="Name Surname *">
-              </div>
-              <div class="cont-inp-wrap">
-                <input type="phone" placeholder="Phone number *">
-              </div>
-              <div class="cont-inp-wrap">
-                <input type="email" placeholder="E-mail address *">
-              </div>
-              <div class="cont-inp-wrap">
-                <textarea placeholder="Your message here..."></textarea>
-              </div>
-              <div class="cont-right-middle">
+            <div class="cont-left-bottom">
+              <div class="cont-sub-h">Name Ltd.:</div>
+              <p class="cont-sub-info">Reg.No. 50103005351
+                <br>97 Spilves Street, Riga, LV-1055, Latvia
+                <br>Bank: OP Corporate Bank plc Latvia
+                <br> SWIFT code: OK64YLV2X
+                <br>Bank No.: LV82O64640005100035077</p>
+            </div>
+            <a href="#" class="cont-left-link">www.website.lv</a>
+          </div>
+          <form action="#" class="cont-bottom-right">
+            <div class="cont-h">Send us message!</div>
+            <div class="cont-inp-wrap">
+              <input type="text" placeholder="Name Surname *">
+            </div>
+            <div class="cont-inp-wrap">
+              <input type="phone" placeholder="Phone number *">
+            </div>
+            <div class="cont-inp-wrap">
+              <input type="email" placeholder="E-mail address *">
+            </div>
+            <div class="cont-inp-wrap">
+              <textarea placeholder="Your message here..."></textarea>
+            </div>
+            <div class="cont-right-middle">
+              <div>
+                <span class="cont-required">*-Required fields</span>
                 <div>
-                  <span class="cont-required">*-Required fields</span>
-                  <div>
-                    <label class="cont-check">
-                      <input type="checkbox" class="check-inp">
-                      <span class="check-mark"></span>
-                      <span class="checkbox-content">
-                        I accept Company Ltd.
-                        <a href="#">privacy policy</a>
-                      </span>
-                    </label>
-                  </div>
+                  <label class="cont-check">
+                    <input type="checkbox" class="check-inp">
+                    <span class="check-mark"></span>
+                    <span class="checkbox-content">
+                      I accept Company Ltd.
+                      <a href="#">privacy policy</a>
+                    </span>
+                  </label>
                 </div>
-              </div><!-- cont-right-middle -->
-              <div class="cont-right-bottom">
-                <button type="submit" class="cont-btn">Send Message</button>
               </div>
-            </form><!-- Cont-bottom-right -->
-          </div><!-- Cont-bottom -->
-        </div><!-- Cont-block -->
-      </div><!-- Container -->
+            </div><!-- cont-right-middle -->
+            <div class="cont-right-bottom">
+              <button type="submit" class="cont-btn">Send Message</button>
+            </div>
+          </form><!-- Cont-bottom-right -->
+        </div><!-- Cont-bottom -->
+      </div><!-- Cont-block -->
     </div>
 
     <aside class="sidebar">
@@ -245,6 +253,43 @@
     </aside>
 
     <p class="copy">Copyright © 2019 . All rights reserved.</p>
+
+    <section class="mob-menu">
+      <img src="img/close.svg" alt="" class="close-menu">
+      <img src="img/logo.png" alt="" class="mob-logo">
+      <nav>
+        <ul class="mob-menu-list">
+          <li>
+            <a href="slider1-wrap" class="active-page">Home</a>
+          </li>
+          <li>
+            <a href="#">About Us</a>
+          </li>
+          <li>
+            <a href="#">Projects</a>
+          </li>
+          <li>
+            <a href="#">News</a>
+          </li>
+          <li>
+            <a href="#">Partners</a>
+          </li>
+          <li>
+            <a href="contacts">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="menu-btns-wrap">
+        <a href="#" class="login head-btn">
+          <img src="img/user.svg" alt="">
+          <span>Login</span>
+        </a>
+        <a href="#" class="message head-btn">
+          <img src="img/message.svg" alt="">
+          <span>Send message</span>
+        </a>
+      </div>
+    </section>
   </main>
 
   <script src="js/libs.min.js"></script>
