@@ -72,37 +72,32 @@ html {
 }
 
 .h-sq1 {
-  // transform: rotate(45deg);
-  transform: rotate(0deg);
+  transform: rotate(45deg);
   margin-left: -17px;
   margin-top: -17px;
 }
 
 .h-sq3 {
-  // transform: rotate(25deg);
-  transform: rotate(0deg);
+  transform: rotate(20deg);
   margin-left: -17px;
   margin-top: -17px;
 }
 
 .h-sq4 {
-  // transform: rotate(-25deg);
-  transform: rotate(0deg);
+  transform: rotate(-20deg);
   margin-left: -17px;
   margin-top: -17px;
 }
 
 .logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   font-size: 20px;
   font-weight: 800;
+  font-weight: 800;
   line-height: 106.9%;
-}
-
-.head-logo-wrap {
-  width: 35px;
-  height: 35px;
-  position: relative;
-  display: inline-block;
+  color: $text-color;
   &:hover {
     .h-sq1 {
       transform: rotate(225deg);
@@ -114,6 +109,21 @@ html {
       transform: rotate(-200deg);
     }
   }
+}
+
+.head-logo-wrap {
+  width: 35px;
+  height: 35px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-left {
+  display: inline-block;
+  margin-left: 10px;
 }
 
 .main-menu {
@@ -151,7 +161,7 @@ html {
   right: 0;
   left: 0;
   opacity: 1;
-  animation: 1.5s preloaderHide 3.5s forwards;
+  animation: 1.5s preloaderHide 3s forwards;
 }
 
 .pre-logo-wrap {
@@ -171,11 +181,11 @@ html {
 }
 
 .sq-thin {
-  border: 1px solid #000;
+  border: 1px solid $text-color;
 }
 
 .sq-fat {
-  border: 3px solid #000;
+  border: 3px solid $text-color;
   &.sq-green {
     border-color: $green;
   }
@@ -194,23 +204,19 @@ html {
   // transform: rotate(25deg);
   margin-left: -40px;
   margin-top: -40px;
-  animation: 2s sq3 1s ease-in-out forwards;
+  animation: 2s sq3 0.5s ease-in-out forwards;
 }
 .sq4 {
   // transform: rotate(-25deg);
   margin-left: -40px;
   margin-top: -40px;
-  animation: 2s sq4 1s ease-in-out forwards;
+  animation: 2s sq4 0.5s ease-in-out forwards;
 }
 
 .logo-m-wrap {
-  height: 0;
-  overflow: hidden;
+  font-size: 45px;
+  font-weight: 900;
   animation: 2s logoM 0.5s ease-in-out forwards;
-  img {
-    width: 40px;
-    height: 40px;
-  }
 }
 //Preloader End
 
@@ -257,7 +263,8 @@ html {
     transform: rotate(0);
   }
   to {
-    transform: rotate(1845deg);
+    // transform: rotate(1845deg);
+    transform: rotate(495deg);
   }
 }
 @keyframes sq3 {
@@ -265,7 +272,8 @@ html {
     transform: rotate(0);
   }
   to {
-    transform: rotate(-1865deg);
+    // transform: rotate(-1865deg);
+    transform: rotate(-200deg);
   }
 }
 @keyframes sq4 {
@@ -273,15 +281,16 @@ html {
     transform: rotate(0);
   }
   to {
-    transform: rotate(1865deg);
+    // transform: rotate(1865deg);
+    transform: rotate(200deg);
   }
 }
 @keyframes logoM {
   from {
-    height: 0;
+    color: $text-color;
   }
   to {
-    height: 40px;
+    color: $green;
   }
 }
 @keyframes preloaderHide {
