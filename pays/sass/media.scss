@@ -1,0 +1,801 @@
+@media screen and (max-width: 1600px) {
+  .top-private {
+    background-image: none;
+  }
+  .priv-top-bg {
+    display: block;
+  }
+
+  .top-block {
+    background-image: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  //Private
+  .top-wrap {
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  .top-btn-wrap {
+    display: flex;
+    justify-content: center;
+  }
+
+  .top-btn {
+    min-width: 206px;
+  }
+
+  .top-left {
+    width: 100%;
+    padding: 100px 0;
+  }
+
+  .top-right {
+    width: 100%;
+    .parallax {
+      position: static;
+    }
+  }
+
+  .priv-mac {
+    margin-left: -120px;
+  }
+
+  .cont-wrap {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .cont-left {
+    margin-bottom: 50px;
+  }
+
+  //Business
+  .top-block {
+    .top-left {
+      padding: 50px 0;
+    }
+  }
+
+  .bus-iphone {
+    margin-left: -180px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .warning {
+    padding: 30px;
+  }
+
+  .cookie-form {
+    flex-wrap: wrap;
+  }
+
+  .warn-text {
+    width: 100%;
+    padding: 0;
+    margin-top: 0;
+    br {
+      display: none;
+    }
+  }
+
+  .warn-btn-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  //About
+
+  .wrap {
+    flex-wrap: wrap;
+  }
+
+  .about-left {
+    order: 1;
+  }
+
+  .about {
+    padding: 40px 0;
+    .about-right {
+      padding: 0;
+      margin-bottom: 40px;
+    }
+    .section-h {
+      margin-bottom: 30px;
+    }
+  }
+
+  .section-descr {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .about-left {
+    text-align: center;
+    width: 100%;
+  }
+
+  .focus {
+    padding: 25px 0;
+    overflow: hidden;
+  }
+
+  .focus-right {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    img {
+      margin-top: 0;
+    }
+  }
+
+  .solutions {
+    padding: 0 0 40px 0;
+    .section-h {
+      margin-bottom: 20px;
+    }
+  }
+
+  .solutions-left {
+    width: 100%;
+    text-align: center;
+    order: 1;
+  }
+
+  .solutions-right {
+    padding: 0;
+    margin-bottom: 40px;
+  }
+
+  //Fees
+  .fees-flex {
+    flex-wrap: wrap;
+  }
+
+  .fees-h {
+    font-size: 45px;
+  }
+
+  .fees-left {
+    display: none;
+    width: 100%;
+  }
+
+  .fees-right {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .fees-line {
+    display: none;
+  }
+
+  .fees-list {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    box-shadow: 0 2px 49px 0 rgba(0, 0, 0, 0.07);
+    &:first-child {
+      margin-top: 0;
+    }
+    li {
+      border-bottom: 1px solid $gray;
+      padding: 10px 0;
+    }
+    .fees-list-h {
+      padding-bottom: 15px;
+    }
+  }
+
+  .fees-mob-name {
+    display: flex;
+  }
+
+  // Regulations
+
+  .regulations {
+    padding: 40px 0;
+  }
+
+  .reg-wrap {
+    flex-wrap: wrap;
+  }
+
+  .reg-h {
+    margin-bottom: 0;
+  }
+
+  .reg-descr {
+    margin: 30px 0;
+  }
+
+  .reg-right {
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .reg-list {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .business {
+    padding: 50px 0;
+  }
+
+  .business-left,
+  .business-right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .business-right {
+    margin-top: 50px;
+    .parallax {
+      display: none;
+    }
+  }
+
+  .bus-mob-img {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .head-top-right {
+    .create-account {
+      display: none;
+    }
+  }
+
+  .head-top-nav {
+    display: none;
+  }
+
+  .head-top {
+    .select2 {
+      display: none;
+    }
+  }
+
+  .head-bottom {
+    .select2 {
+      display: block
+    }
+  }
+
+  .open-menu {
+    display: block;
+  }
+
+  .business-wrap {
+    flex-wrap: wrap;
+  }
+
+  .private {
+    padding: 50px 0;
+  }
+
+  .private-left {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .private-right {
+    padding-top: 50px;
+    width: 100%;
+  }
+
+  .foot-left {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 30px;
+  }
+
+  .foot-right {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .contacts-foot-popup {
+    width: 305px;
+    min-width: auto;
+    bottom: 130%;
+    border-radius: 20px;
+    border-radius: 10px;
+    left: 168px;
+    &.foot-contact-popup {
+      left: 0;
+    }
+    p {
+      font-size: 14px;
+    }
+    .treangle-popup {
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 10px solid #fff;
+      left: 30px;
+      right: 94%;
+    }
+    &.foot-contact-popup {
+      left: 144%;
+    }
+  }
+
+  .foot-popup-close {
+    &::after,
+    &::before {
+      left: 56%;
+    }
+  }
+
+  .warn-text {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .priv-top-bg {
+    width: 1000px;
+  }
+
+  .top-left {
+    padding: 50px 0;
+  }
+
+  .top-h {
+    font-size: 40px;
+  }
+
+  .top-descr {
+    font-size: 20px;
+    margin: 25px 0 40px 0;
+  }
+
+  .top-btn {
+    font-size: 14px;
+    min-width: 150px;
+  }
+
+  .priv-imac {
+    max-width: 300px;
+  }
+  .priv-mac {
+    max-width: 270px;
+  }
+
+  .priv-mac {
+    margin-left: -85px;
+  }
+
+  .sub-info-descr {
+    top: 300%;
+    right: -30px;
+    border-radius: 10px;
+    left: auto;
+    min-width: 206px;
+    // padding: 10px 20px;
+  }
+
+  .bus-list {
+    .sub-info-triangle {
+      transform: translateY(-50%);
+      top: 0;
+      right: 15px;
+      left: auto;
+      border-top: none;
+      border-left: 25px solid transparent;
+      border-right: 25px solid transparent;
+      border-bottom: 25px solid $blue;
+    }
+  }
+
+  //Business
+  .top-block {
+    .top-left {
+      padding-bottom: 20px;
+    }
+  }
+
+  .bus-mac {
+    max-width: 450px;
+  }
+
+  .bus-iphone {
+    margin-left: -135px;
+    max-width: 150px;
+  }
+
+  .bus-mob-img {
+    width: 100%;
+  }
+
+  //About
+  .focus {
+    margin-top: 20px;
+  }
+
+  //Terms
+
+  .policy {
+    padding: 40px 0;
+    .cookie-sub-h {
+      margin-top: 20px;
+    }
+  }
+
+  .cookie-wrap {
+    padding: 0;
+  }
+
+  .cookie-h {
+    font-size: 40px;
+  }
+
+  .policy p {
+    font-size: 15px;
+  }
+
+  .terms-list li {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 678px) {
+  .cont-right {
+    width: 100%;
+  }
+
+  .cont-form {
+    min-width: auto;
+    input {
+      width: 100%;
+      min-width: auto;
+    }
+    textarea {
+      width: 100%;
+      min-width: auto;
+    }
+  }
+
+  .cont-descr-inp {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  //About
+
+  .about-left {
+    img {
+      width: 100%;
+    }
+  }
+
+  .focus-right {
+    img {
+      width: 100%;
+    }
+  }
+
+  .solutions-left {
+    img {
+      width: 100%;
+    }
+  }
+
+  //Fees
+  .fees-h {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 578px) {
+  .logo {
+    max-width: 200px;
+    img {
+      width: 100%;
+    }
+  }
+
+  .head-bottom-menu {
+    a {
+      font-size: 15px;
+    }
+  }
+
+  .top-private,
+  .top-block,
+  .top-wrap {
+    min-height: auto;
+  }
+
+  .top-left {
+    padding: 40px 0;
+  }
+
+  .priv-imac {
+    max-width: 250px;
+  }
+
+  .priv-mac {
+    max-width: 220px;
+  }
+
+  .foot-left-bottom {
+    margin: 0;
+    br {
+      display: none;
+    }
+  }
+
+  .foot-left-top {
+    .head-bottom-menu {
+      width: 100%;
+      margin: 20px 0;
+    }
+  }
+
+  .warn-text {
+    font-size: 12px;
+  }
+
+  //Business
+
+  .bus-mac {
+    max-width: 350px;
+  }
+
+  .bus-iphone {
+    margin-left: -105px;
+    max-width: 120px;
+  }
+
+  //Regulations
+
+  .reg-right {
+    img {
+      width: 100%;
+    }
+  }
+
+  .reg-h {
+    font-size: 40px;
+  }
+
+  .reg-descr {
+    font-size: 13px;
+  }
+
+  .reg-sub-h {
+    font-size: 20px;
+  }
+
+  .reg-num-wrap {
+    min-width: 30px;
+    min-height: 30px;
+  }
+
+  .reg-num {
+    font-size: 15px;
+  }
+
+  .reg-list-descr {
+    font-size: 15px;
+  }
+
+  //About
+
+  .focus-bg {
+    display: none;
+  }
+
+  .focus-mob-bg {
+    display: block;
+  }
+
+  .focus-left {
+    padding: 15px;
+  }
+  .focus-right {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card1-wrap {
+    img {
+      width: 100%;
+    }
+  }
+
+  .card-wrap {
+    display: none;
+  }
+
+  .priv-right-mob {
+    display: block;
+    width: 100%;
+  }
+
+  .cont-descr {
+    br {
+      display: none;
+    }
+  }
+
+  //About 
+  .focus-mob-bg {
+    height: 90%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .priv-top-bg {
+    width: 880px;
+    transform: translateX(-30%);
+  }
+
+  .logo {
+    max-width: 150px;
+    img {
+      width: 100%;
+    }
+  }
+
+  .open-menu {
+    margin-right: 10px;
+  }
+
+  .head-bottom-menu {
+    a {
+      font-size: 14px;
+    }
+  }
+
+  .top-h {
+    font-size: 30px;
+  }
+
+  .priv-imac {
+    max-width: 210px;
+  }
+
+  .priv-mac {
+    max-width: 150px;
+    margin-left: -74px;
+  }
+
+  .private {
+    padding: 40px 0;
+  }
+
+  .bus-h {
+    font-size: 33px;
+  }
+
+  .cont-h {
+    font-size: 27px;
+  }
+
+  .cont-descr {
+    font-size: 18px;
+  }
+
+  .foot-right-list {
+    margin-top: 30px;
+    width: 100%;
+    &:first-child {
+      margin: 0;
+    }
+  }
+
+  .contacts-foot-popup {
+    left: 56%;
+    &.foot-contact-popup {
+      left: 56%;
+    }
+  }
+
+  .bus-list-descr {
+    max-width: 243px;
+  }
+
+  //Business 
+
+  .bus-mac {
+    margin-left: -30px;
+    max-width: 300px;
+  }
+
+  .bus-iphone {
+    margin-bottom: -20px;
+    margin-left: -85px;
+    max-width: 100px;
+  }
+
+  .business {
+    padding: 30px 0;
+    .bus-h {
+      font-size: 30px;
+    }
+  }
+
+  .bus-list-name {
+    padding-top: 5px;
+    font-size: 15px;
+  }
+
+  .sub-info-img {
+    widows: 15px;
+    height: 15px;
+  }
+
+  .sub-info-descr {
+    top: 380%;
+  }
+
+  //Fees
+
+  .fees-wrap {
+    .fees-h {
+      font-size: 25px;
+    }
+  
+    .fees-list {
+      min-width: 100%;
+      width: 100%;
+    }
+  }
+
+  .fees-h {
+    font-size: 24px;
+  }
+
+  .fees-sub-info {
+    .sub-info-descr {
+      transform: translateX(-90%);
+      bottom: 130%;
+    }
+    .sub-info-triangle {
+      display: none;
+    }
+  }
+
+  // About
+  .section-h {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  .focus-right {
+    margin-top: 15px;
+  }
+
+  .section-descr {
+    font-size: 12px;
+  }
+
+  //Text
+
+  .cookie-h {
+    font-size: 32px;
+  }
+
+  .cookie-sub-h {
+    font-size: 21px;
+  }
+
+  .policy p {
+    font-size: 13px;
+  }
+}

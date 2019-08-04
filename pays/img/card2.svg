@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="378px" height="238px" viewBox="0 0 378 238" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 8</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0.771152603%" y1="1.35267103%" x2="98.9371769%" y2="96.7027819%" id="linearGradient-1">
+            <stop stop-color="#73C2ED" offset="0%"></stop>
+            <stop stop-color="#78A0F1" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="378" height="238" rx="20"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-17" transform="translate(-560.000000, -382.000000)">
+            <g id="Group-8" transform="translate(560.000000, 382.000000)">
+                <g id="Screen-Shot-2019-02-19-at-16.30.44">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <use id="Mask" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

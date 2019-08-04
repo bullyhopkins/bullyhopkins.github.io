@@ -1,0 +1,124 @@
+/* MAIN */
+
+.about {
+  padding: 70px 0;
+}
+
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-left {
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  transition: 1s;
+  img {
+    max-width: 593px;
+  }
+}
+
+.about-right {
+  padding-left: 50px;
+  top: 100%;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  transition: 1s;
+}
+
+.section-h {
+  font-size: 56px;
+  margin-bottom: 55px;
+}
+
+.section-descr {
+  font-size: 16px;
+  font-weight: 300;
+  max-width: 542px;
+  padding-left: 50px;
+  p {
+    margin: 0;
+    margin-top: 30px;
+    line-height: 1.88em;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+//Focus
+
+.focus {
+  // background-image: url(../img/focus-bg.png);
+  // background-repeat: no-repeat;
+  // background-position: 100% 0;
+  // background-size: contain;
+  padding: 70px 0 200px 0;
+  margin-top: 100px;
+  color: #fff;
+  position: relative;
+  // overflow-x: hidden;
+}
+
+.focus-bg {
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  top: 0;
+  transform: translateX(-48%);
+  max-height: 100%;
+  // overflow: hidden;
+  // display: none;
+}
+
+.focus-mob-bg {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+  height: 100%;
+  display: none;
+}
+
+.focus-left {
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  transition: 1s;
+}
+
+.focus-right {
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  transition: 1s;
+  img {
+    max-width: 494px;
+    margin-top: -230px;
+  }
+}
+
+//Focus End
+
+//Solutions
+
+.solutions {
+  padding: 150px 0;
+}
+
+.solutions-left {
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  transition: 1s;
+}
+
+.solutions-right {
+  padding-left: 70px;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  transition: 1s;
+}
+
+//Solutions End
+
+/* MAIN END */

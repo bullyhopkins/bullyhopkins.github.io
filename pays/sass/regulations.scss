@@ -1,0 +1,85 @@
+/* MAIN */
+
+.regulations {
+  padding: 90px 0 165px 0;
+}
+
+.reg-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: $text-color;
+}
+
+.reg-h {
+  font-size: 56px;
+  margin-bottom: 55px;
+}
+
+.reg-descr {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.88em;
+  margin-left: 48px;
+  margin: 50px;
+}
+
+.reg-sub-h {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.reg-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-right: 80px;
+  li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 22px 0;
+  }
+}
+
+.reg-num-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 40px;
+  min-height: 40px;
+  margin-right: 15px;
+  border-radius: 50%;
+  text-align: center;
+  background: $light-gray;
+}
+
+.reg-num {
+  font-size: 18px;
+  font-weight: 700;
+  color: $blue;
+}
+
+.reg-list-descr {
+  font-size: 18px;
+  font-weight: 300;
+  margin: 0;
+  line-height: 1.3em;
+}
+
+.reg-left-top,
+.reg-left-bottom,
+.reg-right {
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  transition: 1s;
+}
+
+.reg-right {
+  img {
+    max-width: 531px;
+  }
+}
+
+/* MAIN END */

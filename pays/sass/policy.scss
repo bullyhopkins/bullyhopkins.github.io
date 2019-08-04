@@ -1,0 +1,22 @@
+/* MAIN */
+
+.policy {
+  color: $text-color;
+  padding: 70px 0 100px 0;
+  p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.88em;
+    span {
+      font-weight: 500;
+    }
+  }
+  .cookie-sub-h {
+    margin-top: 50px;
+  }
+  a {
+    color: $blue;
+  }
+}
+
+/* MAIN END */

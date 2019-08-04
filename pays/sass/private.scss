@@ -1,0 +1,86 @@
+/* MAIN */
+
+.top-private {
+  background-image: url(../img/private-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  min-height: 740px;
+  position: relative;
+  overflow: hidden;
+  .top-img {
+    padding-top: 170px;
+    max-width: 620px;
+  }
+}
+
+.priv-top-bg {
+  width: 1400px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-left: -100px;
+  display: none;
+} 
+
+.priv-imac {
+  top: -115px;
+  right: 240px;
+  max-width: 400px;
+}
+.priv-mac {
+  top: 45px;
+  right: 5px;
+  max-width: 350px;
+}
+
+.private {
+  padding: 150px 0;
+}
+
+.private-left {
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  transition: 1s;
+  z-index: 100;
+}
+.private-right {
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  transition: 1s;
+  text-align: center;
+}
+
+.card1-wrap {
+  position: relative;
+  z-index: 2;
+}
+.card2-wrap {
+  position: relative;
+  margin-top: -225px;
+  z-index: 1;
+}
+.card3-wrap {
+  margin-top: -195px;
+}
+
+.card-wrap {
+  // opacity: 0;
+  transition: 0.5s;
+}
+
+.cont-right,
+.cont-left-top,
+.cont-left-bottom {
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  transition: 0.5s;
+}
+
+.priv-right-mob {
+  // opacity: 0;
+  display: none;
+}
+
+/* MAIN END */
