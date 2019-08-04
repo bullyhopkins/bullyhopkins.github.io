@@ -1,0 +1,138 @@
+.page-head {
+  background: #fff !important;
+  box-shadow: 0px 10px 24px -8px rgba(0,0,0,0.27);
+  .logo-top {
+    background-position: 0 6px;
+  }
+  a {
+    color: #000;
+    &:hover {
+      color: #000;
+    }
+  }
+  .open-menu {
+    border: 1px solid #000;
+  }
+  .menu-line {
+    background: #000;
+    &::before {
+      background: #000;
+    }
+  }
+}
+
+.landing {
+  background-image: url(../img/land-bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 70px;
+  padding: 150px 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.landing-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.landing-left {
+  position: relative;
+  z-index: 1;
+}
+
+.land-h {
+  font-size: 46px;
+  line-height: 1.2em;
+}
+
+.land-sub-h {
+  font-size: 14px;
+  color: $new-gray;
+  font-weight: 500;
+}
+
+.land-descr {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.4em;
+  margin: 40px 0;
+  color: $new-gray;
+}
+
+.land-descr {
+  color: $new-gray;
+}
+
+.sect-btn {
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.landing-img {
+  position: absolute;
+}
+
+.iphone {
+  top: 170px;
+  right: 450px;
+  max-width: 260px;
+  z-index: 2;
+}
+
+.ipad {
+  top: 70px;
+  right: 220px;
+  max-width: 2600px;
+  z-index: 1;
+}
+
+.mac {
+  top: 0;
+  right: -400px;
+  max-width: 1000px;
+}
+
+//Site
+
+.site {
+  background-image: url(../img/site-bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 150px 0;
+  overflow: hidden;
+  position: relative;
+  .section-h {
+    color: #fff;
+  }
+  .sub-h {
+    color: #fff;
+  }
+  .section-descr {
+    color: #fff;
+  }
+}
+
+//Shop
+
+.shop {
+  background-image: url(../img/shop-bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 150px 0;
+  overflow: hidden;
+  position: relative;
+  .section-h {
+    color: #fff;
+  }
+  .sub-h {
+    color: #fff;
+  }
+  .section-descr {
+    color: #fff;
+  }
+}

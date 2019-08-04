@@ -477,11 +477,9 @@
 
   /* POPUPS */
 
-  // .led-popup {
   .led-popup-main {
     padding: 30px 20px;
   }
-  // }
 
   /* POPUPS END */
 }
@@ -903,6 +901,8 @@
 
   .dif-item {
     width: 70%;
+    margin: 0;
+    padding: 15px 10px;
   }
 
   .num-descr {
@@ -966,7 +966,6 @@
   }
 
   .floor-right {
-    // position: static;
     margin-top: 20px;
   }
 
@@ -1091,7 +1090,15 @@
   }
 
   .led-popup-wrap {
-    margin-top: 300px;
+    margin-top: 350px;
+  }
+
+  .led-popup,
+  .sound-popup,
+  .photo-popup {
+    .led-popup-wrap {
+      margin-top: 500px;
+    }
   }
 
   .led-form-middle {
@@ -1412,7 +1419,6 @@
   }
 
   .step-descr {
-    // width: 100%;
     text-align: center;
     margin: 0;
   }
@@ -1527,6 +1533,7 @@
   }
 
   .foot-table {
+    margin-top: 350px;
     .led-form-h {
       font-size: 25px;
     }
