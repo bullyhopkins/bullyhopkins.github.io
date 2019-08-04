@@ -1,0 +1,42 @@
+/* HEADER */
+
+.dj-head {
+  background-image: url(../img/dj/head-bg.jpg);
+}
+
+/* HEADER END */
+
+/* MAIN */
+
+.dj-am-h {
+  margin-bottom: 40px;
+}
+
+.dj-outcome {
+  .out-item {
+    padding: 45px 20px;
+  }
+}
+
+/* MAIN END */
+
+
+/* FOOTER */
+
+.foot-dj {
+  min-height: 441.93px;
+  background-image: url(../img/dj/foot-bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-top: 380px;
+  .led-form-h {
+    margin-bottom: 20px;
+  }
+  select {
+    margin-right: 50px;
+  }
+}
+
+/* FOOTER END */

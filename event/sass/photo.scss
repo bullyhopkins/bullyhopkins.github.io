@@ -1,0 +1,147 @@
+/* HEADER */
+
+.photo-head {
+  background-image: url(../img/photo/head-bg.jpg);
+}
+
+/* HEADER END */
+
+/* MAIN */
+
+.photos {
+  padding: 60px 15px;
+  overflow: hidden;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0;
+    background: $gray;
+    width: 527px;
+    height: 830px;
+    z-index: -1;
+  }
+}
+
+.photo-h {
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  line-height: 1.2em;
+}
+
+.photos-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photos-left {
+  max-width: 567px;
+}
+
+.photos-right {
+  padding-left: 30px;
+}
+
+.photos-h {
+  font-size: 48px;
+  line-height: 1.1em;
+  span {
+    font-weight: 700;
+  }
+}
+
+.photos-strikethrough {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+  max-width: 560px;
+  margin: 0;
+  margin: 20px 0 30px 0;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 7px;
+    left: 0;
+    width: 96%;
+    height: 6px;
+    background: #DDE9FF;
+    z-index: -1;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 0;
+    width: 93%;
+    height: 6px;
+    background: #DDE9FF;
+    z-index: -1;
+  }
+}
+
+.photos-descr {
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.photos-sub-h {
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 700;
+  margin: 30px 0 20px 0;
+}
+
+.photos-left-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.photos-item {
+  width: 49%;
+  min-width: 222px;
+  margin: 10px 0;
+}
+
+//Photo-gallery
+
+.photo-gallery {
+  text-align: center;
+  padding-top: 50px;
+  img {
+    width: 100%;
+  }
+}
+
+.photo-gallery-descr {
+  margin: 10px 0 40px 0;
+}
+
+/* MAIN END */
+
+/* FOOTER */
+
+.foot-photo {
+  min-height: 441.93px;
+  background-image: url(../img/photo/foot-bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-top: 350px;
+  .led-form-h {
+    margin-bottom: 20px;
+  }
+  select {
+    margin-right: 50px;
+  }
+  .led-form-h {
+    font-size: 36px;
+  }
+}
+
+/* FOOTER END */
