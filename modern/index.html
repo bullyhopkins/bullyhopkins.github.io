@@ -14,7 +14,7 @@
     <div class="container">
       <div class="head-wrap">
         <div class="head-left">
-          <a href="/" class="logo">
+          <a href="#one" class="logo" data-menuanchor="one">
             <div class="head-logo-wrap">
               <div class="h-square sq-fat sq-green h-sq1"></div>
               <div class="h-square sq-fat h-sq2"></div>
@@ -22,26 +22,38 @@
               <div class="h-square sq-thin h-sq4"></div>
               <span class="h-logo-m-wrap">M</span>
             </div>
-            <span class="logo-left">odern</span>
+            <p class="logo-left">
+              <span>odern</span>
+            </p>
           </a>
         </div>
         <div class="head-right">
           <nav>
             <ul class="main-menu">
               <li>
-                <a href="#">Главная</a>
+                <a href="#">
+                  <span>Главная</span>
+                </a>
               </li>
               <li>
-                <a href="#">Кейсы</a>
+                <a href="#">
+                  <span>Кейсы</span>
+                </a>
               </li>
               <li>
-                <a href="#">Прайс</a>
+                <a href="#">
+                  <span>Прайс</span>
+                </a>
               </li>
               <li>
-                <a href="#">О нас</a>
+                <a href="#">
+                  <span>О нас</span>
+                </a>
               </li>
               <li>
-                <a href="#">Контакты</a>
+                <a href="#">
+                  <span>Контакты</span>
+                </a>
               </li>
             </ul>
           </nav>
@@ -62,21 +74,59 @@
       </div>
     </section>
 
-    <section class="main-block section">
-      <div class="container main-container">
-        <div class="main-wrap">
-          <div class="section-h">
-            <span class="green">M</span><span>odern</span>
+    <div id="fullpage">
+      <section class="main-block section" data-anchor="one">
+        <div id="particles" class="particles"></div>
+        <div class="container main-container">
+          <div class="main-wrap">
+            <div class="section-h">
+              <span class="green">M</span><span>odern</span>
+            </div>
+            <p class="sub-h">Digital Agency</p>
           </div>
-          <p class="sub-h">Digital Agency</p>
+          <a href="#two" class="top-block-scroll" data-menuanchor="two"></a>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <section class="elephants section" data-anchor="two">
+        <!-- <div id="particles" class="particles"></div> -->
+        <div class="container main-container">
+          <div class="main-wrap">
+            <div class="elephants-h">
+              На каких <span class="green">3</span> слонах
+              <p>стоит наша студия</p>
+            </div>
+            <div class="eleph-wrap">
+              <div class="eleph-item">
+                <div class="eleph-num">
+                  100<span class="perc">%</span>
+                </div>
+                <p class="eleph-item-h">Время</p>
+              </div>
+              <div class="eleph-item">
+                <div class="eleph-num">
+                  100<span class="perc">%</span>
+                </div>
+                <p class="eleph-item-h">Качество</p>
+              </div>
+              <div class="eleph-item">
+                <div class="eleph-num">
+                  100<span class="perc">%</span>
+                </div>
+                <p class="eleph-item-h">Результат</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
   </main>
   <!-- MAIN END -->
   <!-- FOOTER -->
   <footer></footer>
   <!-- FOOTER END -->
-  <script src="js/index.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/fullpage.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
