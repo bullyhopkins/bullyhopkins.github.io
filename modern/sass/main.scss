@@ -25,6 +25,12 @@ html {
   min-height: 100vh;
 }
 
+.content-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 /* HEADER */
 
 .head {
@@ -133,7 +139,8 @@ html {
   margin-left: 10px;
   position: relative;
   overflow: hidden;
-  min-width: 58px;
+  min-width: 70px;
+  margin-left: -2px;
   height: 25px;
   span {
     position: absolute;
@@ -161,11 +168,96 @@ html {
     padding: 20px;
     line-height: 132.9%;
     font-family: $monser;
+    letter-spacing: 1px;
     &:hover {
       span {
         border-bottom: 2px solid $text-color;
       }
     }
+  }
+}
+
+.head-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.open-menu {
+  width: 30px;
+  height: 20px;
+  overflow: hidden;
+  position: relative;
+  margin-left: 20px;
+  cursor: pointer;
+  &:hover {
+    .line-top {
+      left: -59%;
+    }
+    .line-middle {
+      left: 0;
+    }
+    .line-bottom {
+      left: 14px;
+    }
+  }
+}
+
+.menu-line {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: $green;
+  transition: 0.3s;
+}
+
+.line-top {
+  top: 0;
+  left: 0;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -34px;
+    width: 100%;
+    height: 1px;
+    background: $green;
+  }
+}
+.line-middle {
+  top: 50%;
+  left: -50%;
+  // transform: translateY(-50%);
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -34px;
+    width: 100%;
+    height: 1px;
+    background: $green;
+  }
+}
+.line-bottom {
+  bottom: 0;
+  left: -80%;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -34px;
+    width: 100%;
+    height: 1px;
+    background: $green;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -34px;
+    width: 100%;
+    height: 1px;
+    background: $green;
   }
 }
 
@@ -186,7 +278,7 @@ html {
   z-index: 100;
   opacity: 1;
   animation: 1.5s preloaderHide 3s forwards;
-  // display: none; //Del
+  display: none; //Del
 }
 
 .pre-logo-wrap {
@@ -413,6 +505,417 @@ html {
 }
 
 //Elephants End
+
+//Main menu
+
+.popup-menu {
+  background: #fff;
+  position: fixed;
+  // width: 100%;
+  // height: 100%;
+  width: 0;
+  height: 10px;
+  top: 0;
+  right: 0;
+  z-index: 600;
+  overflow: auto;
+  font-family: $monser;
+}
+
+.main-m-top {
+  position: relative;
+  padding-top: 20px;
+}
+
+.menu-logo-wrap {
+  display: inline-block;
+  .logo-left {
+    width: 75px;
+  }
+}
+
+.close-menu {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  top: 40px;
+  margin-left: 580px;
+  transition: all 0.4s ease-in-out;
+  transform-origin: center;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    right: 0;
+    background: $green;
+    width: 25px;
+    height: 1px;
+    transform: rotate(45deg);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    right: 0;
+    background: $green;
+    width: 25px;
+    height: 1px;
+    transform: rotate(-45deg);
+  }
+  &:hover {
+    transform: rotate(180deg);
+  }
+}
+
+.m-content-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-orient: vertical;
+  height: 100%;
+  padding-top: 90px;
+}
+
+.m-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.m-left-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 30px;
+  font-weight: 400;
+  li {
+    margin-top: 10px;
+    &:first-child {
+      margin: 0;
+    }
+  }
+  a {
+    color: $gray;
+    transition: 0.4s;
+    &:hover {
+      color: $green;
+    }
+  }
+}
+
+.m-services {
+  color: $gray;
+}
+
+.m-services-h {
+  color: $text-color;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.services-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li {
+    margin-top: 15px;
+    // opacity: 0.6;
+    transition: 0.3s;
+    font-size: 20px;
+  }
+  a {
+    color: $gray;
+    &:hover {
+      color: $green;
+    }
+  }
+}
+
+.m-contacts {
+  color: $gray;
+  p {
+    font-size: 20px;
+    opacity: 0.6;
+    margin: 20px 0;
+  }
+}
+
+.m-contacts-h {
+  color: $text-color;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.m-phones-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  font-size: 20px;
+  li {
+    margin-top: 10px;
+    &:first-child {
+      margin: 0;
+    }
+  }
+  a {
+    color: $gray;
+    // opacity: 0.6;
+    &:hover {
+      color: $green;
+    }
+  }
+}
+
+.m-contacts-mail {
+  a {
+    color: $gray;
+    font-size: 20px;
+    opacity: 0.6;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.m-contacts-links {
+  display: flex;
+  justify-content: space-between; 
+  align-items: flex-end;
+  margin-top: 60px;
+  a {
+    max-width: 30px;
+    opacity: 0.6;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  img {
+    width: 100%;
+    min-width: 30px;
+  }
+}
+
+//Main menu End
+
+//Steps
+
+.steps {
+  font-family: $monser;
+  .container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // align-items: center;
+  }
+}
+
+.steps-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.steps-left {
+  position: relative;
+}
+
+.step-arrows {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.arrow {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid $green;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.3s;
+  cursor: pointer;
+  outline: none;
+  // z-index: 1111;
+  &::before {
+    content: "";
+    width: 11px;
+    height: 1px;
+    position: absolute;
+    top: 20px;
+    right: 17px;
+    background: $green;
+    // transform: rotate(45deg);
+    transition: 0.3s;
+  }
+  &::after {
+    content: "";
+    width: 11px;
+    height: 1px;
+    position: absolute;
+    top: 20px;
+    left: 17px;
+    background: $green;
+    // transform: rotate(-45deg);
+    transition: 0.3s;
+  }
+  &:hover {
+    background: $green;
+    &::before {
+      background: #fff;
+    }
+    &::after {
+      background: #fff;
+    }
+  }
+}
+
+.step-next {
+  top: -40px;
+  &::before {
+    transform: rotate(45deg);
+  }
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.step-prev {
+  // top: -40px;
+  &::before {
+    transform: rotate(-45deg);
+  }
+  &::after {
+    transform: rotate(45deg);
+  }
+}
+
+.step-content {
+  display: none;
+}
+
+.active-step {
+  display: block;
+}
+
+.steps-h {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  color: $gray;
+  margin-bottom: 30px;
+}
+
+.step-item-top {
+  position: relative;
+  padding: 40px 0;
+}
+
+.step-item-h {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 1.2em;
+  color: $green;
+}
+
+.step-num {
+  font-family: $fonts;
+  font-weight: 700;
+  color: #FAFAFA;
+  font-size: 144px;
+  line-height: 105%;
+  text-align: center;
+  letter-spacing: 0.05em;
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.step-descr {
+  color: $gray;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.4em;
+  letter-spacing: 0.02em;
+  max-width: 230px;
+}
+
+.steps-right {
+  max-width: 576px;
+  overflow: hidden;
+  img {
+    width: 100%;
+  }
+}
+
+//Steps End
+
+//Technology
+
+.technology {
+  font-family: $monser;
+}
+
+.tech-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tech-h {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.5em;
+  letter-spacing: 0.1em;
+  color: $gray;
+  span {
+    color: $green;
+  }
+}
+
+.tech-right {
+  display: flex;
+  justify-content: space-between;
+  width: 55%;
+  min-width: 600px;
+}
+
+.tech-item-h {
+  color: $gray;
+  font-weight: bold;
+  font-size: 20px;
+  // line-height: 130%;
+  text-align: center;
+  letter-spacing: 0.1em;
+  margin-bottom: 20px;
+}
+
+.tech-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  li {
+    font-weight: 500;
+    font-size: 14px;
+    // line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.1em;
+    padding: 20px 0;
+  }
+}
+
+//Technology End
 
 /* MAIN END */
 

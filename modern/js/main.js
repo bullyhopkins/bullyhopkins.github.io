@@ -1,4 +1,6 @@
 $(function () {
+
+  //Scroll-block
   $('#fullpage').fullpage({
     //options here
     // autoScrolling: true,
@@ -13,6 +15,27 @@ $(function () {
     //     $(".head").addClass("dark-menu");
     //   }
     // }
+  });
+
+  //Main-menu
+  $(".open-menu").on("click", function () {
+    // alert(1);
+    $(".popup-menu").animate({
+      width: "100%",
+      padding: "0 20px"
+    }, 1000).animate({
+      height: "100%"
+    }, 1000);
+  });
+
+  //Close popup menu
+  $(".close-menu").on("click", function () {
+    $(".popup-menu").animate({
+      height: "10px"
+    }, 1000).animate({
+      width: "0",
+      padding: "0"
+    }, 1000);
   });
 
   particlesJS("particles", {
@@ -124,5 +147,21 @@ $(function () {
       }
     },
     "retina_detect": true
+  });
+
+  const stepsSlider = new Swiper(".steps-right", {
+    speed: 400,
+    effect: 'flip',
+    navigation: {
+      nextEl: '.step-next',
+      prevEl: '.step-prev',
+    },
+    on: {
+      slideChange: function () {
+        // alert(this.activeIndex);
+        $(".step-content").removeClass("active-step");
+        $(".step-content")[this.activeIndex].classList += " active-step";
+      }
+    }
   });
 });
