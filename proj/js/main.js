@@ -57,7 +57,7 @@ $(function () {
                 height: "1081px"
             }, 10000);
             $(".team-img-wrap").animate({
-                height: "405px"
+                height: "305px"
             }, 1500);
             $(".team-descr-wrap").addClass("team-descr-anim");
         }
@@ -259,33 +259,33 @@ $(function () {
     });
 
     //Team-slider-mob
-    $(".team-wrap").slick({
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        arrows: false,
-        dots: false,
-        infinite: false,
-        responsive: [
-            {
-                breakpoint: 1200,
-                settings: {
-                    slidesToShow: 3
-                }
-            },
-            {
-                breakpoint: 920,
-                settings: {
-                    slidesToShow: 2
-                }
-            },
-            {
-                breakpoint: 620,
-                settings: {
-                    slidesToShow: 1
-                }
-            }
-        ]
-    });
+    // $(".team-wrap").slick({
+    //     slidesToShow: 4,
+    //     slidesToScroll: 1,
+    //     arrows: false,
+    //     dots: false,
+    //     infinite: false,
+    //     responsive: [
+    //         {
+    //             breakpoint: 1200,
+    //             settings: {
+    //                 slidesToShow: 3
+    //             }
+    //         },
+    //         {
+    //             breakpoint: 920,
+    //             settings: {
+    //                 slidesToShow: 2
+    //             }
+    //         },
+    //         {
+    //             breakpoint: 620,
+    //             settings: {
+    //                 slidesToShow: 1
+    //             }
+    //         }
+    //     ]
+    // });
 
     //Sliders(Page LED)
 
