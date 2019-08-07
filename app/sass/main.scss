@@ -272,7 +272,7 @@ header {
 
 .head-phone {
   position: relative;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 29px;
   &:hover {
     &::before {
@@ -1010,11 +1010,18 @@ header {
 
 //Steps
 
+.steps {
+  padding-top: 100px;
+  .section-h {
+    margin-bottom: 50px;
+  }
+}
+
 .content-wrap {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 130px;
+  // padding-top: 130px;
 }
 
 .step-left-block {
