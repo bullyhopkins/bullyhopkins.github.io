@@ -917,6 +917,256 @@ html {
 
 //Technology End
 
+//Benefit
+
+.benefit {
+  font-family: $monser;
+}
+
+.ben-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ben-right {
+  max-width: 420px;
+}
+
+.ben-h {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.3em;
+  letter-spacing: 0.1em;
+  margin-bottom: 40px;
+  color: $gray;
+  span {
+    color: $green;
+  }
+}
+
+.ben-descr {
+  // font-weight: 500;
+  // max-width: 380px;
+  font-size: 18px;
+  line-height: 1.5em;
+  letter-spacing: 0.02em;
+  color: $gray;
+}
+
+.ben-details {
+  display: inline-block;
+  margin-top: 60px;
+  position: relative;
+  font-weight: 600;
+  transition: 0.3s;
+  color: $gray;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 3px;
+    width: 0;
+    background: $green;
+    transition: 0.3s;
+  }
+  &:hover {
+    color: $text-color;
+    &::before {
+      width: 100%;
+    }
+  }
+}
+
+//Benefit End
+
+//Benefit End
+//Benefit End
+
+//About
+
+.about {
+  font-family: $monser;
+}
+
+.about-h {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 1.3em;
+  color: $text-color;
+  margin-bottom: 30px;
+}
+
+.about-left {
+  max-width: 420px;
+}
+
+//About End
+
+//Create
+
+.create {
+  font-family: $monser;
+}
+
+.create-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.create-left-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  a {
+    display: inline-block;
+    padding: 10px 0;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.2em;
+    letter-spacing: 0.1em;
+    color: $text-color;
+  }
+  li {
+    a {
+      &:hover {
+        color: $green;
+      }
+    }
+  }
+  .c-active-tab {
+    a {
+      color: $green;
+    }
+  }
+}
+
+.create-right {
+  padding-left: 70px;
+  // position: relative;
+}
+
+.create-h {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.2em;
+  letter-spacing: 0.1em;
+  color: $text-color;
+  margin-bottom: 60px;
+}
+
+.c-content-active {
+  display: block !important;
+}
+
+.create-content {
+  display: none;
+}
+
+.create-tab-wrap {
+  // span {
+  //   font-size: 23px;
+  //   color: $gray;
+  //   font-weight: 500;
+  // }
+  a {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.7em;
+    letter-spacing: 0.02em;
+    color: $gray;
+    position: relative;
+    margin-right: 15px;
+    &:last-child {
+      &::after {
+        display: none;
+      }
+    }
+    &::after {
+      content: "/";
+      position: absolute;
+      font-size: 23px;
+      color: $gray;
+      font-weight: 500;
+      top: 0;
+      right: -15px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 2px;
+      width: 0;
+      height: 3px;
+      background: $green;
+      transition: 0.7s;
+    }
+    &:hover {
+      color: $green;
+    }
+  }
+  .active-create-tab {
+    &::before {
+      width: 99%;
+    }
+  }
+}
+
+.create-btn {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  color: #fff;
+  padding: 15px;
+  min-width: 180px;
+  background: $green;
+  border: 1px solid $green;
+  text-align: center;
+  margin: 50px 0 100px 0;
+  &:hover {
+    color: $green;
+    background: rgba(0,0,0,0);
+  }
+}
+
+.c-prog-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+.c-prog-name {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2em;
+  letter-spacing: 0.1em;
+  color: $gray;
+}
+
+.c-progressbar {
+  background: $light-gray;
+  width: 60%;
+  height: 3px;
+  border-radius: 2px;
+  overflow: hidden;
+  &::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: $green;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+//Create End
+
 /* MAIN END */
 
 /* FOOTER */

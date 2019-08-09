@@ -164,4 +164,31 @@ $(function () {
       }
     }
   });
+
+  //Create main tab
+  $(".c-main-tab").on("click", function () {
+    // alert($(this).index());
+    $(".c-main-tab").removeClass("c-active-tab");
+    $(this).addClass("c-active-tab");
+
+    $(".create-content").removeClass("c-content-active").fadeOut(0);
+    $(".create-content:eq(" + $(this).index() + ")").fadeIn(700);
+    return false;
+  });
+
+  //Create active tab
+  $(".create-tab-wrap a").on("click", function (e) {
+    // e.preventDefault;
+    // alert($(this).index());
+
+    //This progress
+    $(this).parent(".create-content").children(".create-progress").removeClass("c-prog-active").fadeOut(0);
+    $(this).parent(".create-content").children(".create-progress:eq(" + $(this).index() + ")").fadeIn(700);
+
+    //Open-progress
+    $(".create-tab-wrap a").removeClass("active-create-tab");
+    $(this).addClass("active-create-tab");
+    return false;
+  });
+
 });
