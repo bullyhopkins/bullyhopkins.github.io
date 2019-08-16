@@ -401,7 +401,7 @@ header {
 }
 
 .head-h {
-  font-size: 64px;
+  font-size: 55px;
   color: #fff;
   line-height: 1.203125em;
   max-width: 1000px;
@@ -1379,17 +1379,17 @@ header {
     max-width: 100%;
     display: none;
   }
-}
-
-.swiper-slide {
-  min-width: 188.96px;
-  height: 260px;
-  transition: 0.3s;
-  img {
-    max-width: 290px;
-    height: 100%;
+  .swiper-slide {
+    min-width: 188.96px;
+    height: 260px;
+    transition: 0.3s;
+    img {
+      max-width: 290px;
+      height: 100%;
+    }
   }
 }
+
 
 .about-arrows {
   position: absolute;
@@ -2538,6 +2538,25 @@ header {
 }
 
 //Main menu End
+
+//Brands
+
+.brands {
+  padding-top: 50px;
+  .section-h {
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  .brand-slider {
+    overflow: hidden;
+  }
+}
+
+.brand-img {
+  width: 100%;
+}
+
+//Brands End
 
 /* MAIN END */
 

@@ -2,73 +2,6 @@ $(function () {
 
     $(".head-descr, .head-h-wrap").addClass("anim-text");
 
-    //Scroll
-
-    function scrollPage() {
-        if ($(window).scrollTop() + 70 > $(".services").offset().top) {
-            $(".top-menu").addClass("top-menu-scroll");
-        } else {
-            $(".top-menu").removeClass("top-menu-scroll");
-        }
-
-        if ($(window).scrollTop() > $(".two-section").offset().top - 300) {
-            $(".two-h").addClass("anim-text");
-            $(".two-descr").addClass("anim-text");
-        }
-
-        if ($(window).scrollTop() > $(".two-section").offset().top - 100) {
-            $(".offer-img-wrap").animate({
-                height: "335px"
-            }, 1500);
-
-            setTimeout(function () {
-                $(".offer-descr-wrap").animate({
-                    width: "330px",
-                }, 1000);
-                $(".offer-descr-wrap").css({
-                    border: "2px solid #EDF3FF"
-                });
-            }, 1500);
-        }
-
-        if ($(window).scrollTop() > $(".five-section").offset().top - 200) {
-            $(".step-left-block").addClass("slideUp");
-            $(".step-right-block").addClass("slideLeft");
-        }
-
-        if ($(window).scrollTop() > $(".seven-section").offset().top - 300) {
-
-            $(".about-h").addClass("anim-text");
-
-            $(".about-left-bottom").addClass("about-before");
-
-            setTimeout(function () {
-                $(".about-left-bottom").css("overflow", "visible !important");
-            }, 3000);
-        }
-
-        if ($(window).scrollTop() > $(".eight-section").offset().top - 300) {
-            $(".dif-descr").addClass("anim-text");
-        }
-
-        if ($(window).scrollTop() > $(".twelve-section").offset().top - 300) {
-            $(".team-h").addClass("anim-text");
-            $(".team-bg-block").animate({
-                height: "1081px"
-            }, 10000);
-            $(".team-img-wrap").animate({
-                height: "305px"
-            }, 1500);
-            $(".team-descr-wrap").addClass("team-descr-anim");
-        }
-    }
-
-    scrollPage();
-
-    $(window).scroll(function () {
-        scrollPage();
-    });
-
     //Main-menu links
     $(function () {
         $(".top-menu-list a, .m-left-list a").click(function () {
@@ -154,36 +87,36 @@ $(function () {
         $("body,html").animate({ scrollTop: top + 50 }, 500);
     });
 
-    //Stap-slider
-    $(".step-slider").slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        fade: true,
-        infinite: false,
-        swipe: false,
-        nextArrow: ".step-next",
-        prevArrow: ".step-prev"
-    });
+    // //Stap-slider
+    // $(".step-slider").slick({
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    //     fade: true,
+    //     infinite: false,
+    //     swipe: false,
+    //     nextArrow: ".step-next",
+    //     prevArrow: ".step-prev"
+    // });
 
-    $(".arrow").on("click", function () {
-        // alert(1);
-        let indexSlide = $(".slick-active").attr("data-slick-index");
-        let step = $(".step");
+    // $(".arrow").on("click", function () {
+    //     // alert(1);
+    //     let indexSlide = $(".slick-active").attr("data-slick-index");
+    //     let step = $(".step");
 
-        step.removeClass("active-step");
-        step[indexSlide].className += " active-step";
+    //     step.removeClass("active-step");
+    //     step[indexSlide].className += " active-step";
 
-        let stepName = $(".active-step").children(".step-name").html();
+    //     let stepName = $(".active-step").children(".step-name").html();
 
-        setTimeout(function () {
-            if (stepName == "Team buildings, corporate events") {
-                stepName = "Team buildings";
-            } else if (stepName == "Fashion shows, presentations") {
-                stepName = "Fashion shows";
-            }
-            $(".step-descr").text(stepName);
-        }, 0);
-    });
+    //     setTimeout(function () {
+    //         if (stepName == "Team buildings, corporate events") {
+    //             stepName = "Team buildings";
+    //         } else if (stepName == "Fashion shows, presentations") {
+    //             stepName = "Fashion shows";
+    //         }
+    //         $(".step-descr").text(stepName);
+    //     }, 0);
+    // });
 
     //About-slider
 
@@ -211,17 +144,39 @@ $(function () {
         },
         on: {
             slideChange: function () {
+                // alert(1);
                 let aboutContent = $(".about-content");
                 aboutContent.removeClass("content-active");
                 aboutContent[this.realIndex].classList += " content-active";
-                console.log(this.realIndex);
+                // console.log(this.realIndex);
 
                 //Now-slide
                 $(".now-slide-about").text(this.realIndex + 1);
             },
             init: function () {
-                let allSlides = $(".swiper-slide").length / 2 + 2;
+                let allSlides = $(".swiper-slide").length / 2;
                 $(".all-slides-about").text(allSlides);
+            }
+        }
+    });
+
+    //Brands-slider
+    let brandSwipe = new Swiper(".brand-slider", {
+        loop: true,
+        slidesPerView: 4,
+        // updateOnImagesReady: true,
+        breakpoints: {
+            1200: {
+                slidesPerView: 4
+            },
+            920: {
+                slidesPerView: 3
+            },
+            668: {
+                slidesPerView: 2
+            },
+            568: {
+                slidesPerView: 1
             }
         }
     });
@@ -257,35 +212,6 @@ $(function () {
         $slideNow.text(i);
         $slideAll.text(slick.slideCount);
     });
-
-    //Team-slider-mob
-    // $(".team-wrap").slick({
-    //     slidesToShow: 4,
-    //     slidesToScroll: 1,
-    //     arrows: false,
-    //     dots: false,
-    //     infinite: false,
-    //     responsive: [
-    //         {
-    //             breakpoint: 1200,
-    //             settings: {
-    //                 slidesToShow: 3
-    //             }
-    //         },
-    //         {
-    //             breakpoint: 920,
-    //             settings: {
-    //                 slidesToShow: 2
-    //             }
-    //         },
-    //         {
-    //             breakpoint: 620,
-    //             settings: {
-    //                 slidesToShow: 1
-    //             }
-    //         }
-    //     ]
-    // });
 
     //Sliders(Page LED)
 
@@ -416,5 +342,9 @@ $(function () {
     //         });
     //     });
     // }
+
+    // $(".screen-slider").slick({
+    //     slidesToShow: 1
+    // });
 
 });
