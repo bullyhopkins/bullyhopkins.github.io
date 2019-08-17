@@ -1267,6 +1267,15 @@ header {
   padding: 100px 15px;
   overflow: hidden;
   position: relative;
+  .swiper-slide {
+    min-width: 188.96px;
+    height: 260px;
+    transition: 0.3s;
+    img {
+      max-width: 290px;
+      height: 100%;
+    }
+  }
 }
 
 .about-container {
@@ -1283,8 +1292,9 @@ header {
 }
 
 .about-h {
+  font-size: 45px;
   width: 0;
-  max-width: 540px;
+  max-width: 665px;
   max-height: 85px;
   overflow: hidden;
   &::before {
@@ -1379,17 +1389,7 @@ header {
     max-width: 100%;
     display: none;
   }
-  .swiper-slide {
-    min-width: 188.96px;
-    height: 260px;
-    transition: 0.3s;
-    img {
-      max-width: 290px;
-      height: 100%;
-    }
-  }
 }
-
 
 .about-arrows {
   position: absolute;
@@ -2365,13 +2365,19 @@ header {
   padding-top: 50px;
 }
 
-.main-menu-logo {
-  background-image: url(../img/logo-sprite.png);
-  background-position: 0 6px;
-  background-repeat: no-repeat;
-  width: 83px;
-  height: 69px;
+.menu-logo-wrap {
+  img {
+    max-width: 100px;
+  }
 }
+
+// .main-menu-logo {
+//   background-image: url(../img/logo-sprite.png);
+//   background-position: 0 6px;
+//   background-repeat: no-repeat;
+//   width: 83px;
+//   height: 69px;
+// }
 
 .close-menu {
   width: 25px;

@@ -18,6 +18,7 @@ $(function () {
                 if ($target.length) {
                     var targetOffset = $target.offset().top;
                     $("html,body").animate({ scrollTop: targetOffset }, 1500);//скорость прокрутки
+                    $("html,body").css("overflow", "auto");
                     return false;
                 }
             }
