@@ -58,7 +58,7 @@ $(function () {
         e.preventDefault;
         let idPopup = $(this).attr("href");
         $(idPopup).fadeIn(400);
-        $("body, html").css("overflow", "hidden");
+        // $("body, html").css("overflow", "hidden");
     });
 
     $(".emotions-btn").on("click", function (e) {

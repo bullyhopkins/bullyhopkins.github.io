@@ -1,3 +1,10 @@
+.page-bg {
+  background-image: url(../img/land-bg.jpg);
+  background-position: center center;
+  // background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .page-head {
   background: #fff !important;
   box-shadow: 0px 10px 24px -8px rgba(0,0,0,0.27);
@@ -22,10 +29,10 @@
 }
 
 .landing {
-  background-image: url(../img/land-bg.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  // background-image: url(../img/land-bg.jpg);
+  // background-position: center center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
   margin-top: 70px;
   padding: 150px 0;
   overflow: hidden;
@@ -50,7 +57,7 @@
 
 .land-sub-h {
   font-size: 14px;
-  color: $new-gray;
+  // color: $new-gray;
   font-weight: 500;
 }
 
@@ -59,12 +66,12 @@
   font-weight: 700;
   line-height: 1.4em;
   margin: 40px 0;
-  color: $new-gray;
+  // color: $new-gray;
 }
 
-.land-descr {
-  color: $new-gray;
-}
+// .land-descr {
+//   color: $new-gray;
+// }
 
 .sect-btn {
   text-transform: uppercase;
@@ -212,4 +219,11 @@
 
 .screen-active {
   opacity: 1 !important;
+}
+
+.foot-main.foot-pages {
+  margin-top: 0;
+  .container-max {
+    padding: 0;
+  }
 }
