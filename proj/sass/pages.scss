@@ -227,3 +227,20 @@
     padding: 0;
   }
 }
+
+.sub-info-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 50px;
+  .site-item-descr {
+    span {
+      font-weight: 700;
+      font-size: 20px;
+    }
+    &:first-child {
+      width: 70%;
+    }
+    width: 27%;
+  }
+}
