@@ -229,18 +229,14 @@
 }
 
 .sub-info-wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
   padding-bottom: 50px;
   .site-item-descr {
     span {
+      display: inline-block;
       font-weight: 700;
       font-size: 20px;
+      margin-bottom: 10px;
     }
-    &:first-child {
-      width: 70%;
-    }
-    width: 27%;
+    width: 100%;
   }
 }

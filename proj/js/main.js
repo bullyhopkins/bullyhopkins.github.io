@@ -166,6 +166,7 @@ $(function () {
         loop: true,
         slidesPerView: 4,
         // updateOnImagesReady: true,
+        spaceBetween: 30,
         breakpoints: {
             1200: {
                 slidesPerView: 4

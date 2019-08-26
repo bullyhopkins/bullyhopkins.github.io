@@ -274,23 +274,6 @@ header {
   position: relative;
   font-size: 20px;
   line-height: 29px;
-  &:hover {
-    &::before {
-      width: 87%;
-    }
-  }
-  &::before {
-    content: "";
-    width: 66px;
-    height: 8px;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    background: $purple;
-    z-index: -1;
-    transition: 0.3s;
-  }
   span {
     font-weight: 700;
   }
@@ -2556,6 +2539,9 @@ header {
   }
   .brand-slider {
     overflow: hidden;
+    img {
+      width: 100%;
+    }
   }
 }
 
