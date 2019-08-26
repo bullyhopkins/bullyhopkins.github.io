@@ -180,6 +180,9 @@ $(function () {
             568: {
                 slidesPerView: 1
             }
+        },
+        autoplay: {
+            delay: 2500,
         }
     });
 
