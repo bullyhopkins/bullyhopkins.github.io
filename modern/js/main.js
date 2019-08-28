@@ -23,7 +23,7 @@ $(function () {
     $(".popup-menu").animate({
       width: "100%",
       padding: "0 20px"
-    }, 1000).animate({
+    }, 100).animate({
       height: "100%"
     }, 1000);
   });
@@ -35,7 +35,7 @@ $(function () {
     }, 1000).animate({
       width: "0",
       padding: "0"
-    }, 1000);
+    }, 100);
   });
 
   particlesJS("particles", {
