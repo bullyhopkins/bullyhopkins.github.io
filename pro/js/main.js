@@ -74,6 +74,11 @@ $(function () {
         $("#" + popupId).fadeOut(400);
         $("body, html").css("overflow", "visible");
     });
+    $(".form-close").on("click", function () {
+        let popupId = $(this).attr("data-close");
+        $("#" + popupId).fadeOut(400);
+        $("body, html").css("overflow", "visible");
+    });
 
     $(".popup-bg").on("click", function () {
         $(".form-bg").fadeOut(400);
