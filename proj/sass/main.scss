@@ -28,7 +28,7 @@ body {
 /* HEADER */
 
 .head-main-content {
-  background-image: url(../img/head-bg-b.jpg);
+  background-image: url(../img/head-bg-b2.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -405,8 +405,9 @@ header {
   color: #fff;
   font-size: 18px;
   line-height: 25px;
+  // font-weight: 600;
   width: 0;
-  max-height: 50px;
+  max-height: 70px;
   overflow: hidden;
   position: relative;
   &::before {
@@ -2523,8 +2524,8 @@ header {
 .brands {
   padding-top: 50px;
   .section-h {
-    text-align: center;
-    padding-bottom: 40px;
+    // text-align: center;
+    padding-bottom: 60px;
   }
   .brand-slider {
     overflow: hidden;
