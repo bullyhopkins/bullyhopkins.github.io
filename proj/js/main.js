@@ -160,7 +160,7 @@ $(function () {
                 $(".now-slide-about").text(this.realIndex + 1);
             },
             init: function () {
-                let allSlides = $(".swiper-slide").length / 2;
+                let allSlides = $(".swiper-slide").length / 2 - 3;
                 $(".all-slides-about").text(allSlides);
             }
         }
