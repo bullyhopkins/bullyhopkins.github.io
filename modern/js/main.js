@@ -5,16 +5,29 @@ $(function () {
     //options here
     // autoScrolling: true,
     // scrollHorizontally: true,
-    loopBottom: true,
+    // loopBottom: true,
     // menu: '.top-block-scroll',
     // paddingTop: 120
-    // afterLoad: function (origin, destination) {
-    //   if (destination.index == 0) {
-    //     $(".head").removeClass("dark-menu");
-    //   } else {
-    //     $(".head").addClass("dark-menu");
-    //   }
-    // }
+    onLeave: function (origin, destination, direction) {
+      if (destination.index == 1) {
+        $('.eleph-count').each(function () {
+          $(this).prop('Counter', 0).animate({
+            Counter: $(this).text()
+          }, {
+            duration: 3000,
+            easing: 'swing',
+            step: function (now) {
+              $(this).text(Math.ceil(now));
+            }
+          })
+        });
+      }
+      if (destination.index == 6) {
+        $(".c-progressbar1").addClass("progress1-active");
+        $(".c-progressbar2").addClass("progress2-active");
+        $(".c-progressbar3").addClass("progress3-active");
+      }
+    }
   });
 
   //Main-menu
@@ -149,6 +162,10 @@ $(function () {
     "retina_detect": true
   });
 
+  //Counter
+
+  //Counter End
+
   const stepsSlider = new Swiper(".steps-right", {
     speed: 400,
     effect: 'flip',
@@ -163,6 +180,16 @@ $(function () {
         $(".step-content")[this.activeIndex].classList += " active-step";
       }
     }
+  });
+
+  //Portfolio slider
+  const portfolioSlider = new Swiper(".port-slider", {
+    speed: 400,
+    direction: 'vertical',
+    navigation: {
+      nextEl: '.port-next',
+      prevEl: '.port-prev',
+    },
   });
 
   //Create main tab

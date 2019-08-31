@@ -278,7 +278,7 @@ html {
   z-index: 100;
   opacity: 1;
   animation: 1.5s preloaderHide 3s forwards;
-  // display: none; //Del
+  display: none; //Del
 }
 
 .pre-logo-wrap {
@@ -378,6 +378,7 @@ html {
   position: relative;
   z-index: 1;
   pointer-events: none;
+  margin: 0;
 }
 
 .sub-h {
@@ -410,22 +411,22 @@ html {
   // z-index: 1111;
   &::before {
     content: "";
-    width: 16px;
+    width: 8px;
     height: 2px;
     position: absolute;
-    top: 19px;
-    right: 15px;
+    top: 18px;
+    right: 16.5px;
     background: $green;
     transform: rotate(45deg);
     transition: 0.3s;
   }
   &::after {
     content: "";
-    width: 16px;
+    width: 8px;
     height: 2px;
     position: absolute;
-    top: 19px;
-    left: 15px;
+    top: 18px;
+    left: 16.5px;
     background: $green;
     transform: rotate(-45deg);
     transition: 0.3s;
@@ -488,6 +489,7 @@ html {
   // line-height: ;
   text-align: center;
   letter-spacing: 0.02em;
+  width: 135px;
   .perc {
     color: $gray;
   }
@@ -572,16 +574,16 @@ html {
 .m-content-wrap {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   box-orient: vertical;
-  height: 100%;
+  height: 100vh;
   padding-top: 90px;
 }
 
 .m-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
 }
@@ -747,22 +749,22 @@ html {
   // z-index: 1111;
   &::before {
     content: "";
-    width: 11px;
+    width: 8px;
     height: 1px;
     position: absolute;
     top: 20px;
-    right: 17px;
+    right: 18px;
     background: $green;
     // transform: rotate(45deg);
     transition: 0.3s;
   }
   &::after {
     content: "";
-    width: 11px;
+    width: 8px;
     height: 1px;
     position: absolute;
     top: 20px;
-    left: 17px;
+    left: 18px;
     background: $green;
     // transform: rotate(-45deg);
     transition: 0.3s;
@@ -927,7 +929,7 @@ html {
 .ben-wrap {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .ben-right {
@@ -1004,6 +1006,102 @@ html {
 }
 
 //About End
+
+//Portfolio
+
+.port-wrap {
+  position: relative;
+}
+
+.port-slider {
+  overflow: hidden;
+  max-height: 300px;
+}
+
+.port-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.port-item-name {
+  // display: inline-block;
+  font-family: 'Montserrat', 'Open Sans';
+  color: $text-color;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 144px;
+  line-height: 176px;
+  letter-spacing: 0.09em;
+  span {
+    transition: 0.4s;
+  }
+  &:hover {
+    span {
+      color: $green;
+    }
+  }
+}
+
+.port-item-descr {
+  color: $gray;
+  font-family: $monser;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 130%;
+  letter-spacing: 0.02em;
+}
+
+.port-strong {
+  font-weight: 700;
+  color: $text-color;
+}
+
+.port-arrow {
+  position: absolute;
+  right: 50px;
+  top: 50%;
+  transform: translateY(-50%)rotate(90deg);
+  cursor: pointer;
+  font-family: $monser;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 130%;
+  /* or 18px */
+  letter-spacing: 0.1em;
+  color: $green;
+  z-index: 100;
+  outline: none;
+  transition: 0.3s;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 4px;
+    background: $green;
+    z-index: -1;
+    transition: 1s;
+  }
+  &:hover {
+    color: #fff;
+    &::before {
+      animation: 0.5s portBtn ease-in-out forwards; 
+    }
+  }
+}
+
+.port-next {
+  margin-top: 100px;
+}
+.port-prev {
+  margin-top: -100px;
+}
+
+//Portfolio End
 
 //Create
 
@@ -1106,7 +1204,7 @@ html {
       transition: 0.7s;
     }
     &:hover {
-      color: $green;
+      color: $text-color;
       &::before {
         width: 99%;
       }
@@ -1153,6 +1251,7 @@ html {
   height: 3px;
   border-radius: 2px;
   overflow: hidden;
+  position: relative;
   &::after {
     content: "";
     width: 0;
@@ -1161,8 +1260,25 @@ html {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 10;
   }
 }
+
+.progress1-active {
+  &::after {
+    animation: 3s progress1 ease-in-out forwards; 
+  }
+} 
+.progress2-active {
+  &::after {
+    animation: 3s progress2 ease-in-out forwards; 
+  }
+} 
+.progress3-active {
+  &::after {
+    animation: 3s progress3 ease-in-out forwards; 
+  }
+} 
 
 //Create End
 
@@ -1172,6 +1288,44 @@ html {
 /* FOOTER END */
 
 //Animation
+@keyframes portBtn {
+  0% {
+    width: 0;
+    height: 4px;
+  }
+  50% {
+    width: 100%;
+    height: 4px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+  }
+}
+@keyframes progress1 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 75%;
+  }
+}
+@keyframes progress2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 85%;
+  }
+}
+@keyframes progress3 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 55%;
+  }
+}
 @keyframes sq1 {
   from {
     transform: rotate(0);
