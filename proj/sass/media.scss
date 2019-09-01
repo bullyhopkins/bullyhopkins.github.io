@@ -48,6 +48,10 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .team-bg-block {
+    display: none;
+  }
+
   .line-wrap {
     width: 100%;
     overflow: hidden;
@@ -518,6 +522,16 @@
 }
 
 @media screen and (max-width: 920px) {
+
+  .team-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+
   .about-arrows {
     display: none;
   }
@@ -707,6 +721,35 @@
   }
 
   /* PHOTO End */
+
+  /* Services */
+
+  .services-block {
+    flex-wrap: wrap;
+  }
+
+  .services-item {
+    width: 100%;
+    min-height: auto;
+    padding: 25px;
+    border-bottom: 1px solid rgba(255,255,255,.5);
+  }
+
+  .serv-item-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .services-h {
+      br {
+        display: none;
+      }
+    }
+    img {
+      margin: 0 20px 0 0;
+    }
+  }
+
+  /* Services End */
 }
 
 @media screen and (max-width: 868px) {
@@ -1204,6 +1247,14 @@
   }
 
   /* SOUND END */
+
+  /* WORK */
+
+  .work {
+    padding-top: 30px;
+  }
+
+  /* WORK END */
 }
 
 @media screen and (max-width: 620px) {
@@ -1381,6 +1432,16 @@
 @media screen and (max-width: 568px) {
   .section-h {
     font-size: 35px;
+  }
+
+  .brands {
+    padding-bottom: 30px;
+  }
+
+  .brands-wrap {
+    .section-h {
+      padding-bottom: 0px;
+    }
   }
 
   .offer-descr {
@@ -1573,9 +1634,37 @@
     font-size: 15px;
   }
   /* POPUPS END */
+
+  /* Servvices */
+
+  .services-item {
+    padding: 25px 10px;
+    text-align: center;
+    img {
+      display: none;
+    }
+  }
+
+  .services-h {
+    font-size: 17px;
+  }
+
+  /* Servvices End */
+
+  /* WORK */
+
+  .work {
+    padding-top: 60px;
+  }
+
+  /* WORK END */
 }
 
 @media screen and (max-width: 480px) {
+  .team {
+    padding-top: 50px;
+  }
+
   .head-h {
     font-size: 30px;
     br {
@@ -1705,9 +1794,17 @@
   }
 
   .head-btn-wrap {
+    div {
+      display: flex;
+      justify-content: center;
+    }
     img {
       display: none;
     }
+  }
+
+  .head-btn {
+    width: 95%;
   }
 
   .section-h {
