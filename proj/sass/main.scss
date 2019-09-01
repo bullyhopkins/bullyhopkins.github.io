@@ -2535,6 +2535,14 @@ header {
   }
 }
 
+.brand-slider {
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .brand-img {
   width: 100%;
   filter: grayscale(60%);
