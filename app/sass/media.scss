@@ -11,6 +11,10 @@
   .em-about {
     display: none;
   }
+
+  .iphone {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1250px) {
@@ -22,6 +26,10 @@
     br {
       display: none;
     }
+  }
+
+  .ipad {
+    display: none;
   }
 }
 
@@ -486,6 +494,24 @@
   }
 
   /* POPUPS END */
+
+  .mac {
+    display: none;
+  }
+
+  .landing-left {
+    width: 100%;
+    text-align: center;
+  }
+
+  .sites-phone {
+    display: none;
+  }
+
+  .sites-left {
+    width: 100%;
+    max-width: none;
+  }
 }
 @media screen and (max-width: 1000px) {
   .head-h,
@@ -1208,8 +1234,44 @@
       padding-top: 20px;
     }
   }
-
   /* POPUPS END */
+
+  .main-popup-form {
+    min-width: auto;
+    width: 95%;
+  }
+
+  .popup-descr-top {
+    font-size: 26px;
+  }
+
+  .popup-descr-bottom {
+    font-size: 21px;
+    margin-top: 5px;
+  }
+
+  .main-popup-logo {
+    display: none;
+  }
+
+  .main-form-content {
+    padding-top: 0;
+  }
+
+  .main-popup-h {
+    font-size: 22px;
+  }
+
+  .sites {
+    .section-h {
+      font-size: 27px;
+    }
+  }
+
+  .sites-sub-h {
+    padding: 20px 15px;
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 668px) {
@@ -1656,11 +1718,72 @@
   .work {
     padding-top: 60px;
   }
-
   /* WORK END */
+
+  .main-popup-h {
+    font-size: 17px;
+    padding: 10px 45px;
+    br {
+      display: none;
+    }
+  }
+
+  .popup-descr-top {
+    font-size: 20px;
+  }
+
+  .popup-descr-bottom {
+    font-size: 17px;
+  }
+
+  .main-popup-descr {
+    padding: 10px 5px;
+  }
+
+  .main-inp-name {
+    width: 100%;
+  }
+
+  .main-inp-wrap {
+    flex-wrap: wrap;
+    text-align: center;
+    input {
+      margin: 10px 0 0 0;
+      width: 95%;
+    }
+  }
+
+  .main-popup-form {
+    margin: 200px 0;
+  }
+
+  .site-item {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .site-circle {
+      margin: 0;
+    }
+  }
+
+  .land-h {
+    font-size: 30px;
+  }
+
+  .land-descr {
+    br {
+      display: none;
+    }
+  }
 }
 
 @media screen and (max-width: 480px) {
+  .head-main-content {
+    padding: 0 5px;
+  }
+
   .team {
     padding-top: 50px;
   }
@@ -1957,6 +2080,14 @@
   }
 
   /* POPUPS End */
+
+  .land-h {
+    font-size: 21px;
+  }
+
+  .landing {
+    padding: 80px 0;
+  }
 }
 
 @media screen and (max-width: 360px) {

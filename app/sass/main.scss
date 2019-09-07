@@ -35,6 +35,7 @@ body {
   position: relative;
   min-height: 650px;
   height: 100vh;
+  padding: 0 15px;
   .container {
     display: flex;
     flex-direction: column;
@@ -2574,6 +2575,7 @@ header {
   min-width: 700px;
   transform: translate(-50%, -50%);
   background: #fff;
+  margin: 100px 0;
 }
 
 .main-popup-top {
