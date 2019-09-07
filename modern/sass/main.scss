@@ -1013,6 +1013,23 @@ html {
   position: relative;
 }
 
+.port-top {
+  text-align: center;
+}
+
+.cases-text {
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 56px;
+  font-family: $monser;
+  color: $gray;
+}
+
+.port-cases-img {
+  max-width: 30px;
+  margin-left: 10px;
+}
+
 .port-slider {
   overflow: hidden;
   max-height: 300px;
@@ -1074,22 +1091,26 @@ html {
   z-index: 100;
   outline: none;
   transition: 0.3s;
+  transition-delay: 0.1s;
   &::before {
     content: "";
     position: absolute;
-    left: 0;
+    left: 50%;
     top: 50%;
-    transform: translateY(-50%);
-    width: 0;
-    height: 4px;
+    transform: translate(-50%, -50%);
     background: $green;
     z-index: -1;
-    transition: 1s;
+    transition: 0.5s;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
   }
   &:hover {
     color: #fff;
     &::before {
-      animation: 0.5s portBtn ease-in-out forwards; 
+      // animation: 0.5s portBtn ease-in-out forwards;
+      width: 100px;
+      height: 100px;
     }
   }
 }
@@ -1282,6 +1303,199 @@ html {
 
 //Create End
 
+
+//Team
+
+.team-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.team-slider-wrap {
+  position: relative;
+}
+
+.team-slider {
+  width: 140px;
+  overflow: hidden;
+  max-height: 400px;
+  position: relative;
+  img {
+    width: 100%;
+  }
+}
+
+.team-arrows {
+  position: absolute;
+  bottom: 0px;
+  left: 150%;
+  .arrow {
+    bottom: 0;
+  }
+}
+
+.team-next {
+  left: 60px;
+  height: 50px;
+  width: 50px;
+  &::before {
+    transform: rotate(45deg);
+    top: 21px;
+  }
+  &::after {
+    transform: rotate(-45deg)translateY(100%);
+    top: 55%;
+    left: 21px;
+  }
+}
+
+.team-prev {
+  height: 50px;
+  width: 50px;
+  &::before {
+    transform: rotate(-45deg);
+    left: 21px;
+    top: 21px;
+  }
+  &::after {
+    transform: rotate(45deg)translateY(100%);
+    top: 55%;
+    left: 21px;
+  }
+}
+
+.team-h {
+  font-size: 36px;
+  font-weight: 700;
+  font-family: $fonts;
+  line-height: 36px;
+  letter-spacing: 0.32em;
+  margin-bottom: 25px;
+  span {
+    color: $green;
+  }
+}
+
+.team-content-wrap {
+  max-width: 350px;
+  position: relative;
+  margin-left: 50px;
+}
+
+.team-content-name {
+  display: inline-block;
+  font-family: $monser;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  margin-bottom: 40px;
+}
+
+.team-descr {
+  font-family: $monser;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  margin: 0;
+  color: $gray;
+  transition: 0.3s;
+}
+
+.team-content {
+  display: none;
+}
+
+.active {
+  display: block;
+  transition: 0.3s;
+}
+//Team End
+
+//Main form
+
+.main-form-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.main-form-left {
+  max-width: 300px;
+  margin-right: 200px;
+}
+
+.main-form-h {
+  font-family: $monser;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  letter-spacing: 0.1em;
+  padding-bottom: 20px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 70px;
+    background: $green;
+    transform: translateY(50%);
+  }
+}
+
+.main-form-descr {
+  font-family: $monser;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  color: $gray;
+  margin-top: 20px;
+}
+
+.callback-form {
+  width: 350px;
+  input {
+    border: none;
+    border-bottom: 1px solid $green;
+    width: 100%;
+    padding: 5px;
+  }
+}
+
+.callback-inp-wrap {
+  margin-bottom: 40px;
+}
+
+.form-btn-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.main-form-btn {
+  padding: 15px;
+  min-width: 150px;
+  border-radius: 3px;
+  background: $green;
+  color: #fff;
+  font-size: 16px;
+  border: 1px solid $green;
+  font-family: $monser;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    background: rgba(0,0,0,0);
+    color: $green;
+  }
+}
+
+//Main form End
 /* MAIN END */
 
 /* FOOTER */

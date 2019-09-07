@@ -218,4 +218,21 @@ $(function () {
     return false;
   });
 
+  //Team Slider
+  const teamSlider = new Swiper(".team-slider", {
+    speed: 1000,
+    direction: 'vertical',
+    navigation: {
+      nextEl: '.team-next',
+      prevEl: '.team-prev',
+    },
+    on: {
+      slideChange: function () {
+        // alert(this.activeIndex);
+        $(".team-content").removeClass("active");
+        $(".team-content")[this.activeIndex].classList += " active";
+      }
+    }
+  });
+
 });
