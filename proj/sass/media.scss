@@ -1510,6 +1510,15 @@
     font-size: 13px;
   }
 
+  .head-btn-wrap {
+    width: 100%;
+    justify-content: center;
+    // padding: 0 10px;
+    img {
+      display: none;
+    }
+  }
+
   .offer-item {
     height: auto;
     margin: 0;
@@ -1838,8 +1847,16 @@
     justify-content: center;
   }
 
+  footer .foot-wrap {
+    padding: 0;
+  }
+
+  footer .foot-left {
+    padding: 50px 0;
+  }
+
   .social-a-wrap {
-    width: 43%;
+    width: 100%;
   }
 
   /* LED */
@@ -1983,9 +2000,6 @@
   footer {
     .foot-descr {
       font-size: 14px;
-    }
-    .foot-left {
-      padding: 50px 20px;
     }
     .foot-list {
       img {
