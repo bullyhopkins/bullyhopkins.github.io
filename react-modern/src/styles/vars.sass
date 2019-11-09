@@ -1,0 +1,12 @@
+// Here you can find and write all global variables and mixins
+//
+// To use these, write `@import "styles/vars"` at the start of your sass file
+
+$mainColor:      #14AD91
+$subColor:       #888888
+$textColor:      #262626
+
+/* media */
+@mixin media($width)
+    @media screen and (max-width: $width)
+        @content

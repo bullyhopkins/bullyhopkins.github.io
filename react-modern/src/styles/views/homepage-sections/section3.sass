@@ -1,0 +1,62 @@
+@import "styles/vars"
+
+section.section3
+
+    div.sect3-flex
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+    div.sect3-left
+        max-width: 500px
+        position: relative
+        padding-right: 50px
+
+    span.sect3-step-title
+        transition-duration: 1s
+
+    span.sect3-step-title
+        font-size: 24px
+        font-weight: 600
+        color: $subColor
+
+    span.sect3-step-num
+        font-size: 144px
+        color: #FAFAFA
+
+    p.sect3-step-desr
+        font-size: 18px
+        font-weight: 500
+        color: $subColor
+
+    div.sect3-arrows-wrap
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        position: absolute
+        right: 0
+        bottom: 30px
+        img
+            max-width: 45px
+            margin: 10px 0
+            cursor: pointer
+
+    img.slider-arrow-next
+        transform: rotate(90deg)
+
+    img.slider-arrow-prev
+        transform: rotate(-90deg)
+
+    div.sect3-slider-wrap
+        position: relative
+        // width-auto: 600px
+        // height: 500px
+
+    img.sect3-slide
+        max-width: 600px
+        transition: 0.3s
+        top: 0
+        left: 0
+        img
+            width: 100%

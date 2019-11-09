@@ -1,0 +1,175 @@
+@import "styles/vars"
+
+header.head-main
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    padding: 20px 15px
+    z-index: 100
+
+    div.head-flex
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+    div.logo-animation-wrap
+        height: 50px
+        &:hover
+            width: 20px
+            div.cube1
+                transform: rotate(0)translate(-50%, -50%)
+                top: 50%
+                left: 50%
+                width: 20px
+                height: 20px
+            div.cube2
+                transform: rotate(0)translate(-50%, -50%)
+                top: 50%
+                left: 50%
+                width: 20px
+                height: 20px
+            div.cube3
+                transform: rotate(0)translate(-50%, -50%)
+                top: 50%
+                left: 50%
+                width: 20px
+                height: 20px
+            div.cube4
+                transform: rotate(0)translate(-50%, -50%)
+                top: 50%
+                left: 50%
+                width: 20px
+                height: 20px
+            a.logo-head
+                width: 20px
+                &:before
+                    left: 105%
+
+    a.logo-head
+        display: inline-block
+        width: 40px
+        height: 40px
+        position: relative
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        font-size: 18px
+        background: #fff
+        // &:hover
+        //     width: 20px
+        //     div.cube1
+        //         transform: rotate(0)translate(-50%, -50%)
+        //         top: 50%
+        //         left: 50%
+        //         width: 20px
+        //         height: 20px
+        //     div.cube2
+        //         transform: rotate(0)translate(-50%, -50%)
+        //         top: 50%
+        //         left: 50%
+        //         width: 20px
+        //         height: 20px
+        //     div.cube3
+        //         transform: rotate(0)translate(-50%, -50%)
+        //         top: 50%
+        //         left: 50%
+        //         width: 20px
+        //         height: 20px
+        //     div.cube4
+        //         transform: rotate(0)translate(-50%, -50%)
+        //         top: 50%
+        //         left: 50%
+        //         width: 20px
+        //         height: 20px
+            // &:before
+            //     left: 105%
+        &:before
+            content: "odern"
+            font-size: 18px
+            position: absolute
+            top: 50%
+            left: 0
+            transform: translateY(-50%)
+            transition: 0.5s
+            z-index: -1
+
+    div.logo-cube
+        width: 40px
+        height: 40px
+        position: absolute
+        left: 0
+        top: 0
+        transform-origin: center center
+
+    div.bold-cube
+        border: 2px solid $textColor
+
+    div.thin-cube
+        border: 1px solid $textColor
+
+    div.cube1
+        transform: rotate(250deg)
+    div.cube2
+        transform: rotate(125deg)
+    div.cube3
+        transform: rotate(-250deg)
+    div.cube4
+        transform: rotate(-125deg)
+
+    div.open-menu
+        position: relative
+        height: 20px
+        width: 35px
+        cursor: pointer
+        overflow: hidden
+        &:hover
+            div.menu-line1
+                left: -110%
+            div.menu-line2
+                right: -80%
+            div.menu-line3
+                left: -80%
+                // &:before
+                //     left: 0
+
+    div.menu-line
+        position: absolute
+        width: 100%
+        height: 1px
+        background: $mainColor
+
+    div.menu-line1
+        top: 0
+        left: -40%
+        &:before
+            content: ""
+            position: absolute
+            width: 100%
+            left: 110%
+            height: 1px
+            background: $mainColor
+
+    div.menu-line2
+        top: 50%
+        right: -40%
+        // transform: translateY(-50%)
+        &:before
+            content: ""
+            position: absolute
+            width: 100%
+            right: 110%
+            height: 1px
+            background: $mainColor
+
+    div.menu-line3
+        bottom: 0
+        left: -15%
+        &:before
+            content: ""
+            position: absolute
+            width: 100%
+            left: 110%
+            height: 1px
+            background: $mainColor

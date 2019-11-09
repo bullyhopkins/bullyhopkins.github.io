@@ -1,0 +1,38 @@
+@import "styles/vars"
+
+section.section1
+    // padding-top: 60px
+    min-height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    position: relative
+
+    h1.sect1-title
+        font-size: 96px
+        text-align: center
+        letter-spacing: 0.16em
+        span
+            color: $mainColor
+
+    p.sect1-descr
+        font-size: 36px
+        letter-spacing: 0.16em
+
+    div.scroll-down
+        position: absolute
+        bottom: 50px
+        left: 50%
+        transform: translateX(-50%)
+        border: 1px solid $mainColor
+        border-radius: 100%
+        width: 35px
+        height: 35px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        cursor: pointer
+        img
+            max-width: 50%
+            transform: translateY(1px)
